@@ -1,0 +1,859 @@
+{
+  "title": "Einführung in die Bibliometrie",
+  "slug": "bibliometrie-grundkurs",
+  "description": "Zwölf Module zur Einführung in bibliometrische Methoden, Datenquellen und Analysen.",
+  "pages": [
+    {
+      "title": "Start",
+      "slug": "start",
+      "readingTimeMinutes": 5,
+      "learningGoals": ["Kursaufbau verstehen", "Navigation der Inhalte"],
+      "outputs": [
+        {"type": "checklist", "description": "Onboarding-Checkliste", "format": "markdown"}
+      ]
+    },
+    {
+      "title": "Kursüberblick",
+      "slug": "kursueberblick",
+      "readingTimeMinutes": 8,
+      "learningGoals": ["Ziele des Kurses kennen", "Lernpfad planen"],
+      "outputs": [
+        {"type": "outline", "description": "Kursstruktur", "format": "json"}
+      ]
+    },
+    {
+      "title": "Bewertung und Abgaben",
+      "slug": "bewertung",
+      "readingTimeMinutes": 6,
+      "learningGoals": ["Abgabekriterien verstehen", "Bewertungsschema kennen"],
+      "outputs": [
+        {"type": "rubric", "description": "Bewertungskriterien", "format": "pdf"}
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "title": "Modul 1: Grundlagen der Bibliometrie",
+      "slug": "modul-1-grundlagen",
+      "difficulty": "beginner",
+      "readingTimeMinutes": 45,
+      "learningGoals": ["Begriffe definieren", "Anwendungsfelder benennen"],
+      "outputs": [
+        {"type": "summary", "description": "Begriffsübersicht", "format": "markdown"}
+      ],
+      "exercises": [
+        {
+          "title": "Begriffe zuordnen",
+          "slug": "begriffe-zuordnen",
+          "difficulty": "beginner",
+          "readingTimeMinutes": 20,
+          "learningGoals": ["Schlüsselbegriffe unterscheiden"],
+          "outputs": [
+            {"type": "worksheet", "description": "Zuordnungstabelle", "format": "csv"}
+          ]
+        },
+        {
+          "title": "Einsatzfelder skizzieren",
+          "slug": "einsatzfelder-skizzieren",
+          "difficulty": "beginner",
+          "readingTimeMinutes": 25,
+          "learningGoals": ["Bibliometrische Anwendungsfelder erkennen"],
+          "outputs": [
+            {"type": "map", "description": "Einsatzfelder-Mindmap", "format": "png"}
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "title": "Einführung: Was ist Bibliometrie?",
+          "slug": "was-ist-bibliometrie",
+          "type": "article",
+          "url": "https://example.com/bibliometrie-einfuehrung",
+          "difficulty": "beginner",
+          "readingTimeMinutes": 12,
+          "learningGoals": ["Grundbegriffe verstehen"],
+          "outputs": [
+            {"type": "notes", "description": "Lesenotizen", "format": "markdown"}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Modul 2: Publikationsdaten und Quellen",
+      "slug": "modul-2-quellen",
+      "difficulty": "beginner",
+      "readingTimeMinutes": 50,
+      "learningGoals": ["Quelltypen unterscheiden", "Datenqualität einschätzen"],
+      "outputs": [
+        {"type": "matrix", "description": "Quellenvergleich", "format": "xlsx"}
+      ],
+      "exercises": [
+        {
+          "title": "Quellen vergleichen",
+          "slug": "quellen-vergleichen",
+          "difficulty": "beginner",
+          "readingTimeMinutes": 25,
+          "learningGoals": ["Datenquellen bewerten"],
+          "outputs": [
+            {"type": "table", "description": "Vergleichstabelle", "format": "csv"}
+          ]
+        },
+        {
+          "title": "Datenlücken erkennen",
+          "slug": "datenluecken-erkennen",
+          "difficulty": "beginner",
+          "readingTimeMinutes": 20,
+          "learningGoals": ["Abdeckung einschätzen"],
+          "outputs": [
+            {"type": "report", "description": "Abdeckungskurzanalyse", "format": "pdf"}
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "title": "Überblick Datenquellen",
+          "slug": "datenquellen-ueberblick",
+          "type": "video",
+          "url": "https://example.com/datenquellen-video",
+          "difficulty": "beginner",
+          "readingTimeMinutes": 15,
+          "learningGoals": ["Wichtige Datenbanken benennen"],
+          "outputs": [
+            {"type": "notes", "description": "Stichpunkte", "format": "markdown"}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Modul 3: Zitationsindikatoren",
+      "slug": "modul-3-zitation",
+      "difficulty": "beginner",
+      "readingTimeMinutes": 55,
+      "learningGoals": ["Basisindikatoren berechnen", "Interpretation verstehen"],
+      "outputs": [
+        {"type": "worksheet", "description": "Indikatoren-Übersicht", "format": "xlsx"}
+      ],
+      "exercises": [
+        {
+          "title": "Zitationszählung",
+          "slug": "zitationszaehlung",
+          "difficulty": "beginner",
+          "readingTimeMinutes": 25,
+          "learningGoals": ["Zitationen korrekt zählen"],
+          "outputs": [
+            {"type": "table", "description": "Zitationsliste", "format": "csv"}
+          ]
+        },
+        {
+          "title": "h-Index berechnen",
+          "slug": "h-index-berechnen",
+          "difficulty": "beginner",
+          "readingTimeMinutes": 30,
+          "learningGoals": ["h-Index anwenden"],
+          "outputs": [
+            {"type": "calculation", "description": "Berechnungsschritte", "format": "markdown"}
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "title": "Indikatoren im Überblick",
+          "slug": "indikatoren-ueberblick",
+          "type": "article",
+          "url": "https://example.com/indikatoren",
+          "difficulty": "beginner",
+          "readingTimeMinutes": 18,
+          "learningGoals": ["Indikatoren vergleichen"],
+          "outputs": [
+            {"type": "notes", "description": "Zusammenfassung", "format": "markdown"}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Modul 4: Feldnormierung",
+      "slug": "modul-4-feldnormierung",
+      "difficulty": "intermediate",
+      "readingTimeMinutes": 60,
+      "learningGoals": ["Feldnormierung erklären", "Vergleichbarkeit sichern"],
+      "outputs": [
+        {"type": "guide", "description": "Normierungsschritte", "format": "pdf"}
+      ],
+      "exercises": [
+        {
+          "title": "Referenzwerte bestimmen",
+          "slug": "referenzwerte-bestimmen",
+          "difficulty": "intermediate",
+          "readingTimeMinutes": 30,
+          "learningGoals": ["Feldspezifische Benchmarks nutzen"],
+          "outputs": [
+            {"type": "table", "description": "Benchmark-Tabelle", "format": "csv"}
+          ]
+        },
+        {
+          "title": "Normierte Kennzahlen",
+          "slug": "normierte-kennzahlen",
+          "difficulty": "intermediate",
+          "readingTimeMinutes": 25,
+          "learningGoals": ["Normalisierte Werte interpretieren"],
+          "outputs": [
+            {"type": "report", "description": "Normierungsbericht", "format": "pdf"}
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "title": "Field-normalized indicators",
+          "slug": "field-normalized-indicators",
+          "type": "article",
+          "url": "https://example.com/field-normalized",
+          "difficulty": "intermediate",
+          "readingTimeMinutes": 20,
+          "learningGoals": ["Normierungsansätze vergleichen"],
+          "outputs": [
+            {"type": "notes", "description": "Lesenotizen", "format": "markdown"}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Modul 5: Altmetrics",
+      "slug": "modul-5-altmetrics",
+      "difficulty": "intermediate",
+      "readingTimeMinutes": 50,
+      "learningGoals": ["Alternative Metriken einordnen", "Altmetrics-Daten interpretieren"],
+      "outputs": [
+        {"type": "dashboard", "description": "Altmetrics-Übersicht", "format": "png"}
+      ],
+      "exercises": [
+        {
+          "title": "Altmetrics bewerten",
+          "slug": "altmetrics-bewerten",
+          "difficulty": "intermediate",
+          "readingTimeMinutes": 25,
+          "learningGoals": ["Altmetrics kritisch beurteilen"],
+          "outputs": [
+            {"type": "checklist", "description": "Bewertungskriterien", "format": "markdown"}
+          ]
+        },
+        {
+          "title": "Social-Media-Signale",
+          "slug": "social-media-signale",
+          "difficulty": "intermediate",
+          "readingTimeMinutes": 20,
+          "learningGoals": ["Signalquellen erkennen"],
+          "outputs": [
+            {"type": "summary", "description": "Signalquellen-Notizen", "format": "markdown"}
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "title": "Altmetrics Primer",
+          "slug": "altmetrics-primer",
+          "type": "article",
+          "url": "https://example.com/altmetrics",
+          "difficulty": "intermediate",
+          "readingTimeMinutes": 14,
+          "learningGoals": ["Altmetrics-Landschaft verstehen"],
+          "outputs": [
+            {"type": "notes", "description": "Kurznotizen", "format": "markdown"}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Modul 6: Datenbereinigung",
+      "slug": "modul-6-datenbereinigung",
+      "difficulty": "intermediate",
+      "readingTimeMinutes": 55,
+      "learningGoals": ["Daten bereinigen", "Duplikate identifizieren"],
+      "outputs": [
+        {"type": "script", "description": "Bereinigungsschritte", "format": "python"}
+      ],
+      "exercises": [
+        {
+          "title": "Duplikate entfernen",
+          "slug": "duplikate-entfernen",
+          "difficulty": "intermediate",
+          "readingTimeMinutes": 25,
+          "learningGoals": ["Dublettenerkennung anwenden"],
+          "outputs": [
+            {"type": "log", "description": "Bereinigungsprotokoll", "format": "txt"}
+          ]
+        },
+        {
+          "title": "Autoren disambiguieren",
+          "slug": "autoren-disambiguieren",
+          "difficulty": "intermediate",
+          "readingTimeMinutes": 30,
+          "learningGoals": ["Namensvarianten zusammenführen"],
+          "outputs": [
+            {"type": "table", "description": "Namensmapping", "format": "csv"}
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "title": "Cleaning bibliographic data",
+          "slug": "cleaning-bibliographic-data",
+          "type": "article",
+          "url": "https://example.com/cleaning",
+          "difficulty": "intermediate",
+          "readingTimeMinutes": 16,
+          "learningGoals": ["Bereinigungsstrategien anwenden"],
+          "outputs": [
+            {"type": "notes", "description": "Checkliste", "format": "markdown"}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Modul 7: Netzwerk- und Graphanalyse",
+      "slug": "modul-7-netzwerke",
+      "difficulty": "intermediate",
+      "readingTimeMinutes": 60,
+      "learningGoals": ["Ko-Autorenschaften analysieren", "Netzwerke visualisieren"],
+      "outputs": [
+        {"type": "graph", "description": "Ko-Autoren-Netzwerk", "format": "graphml"}
+      ],
+      "exercises": [
+        {
+          "title": "Ko-Autorenschaften modellieren",
+          "slug": "ko-autoren-modellieren",
+          "difficulty": "intermediate",
+          "readingTimeMinutes": 30,
+          "learningGoals": ["Netzwerkgraphen erstellen"],
+          "outputs": [
+            {"type": "graph", "description": "Graphdaten", "format": "graphml"}
+          ]
+        },
+        {
+          "title": "Cluster finden",
+          "slug": "cluster-finden",
+          "difficulty": "intermediate",
+          "readingTimeMinutes": 25,
+          "learningGoals": ["Community Detection anwenden"],
+          "outputs": [
+            {"type": "report", "description": "Cluster-Übersicht", "format": "pdf"}
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "title": "Netzwerkanalyse kompakt",
+          "slug": "netzwerkanalyse-kompakt",
+          "type": "video",
+          "url": "https://example.com/netzwerk",
+          "difficulty": "intermediate",
+          "readingTimeMinutes": 18,
+          "learningGoals": ["Netzwerke interpretieren"],
+          "outputs": [
+            {"type": "notes", "description": "Kernaussagen", "format": "markdown"}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Modul 8: Themenmapping",
+      "slug": "modul-8-themenmapping",
+      "difficulty": "intermediate",
+      "readingTimeMinutes": 55,
+      "learningGoals": ["Themencluster erkennen", "Keyword-Co-Occurrence analysieren"],
+      "outputs": [
+        {"type": "map", "description": "Themenlandkarte", "format": "png"}
+      ],
+      "exercises": [
+        {
+          "title": "Keyword-Matrix erstellen",
+          "slug": "keyword-matrix-erstellen",
+          "difficulty": "intermediate",
+          "readingTimeMinutes": 25,
+          "learningGoals": ["Co-Occurrence berechnen"],
+          "outputs": [
+            {"type": "table", "description": "Keyword-Matrix", "format": "csv"}
+          ]
+        },
+        {
+          "title": "Themencluster beschreiben",
+          "slug": "themencluster-beschreiben",
+          "difficulty": "intermediate",
+          "readingTimeMinutes": 25,
+          "learningGoals": ["Cluster interpretieren"],
+          "outputs": [
+            {"type": "report", "description": "Clusterbeschreibung", "format": "markdown"}
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "title": "Themenmapping Tutorial",
+          "slug": "themenmapping-tutorial",
+          "type": "video",
+          "url": "https://example.com/themenmapping",
+          "difficulty": "intermediate",
+          "readingTimeMinutes": 20,
+          "learningGoals": ["Mapping-Methoden anwenden"],
+          "outputs": [
+            {"type": "notes", "description": "Notizen", "format": "markdown"}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Modul 9: Forschungsleistung bewerten",
+      "slug": "modul-9-bewertung",
+      "difficulty": "advanced",
+      "readingTimeMinutes": 60,
+      "learningGoals": ["Leistungsindikatoren kombinieren", "Limitationen verstehen"],
+      "outputs": [
+        {"type": "scorecard", "description": "Leistungsprofil", "format": "xlsx"}
+      ],
+      "exercises": [
+        {
+          "title": "Indikatoren kombinieren",
+          "slug": "indikatoren-kombinieren",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 30,
+          "learningGoals": ["Mehrdimensionale Bewertung"],
+          "outputs": [
+            {"type": "table", "description": "Bewertungsmatrix", "format": "csv"}
+          ]
+        },
+        {
+          "title": "Interpretationsgrenzen",
+          "slug": "interpretationsgrenzen",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 25,
+          "learningGoals": ["Limitationen dokumentieren"],
+          "outputs": [
+            {"type": "memo", "description": "Grenzen-Notiz", "format": "markdown"}
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "title": "Leistungsbewertung in der Praxis",
+          "slug": "leistungsbewertung-praxis",
+          "type": "article",
+          "url": "https://example.com/leistungsbewertung",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 18,
+          "learningGoals": ["Bewertungskriterien anwenden"],
+          "outputs": [
+            {"type": "notes", "description": "Stichpunkte", "format": "markdown"}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Modul 10: Open-Science-Indikatoren",
+      "slug": "modul-10-open-science",
+      "difficulty": "advanced",
+      "readingTimeMinutes": 50,
+      "learningGoals": ["Open-Science-Praktiken erfassen", "Indikatoren ableiten"],
+      "outputs": [
+        {"type": "catalog", "description": "Open-Science-Indikatoren", "format": "json"}
+      ],
+      "exercises": [
+        {
+          "title": "Open-Access-Quellen",
+          "slug": "open-access-quellen",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 25,
+          "learningGoals": ["OA-Quellen identifizieren"],
+          "outputs": [
+            {"type": "table", "description": "OA-Quelle-Liste", "format": "csv"}
+          ]
+        },
+        {
+          "title": "Transparenz-Checklist",
+          "slug": "transparenz-checklist",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 20,
+          "learningGoals": ["Transparenzkriterien anwenden"],
+          "outputs": [
+            {"type": "checklist", "description": "Transparenz-Check", "format": "markdown"}
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "title": "Open-Science-Metriken",
+          "slug": "open-science-metriken",
+          "type": "article",
+          "url": "https://example.com/open-science",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 16,
+          "learningGoals": ["OS-Indikatoren verstehen"],
+          "outputs": [
+            {"type": "notes", "description": "Notizen", "format": "markdown"}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Modul 11: Forschungsdatenmetriken",
+      "slug": "modul-11-forschungsdaten",
+      "difficulty": "advanced",
+      "readingTimeMinutes": 55,
+      "learningGoals": ["Datensätze bewerten", "Reproduzierbarkeit fördern"],
+      "outputs": [
+        {"type": "report", "description": "Datensatzprofil", "format": "pdf"}
+      ],
+      "exercises": [
+        {
+          "title": "Datensatz-Impact",
+          "slug": "datensatz-impact",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 25,
+          "learningGoals": ["Impact-Indikatoren berechnen"],
+          "outputs": [
+            {"type": "table", "description": "Impact-Tabelle", "format": "csv"}
+          ]
+        },
+        {
+          "title": "Zitationsverknüpfungen",
+          "slug": "zitationsverknuepfungen",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 25,
+          "learningGoals": ["Verknüpfungen dokumentieren"],
+          "outputs": [
+            {"type": "graph", "description": "Zitationsgraph", "format": "graphml"}
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "title": "Data Metrics Guide",
+          "slug": "data-metrics-guide",
+          "type": "book",
+          "url": "https://example.com/data-metrics",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 22,
+          "learningGoals": ["Datenmetriken einordnen"],
+          "outputs": [
+            {"type": "notes", "description": "Kapitelnotizen", "format": "markdown"}
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Modul 12: Reporting und Storytelling",
+      "slug": "modul-12-reporting",
+      "difficulty": "advanced",
+      "readingTimeMinutes": 60,
+      "learningGoals": ["Ergebnisse kommunizieren", "Visualisierungen einsetzen"],
+      "outputs": [
+        {"type": "presentation", "description": "Berichtsstruktur", "format": "pptx"}
+      ],
+      "exercises": [
+        {
+          "title": "Dashboard entwerfen",
+          "slug": "dashboard-entwerfen",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 30,
+          "learningGoals": ["Visualisierung planen"],
+          "outputs": [
+            {"type": "wireframe", "description": "Dashboard-Wireframe", "format": "png"}
+          ]
+        },
+        {
+          "title": "Executive Summary",
+          "slug": "executive-summary",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 25,
+          "learningGoals": ["Kernaussagen formulieren"],
+          "outputs": [
+            {"type": "summary", "description": "Summary-Text", "format": "markdown"}
+          ]
+        }
+      ],
+      "resources": [
+        {
+          "title": "Storytelling mit Daten",
+          "slug": "storytelling-mit-daten",
+          "type": "video",
+          "url": "https://example.com/storytelling",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 15,
+          "learningGoals": ["Storyline strukturieren"],
+          "outputs": [
+            {"type": "notes", "description": "Storytelling-Tipps", "format": "markdown"}
+          ]
+        }
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "title": "Bibliometrie Tools Überblick",
+      "slug": "bibliometrie-tools",
+      "type": "tool",
+      "url": "https://example.com/tools",
+      "difficulty": "beginner",
+      "readingTimeMinutes": 10,
+      "learningGoals": ["Wichtige Tools benennen"],
+      "outputs": [
+        {"type": "catalog", "description": "Tool-Liste", "format": "json"}
+      ]
+    },
+    {
+      "title": "Datenethik in der Forschung",
+      "slug": "datenethik",
+      "type": "article",
+      "url": "https://example.com/ethik",
+      "difficulty": "intermediate",
+      "readingTimeMinutes": 12,
+      "learningGoals": ["Ethikleitlinien kennen"],
+      "outputs": [
+        {"type": "notes", "description": "Ethiknotizen", "format": "markdown"}
+      ]
+    }
+  ],
+  "sitemap": [
+    {
+      "title": "Start",
+      "slug": "/start",
+      "type": "page"
+    },
+    {
+      "title": "Kursüberblick",
+      "slug": "/kursueberblick",
+      "type": "page"
+    },
+    {
+      "title": "Bewertung und Abgaben",
+      "slug": "/bewertung",
+      "type": "page"
+    },
+    {
+      "title": "Module",
+      "slug": "/module",
+      "type": "page",
+      "children": [
+        {
+          "title": "Modul 1: Grundlagen der Bibliometrie",
+          "slug": "/module/modul-1-grundlagen",
+          "type": "module",
+          "children": [
+            {
+              "title": "Begriffe zuordnen",
+              "slug": "/module/modul-1-grundlagen/begriffe-zuordnen",
+              "type": "exercise"
+            },
+            {
+              "title": "Einsatzfelder skizzieren",
+              "slug": "/module/modul-1-grundlagen/einsatzfelder-skizzieren",
+              "type": "exercise"
+            }
+          ]
+        },
+        {
+          "title": "Modul 2: Publikationsdaten und Quellen",
+          "slug": "/module/modul-2-quellen",
+          "type": "module",
+          "children": [
+            {
+              "title": "Quellen vergleichen",
+              "slug": "/module/modul-2-quellen/quellen-vergleichen",
+              "type": "exercise"
+            },
+            {
+              "title": "Datenlücken erkennen",
+              "slug": "/module/modul-2-quellen/datenluecken-erkennen",
+              "type": "exercise"
+            }
+          ]
+        },
+        {
+          "title": "Modul 3: Zitationsindikatoren",
+          "slug": "/module/modul-3-zitation",
+          "type": "module",
+          "children": [
+            {
+              "title": "Zitationszählung",
+              "slug": "/module/modul-3-zitation/zitationszaehlung",
+              "type": "exercise"
+            },
+            {
+              "title": "h-Index berechnen",
+              "slug": "/module/modul-3-zitation/h-index-berechnen",
+              "type": "exercise"
+            }
+          ]
+        },
+        {
+          "title": "Modul 4: Feldnormierung",
+          "slug": "/module/modul-4-feldnormierung",
+          "type": "module",
+          "children": [
+            {
+              "title": "Referenzwerte bestimmen",
+              "slug": "/module/modul-4-feldnormierung/referenzwerte-bestimmen",
+              "type": "exercise"
+            },
+            {
+              "title": "Normierte Kennzahlen",
+              "slug": "/module/modul-4-feldnormierung/normierte-kennzahlen",
+              "type": "exercise"
+            }
+          ]
+        },
+        {
+          "title": "Modul 5: Altmetrics",
+          "slug": "/module/modul-5-altmetrics",
+          "type": "module",
+          "children": [
+            {
+              "title": "Altmetrics bewerten",
+              "slug": "/module/modul-5-altmetrics/altmetrics-bewerten",
+              "type": "exercise"
+            },
+            {
+              "title": "Social-Media-Signale",
+              "slug": "/module/modul-5-altmetrics/social-media-signale",
+              "type": "exercise"
+            }
+          ]
+        },
+        {
+          "title": "Modul 6: Datenbereinigung",
+          "slug": "/module/modul-6-datenbereinigung",
+          "type": "module",
+          "children": [
+            {
+              "title": "Duplikate entfernen",
+              "slug": "/module/modul-6-datenbereinigung/duplikate-entfernen",
+              "type": "exercise"
+            },
+            {
+              "title": "Autoren disambiguieren",
+              "slug": "/module/modul-6-datenbereinigung/autoren-disambiguieren",
+              "type": "exercise"
+            }
+          ]
+        },
+        {
+          "title": "Modul 7: Netzwerk- und Graphanalyse",
+          "slug": "/module/modul-7-netzwerke",
+          "type": "module",
+          "children": [
+            {
+              "title": "Ko-Autorenschaften modellieren",
+              "slug": "/module/modul-7-netzwerke/ko-autoren-modellieren",
+              "type": "exercise"
+            },
+            {
+              "title": "Cluster finden",
+              "slug": "/module/modul-7-netzwerke/cluster-finden",
+              "type": "exercise"
+            }
+          ]
+        },
+        {
+          "title": "Modul 8: Themenmapping",
+          "slug": "/module/modul-8-themenmapping",
+          "type": "module",
+          "children": [
+            {
+              "title": "Keyword-Matrix erstellen",
+              "slug": "/module/modul-8-themenmapping/keyword-matrix-erstellen",
+              "type": "exercise"
+            },
+            {
+              "title": "Themencluster beschreiben",
+              "slug": "/module/modul-8-themenmapping/themencluster-beschreiben",
+              "type": "exercise"
+            }
+          ]
+        },
+        {
+          "title": "Modul 9: Forschungsleistung bewerten",
+          "slug": "/module/modul-9-bewertung",
+          "type": "module",
+          "children": [
+            {
+              "title": "Indikatoren kombinieren",
+              "slug": "/module/modul-9-bewertung/indikatoren-kombinieren",
+              "type": "exercise"
+            },
+            {
+              "title": "Interpretationsgrenzen",
+              "slug": "/module/modul-9-bewertung/interpretationsgrenzen",
+              "type": "exercise"
+            }
+          ]
+        },
+        {
+          "title": "Modul 10: Open-Science-Indikatoren",
+          "slug": "/module/modul-10-open-science",
+          "type": "module",
+          "children": [
+            {
+              "title": "Open-Access-Quellen",
+              "slug": "/module/modul-10-open-science/open-access-quellen",
+              "type": "exercise"
+            },
+            {
+              "title": "Transparenz-Checklist",
+              "slug": "/module/modul-10-open-science/transparenz-checklist",
+              "type": "exercise"
+            }
+          ]
+        },
+        {
+          "title": "Modul 11: Forschungsdatenmetriken",
+          "slug": "/module/modul-11-forschungsdaten",
+          "type": "module",
+          "children": [
+            {
+              "title": "Datensatz-Impact",
+              "slug": "/module/modul-11-forschungsdaten/datensatz-impact",
+              "type": "exercise"
+            },
+            {
+              "title": "Zitationsverknüpfungen",
+              "slug": "/module/modul-11-forschungsdaten/zitationsverknuepfungen",
+              "type": "exercise"
+            }
+          ]
+        },
+        {
+          "title": "Modul 12: Reporting und Storytelling",
+          "slug": "/module/modul-12-reporting",
+          "type": "module",
+          "children": [
+            {
+              "title": "Dashboard entwerfen",
+              "slug": "/module/modul-12-reporting/dashboard-entwerfen",
+              "type": "exercise"
+            },
+            {
+              "title": "Executive Summary",
+              "slug": "/module/modul-12-reporting/executive-summary",
+              "type": "exercise"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ressourcen",
+      "slug": "/ressourcen",
+      "type": "page",
+      "children": [
+        {
+          "title": "Bibliometrie Tools Überblick",
+          "slug": "/ressourcen/bibliometrie-tools",
+          "type": "resource"
+        },
+        {
+          "title": "Datenethik in der Forschung",
+          "slug": "/ressourcen/datenethik",
+          "type": "resource"
+        }
+      ]
+    }
+  ]
+}
