@@ -1,0 +1,155 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/course.json",
+  "title": "Course Export",
+  "type": "object",
+  "required": ["title", "slug", "pages", "modules", "resources", "sitemap"],
+  "properties": {
+    "title": {"type": "string"},
+    "slug": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+    "description": {"type": "string"},
+    "pages": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/page"}
+    },
+    "modules": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/module"},
+      "minItems": 1
+    },
+    "resources": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/resource"}
+    },
+    "sitemap": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/sitemapItem"}
+    }
+  },
+  "$defs": {
+    "output": {
+      "type": "object",
+      "required": ["type", "description"],
+      "properties": {
+        "type": {"type": "string"},
+        "description": {"type": "string"},
+        "format": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "learningGoal": {
+      "type": "string",
+      "minLength": 3
+    },
+    "resource": {
+      "type": "object",
+      "required": ["title", "slug", "type", "readingTimeMinutes", "learningGoals"],
+      "properties": {
+        "title": {"type": "string"},
+        "slug": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+        "type": {"type": "string", "enum": ["article", "book", "dataset", "video", "tool"]},
+        "url": {"type": "string", "format": "uri"},
+        "difficulty": {"type": "string", "enum": ["beginner", "intermediate", "advanced"]},
+        "readingTimeMinutes": {"type": "integer", "minimum": 1},
+        "learningGoals": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/learningGoal"}
+        },
+        "outputs": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/output"}
+        }
+      },
+      "additionalProperties": false
+    },
+    "exercise": {
+      "type": "object",
+      "required": ["title", "slug", "difficulty", "readingTimeMinutes", "learningGoals", "outputs"],
+      "properties": {
+        "title": {"type": "string"},
+        "slug": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+        "difficulty": {"type": "string", "enum": ["beginner", "intermediate", "advanced"]},
+        "readingTimeMinutes": {"type": "integer", "minimum": 1},
+        "learningGoals": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/learningGoal"}
+        },
+        "outputs": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/output"},
+          "minItems": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "module": {
+      "type": "object",
+      "required": [
+        "title",
+        "slug",
+        "difficulty",
+        "readingTimeMinutes",
+        "learningGoals",
+        "outputs",
+        "exercises",
+        "resources"
+      ],
+      "properties": {
+        "title": {"type": "string"},
+        "slug": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+        "difficulty": {"type": "string", "enum": ["beginner", "intermediate", "advanced"]},
+        "readingTimeMinutes": {"type": "integer", "minimum": 1},
+        "learningGoals": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/learningGoal"}
+        },
+        "outputs": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/output"}
+        },
+        "exercises": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/exercise"}
+        },
+        "resources": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/resource"}
+        }
+      },
+      "additionalProperties": false
+    },
+    "page": {
+      "type": "object",
+      "required": ["title", "slug", "readingTimeMinutes", "learningGoals", "outputs"],
+      "properties": {
+        "title": {"type": "string"},
+        "slug": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+        "readingTimeMinutes": {"type": "integer", "minimum": 1},
+        "learningGoals": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/learningGoal"}
+        },
+        "outputs": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/output"}
+        }
+      },
+      "additionalProperties": false
+    },
+    "sitemapItem": {
+      "type": "object",
+      "required": ["title", "slug", "type"],
+      "properties": {
+        "title": {"type": "string"},
+        "slug": {"type": "string"},
+        "type": {"type": "string", "enum": ["page", "module", "exercise", "resource"]},
+        "children": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/sitemapItem"}
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
