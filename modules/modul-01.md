@@ -1,3 +1,34 @@
+<div class="module-role-panel">
+  <p class="module-role-label">Wähle deine Rolle für passende Hinweise:</p>
+  <div class="module-role-buttons" role="group" aria-label="Rolle auswählen">
+    <button type="button" class="role-toggle-button" data-role="Bibliothek">Bibliothek</button>
+    <button type="button" class="role-toggle-button" data-role="Research Office">Research Office</button>
+    <button type="button" class="role-toggle-button" data-role="Forschende">Forschende</button>
+  </div>
+  <div class="module-role-hints">
+    <div class="role-hint" data-role="Bibliothek" hidden>
+      Hinweis: Klärt mit dem Team, welche bibliometrischen Basisbegriffe in Schulungen konsistent
+      verwendet werden sollen.
+    </div>
+    <div class="role-hint" data-role="Bibliothek" hidden>
+      Hinweis: Notiert typische Nutzerfragen, um spätere Beratungsangebote daran auszurichten.
+    </div>
+    <div class="role-hint" data-role="Research Office" hidden>
+      Hinweis: Haltet fest, welche Kennzahlen für interne Reports wirklich benötigt werden.
+    </div>
+    <div class="role-hint" data-role="Research Office" hidden>
+      Hinweis: Prüft früh, welche Datenquellen für zentrale Entscheidungen akzeptiert sind.
+    </div>
+    <div class="role-hint" data-role="Forschende" hidden>
+      Hinweis: Überlegt, welche Indikatoren eure Arbeit sinnvoll ergänzen, ohne sie zu reduzieren.
+    </div>
+    <div class="role-hint" data-role="Forschende" hidden>
+      Hinweis: Sammelt Beispiele, wo Zitationszahlen missverstanden wurden, um gegenzusteuern.
+    </div>
+  </div>
+</div>
+<script src="../role-toggle.js" defer></script>
+
 # Modul 1: Einführung in die Bibliometrie
 
 ## Lernziele

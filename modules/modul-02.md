@@ -1,3 +1,33 @@
+<div class="module-role-panel">
+  <p class="module-role-label">Wähle deine Rolle für passende Hinweise:</p>
+  <div class="module-role-buttons" role="group" aria-label="Rolle auswählen">
+    <button type="button" class="role-toggle-button" data-role="Bibliothek">Bibliothek</button>
+    <button type="button" class="role-toggle-button" data-role="Research Office">Research Office</button>
+    <button type="button" class="role-toggle-button" data-role="Forschende">Forschende</button>
+  </div>
+  <div class="module-role-hints">
+    <div class="role-hint" data-role="Bibliothek" hidden>
+      Hinweis: Prüft, welche Datenbanken eure Nutzerinnen und Nutzer bereits kennen.
+    </div>
+    <div class="role-hint" data-role="Bibliothek" hidden>
+      Hinweis: Bereitet eine kurze Übersicht zu Abdeckungsgrenzen der wichtigsten Quellen vor.
+    </div>
+    <div class="role-hint" data-role="Research Office" hidden>
+      Hinweis: Legt fest, welche Quellen im Reporting priorisiert werden und warum.
+    </div>
+    <div class="role-hint" data-role="Research Office" hidden>
+      Hinweis: Klärt, wie ihr Datenlücken transparent in Berichten kennzeichnet.
+    </div>
+    <div class="role-hint" data-role="Forschende" hidden>
+      Hinweis: Notiert, welche Publikationswege in eurem Feld fehlen könnten.
+    </div>
+    <div class="role-hint" data-role="Forschende" hidden>
+      Hinweis: Überlegt, wie ihr eure eigenen Publikationslisten aktuell halten wollt.
+    </div>
+  </div>
+</div>
+<script src="../role-toggle.js" defer></script>
+
 # Modul 2: Datenquellen und Datenqualität
 
 ## Lernziele
