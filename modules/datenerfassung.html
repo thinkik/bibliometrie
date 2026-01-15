@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Modul Datenerfassung</title>
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Modul: Datenerfassung</h1>
+        <p>Hier werden Eingaben aus den unterschiedlichen Quellen zusammengeführt.</p>
+      </header>
+
+      <div class="role-toggle" data-role-toggle>
+        <span>Rolle wählen:</span>
+        <button type="button" data-role="bibliothek">Bibliothek</button>
+        <button type="button" data-role="research-office">Research Office</button>
+        <button type="button" data-role="forschende">Forschende</button>
+      </div>
+
+      <section class="hint-panel" aria-live="polite" data-role-hints>
+        {
+          "bibliothek": [
+            "Prüft die Datenquellen auf Dubletten und pflegt Normdaten als Platzhalter.",
+            "Stimmt die Metadatenschemata mit dem Katalog ab."
+          ],
+          "research-office": [
+            "Definiert, welche Kennzahlen verpflichtend erhoben werden sollen.",
+            "Klärt offene Fragen zu Datenschutzfreigaben."
+          ],
+          "forschende": [
+            "Bereitet die Publikationslisten für den Import vor.",
+            "Notiert fehlende ORCID-IDs als Platzhalter."
+          ]
+        }
+      </section>
+    </main>
+    <script src="../assets/app.js"></script>
+  </body>
+</html>

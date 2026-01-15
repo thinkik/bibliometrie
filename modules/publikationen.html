@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Modul Publikationen</title>
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Modul: Publikationen</h1>
+        <p>Auswertung der Publikationsdaten für Dashboards und Berichte.</p>
+      </header>
+
+      <div class="role-toggle" data-role-toggle>
+        <span>Rolle wählen:</span>
+        <button type="button" data-role="bibliothek">Bibliothek</button>
+        <button type="button" data-role="research-office">Research Office</button>
+        <button type="button" data-role="forschende">Forschende</button>
+      </div>
+
+      <section class="hint-panel" aria-live="polite" data-role-hints>
+        {
+          "bibliothek": [
+            "Kennzeichnet Open-Access-Publikationen als Platzhalter.",
+            "Prüft die Zeitschriften-IDs für die Berichte."
+          ],
+          "research-office": [
+            "Legt Schwellenwerte für Impact-Analysen fest.",
+            "Stimmt Berichtstermine mit dem Präsidium ab."
+          ],
+          "forschende": [
+            "Kontrolliert die Zitationen auf Vollständigkeit.",
+            "Kommentiert auffällige Metriken für das Reporting."
+          ]
+        }
+      </section>
+    </main>
+    <script src="../assets/app.js"></script>
+  </body>
+</html>
