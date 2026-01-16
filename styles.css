@@ -79,8 +79,58 @@ body {
   font-size: 1.05rem;
 }
 
+.module-nav {
+  margin: 2rem 0 1.5rem;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(15, 118, 110, 0.08);
+}
+
+.module-nav-label {
+  margin: 0 0 0.75rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.module-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.module-tab {
+  border: 1px solid var(--border);
+  background: #ffffff;
+  color: var(--text);
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.module-tab:hover,
+.module-tab:focus {
+  border-color: var(--primary);
+  color: var(--primary);
+  outline: none;
+}
+
+.module-tab.is-active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff;
+  font-weight: 600;
+}
+
 .module-section {
   margin-top: 3rem;
+}
+
+.module-section[hidden] {
+  display: none;
 }
 
 .module-section h2 {
