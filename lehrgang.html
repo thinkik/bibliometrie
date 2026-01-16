@@ -27,8 +27,22 @@
         Hier findest du die Module 1–3 des Lehrgangs. Nutze die Hinweise für deine Rolle, um die
         wichtigsten Punkte gezielt zu vertiefen.
       </p>
+      <nav class="module-nav" aria-label="Modul-Navigation">
+        <p class="module-nav-label">Module auswählen:</p>
+        <div class="module-tabs" role="tablist" aria-label="Module">
+          <button type="button" class="module-tab" role="tab" id="tab-modul-1" aria-controls="modul-1">
+            Modul 1
+          </button>
+          <button type="button" class="module-tab" role="tab" id="tab-modul-2" aria-controls="modul-2">
+            Modul 2
+          </button>
+          <button type="button" class="module-tab" role="tab" id="tab-modul-3" aria-controls="modul-3">
+            Modul 3
+          </button>
+        </div>
+      </nav>
 
-      <section class="module-section" id="modul-1">
+      <section class="module-section" id="modul-1" role="tabpanel" aria-labelledby="tab-modul-1">
         <h2>Modul 1: Einführung in die Bibliometrie</h2>
         <ul class="module-meta">
           <li><strong>Schwierigkeit:</strong> 1</li>
@@ -145,7 +159,7 @@
         </ul>
       </section>
 
-      <section class="module-section" id="modul-2">
+      <section class="module-section" id="modul-2" role="tabpanel" aria-labelledby="tab-modul-2">
         <h2>Modul 2: Datenquellen &amp; Coverage: Woher kommen bibliometrische Zahlen?</h2>
         <ul class="module-meta">
           <li><strong>Schwierigkeit:</strong> 1–2</li>
@@ -496,7 +510,7 @@
         </ul>
       </section>
 
-      <section class="module-section" id="modul-3">
+      <section class="module-section" id="modul-3" role="tabpanel" aria-labelledby="tab-modul-3">
         <h2>Modul 3: Zitationen verstehen: Was zählen wir – und was bedeutet es (nicht)?</h2>
         <ul class="module-meta">
           <li><strong>Schwierigkeit:</strong> 1</li>
