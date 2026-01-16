@@ -79,6 +79,67 @@ body {
   font-size: 1.05rem;
 }
 
+.module-section {
+  margin-top: 3rem;
+}
+
+.module-section h2 {
+  margin-bottom: 0.75rem;
+}
+
+.module-meta {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 1.5rem;
+  display: grid;
+  gap: 0.35rem;
+  color: var(--muted);
+}
+
+.module-subsection-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.module-subsection-grid h4 {
+  margin-bottom: 0.5rem;
+}
+
+details {
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: #ffffff;
+}
+
+details summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.details-content {
+  margin-top: 1rem;
+}
+
+.content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.75rem 0 1rem;
+  font-size: 0.95rem;
+}
+
+.content th,
+.content td {
+  border: 1px solid var(--border);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+.content th {
+  background: #f1f5f9;
+}
+
 .module-role-panel {
   margin: 1.5rem 0 2rem;
   padding: 1.25rem 1.5rem;
