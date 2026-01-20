@@ -94,6 +94,38 @@ body {
   color: var(--text);
 }
 
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.module-table {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.start-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  background: var(--primary);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: 1px solid transparent;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.start-button:hover,
+.start-button:focus {
+  background: #0c5f58;
+  border-color: #0c5f58;
+  outline: none;
+}
+
 .module-tabs {
   display: flex;
   flex-wrap: wrap;
@@ -191,6 +223,40 @@ details summary {
 
 .content th {
   background: #f1f5f9;
+}
+
+@media (max-width: 720px) {
+  .module-table thead {
+    display: none;
+  }
+
+  .module-table,
+  .module-table tbody,
+  .module-table tr,
+  .module-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .module-table tr {
+    margin-bottom: 1rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: #ffffff;
+  }
+
+  .module-table td {
+    border: none;
+    padding: 0.4rem 0;
+  }
+
+  .module-table td::before {
+    content: attr(data-label) ": ";
+    font-weight: 600;
+    color: var(--text);
+    display: block;
+  }
 }
 
 .module-role-panel {
