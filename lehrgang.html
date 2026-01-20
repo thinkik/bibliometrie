@@ -29,24 +29,74 @@
       </p>
       <nav class="module-nav" aria-label="Modul-Navigation">
         <p class="module-nav-label">Module auswählen:</p>
-        <div class="module-tabs" role="tablist" aria-label="Module">
-          <button type="button" class="module-tab" role="tab" id="tab-modul-1" aria-controls="modul-1">
-            Modul 1
-          </button>
-          <button type="button" class="module-tab" role="tab" id="tab-modul-2" aria-controls="modul-2">
-            Modul 2
-          </button>
-          <button type="button" class="module-tab" role="tab" id="tab-modul-3" aria-controls="modul-3">
-            Modul 3
-          </button>
-          <button type="button" class="module-tab" role="tab" id="tab-modul-4" aria-controls="modul-4">
-            Modul 4
-          </button>
+        <div class="table-responsive">
+          <table class="table module-table">
+            <thead>
+              <tr>
+                <th scope="col">Modul</th>
+                <th scope="col">Modulname</th>
+                <th scope="col">Kurzbeschreibung</th>
+                <th scope="col">Schwierigkeit</th>
+                <th scope="col">Lesezeit</th>
+                <th scope="col">Start</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Modul">1</td>
+                <td data-label="Modulname">Grundlagen der Bibliometrie</td>
+                <td data-label="Kurzbeschreibung">
+                  Zentrale Begriffe, Zitationslogik und verantwortungsvoller Einsatz von Kennzahlen.
+                </td>
+                <td data-label="Schwierigkeit">Beginner</td>
+                <td data-label="Lesezeit">45 Minuten</td>
+                <td data-label="Start">
+                  <a class="start-button" href="#modul-1">Start</a>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Modul">2</td>
+                <td data-label="Modulname">Publikationsdaten und Quellen</td>
+                <td data-label="Kurzbeschreibung">
+                  Auswahl, Abdeckung und Qualität von Datenquellen für bibliometrische Analysen.
+                </td>
+                <td data-label="Schwierigkeit">Beginner</td>
+                <td data-label="Lesezeit">50 Minuten</td>
+                <td data-label="Start">
+                  <a class="start-button" href="#modul-2">Start</a>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Modul">3</td>
+                <td data-label="Modulname">Zitationsindikatoren</td>
+                <td data-label="Kurzbeschreibung">
+                  Zitationsmetriken verstehen, sauber berichten und im Kontext interpretieren.
+                </td>
+                <td data-label="Schwierigkeit">Beginner</td>
+                <td data-label="Lesezeit">55 Minuten</td>
+                <td data-label="Start">
+                  <a class="start-button" href="#modul-3">Start</a>
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Modul">4</td>
+                <td data-label="Modulname">Metriken für Autor:innen</td>
+                <td data-label="Kurzbeschreibung">
+                  Autor:innenmetriken einordnen und fair im Berichtskontext einsetzen.
+                </td>
+                <td data-label="Schwierigkeit">2</td>
+                <td data-label="Lesezeit">25 Minuten</td>
+                <td data-label="Start">
+                  <a class="start-button" href="#modul-4">Start</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </nav>
 
-      <section class="module-section" id="modul-1" role="tabpanel" aria-labelledby="tab-modul-1">
-        <h2>Modul 1: Grundlagen der Bibliometrie</h2>
+      <section class="module-section" id="modul-1" aria-labelledby="heading-modul-1">
+        <h2 id="heading-modul-1">Modul 1: Grundlagen der Bibliometrie</h2>
         <ul class="module-meta">
           <li><strong>Schwierigkeit:</strong> Beginner</li>
           <li><strong>Geschätzte Lesezeit:</strong> 45 Minuten</li>
@@ -162,8 +212,8 @@
         </ul>
       </section>
 
-      <section class="module-section" id="modul-2" role="tabpanel" aria-labelledby="tab-modul-2">
-        <h2>Modul 2: Publikationsdaten und Quellen</h2>
+      <section class="module-section" id="modul-2" aria-labelledby="heading-modul-2">
+        <h2 id="heading-modul-2">Modul 2: Publikationsdaten und Quellen</h2>
         <ul class="module-meta">
           <li><strong>Schwierigkeit:</strong> Beginner</li>
           <li><strong>Geschätzte Lesezeit:</strong> 50 Minuten</li>
@@ -513,8 +563,8 @@
         </ul>
       </section>
 
-      <section class="module-section" id="modul-3" role="tabpanel" aria-labelledby="tab-modul-3">
-        <h2>Modul 3: Zitationsindikatoren</h2>
+      <section class="module-section" id="modul-3" aria-labelledby="heading-modul-3">
+        <h2 id="heading-modul-3">Modul 3: Zitationsindikatoren</h2>
         <ul class="module-meta">
           <li><strong>Schwierigkeit:</strong> Beginner</li>
           <li><strong>Geschätzte Lesezeit:</strong> 55 Minuten</li>
@@ -848,8 +898,8 @@
         </ul>
       </section>
 
-      <section class="module-section" id="modul-4" role="tabpanel" aria-labelledby="tab-modul-4">
-        <h2>Modul 4: Metriken für Autor:innen</h2>
+      <section class="module-section" id="modul-4" aria-labelledby="heading-modul-4">
+        <h2 id="heading-modul-4">Modul 4: Metriken für Autor:innen</h2>
         <ul class="module-meta">
           <li><strong>Schwierigkeit:</strong> 2</li>
           <li><strong>Geschätzte Lesezeit:</strong> 25 Minuten</li>
