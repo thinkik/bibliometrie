@@ -29,7 +29,7 @@
 </div>
 <script src="../role-toggle.js" defer></script>
 
-# Modul 1: Einführung in die Bibliometrie
+# Modul 1: Grundlagen der Bibliometrie
 
 ## Lernziele
 - Grundbegriffe der Bibliometrie erklären

@@ -1,4 +1,4 @@
-# Modul 12: Praxisprojekt, Reporting und Kommunikation
+# Modul 12: Reporting und Storytelling
 
 ## Lernziele
 - Bibliometrische Reports strukturieren

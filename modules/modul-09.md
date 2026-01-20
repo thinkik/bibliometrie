@@ -1,4 +1,4 @@
-# Modul 9: Open Science, Repositorien und Daten
+# Modul 9: Forschungsleistung bewerten
 
 ## Lernziele
 - Open-Science-Prinzipien in Bibliometrie einordnen

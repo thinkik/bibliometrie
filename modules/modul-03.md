@@ -1,7 +1,7 @@
-# Modul 3: Zitationen verstehen: Was zählen wir – und was bedeutet es (nicht)?
+# Modul 3: Zitationsindikatoren
 
-**Schwierigkeit:** 1  
-**Geschätzte Lesezeit:** 20 Minuten  
+**Schwierigkeit:** Beginner  
+**Geschätzte Lesezeit:** 55 Minuten  
 **Zielgruppen:** Bibliothek, Forschungsreferat, Forschende  
 **Voraussetzungen:** Modul 1, Modul 2
 

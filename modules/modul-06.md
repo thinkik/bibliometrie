@@ -1,4 +1,4 @@
-# Modul 6: Journalmetriken und Rankings
+# Modul 6: Datenbereinigung
 
 ## Lernziele
 - Journalindikatoren (JIF, SJR, CiteScore) vergleichen

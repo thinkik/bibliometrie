@@ -1,4 +1,4 @@
-# Modul 10: Altmetrics und gesellschaftliche Wirkung
+# Modul 10: Open-Science-Indikatoren
 
 ## Lernziele
 - Altmetrics-Kategorien unterscheiden

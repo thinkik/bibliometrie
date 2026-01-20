@@ -1,4 +1,4 @@
-# Modul 5: Autoren- und Institutionsmetriken
+# Modul 5: Altmetrics
 
 ## Lernziele
 - h-Index und Varianten erklären
