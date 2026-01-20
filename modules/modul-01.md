@@ -28,6 +28,7 @@
   </div>
 </div>
 <script src="../role-toggle.js" defer></script>
+<script src="../details-accordion.js" defer></script>
 
 # Modul 1: Grundlagen der Bibliometrie
 
@@ -50,9 +51,30 @@ Bibliometrie untersucht wissenschaftliche Kommunikation anhand von Publikations-
 - Datenlücken oder Dubletten ignorieren.
 
 ## Mini-Übungen (Level 1–3)
-- **Level 1:** Ein zentrales Konzept in zwei Sätzen definieren.
-- **Level 2:** Ein kleines Datenset skizzieren und passende Indikatoren vorschlagen.
-- **Level 3:** Eine kurze Interpretation schreiben und mögliche Bias benennen.
+<details class="exercise-item">
+  <summary>Level 1: Ein zentrales Konzept in zwei Sätzen definieren</summary>
+  <p>
+    <strong>Antwort:</strong> Beispiel: Bibliometrie untersucht wissenschaftliche Kommunikation anhand von
+    Publikations- und Zitationsdaten und liefert Hinweise auf Sichtbarkeit und Rezeption. Sie ersetzt keine
+    Qualitätsurteile, sondern unterstützt Kontextanalysen.
+  </p>
+</details>
+<details class="exercise-item">
+  <summary>Level 2: Ein kleines Datenset skizzieren und passende Indikatoren vorschlagen</summary>
+  <p>
+    <strong>Antwort:</strong> Beispiel: Datenset mit Publikationstyp, Jahr, Zitationen und Autor:in.
+    Indikatoren könnten Publikationsanzahl pro Jahr, Zitationen pro Publikation und Anteil verschiedener
+    Dokumenttypen sein.
+  </p>
+</details>
+<details class="exercise-item">
+  <summary>Level 3: Eine kurze Interpretation schreiben und mögliche Bias benennen</summary>
+  <p>
+    <strong>Antwort:</strong> Beispiel: „Die Zitationszahlen sind im Beobachtungszeitraum gestiegen, was auf
+    höhere Sichtbarkeit hindeuten kann. Mögliche Bias ergeben sich aus fachlichen Unterschieden,
+    Dokumenttypen und unvollständiger Coverage der Datenquelle.“
+  </p>
+</details>
 
 ## Praxis-Workflow
 1. Fragestellung präzisieren und Zielgruppe definieren.

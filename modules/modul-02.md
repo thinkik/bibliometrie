@@ -36,6 +36,7 @@
   </div>
 </div>
 <script src="../role-toggle.js" defer></script>
+<script src="../details-accordion.js" defer></script>
 
 # Modul 2: Publikationsdaten und Quellen
 
@@ -129,57 +130,106 @@ In der Bibliometrie gibt es grob drei Familien von Datenquellen:
 
 ## Übungen
 ### Level 1
-1. **M02-L1-Q1:** Was bedeutet „Coverage“ in einer bibliometrischen Datenquelle?
-   - Wie viele Personen an einem Institut arbeiten.
-   - Welche Publikationsarten, Disziplinen, Sprachen und Jahre in der Quelle enthalten sind.
-   - Wie hoch der Journal Impact Factor ist.
-   **Lösung:** Welche Publikationsarten, Disziplinen, Sprachen und Jahre in der Quelle enthalten sind.
-
-2. **M02-L1-Q2:** Welche Aussage ist am besten im Sinne von Responsible Metrics?
-   - Ein Report braucht keine Methodik, Hauptsache die Zahl ist klar.
-   - Zu jeder Kennzahl gehören Datenquelle, Zeitraum und Limitationen.
-   - Wenn zwei Tools verschieden zählen, nimmt man einfach den höheren Wert.
-   **Lösung:** Zu jeder Kennzahl gehören Datenquelle, Zeitraum und Limitationen.
-
-3. **M02-L1-Q3:** Wähle die defensibelste Erklärung: Warum zeigt Quelle A mehr Publikationen als Quelle B?
-   - Quelle A hat wahrscheinlich mehr Dokumenttypen oder breitere Abdeckung indexiert.
-   - Quelle B ist automatisch falsch.
-   - Das Institut hat heimlich Publikationen gelöscht.
-   **Lösung:** Quelle A hat wahrscheinlich mehr Dokumenttypen oder breitere Abdeckung indexiert.
-
-4. **M02-L1-Q4:** Was ist ein sinnvoller erster Schritt, bevor du zwei Datenquellen vergleichst?
-   - Sofort ein Ranking erstellen.
-   - Dokumenttypen und Zeitraum angleichen und Coverage prüfen.
-   - Nur nach Gefühl entscheiden, welche Quelle besser ist.
-   **Lösung:** Dokumenttypen und Zeitraum angleichen und Coverage prüfen.
-
-5. **M02-L1-Q5:** Warum ist die Datenquelle in jedem Bibliometrie-Report Pflichtangabe?
-   - Weil Zahlen nur im Kontext der Coverage interpretierbar sind.
-   - Weil sonst das Layout zu leer ist.
-   - Weil Kennzahlen überall identisch sind.
-   **Lösung:** Weil Zahlen nur im Kontext der Coverage interpretierbar sind.
+<details class="exercise-item">
+  <summary>M02-L1-Q1: Was bedeutet „Coverage“ in einer bibliometrischen Datenquelle?</summary>
+  <p>
+    <strong>Antwort:</strong> Welche Publikationsarten, Disziplinen, Sprachen und Jahre in der Quelle enthalten
+    sind.
+  </p>
+</details>
+<details class="exercise-item">
+  <summary>M02-L1-Q2: Welche Aussage ist am besten im Sinne von Responsible Metrics?</summary>
+  <p><strong>Antwort:</strong> Zu jeder Kennzahl gehören Datenquelle, Zeitraum und Limitationen.</p>
+</details>
+<details class="exercise-item">
+  <summary>M02-L1-Q3: Warum zeigt Quelle A mehr Publikationen als Quelle B?</summary>
+  <p>
+    <strong>Antwort:</strong> Quelle A hat wahrscheinlich mehr Dokumenttypen oder breitere Abdeckung
+    indexiert.
+  </p>
+</details>
+<details class="exercise-item">
+  <summary>M02-L1-Q4: Was ist ein sinnvoller erster Schritt, bevor du zwei Datenquellen vergleichst?</summary>
+  <p><strong>Antwort:</strong> Dokumenttypen und Zeitraum angleichen und Coverage prüfen.</p>
+</details>
+<details class="exercise-item">
+  <summary>M02-L1-Q5: Warum ist die Datenquelle in jedem Bibliometrie-Report Pflichtangabe?</summary>
+  <p><strong>Antwort:</strong> Weil Zahlen nur im Kontext der Coverage interpretierbar sind.</p>
+</details>
 
 ### Level 2
-1. **M02-L2-Q1:** Interpretation: Zwei Quellen liefern unterschiedliche Publikationszahlen. Was schreibst du in den Report (2–3 Sätze, defensiv formuliert)?
-
-   Datensnippet:
-
-   | Einheit | Zeitraum | Quelle | Publikationen |
-   | --- | --- | --- | --- |
-   | Institut A | 2021–2024 | Quelle 1 | 120 |
-   | Institut A | 2021–2024 | Quelle 2 | 155 |
-
-   **Lösung:** Die unterschiedlichen Werte sind wahrscheinlich durch abweichende Coverage (z. B. Dokumenttypen, Journals/Proceedings, Indexierungsregeln) erklärbar. Für die Interpretation ist entscheidend, welche Datenquelle zur Fragestellung passt. Im Report werden Datenquelle, Zeitraum, einbezogene Dokumenttypen und Limitationen transparent dokumentiert.
-
-2. **M02-L2-Q2:** Quelle auswählen: Du brauchst ein reproduzierbares Monitoring-Dashboard ohne Paywall. Welche Datenquelle passt am ehesten und welche Einschränkung nennst du?
-   **Lösung:** OpenAlex (API-basiert, offen, reproduzierbar) ist naheliegend. Einschränkung: Coverage und Metadatenqualität können je nach Fachgebiet variieren; deshalb braucht es Plausibilisierung und Dokumentation der Abfrageparameter.
-
-3. **M02-L2-Q3:** Quality Check: Nenne 3 Prüfungen, die du bei einer Publikationsliste aus einer Datenquelle machst, bevor du Kennzahlen berichtest.
-   **Lösung:** Beispiele: (1) Dublettenprüfung, (2) Namensvarianten/IDs plausibilisieren, (3) Affiliations prüfen (falsche Zuordnungen), (4) Dokumenttypen filtern (z. B. Editorials/Errata), (5) Zeitraum korrekt gesetzt.
+<details class="exercise-item">
+  <summary>
+    M02-L2-Q1: Zwei Quellen liefern unterschiedliche Publikationszahlen. Was schreibst du in den Report (2–3
+    Sätze, defensiv formuliert)?
+  </summary>
+  <p>
+    <strong>Antwort:</strong> Die unterschiedlichen Werte sind wahrscheinlich durch abweichende Coverage
+    (z. B. Dokumenttypen, Journals/Proceedings, Indexierungsregeln) erklärbar. Für die Interpretation ist
+    entscheidend, welche Datenquelle zur Fragestellung passt. Im Report werden Datenquelle, Zeitraum,
+    einbezogene Dokumenttypen und Limitationen transparent dokumentiert.
+  </p>
+  <p><strong>Datensnippet:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Einheit</th>
+        <th>Zeitraum</th>
+        <th>Quelle</th>
+        <th>Publikationen</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Institut A</td>
+        <td>2021–2024</td>
+        <td>Quelle 1</td>
+        <td>120</td>
+      </tr>
+      <tr>
+        <td>Institut A</td>
+        <td>2021–2024</td>
+        <td>Quelle 2</td>
+        <td>155</td>
+      </tr>
+    </tbody>
+  </table>
+</details>
+<details class="exercise-item">
+  <summary>
+    M02-L2-Q2: Du brauchst ein reproduzierbares Monitoring-Dashboard ohne Paywall. Welche Datenquelle passt
+    am ehesten und welche Einschränkung nennst du?
+  </summary>
+  <p>
+    <strong>Antwort:</strong> OpenAlex (API-basiert, offen, reproduzierbar) ist naheliegend. Einschränkung:
+    Coverage und Metadatenqualität können je nach Fachgebiet variieren; deshalb braucht es Plausibilisierung
+    und Dokumentation der Abfrageparameter.
+  </p>
+</details>
+<details class="exercise-item">
+  <summary>
+    M02-L2-Q3: Nenne drei Prüfungen, die du bei einer Publikationsliste aus einer Datenquelle machst, bevor du
+    Kennzahlen berichtest.
+  </summary>
+  <p>
+    <strong>Antwort:</strong> Beispiele: Dublettenprüfung, Namensvarianten/IDs plausibilisieren,
+    Affiliations prüfen, Dokumenttypen filtern, Zeitraum korrekt setzen.
+  </p>
+</details>
 
 ### Level 3
-1. **M02-L3-CASE:** Mini-Case: Du sollst für eine Fakultät einen Vergleich „Publikationsoutput 2020–2024“ erstellen. Definiere deine Datenbasis (Quelle(n), Dokumenttypen, Zeitraum) und formuliere 4 Limitationen/Warnhinweise, die du transparent kommunizierst.
-   **Deliverable:** Methodik-Kasten (Quelle/Zeitraum/Dokumenttypen) + 4 Limitationen (Bulletpoints).
+<details class="exercise-item">
+  <summary>
+    M02-L3-CASE: Du sollst für eine Fakultät einen Vergleich „Publikationsoutput 2020–2024“ erstellen. Definiere
+    deine Datenbasis (Quelle(n), Dokumenttypen, Zeitraum) und formuliere vier Limitationen/Warnhinweise, die du
+    transparent kommunizierst.
+  </summary>
+  <p>
+    <strong>Antwort:</strong> Methodik-Kasten mit Quelle, Zeitraum und Dokumenttypen ergänzen. Limitationen
+    könnten Coverage-Bias, unterschiedliche Dokumenttypen, Disambiguierung/Affiliations und
+    Datenquellen-Vergleichbarkeit betreffen.
+  </p>
+</details>
 
 ## Quellen & weiterführende Links
 - Clarivate: Web of Science Core Collection – Content collection and indexing process: https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/web-of-science-core-collection/content-collection-and-indexing-process/
