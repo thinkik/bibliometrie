@@ -1,4 +1,4 @@
-# Modul 11: Responsible Metrics und Governance
+# Modul 11: Forschungsdatenmetriken
 
 ## Lernziele
 - Leitlinien (DORA, Leiden) zusammenfassen

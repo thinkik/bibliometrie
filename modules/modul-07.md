@@ -1,4 +1,4 @@
-# Modul 7: Netzwerkanalyse: Kooperation und Zitationsstrukturen
+# Modul 7: Netzwerk- und Graphanalyse
 
 ## Lernziele
 - Kooperations- und Zitationsnetzwerke beschreiben

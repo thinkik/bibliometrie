@@ -37,7 +37,7 @@
 </div>
 <script src="../role-toggle.js" defer></script>
 
-# Modul 2: Datenquellen & Coverage: Woher kommen bibliometrische Zahlen?
+# Modul 2: Publikationsdaten und Quellen
 
 ## Lernziele
 - Die wichtigsten bibliometrischen Datenquellen (z. B. WoS, Scopus, OpenAlex, Crossref, Dimensions, Google Scholar) unterscheiden.

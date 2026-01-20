@@ -1,4 +1,4 @@
-# Modul 4: Feldnormalisierung und Vergleichbarkeit
+# Modul 4: Feldnormierung
 
 ## Lernziele
 - Notwendigkeit der Normalisierung begründen

@@ -1,4 +1,4 @@
-# Modul 8: Mapping und Visualisierung wissenschaftlicher Felder
+# Modul 8: Themenmapping
 
 ## Lernziele
 - Wissenschaftslandkarten erklären
