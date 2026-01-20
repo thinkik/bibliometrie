@@ -5,6 +5,8 @@
 **Zielgruppen:** Bibliothek, Forschungsreferat, Forschende  
 **Voraussetzungen:** Modul 1, Modul 2
 
+<script src="../details-accordion.js" defer></script>
+
 ## Lernziele
 - Erklären, was eine Zitation ist und warum Zitationsdaten als Signal (nicht als Beweis) verstanden werden müssen.
 - Zitationsfenster (Citation Window) und Zeitdynamiken verstehen: warum Alter und Fachgebiet Vergleiche beeinflussen.
@@ -92,95 +94,148 @@ Wenn du Zitationszahlen berichtest, dokumentierst du stets: Datenquelle, Abfrage
 ## Übungen
 
 ### Level 1
-1. **M03-L1-Q1:** Welche Aussage zu Zitationen ist am defensibelsten?
-   - Viele Zitationen beweisen, dass die Forschung qualitativ besser ist.
-   - Zitationen können Sichtbarkeit anzeigen, müssen aber mit Kontext interpretiert werden.
-   - Zitationen sind wertlos und sollten nie verwendet werden.
-   - **Lösung:** Zitationen können Sichtbarkeit anzeigen, müssen aber mit Kontext interpretiert werden.
-   - **Typische Fehler:** Zitationen werden entweder überhöht (Qualitätsbeweis) oder komplett verworfen (wertlos).
-
-2. **M03-L1-Q2:** Was ist ein Zitationsfenster (Citation Window)?
-   - Die Anzahl Referenzen im Literaturverzeichnis.
-   - Der Zeitraum, in dem Zitationen gezählt werden (z. B. 4 Jahre).
-   - Die Anzahl Publikationen pro Jahr.
-   - **Lösung:** Der Zeitraum, in dem Zitationen gezählt werden (z. B. 4 Jahre).
-   - **Typische Fehler:** Fenster wird mit Referenzlisten oder Output verwechselt.
-
-3. **M03-L1-Q3:** Welche Aussage zu Selbstzitaten passt am besten?
-   - Selbstzitate sind immer Betrug.
-   - Selbstzitate können legitim sein, sollten aber je nach Zweck transparent behandelt werden.
-   - Selbstzitate zählen nie in Datenquellen.
-   - **Lösung:** Selbstzitate können legitim sein, sollten aber je nach Zweck transparent behandelt werden.
-   - **Typische Fehler:** Moralische Absolut-Urteile statt Zweck/Transparenz.
-
-4. **M03-L1-Q4:** Welche Aussage ist korrekt?
-   - Alle Zitationen sind positive Anerkennung.
-   - Zitationen können auch kritisch oder neutral sein.
-   - Negative Zitationen sind unmöglich.
-   - **Lösung:** Zitationen können auch kritisch oder neutral sein.
-   - **Typische Fehler:** Zitationen werden automatisch als „Lob“ interpretiert.
-
-5. **M03-L1-Q5:** Warum sind Vergleiche zwischen Fachgebieten schwierig?
-   - Weil Zitations- und Publikationskulturen je nach Fach unterschiedlich sind.
-   - Weil alle Fächer identisch publizieren.
-   - Weil Datenquellen immer vollständig sind.
-   - **Lösung:** Weil Zitations- und Publikationskulturen je nach Fach unterschiedlich sind.
-   - **Typische Fehler:** Feldunterschiede werden ignoriert.
+<details class="exercise-item">
+  <summary>M03-L1-Q1: Welche Aussage zu Zitationen ist am defensibelsten?</summary>
+  <p>
+    <strong>Antwort:</strong> Zitationen können Sichtbarkeit anzeigen, müssen aber mit Kontext interpretiert
+    werden.
+  </p>
+  <p>
+    <strong>Typische Fehler:</strong> Zitationen werden entweder überhöht (Qualitätsbeweis) oder komplett
+    verworfen (wertlos).
+  </p>
+</details>
+<details class="exercise-item">
+  <summary>M03-L1-Q2: Was ist ein Zitationsfenster (Citation Window)?</summary>
+  <p><strong>Antwort:</strong> Der Zeitraum, in dem Zitationen gezählt werden (z. B. 4 Jahre).</p>
+  <p><strong>Typische Fehler:</strong> Fenster wird mit Referenzlisten oder Output verwechselt.</p>
+</details>
+<details class="exercise-item">
+  <summary>M03-L1-Q3: Welche Aussage zu Selbstzitaten passt am besten?</summary>
+  <p>
+    <strong>Antwort:</strong> Selbstzitate können legitim sein, sollten aber je nach Zweck transparent
+    behandelt werden.
+  </p>
+  <p><strong>Typische Fehler:</strong> Moralische Absolut-Urteile statt Zweck/Transparenz.</p>
+</details>
+<details class="exercise-item">
+  <summary>M03-L1-Q4: Welche Aussage ist korrekt?</summary>
+  <p><strong>Antwort:</strong> Zitationen können auch kritisch oder neutral sein.</p>
+  <p><strong>Typische Fehler:</strong> Zitationen werden automatisch als „Lob“ interpretiert.</p>
+</details>
+<details class="exercise-item">
+  <summary>M03-L1-Q5: Warum sind Vergleiche zwischen Fachgebieten schwierig?</summary>
+  <p><strong>Antwort:</strong> Weil Zitations- und Publikationskulturen je nach Fach unterschiedlich sind.</p>
+  <p><strong>Typische Fehler:</strong> Feldunterschiede werden ignoriert.</p>
+</details>
 
 ### Level 2
-1. **M03-L2-Q1:** Zitationsfenster-Effekt: Welche Interpretation ist korrekt?
-
-   **Daten (Ausschnitt):**
-
-   | Paper | Year | Citations in 2024 (cum.) |
-   | --- | --- | --- |
-   | A | 2019 | 45 |
-   | B | 2023 | 8 |
-
-   **Lösung:** Paper A hatte deutlich mehr Zeit, Zitationen zu sammeln. Ein direkter Vergleich ohne gleiches Zitationsfenster oder Altersklassen ist unfair. Für einen faireren Vergleich müsste man z. B. Zitationen innerhalb eines definierten Fensters (z. B. 2 Jahre nach Publikation) betrachten.
-
-   **Typische Fehler:** „A ist besser“ als harte Schlussfolgerung; Zeit/Alter wird nicht berücksichtigt.
-
-   **Bewertung:**
-   - 1 Punkt: Zeit-/Fenster-Effekt erkannt.
-   - 1 Punkt: Vorschlag für faireren Vergleich (Fenster/Altersklasse).
-
-2. **M03-L2-Q2:** Selbstzitate: Formuliere eine Report-Zeile (1–2 Sätze), die Zitationen mit und ohne Selbstzitate transparent ausweist.
-
-   **Daten (Ausschnitt):**
-
-   | Einheit | Zeitraum | Zitationen (gesamt) | Zitationen (ohne Selbstzitate) |
-   | --- | --- | --- | --- |
-   | Institut A | 2020–2024 | 980 | 840 |
-
-   **Lösung:** Im Zeitraum 2020–2024 wurden in der verwendeten Datenquelle 980 Zitationen gezählt; ohne Selbstzitate sind es 840. Die Differenz kann legitime Anschlusszitationen enthalten, wird aber zur Transparenz separat ausgewiesen.
-
-   **Typische Fehler:** Nur eine Zahl nennen ohne Definition/Regel; Selbstzitate pauschal als „Manipulation“ etikettieren.
-
-   **Bewertung:**
-   - 1 Punkt: beide Werte korrekt genannt.
-   - 1 Punkt: Transparenz (Quelle/Zeitraum/Definition) mindestens angedeutet.
-
-3. **M03-L2-Q3:** Dokumenttyp-Effekt: Warum kann ein Review-Artikel Zitationszahlen verzerren? Nenne 2 Gründe.
-
-   **Lösung:** Reviews bündeln Literatur und werden oft als Einstieg zitiert; sie haben dadurch häufig höhere Zitationsraten. Außerdem werden Methoden-/Übersichtsarbeiten quer über Teilfelder zitiert, was Vergleiche mit Spezialstudien verzerren kann.
-
-   **Typische Fehler:** Nur „weil besser“ als Begründung.
-
-   **Bewertung:**
-   - 1 Punkt: mind. 1 korrekter Grund.
-   - 1 Punkt: zweiter korrekter Grund oder saubere Kontextformulierung.
+<details class="exercise-item">
+  <summary>M03-L2-Q1: Zitationsfenster-Effekt – welche Interpretation ist korrekt?</summary>
+  <p>
+    <strong>Antwort:</strong> Paper A hatte deutlich mehr Zeit, Zitationen zu sammeln. Ein direkter Vergleich
+    ohne gleiches Zitationsfenster oder Altersklassen ist unfair. Für einen faireren Vergleich müsste man
+    z. B. Zitationen innerhalb eines definierten Fensters (z. B. 2 Jahre nach Publikation) betrachten.
+  </p>
+  <p><strong>Daten (Ausschnitt):</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Paper</th>
+        <th>Year</th>
+        <th>Citations in 2024 (cum.)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>A</td>
+        <td>2019</td>
+        <td>45</td>
+      </tr>
+      <tr>
+        <td>B</td>
+        <td>2023</td>
+        <td>8</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><strong>Typische Fehler:</strong> „A ist besser“ als harte Schlussfolgerung; Zeit/Alter wird nicht berücksichtigt.</p>
+  <p><strong>Bewertung:</strong></p>
+  <ul>
+    <li>1 Punkt: Zeit-/Fenster-Effekt erkannt.</li>
+    <li>1 Punkt: Vorschlag für faireren Vergleich (Fenster/Altersklasse).</li>
+  </ul>
+</details>
+<details class="exercise-item">
+  <summary>
+    M03-L2-Q2: Formuliere eine Report-Zeile (1–2 Sätze), die Zitationen mit und ohne Selbstzitate transparent
+    ausweist.
+  </summary>
+  <p>
+    <strong>Antwort:</strong> Im Zeitraum 2020–2024 wurden in der verwendeten Datenquelle 980 Zitationen
+    gezählt; ohne Selbstzitate sind es 840. Die Differenz kann legitime Anschlusszitationen enthalten, wird
+    aber zur Transparenz separat ausgewiesen.
+  </p>
+  <p><strong>Daten (Ausschnitt):</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Einheit</th>
+        <th>Zeitraum</th>
+        <th>Zitationen (gesamt)</th>
+        <th>Zitationen (ohne Selbstzitate)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Institut A</td>
+        <td>2020–2024</td>
+        <td>980</td>
+        <td>840</td>
+      </tr>
+    </tbody>
+  </table>
+  <p><strong>Typische Fehler:</strong> Nur eine Zahl nennen ohne Definition/Regel; Selbstzitate pauschal als „Manipulation“ etikettieren.</p>
+  <p><strong>Bewertung:</strong></p>
+  <ul>
+    <li>1 Punkt: beide Werte korrekt genannt.</li>
+    <li>1 Punkt: Transparenz (Quelle/Zeitraum/Definition) mindestens angedeutet.</li>
+  </ul>
+</details>
+<details class="exercise-item">
+  <summary>M03-L2-Q3: Warum kann ein Review-Artikel Zitationszahlen verzerren? Nenne zwei Gründe.</summary>
+  <p>
+    <strong>Antwort:</strong> Reviews bündeln Literatur und werden oft als Einstieg zitiert; sie haben dadurch
+    häufig höhere Zitationsraten. Außerdem werden Methoden-/Übersichtsarbeiten quer über Teilfelder zitiert,
+    was Vergleiche mit Spezialstudien verzerren kann.
+  </p>
+  <p><strong>Typische Fehler:</strong> Nur „weil besser“ als Begründung.</p>
+  <p><strong>Bewertung:</strong></p>
+  <ul>
+    <li>1 Punkt: mind. 1 korrekter Grund.</li>
+    <li>1 Punkt: zweiter korrekter Grund oder saubere Kontextformulierung.</li>
+  </ul>
+</details>
 
 ### Level 3
-1. **M03-L3-CASE:** Mini-Case: Du schreibst einen Kurzreport für ein Departement. Formuliere einen Methodik-Kasten (Quelle, Abfragedatum, Zitationsfenster, Dokumenttypen, Umgang mit Selbstzitaten) und 4 Limitationen/Warnhinweise zur Interpretation der Zitationszahlen.
-   - **Deliverable:** Methodik-Kasten + 4 Limitationen (Bulletpoints).
-   - **Lösungsrahmen:**
-     - Methodik-Kasten: Datenquelle benennen, Abfragedatum, Zeitraum/Zitationsfenster definieren, Dokumenttypen (Article/Review etc.), Selbstzitate-Regel (mit/ohne) transparent machen.
-     - Limitationen: Coverage-Bias (Quelle), Feldunterschiede, Zeit-/Altereffect, Dokumenttyp-Mix, Disambiguierung/Affiliations, Kontext/negative Zitationen möglich.
-   - **Bewertungsraster:**
-     - Methodik ist vollständig (Quelle, Datum, Fenster, Dokumenttypen, Selbstzitate) – 3 Punkte.
-     - Limitationen sind konkret und report-tauglich – 2 Punkte.
-     - Responsible-Metrics-Prinzipien sind klar sichtbar – 2 Punkte.
+<details class="exercise-item">
+  <summary>
+    M03-L3-CASE: Formuliere einen Methodik-Kasten (Quelle, Abfragedatum, Zitationsfenster, Dokumenttypen,
+    Umgang mit Selbstzitaten) und vier Limitationen/Warnhinweise zur Interpretation der Zitationszahlen.
+  </summary>
+  <p>
+    <strong>Antwort:</strong> Methodik-Kasten mit Datenquelle, Abfragedatum, Zitationsfenster, Dokumenttypen
+    und Selbstzitate-Regel ergänzen. Limitationen können Coverage-Bias (Quelle), Feldunterschiede,
+    Zeit-/Alterseffekte, Dokumenttyp-Mix, Disambiguierung/Affiliations sowie Zitationskontext
+    (kritisch/neutral) betreffen.
+  </p>
+  <p><strong>Bewertungsraster:</strong></p>
+  <ul>
+    <li>Methodik ist vollständig (Quelle, Datum, Fenster, Dokumenttypen, Selbstzitate) – 3 Punkte.</li>
+    <li>Limitationen sind konkret und report-tauglich – 2 Punkte.</li>
+    <li>Responsible-Metrics-Prinzipien sind klar sichtbar – 2 Punkte.</li>
+  </ul>
+</details>
 
 ## Quellen
 - Garfield, E. (1955). Citation Indexes for Science. Science (PDF). https://garfield.library.upenn.edu/papers/science1955.pdf
