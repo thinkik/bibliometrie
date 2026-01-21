@@ -401,47 +401,88 @@
       ]
     },
     {
-      "title": "Modul 9: Forschungsleistung bewerten",
+      "title": "Modul 9: Datenqualität & Disambiguierung",
       "slug": "modul-9-bewertung",
       "difficulty": "advanced",
-      "readingTimeMinutes": 60,
-      "learningGoals": ["Leistungsindikatoren kombinieren", "Limitationen verstehen"],
+      "readingTimeMinutes": 35,
+      "learningGoals": [
+        "Datenqualitäts-Probleme erkennen",
+        "Disambiguierung als Kernschritt verstehen",
+        "PIDs gezielt einsetzen",
+        "QA-Protokolle und Checklisten nutzen",
+        "Workflows reproduzierbar dokumentieren"
+      ],
       "outputs": [
-        {"type": "scorecard", "description": "Leistungsprofil", "format": "xlsx"}
+        {"type": "checklist", "description": "QA-Checkliste", "format": "markdown"},
+        {"type": "template", "description": "Methodik-Kasten", "format": "markdown"}
       ],
       "exercises": [
         {
-          "title": "Indikatoren kombinieren",
-          "slug": "indikatoren-kombinieren",
+          "title": "Minimalstandard anwenden",
+          "slug": "minimalstandard-anwenden",
           "difficulty": "advanced",
-          "readingTimeMinutes": 30,
-          "learningGoals": ["Mehrdimensionale Bewertung"],
+          "readingTimeMinutes": 20,
+          "learningGoals": ["Cleaning-Pipeline strukturieren"],
           "outputs": [
-            {"type": "table", "description": "Bewertungsmatrix", "format": "csv"}
+            {"type": "worksheet", "description": "Pipeline-Checkliste", "format": "markdown"}
           ]
         },
         {
-          "title": "Interpretationsgrenzen",
-          "slug": "interpretationsgrenzen",
+          "title": "Dedup & Mapping üben",
+          "slug": "dedup-mapping-ueben",
           "difficulty": "advanced",
           "readingTimeMinutes": 25,
-          "learningGoals": ["Limitationen dokumentieren"],
+          "learningGoals": ["Dedup-Regeln und Mapping anwenden"],
           "outputs": [
-            {"type": "memo", "description": "Grenzen-Notiz", "format": "markdown"}
+            {"type": "table", "description": "Mapping-Tabelle", "format": "csv"}
+          ]
+        },
+        {
+          "title": "Workflow & QA planen",
+          "slug": "workflow-qa-planen",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 30,
+          "learningGoals": ["Reproduzierbare Workflows entwerfen"],
+          "outputs": [
+            {"type": "plan", "description": "Workflow-Blueprint", "format": "markdown"}
           ]
         }
       ],
       "resources": [
         {
-          "title": "Leistungsbewertung in der Praxis",
-          "slug": "leistungsbewertung-praxis",
+          "title": "OpenAlex: Author disambiguation",
+          "slug": "openalex-author-disambiguation",
           "type": "article",
-          "url": "https://example.com/leistungsbewertung",
+          "url": "https://help.openalex.org/hc/en-us/articles/24347048891543-Author-disambiguation",
           "difficulty": "advanced",
-          "readingTimeMinutes": 18,
-          "learningGoals": ["Bewertungskriterien anwenden"],
+          "readingTimeMinutes": 12,
+          "learningGoals": ["Disambiguierungssignale verstehen"],
           "outputs": [
             {"type": "notes", "description": "Stichpunkte", "format": "markdown"}
+          ]
+        },
+        {
+          "title": "ORCID iD Grundlagen",
+          "slug": "orcid-id-grundlagen",
+          "type": "article",
+          "url": "https://support.orcid.org/hc/en-us/articles/360006897334-What-is-an-ORCID-iD-and-how-do-I-use-it",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 10,
+          "learningGoals": ["PIDs für Autor:innen nutzen"],
+          "outputs": [
+            {"type": "notes", "description": "Kurznotizen", "format": "markdown"}
+          ]
+        },
+        {
+          "title": "ROR Basics",
+          "slug": "ror-basics",
+          "type": "article",
+          "url": "https://ror.org/",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 8,
+          "learningGoals": ["Organisationen stabil referenzieren"],
+          "outputs": [
+            {"type": "notes", "description": "Kurznotizen", "format": "markdown"}
           ]
         }
       ]
@@ -769,18 +810,23 @@
           ]
         },
         {
-          "title": "Modul 9: Forschungsleistung bewerten",
+          "title": "Modul 9: Datenqualität & Disambiguierung",
           "slug": "/module/modul-9-bewertung",
           "type": "module",
           "children": [
             {
-              "title": "Indikatoren kombinieren",
-              "slug": "/module/modul-9-bewertung/indikatoren-kombinieren",
+              "title": "Minimalstandard anwenden",
+              "slug": "/module/modul-9-bewertung/minimalstandard-anwenden",
               "type": "exercise"
             },
             {
-              "title": "Interpretationsgrenzen",
-              "slug": "/module/modul-9-bewertung/interpretationsgrenzen",
+              "title": "Dedup & Mapping üben",
+              "slug": "/module/modul-9-bewertung/dedup-mapping-ueben",
+              "type": "exercise"
+            },
+            {
+              "title": "Workflow & QA planen",
+              "slug": "/module/modul-9-bewertung/workflow-qa-planen",
               "type": "exercise"
             }
           ]
