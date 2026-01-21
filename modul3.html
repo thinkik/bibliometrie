@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Einführung Bibliometrie – Modul 3</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">Einführung Bibliometrie</div>
+      <nav class="site-nav" aria-label="Hauptnavigation">
+        <a href="index.html">Start</a>
+        <a class="active" href="lehrgang.html">Lehrgang</a>
+        <a href="uebungen.html">Übungen</a>
+        <a href="fallstudien.html">Fallstudien</a>
+        <a href="tools-datenquellen.html">Tools &amp; Datenquellen</a>
+        <a href="responsible-metrics.html">Responsible Metrics</a>
+        <a href="glossar.html">Glossar</a>
+        <a href="downloads-vorlagen.html">Downloads &amp; Vorlagen</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </header>
+    <main class="content">
+      <div class="module-progress" data-module-progress data-module-id="modul3">
+        <span class="module-progress-label">Fortschritt:</span>
+        <progress id="module-progress-bar" max="100" value="0">0%</progress>
+        <span class="module-progress-value" data-module-progress-value>0%</span>
+      </div>
+      <h1>Modul 3: Zitationsindikatoren</h1>
+
+      <section class="module-section" id="modul-3" aria-labelledby="heading-modul-3">
+        <h2 id="heading-modul-3">Modul 3: Zitationsindikatoren</h2>
+        <ul class="module-meta">
+          <li><strong>Schwierigkeit:</strong> Beginner</li>
+          <li><strong>Geschätzte Lesezeit:</strong> 55 Minuten</li>
+          <li><strong>Zielgruppen:</strong> Bibliothek, Forschungsreferat, Forschende</li>
+          <li><strong>Voraussetzungen:</strong> Modul 1, Modul 2</li>
+        </ul>
+        <div class="module-role-panel">
+          <p class="module-role-label">Wähle deine Rolle für passende Hinweise:</p>
+          <div class="module-role-buttons" role="group" aria-label="Rolle auswählen">
+            <button type="button" class="role-toggle-button" data-role="Bibliothek">Bibliothek</button>
+            <button type="button" class="role-toggle-button" data-role="Research Office">Research Office</button>
+            <button type="button" class="role-toggle-button" data-role="Forschende">Forschende</button>
+          </div>
+          <div class="module-role-hints">
+            <div class="role-hint" data-role="Bibliothek" hidden>
+              Hinweis: In Beratungen zuerst Datenbasis prüfen, dann interpretieren.
+            </div>
+            <div class="role-hint" data-role="Bibliothek" hidden>
+              Hinweis: Zitationen immer mit Zitationsfenster und Abfragedatum ausweisen.
+            </div>
+            <div class="role-hint" data-role="Bibliothek" hidden>
+              Hinweis: Wenn möglich, Standardformulierung für Zitationszahlen nutzen.
+            </div>
+            <div class="role-hint" data-role="Research Office" hidden>
+              Hinweis: Zitationszahlen als Trend- und Kontextsignal nutzen, nicht als Ranking.
+            </div>
+            <div class="role-hint" data-role="Research Office" hidden>
+              Hinweis: Bestehe auf Mindest-Transparenz (Quelle, Fenster, Selbstzitate, Dokumenttypen).
+            </div>
+            <div class="role-hint" data-role="Research Office" hidden>
+              Hinweis: Bei Entscheidungen auf Multi-Methoden-Ansatz setzen (quantitativ + qualitativ).
+            </div>
+            <div class="role-hint" data-role="Forschende" hidden>
+              Hinweis: Vergleiche nur innerhalb sinnvoller Gruppen (Fach, Karrierestufe, Publikationstyp, Alter).
+            </div>
+            <div class="role-hint" data-role="Forschende" hidden>
+              Hinweis: Kontextzeile mit Quelle + Zeitraum + Fenster ergänzen.
+            </div>
+            <div class="role-hint" data-role="Forschende" hidden>
+              Hinweis: Bei Peaks prüfen, ob Reviews/Methodenpapiere oder Datenartefakte vorliegen.
+            </div>
+          </div>
+        </div>
+
+        <h3>Lernziele</h3>
+        <ul>
+          <li>Zitationen als Signal (nicht als Beweis) verstehen.</li>
+          <li>Zitationsfenster und Zeitdynamiken erklären.</li>
+          <li>Selbstzitate und Zitationskontext korrekt einordnen.</li>
+          <li>Zitationskennzahlen transparent berichten.</li>
+        </ul>
+
+        <h3>Kurz erklärt</h3>
+        <p>
+          Eine Zitation ist ein Verweis von einer Publikation auf eine andere. Zitationszahlen werden oft genutzt, um
+          Resonanz oder Sichtbarkeit zu beschreiben. Aber: Zitationen sind kein direkter Qualitätsbeweis. Sie hängen vom
+          Fachgebiet, vom Alter eines Artikels, vom Publikationstyp und von der Datenquelle ab. Zusätzlich sind nicht alle
+          Zitationen „Lob“ – manche sind neutral oder kritisch. Deshalb brauchst du beim Interpretieren immer Kontext:
+          Zitationsfenster, Fachgebiet, Datenbasis und klare Limitationen.
+        </p>
+
+        <h3>Vertiefung</h3>
+        <h4>Schlüsselbegriffe</h4>
+        <ul>
+          <li>
+            <strong>Zitation (Citation):</strong> Verweis auf eine Publikation; Signal für Resonanz, nicht automatisch Qualität.
+          </li>
+          <li><strong>Zitationszählung:</strong> Anzahl Zitationen in einer Datenquelle innerhalb eines Zeitraums.</li>
+          <li><strong>Zitationsfenster:</strong> Zeitraum, in dem Zitationen gezählt werden (z. B. 2, 4, 5 oder 10 Jahre).</li>
+          <li><strong>Zitationsverzögerung:</strong> Zeit, bis eine Publikation zitiert wird.</li>
+          <li><strong>Selbstzitation:</strong> Zitationen, bei denen sich Autor:innen selbst zitieren.</li>
+          <li><strong>Zitationskontext:</strong> Verwendung der Zitation (zustimmend, neutral, kritisch).</li>
+          <li><strong>Feldunterschiede:</strong> Unterschiede in Publikations- und Zitationskulturen.</li>
+        </ul>
+
+        <h4>Wie Zitationsdaten entstehen – und warum sie tückisch sein können</h4>
+        <ol>
+          <li>
+            <strong>Zeitdynamik (Alter zählt):</strong> Neuere Publikationen hatten weniger Zeit, Zitationen zu sammeln. Darum ist
+            das Zitationsfenster ein zentraler Parameter.
+          </li>
+          <li>
+            <strong>Verteilung:</strong> Zitationen sind stark ungleich verteilt; Durchschnittswerte können irreführend sein.
+          </li>
+          <li>
+            <strong>Dokumenttyp-Effekt:</strong> Reviews und Methodenpapiere werden oft häufiger zitiert als Spezialstudien.
+          </li>
+          <li>
+            <strong>Selbstzitate:</strong> Legitimes Anschlusszitat, kann Kennzahlen verzerren. Gute Praxis: mit und ohne
+            Selbstzitate ausweisen.
+          </li>
+          <li>
+            <strong>Zitationskontext:</strong> Zitationen können zustimmend, neutral oder kritisch sein; nicht jede Zitation ist
+            „positiv“.
+          </li>
+        </ol>
+
+        <p>
+          <strong>Praktische Konsequenz:</strong> Zitationszahlen immer mit Datenquelle, Abfragedatum, Zeitraum/Zitationsfenster,
+          Dokumenttypen, Selbstzitate-Regel und Limitationen dokumentieren.
+        </p>
+
+        <h4>Praxis-Workflow: Zitationen korrekt berichten</h4>
+        <ol>
+          <li>Ziel klären: Monitoring, Kontext im CV, Report oder Evaluation?</li>
+          <li>Datenquelle festlegen (und begründen) + Abfragedatum dokumentieren.</li>
+          <li>Zitationsfenster definieren und konsistent halten.</li>
+          <li>Dokumenttypen festlegen (z. B. Article/Review getrennt ausweisen).</li>
+          <li>Selbstzitate-Regel definieren (mit/ohne) und transparent berichten.</li>
+          <li>Ergebnisse plausibilisieren (Stichprobe, Ausreißer prüfen, Kontext beachten).</li>
+          <li>Methodik-Kasten + Limitationen + Responsible-Metrics-Hinweisbox einfügen.</li>
+        </ol>
+
+        <h4>Responsible Metrics: Zitationen</h4>
+        <ul>
+          <li>Zitationen sind Kontextsignale, keine automatische Qualitätsnote.</li>
+          <li>Zitationsfenster und Alter sind Pflichtkontext für jede Interpretation.</li>
+          <li>Dokumenttypen und Fachgebiet berücksichtigen.</li>
+          <li>Selbstzitate transparent behandeln.</li>
+          <li>Bei Evaluationen: Zitationen nur zusammen mit qualitativen Verfahren nutzen.</li>
+        </ul>
+
+        <h3>Typische Fehlinterpretationen</h3>
+        <ul>
+          <li>
+            <strong>„Viele Zitationen beweisen hohe Qualität."</strong> Zitationen sind ein Signal, beeinflusst durch Feld, Alter,
+            Dokumenttyp und Kontext.
+          </li>
+          <li>
+            <strong>„Neuere Publikationen sind schwächer."</strong> Oft ist das ein Zeitfenster-Effekt; Vergleiche brauchen
+            passende Fenster.
+          </li>
+          <li>
+            <strong>„Selbstzitate sind immer Betrug."</strong> Häufig legitim, wichtig ist Transparenz.
+          </li>
+          <li>
+            <strong>„Alle Zitationen sind positiv."</strong> Zitationen können neutral oder kritisch sein.
+          </li>
+          <li>
+            <strong>„Man kann jedes Fachgebiet direkt vergleichen."</strong> Zitationskulturen unterscheiden sich stark.
+          </li>
+        </ul>
+
+        <h3>Übungen</h3>
+        <details data-progress-id="uebungen-3">
+          <summary>Level 1–3</summary>
+          <div class="details-content">
+            <h4>Level 1</h4>
+            <ol>
+              <li>
+                <strong>M03-L1-Q1:</strong> Welche Aussage zu Zitationen ist am defensibelsten?
+                <ul>
+                  <li>Viele Zitationen beweisen, dass die Forschung qualitativ besser ist.</li>
+                  <li>Zitationen können Sichtbarkeit anzeigen, müssen aber mit Kontext interpretiert werden.</li>
+                  <li>Zitationen sind wertlos und sollten nie verwendet werden.</li>
+                </ul>
+                <p><strong>Lösung:</strong> Zitationen können Sichtbarkeit anzeigen, müssen aber mit Kontext interpretiert werden.</p>
+              </li>
+              <li>
+                <strong>M03-L1-Q2:</strong> Was ist ein Zitationsfenster (Citation Window)?
+                <ul>
+                  <li>Die Anzahl Referenzen im Literaturverzeichnis.</li>
+                  <li>Der Zeitraum, in dem Zitationen gezählt werden (z. B. 4 Jahre).</li>
+                  <li>Die Anzahl Publikationen pro Jahr.</li>
+                </ul>
+                <p><strong>Lösung:</strong> Der Zeitraum, in dem Zitationen gezählt werden (z. B. 4 Jahre).</p>
+              </li>
+              <li>
+                <strong>M03-L1-Q3:</strong> Welche Aussage zu Selbstzitaten passt am besten?
+                <ul>
+                  <li>Selbstzitate sind immer Betrug.</li>
+                  <li>Selbstzitate können legitim sein, sollten aber je nach Zweck transparent behandelt werden.</li>
+                  <li>Selbstzitate zählen nie in Datenquellen.</li>
+                </ul>
+                <p><strong>Lösung:</strong> Selbstzitate können legitim sein, sollten aber je nach Zweck transparent behandelt werden.</p>
+              </li>
+              <li>
+                <strong>M03-L1-Q4:</strong> Welche Aussage ist korrekt?
+                <ul>
+                  <li>Alle Zitationen sind positive Anerkennung.</li>
+                  <li>Zitationen können auch kritisch oder neutral sein.</li>
+                  <li>Negative Zitationen sind unmöglich.</li>
+                </ul>
+                <p><strong>Lösung:</strong> Zitationen können auch kritisch oder neutral sein.</p>
+              </li>
+              <li>
+                <strong>M03-L1-Q5:</strong> Warum sind Vergleiche zwischen Fachgebieten schwierig?
+                <ul>
+                  <li>Weil Zitations- und Publikationskulturen je nach Fach unterschiedlich sind.</li>
+                  <li>Weil alle Fächer identisch publizieren.</li>
+                  <li>Weil Datenquellen immer vollständig sind.</li>
+                </ul>
+                <p><strong>Lösung:</strong> Weil Zitations- und Publikationskulturen je nach Fach unterschiedlich sind.</p>
+              </li>
+            </ol>
+
+            <h4>Level 2</h4>
+            <ol>
+              <li>
+                <strong>M03-L2-Q1:</strong> Zitationsfenster-Effekt: Welche Interpretation ist korrekt?
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Paper</th>
+                      <th>Year</th>
+                      <th>Citations in 2024 (cum.)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>A</td>
+                      <td>2019</td>
+                      <td>45</td>
+                    </tr>
+                    <tr>
+                      <td>B</td>
+                      <td>2023</td>
+                      <td>8</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p>
+                  <strong>Lösung:</strong> Paper A hatte mehr Zeit, Zitationen zu sammeln. Ein direkter Vergleich ohne gleiches
+                  Zitationsfenster oder Altersklassen ist unfair. Für einen faireren Vergleich sollte man Zitationen
+                  innerhalb eines definierten Fensters betrachten.
+                </p>
+              </li>
+              <li>
+                <strong>M03-L2-Q2:</strong> Selbstzitate: Formuliere eine Report-Zeile (1–2 Sätze), die Zitationen mit und ohne Selbstzitate
+                transparent ausweist.
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Einheit</th>
+                      <th>Zeitraum</th>
+                      <th>Zitationen (gesamt)</th>
+                      <th>Zitationen (ohne Selbstzitate)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Institut A</td>
+                      <td>2020–2024</td>
+                      <td>980</td>
+                      <td>840</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p>
+                  <strong>Lösung:</strong> Im Zeitraum 2020–2024 wurden 980 Zitationen gezählt; ohne Selbstzitate sind es 840. Die Differenz
+                  wird zur Transparenz separat ausgewiesen.
+                </p>
+              </li>
+              <li>
+                <strong>M03-L2-Q3:</strong> Dokumenttyp-Effekt: Warum kann ein Review-Artikel Zitationszahlen verzerren? Nenne 2 Gründe.
+                <p>
+                  <strong>Lösung:</strong> Reviews bündeln Literatur und werden oft als Einstieg zitiert. Außerdem werden Methoden- und
+                  Übersichtsarbeiten quer über Teilfelder zitiert, was Vergleiche verzerren kann.
+                </p>
+              </li>
+            </ol>
+
+            <h4>Level 3</h4>
+            <ol>
+              <li>
+                <strong>M03-L3-CASE:</strong> Mini-Case: Formuliere einen Methodik-Kasten (Quelle, Abfragedatum, Zitationsfenster,
+                Dokumenttypen, Umgang mit Selbstzitaten) und 4 Limitationen/Warnhinweise zur Interpretation.
+              </li>
+            </ol>
+          </div>
+        </details>
+
+        <h3>Quellen</h3>
+        <ul>
+          <li>
+            Garfield, E. (1955). Citation Indexes for Science. Science (PDF).
+            <a href="https://garfield.library.upenn.edu/papers/science1955.pdf"
+              >https://garfield.library.upenn.edu/papers/science1955.pdf</a
+            >
+          </li>
+          <li>
+            Hicks, D. et al. (2015). The Leiden Manifesto for research metrics. Nature.
+            <a href="https://www.nature.com/articles/520429a">https://www.nature.com/articles/520429a</a>
+          </li>
+          <li>
+            DORA (2012). San Francisco Declaration on Research Assessment.
+            <a href="https://sfdora.org/read/">https://sfdora.org/read/</a>
+          </li>
+          <li>
+            Wilsdon, J. et al. (2015). The Metric Tide (PDF).
+            <a href="https://www.ukri.org/wp-content/uploads/2021/12/RE-151221-TheMetricTideFullReport2015.pdf"
+              >https://www.ukri.org/wp-content/uploads/2021/12/RE-151221-TheMetricTideFullReport2015.pdf</a
+            >
+          </li>
+          <li>
+            Waltman, L. (2016). A review of the literature on citation impact indicators. Journal of Informetrics.
+            <a href="https://www.sciencedirect.com/science/article/pii/S1751157715300900"
+              >https://www.sciencedirect.com/science/article/pii/S1751157715300900</a
+            >
+          </li>
+          <li>
+            Fowler, J. H., &amp; Aksnes, D. W. (2007). Does self-citation pay? Scientometrics.
+            <a href="https://link.springer.com/article/10.1007/s11192-007-1777-2"
+              >https://link.springer.com/article/10.1007/s11192-007-1777-2</a
+            >
+          </li>
+          <li>
+            Moed, H. F. (2007). Developing Bibliometric Indicators of Research Performance (CWTS report, PDF).
+            <a href="https://www.cwts.nl/pdf/nwo_inf_final_report_v_210207.pdf"
+              >https://www.cwts.nl/pdf/nwo_inf_final_report_v_210207.pdf</a
+            >
+          </li>
+          <li>
+            Xu, J. et al. (2015). Citation Sentiment Analysis in Clinical Trial Papers (PMC).
+            <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4765697/">https://pmc.ncbi.nlm.nih.gov/articles/PMC4765697/</a>
+          </li>
+          <li>
+            Song, D. et al. (2022). Quantifying characteristics of negative citations. Information Processing &amp; Management.
+            <a href="https://www.sciencedirect.com/science/article/abs/pii/S0306457322001108"
+              >https://www.sciencedirect.com/science/article/abs/pii/S0306457322001108</a
+            >
+          </li>
+        </ul>
+
+        <h4>Weiterführende Lektüre</h4>
+        <ul>
+          <li>
+            Waltman (Preprint). A review of the literature on citation impact indicators (arXiv).
+            <a href="https://arxiv.org/abs/1507.02099">https://arxiv.org/abs/1507.02099</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="role-toggle.js" defer></script>
+    <script src="module-progress.js" defer></script>
+  </body>
+</html>
