@@ -645,47 +645,155 @@
       ]
     },
     {
-      "title": "Modul 11: Forschungsdatenmetriken",
-      "slug": "modul-11-forschungsdaten",
+      "title": "Modul 11: Science Mapping & Wissensstrukturen: Co-Citation, Bibliographic Coupling, Co-Word",
+      "slug": "modul-11-science-mapping",
       "difficulty": "advanced",
-      "readingTimeMinutes": 55,
-      "learningGoals": ["Datensätze bewerten", "Reproduzierbarkeit fördern"],
+      "readingTimeMinutes": 45,
+      "learningGoals": [
+        "Science-Mapping-Ansätze definieren und auswählen",
+        "Co-citation vs. bibliographic coupling zeitlich einordnen",
+        "Netzwerkgrundbegriffe anwenden",
+        "Reproduzierbaren Mapping-Workflow dokumentieren",
+        "Fehlinterpretationen vermeiden"
+      ],
       "outputs": [
-        {"type": "report", "description": "Datensatzprofil", "format": "pdf"}
+        {"type": "map", "description": "Science-Mapping-Karte mit Methodikbox", "format": "png"}
       ],
       "exercises": [
         {
-          "title": "Datensatz-Impact",
-          "slug": "datensatz-impact",
+          "title": "Methoden-Quiz: Klassiker, Front, Themen",
+          "slug": "methoden-quiz",
           "difficulty": "advanced",
-          "readingTimeMinutes": 25,
-          "learningGoals": ["Impact-Indikatoren berechnen"],
+          "readingTimeMinutes": 15,
+          "learningGoals": ["Passende Mapping-Methode auswählen"],
           "outputs": [
-            {"type": "table", "description": "Impact-Tabelle", "format": "csv"}
+            {"type": "quiz", "description": "Antworten + Begründung", "format": "markdown"}
           ]
         },
         {
-          "title": "Zitationsverknüpfungen",
-          "slug": "zitationsverknuepfungen",
+          "title": "Methoden zuordnen",
+          "slug": "methoden-zuordnen",
           "difficulty": "advanced",
-          "readingTimeMinutes": 25,
-          "learningGoals": ["Verknüpfungen dokumentieren"],
+          "readingTimeMinutes": 20,
+          "learningGoals": ["Fragestellungen mit co-citation, coupling, co-word matchen"],
           "outputs": [
-            {"type": "graph", "description": "Zitationsgraph", "format": "graphml"}
+            {"type": "worksheet", "description": "Zuordnungstabelle", "format": "markdown"}
+          ]
+        },
+        {
+          "title": "Kantenstärke berechnen",
+          "slug": "kantenstaerke-berechnen",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 10,
+          "learningGoals": ["Gewichte im Co-word-Netzwerk interpretieren"],
+          "outputs": [
+            {"type": "calculation", "description": "Kurzberechnung", "format": "markdown"}
+          ]
+        },
+        {
+          "title": "Map Disclosure Box schreiben",
+          "slug": "map-disclosure-box",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 20,
+          "learningGoals": ["Methodik transparent dokumentieren"],
+          "outputs": [
+            {"type": "methodbox", "description": "Disclosure Box", "format": "markdown"}
+          ]
+        },
+        {
+          "title": "Mini-Case: Co-word + Coupling planen",
+          "slug": "mini-case-mapping",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 30,
+          "learningGoals": ["Zwei Mapping-Varianten entwerfen", "Stabilitätschecks definieren"],
+          "outputs": [
+            {"type": "plan", "description": "Varianten + Checks", "format": "markdown"}
           ]
         }
       ],
       "resources": [
         {
-          "title": "Data Metrics Guide",
-          "slug": "data-metrics-guide",
-          "type": "book",
-          "url": "https://example.com/data-metrics",
+          "title": "Small (1973) – Co-citation definition",
+          "slug": "small-1973-co-citation",
+          "type": "article",
+          "url": "https://asistdl.onlinelibrary.wiley.com/doi/10.1002/asi.4630240406",
           "difficulty": "advanced",
-          "readingTimeMinutes": 22,
-          "learningGoals": ["Datenmetriken einordnen"],
+          "readingTimeMinutes": 12,
+          "learningGoals": ["Co-citation definieren"],
           "outputs": [
-            {"type": "notes", "description": "Kapitelnotizen", "format": "markdown"}
+            {"type": "notes", "description": "Notizen", "format": "markdown"}
+          ]
+        },
+        {
+          "title": "Kessler (1963) – Bibliographic coupling",
+          "slug": "kessler-1963-bibliographic-coupling",
+          "type": "article",
+          "url": "https://onlinelibrary.wiley.com/doi/10.1002/asi.5090140103",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 12,
+          "learningGoals": ["Bibliographic coupling erklären"],
+          "outputs": [
+            {"type": "notes", "description": "Notizen", "format": "markdown"}
+          ]
+        },
+        {
+          "title": "Callon et al. (1983) – Introduction to co-word analysis",
+          "slug": "callon-1983-co-word-analysis",
+          "type": "article",
+          "url": "https://journals.sagepub.com/doi/10.1177/053901883022002003",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 14,
+          "learningGoals": ["Co-word analysis einordnen"],
+          "outputs": [
+            {"type": "notes", "description": "Notizen", "format": "markdown"}
+          ]
+        },
+        {
+          "title": "van Eck & Waltman (2010) – VOSviewer paper",
+          "slug": "van-eck-waltman-2010-vosviewer",
+          "type": "article",
+          "url": "https://link.springer.com/article/10.1007/s11192-009-0146-3",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 12,
+          "learningGoals": ["VOSviewer als Tool einordnen"],
+          "outputs": [
+            {"type": "notes", "description": "Notizen", "format": "markdown"}
+          ]
+        },
+        {
+          "title": "VOSviewer Manual (1.6.18, PDF)",
+          "slug": "vosviewer-manual-1-6-18",
+          "type": "article",
+          "url": "https://www.vosviewer.com/documentation/Manual_VOSviewer_1.6.18.pdf",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 18,
+          "learningGoals": ["VOSviewer-Workflow nachschlagen"],
+          "outputs": [
+            {"type": "notes", "description": "Notizen", "format": "markdown"}
+          ]
+        },
+        {
+          "title": "Aria & Cuccurullo (2017) – bibliometrix",
+          "slug": "aria-cuccurullo-2017-bibliometrix",
+          "type": "article",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1751157717300500",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 14,
+          "learningGoals": ["bibliometrix als Pipeline-Tool verstehen"],
+          "outputs": [
+            {"type": "notes", "description": "Notizen", "format": "markdown"}
+          ]
+        },
+        {
+          "title": "Batagelj & Cerinsek (2013) – On bibliographic networks",
+          "slug": "batagelj-cerinsek-2013-bibliographic-networks",
+          "type": "article",
+          "url": "https://arxiv.org/abs/1301.4655",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 16,
+          "learningGoals": ["Netzwerktransformationen & Normalisierung verstehen"],
+          "outputs": [
+            {"type": "notes", "description": "Notizen", "format": "markdown"}
           ]
         }
       ]
@@ -970,18 +1078,33 @@
           ]
         },
         {
-          "title": "Modul 11: Forschungsdatenmetriken",
-          "slug": "/module/modul-11-forschungsdaten",
+          "title": "Modul 11: Science Mapping & Wissensstrukturen: Co-Citation, Bibliographic Coupling, Co-Word",
+          "slug": "/module/modul-11-science-mapping",
           "type": "module",
           "children": [
             {
-              "title": "Datensatz-Impact",
-              "slug": "/module/modul-11-forschungsdaten/datensatz-impact",
+              "title": "Methoden-Quiz: Klassiker, Front, Themen",
+              "slug": "/module/modul-11-science-mapping/methoden-quiz",
               "type": "exercise"
             },
             {
-              "title": "Zitationsverknüpfungen",
-              "slug": "/module/modul-11-forschungsdaten/zitationsverknuepfungen",
+              "title": "Methoden zuordnen",
+              "slug": "/module/modul-11-science-mapping/methoden-zuordnen",
+              "type": "exercise"
+            },
+            {
+              "title": "Kantenstärke berechnen",
+              "slug": "/module/modul-11-science-mapping/kantenstaerke-berechnen",
+              "type": "exercise"
+            },
+            {
+              "title": "Map Disclosure Box schreiben",
+              "slug": "/module/modul-11-science-mapping/map-disclosure-box",
+              "type": "exercise"
+            },
+            {
+              "title": "Mini-Case: Co-word + Coupling planen",
+              "slug": "/module/modul-11-science-mapping/mini-case-mapping",
               "type": "exercise"
             }
           ]
