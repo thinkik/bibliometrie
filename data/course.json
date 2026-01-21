@@ -488,45 +488,156 @@
       ]
     },
     {
-      "title": "Modul 10: Open-Science-Indikatoren",
-      "slug": "modul-10-open-science",
+      "title": "Modul 10: Datenquellen & Coverage: WoS vs. Scopus vs. OpenAlex/Crossref vs. Google Scholar – Auswahl je Use-Case",
+      "slug": "modul-10-datenquellen-coverage",
       "difficulty": "advanced",
-      "readingTimeMinutes": 50,
-      "learningGoals": ["Open-Science-Praktiken erfassen", "Indikatoren ableiten"],
+      "readingTimeMinutes": 40,
+      "learningGoals": [
+        "Die vier großen Quellenfamilien (WoS, Scopus, OpenAlex/Crossref, Google Scholar) nach Kurationsgrad, Coverage, Transparenz, APIs und Reproduzierbarkeit unterscheiden",
+        "Coverage-Bias (Feld/Region/Sprache/Publikationstyp) als Haupttreiber für unterschiedliche Ergebnisse erklären",
+        "Für konkrete Use-Cases eine passende Datenquelle (oder Quelle+Triangulation) auswählen und begründen",
+        "Einen „Source Disclosure“-Methodik-Kasten schreiben, der Quelle, Stichtag, Exportregeln, Limitationen und Reproduzierbarkeit abdeckt"
+      ],
       "outputs": [
-        {"type": "catalog", "description": "Open-Science-Indikatoren", "format": "json"}
+        {"type": "matrix", "description": "Vergleichsmatrix der Quellen", "format": "markdown"},
+        {"type": "guide", "description": "Use-Case-Entscheidungshilfe", "format": "markdown"},
+        {"type": "template", "description": "Source Disclosure Box", "format": "markdown"}
       ],
       "exercises": [
         {
-          "title": "Open-Access-Quellen",
-          "slug": "open-access-quellen",
+          "title": "Quellenfamilien unterscheiden",
+          "slug": "quellenfamilien-unterscheiden",
           "difficulty": "advanced",
-          "readingTimeMinutes": 25,
-          "learningGoals": ["OA-Quellen identifizieren"],
+          "readingTimeMinutes": 15,
+          "learningGoals": ["Quellenfamilien korrekt zuordnen"],
           "outputs": [
-            {"type": "table", "description": "OA-Quelle-Liste", "format": "csv"}
+            {"type": "quiz", "description": "Zuordnungsfragen", "format": "markdown"}
           ]
         },
         {
-          "title": "Transparenz-Checklist",
-          "slug": "transparenz-checklist",
+          "title": "Quellenwahl begründen",
+          "slug": "quellenwahl-begruenden",
           "difficulty": "advanced",
           "readingTimeMinutes": 20,
-          "learningGoals": ["Transparenzkriterien anwenden"],
+          "learningGoals": ["Quellenwahl für Übungen begründen"],
           "outputs": [
-            {"type": "checklist", "description": "Transparenz-Check", "format": "markdown"}
+            {"type": "notes", "description": "Begründung in Bulletpoints", "format": "markdown"}
+          ]
+        },
+        {
+          "title": "Triangulation erklären",
+          "slug": "triangulation-erklaeren",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 20,
+          "learningGoals": ["Coverage-Unterschiede plausibel erklären"],
+          "outputs": [
+            {"type": "list", "description": "Plausible Gründe", "format": "markdown"}
+          ]
+        },
+        {
+          "title": "Dashboard-Case",
+          "slug": "dashboard-case",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 30,
+          "learningGoals": ["Source-Strategie entwerfen", "Disclosure Box erstellen"],
+          "outputs": [
+            {"type": "report", "description": "Strategie + Disclosure Box", "format": "markdown"}
           ]
         }
       ],
       "resources": [
         {
-          "title": "Open-Science-Metriken",
-          "slug": "open-science-metriken",
+          "title": "Clarivate: Web of Science Core Collection – Content collection and indexing process",
+          "slug": "wos-content-collection-indexing",
           "type": "article",
-          "url": "https://example.com/open-science",
+          "url": "https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/web-of-science-core-collection/content-collection-and-indexing-process/",
           "difficulty": "advanced",
-          "readingTimeMinutes": 16,
-          "learningGoals": ["OS-Indikatoren verstehen"],
+          "readingTimeMinutes": 12,
+          "learningGoals": ["Kurations- und Indexing-Prozess verstehen"],
+          "outputs": [
+            {"type": "notes", "description": "Notizen", "format": "markdown"}
+          ]
+        },
+        {
+          "title": "Clarivate: Web of Science Core Collection – Editorial selection process / criteria",
+          "slug": "wos-editorial-selection-process",
+          "type": "article",
+          "url": "https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/web-of-science-core-collection/editorial-selection-process/",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 12,
+          "learningGoals": ["Selektionskriterien nachvollziehen"],
+          "outputs": [
+            {"type": "notes", "description": "Notizen", "format": "markdown"}
+          ]
+        },
+        {
+          "title": "Elsevier: Scopus Content Coverage Guide",
+          "slug": "scopus-content-coverage-guide",
+          "type": "article",
+          "url": "https://assets.ctfassets.net/o78em1y1w4i4/EX1iy8VxBeQKf8aN2XzOp/c36f79db25484cb38a5972ad9a5472ec/Scopus_ContentCoverage_Guide_WEB.pdf",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 15,
+          "learningGoals": ["Scopus-Coverage-Logik verstehen"],
+          "outputs": [
+            {"type": "notes", "description": "Notizen", "format": "markdown"}
+          ]
+        },
+        {
+          "title": "OpenAlex Docs: FAQ",
+          "slug": "openalex-faq",
+          "type": "article",
+          "url": "https://docs.openalex.org/additional-help/faq",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 8,
+          "learningGoals": ["OpenAlex-Datenquellen einordnen"],
+          "outputs": [
+            {"type": "notes", "description": "Notizen", "format": "markdown"}
+          ]
+        },
+        {
+          "title": "OpenAlex Docs: Sources entity",
+          "slug": "openalex-sources-entity",
+          "type": "article",
+          "url": "https://docs.openalex.org/api-entities/sources",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 10,
+          "learningGoals": ["OpenAlex-Quellenherkunft verstehen"],
+          "outputs": [
+            {"type": "notes", "description": "Notizen", "format": "markdown"}
+          ]
+        },
+        {
+          "title": "Crossref: REST API documentation",
+          "slug": "crossref-rest-api",
+          "type": "article",
+          "url": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 8,
+          "learningGoals": ["Crossref-API für Metadaten verstehen"],
+          "outputs": [
+            {"type": "notes", "description": "Notizen", "format": "markdown"}
+          ]
+        },
+        {
+          "title": "Gusenbauer (2024): Beyond Google Scholar, Scopus, and Web of Science",
+          "slug": "gusenbauer-2024-database-evaluation",
+          "type": "article",
+          "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/jrsm.1729",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 18,
+          "learningGoals": ["Vergleichsstudien zur Coverage einordnen"],
+          "outputs": [
+            {"type": "notes", "description": "Notizen", "format": "markdown"}
+          ]
+        },
+        {
+          "title": "LSE Impact Blog (2019): Google Scholar, Web of Science, and Scopus – overlap & differences",
+          "slug": "lse-impact-scholar-wos-scopus",
+          "type": "article",
+          "url": "https://blogs.lse.ac.uk/impactofsocialsciences/2019/12/03/google-scholar-web-of-science-and-scopus-which-is-best-for-me/",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 12,
+          "learningGoals": ["Praxisnahen Quellenvergleich verstehen"],
           "outputs": [
             {"type": "notes", "description": "Notizen", "format": "markdown"}
           ]
@@ -832,18 +943,28 @@
           ]
         },
         {
-          "title": "Modul 10: Open-Science-Indikatoren",
-          "slug": "/module/modul-10-open-science",
+          "title": "Modul 10: Datenquellen & Coverage",
+          "slug": "/module/modul-10-datenquellen-coverage",
           "type": "module",
           "children": [
             {
-              "title": "Open-Access-Quellen",
-              "slug": "/module/modul-10-open-science/open-access-quellen",
+              "title": "Quellenfamilien unterscheiden",
+              "slug": "/module/modul-10-datenquellen-coverage/quellenfamilien-unterscheiden",
               "type": "exercise"
             },
             {
-              "title": "Transparenz-Checklist",
-              "slug": "/module/modul-10-open-science/transparenz-checklist",
+              "title": "Quellenwahl begründen",
+              "slug": "/module/modul-10-datenquellen-coverage/quellenwahl-begruenden",
+              "type": "exercise"
+            },
+            {
+              "title": "Triangulation erklären",
+              "slug": "/module/modul-10-datenquellen-coverage/triangulation-erklaeren",
+              "type": "exercise"
+            },
+            {
+              "title": "Dashboard-Case",
+              "slug": "/module/modul-10-datenquellen-coverage/dashboard-case",
               "type": "exercise"
             }
           ]
