@@ -799,47 +799,181 @@
       ]
     },
     {
-      "title": "Modul 12: Reporting und Storytelling",
+      "title": "Modul 12: Forschungsbewertung in der Praxis: Reporting-Patterns, Dashboards, Use-Cases (Unit/Faculty/Person) + Do/Don’t-Katalog",
       "slug": "modul-12-reporting",
       "difficulty": "advanced",
-      "readingTimeMinutes": 60,
-      "learningGoals": ["Ergebnisse kommunizieren", "Visualisierungen einsetzen"],
+      "readingTimeMinutes": 45,
+      "learningGoals": [
+        "Monitoring, Learning/Improvement und High-stakes Evaluation unterscheiden",
+        "Responsible-Metrics-Leitplanken in Reporting-Designs übersetzen",
+        "Dashboards transparent, auditierbar und fair spezifizieren",
+        "Fehlanreize und Governance-Risiken erkennen und vermeiden",
+        "Indikator-Sets und Narrative-Elemente für Unit/Faculty/Person entwerfen"
+      ],
       "outputs": [
-        {"type": "presentation", "description": "Berichtsstruktur", "format": "pptx"}
+        {
+          "type": "guide",
+          "description": "Dashboard-Blueprint & Do/Don’t-Katalog",
+          "format": "markdown"
+        }
       ],
       "exercises": [
         {
-          "title": "Dashboard entwerfen",
-          "slug": "dashboard-entwerfen",
-          "difficulty": "advanced",
-          "readingTimeMinutes": 30,
-          "learningGoals": ["Visualisierung planen"],
+          "title": "High-stakes Entscheidungen einordnen",
+          "slug": "high-stakes-entscheidungen",
+          "difficulty": "beginner",
+          "readingTimeMinutes": 10,
+          "learningGoals": ["High-stakes-Assessment von Monitoring unterscheiden"],
           "outputs": [
-            {"type": "wireframe", "description": "Dashboard-Wireframe", "format": "png"}
+            {
+              "type": "quiz",
+              "description": "Multiple-Choice-Antwort",
+              "format": "markdown"
+            }
           ]
         },
         {
-          "title": "Executive Summary",
-          "slug": "executive-summary",
-          "difficulty": "advanced",
-          "readingTimeMinutes": 25,
-          "learningGoals": ["Kernaussagen formulieren"],
+          "title": "DORA-Prinzipien benennen",
+          "slug": "dora-prinzipien",
+          "difficulty": "beginner",
+          "readingTimeMinutes": 10,
+          "learningGoals": ["DORA-Prinzipien korrekt wiedergeben"],
           "outputs": [
-            {"type": "summary", "description": "Summary-Text", "format": "markdown"}
+            {
+              "type": "short-answer",
+              "description": "Stichwortliste",
+              "format": "markdown"
+            }
+          ]
+        },
+        {
+          "title": "Dashboard-Spezifikation schreiben",
+          "slug": "dashboard-spezifikation",
+          "difficulty": "intermediate",
+          "readingTimeMinutes": 30,
+          "learningGoals": ["Dashboard-Blueprint für Low-stakes-Use-Case entwerfen"],
+          "outputs": [
+            {
+              "type": "spec",
+              "description": "Spezifikation in Bulletpoints",
+              "format": "markdown"
+            }
+          ]
+        },
+        {
+          "title": "Dashboard kritisch prüfen",
+          "slug": "dashboard-kritik",
+          "difficulty": "intermediate",
+          "readingTimeMinutes": 25,
+          "learningGoals": ["Fehlanreize und Bias in Dashboards erkennen"],
+          "outputs": [
+            {
+              "type": "analysis",
+              "description": "Probleme und Verbesserungen",
+              "format": "markdown"
+            }
+          ]
+        },
+        {
+          "title": "Bewertungs-Set für Berufungen entwerfen",
+          "slug": "berufungskommission-set",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 40,
+          "learningGoals": [
+            "Qualitative Kriterien und Metriken für High-stakes-Use-Cases kombinieren"
+          ],
+          "outputs": [
+            {
+              "type": "template",
+              "description": "Bewertungs-Set mit Narrative-Template",
+              "format": "markdown"
+            }
           ]
         }
       ],
       "resources": [
         {
-          "title": "Storytelling mit Daten",
-          "slug": "storytelling-mit-daten",
-          "type": "video",
-          "url": "https://example.com/storytelling",
+          "title": "The Metric Tide (2015) – Framework for responsible metrics",
+          "slug": "metric-tide-2015",
+          "type": "article",
+          "url": "https://www.ukri.org/wp-content/uploads/2021/12/RE-151221-TheMetricTideFullReport2015.pdf",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 20,
+          "learningGoals": ["Framework für Responsible Metrics verstehen"],
+          "outputs": [
+            {"type": "notes", "description": "Kernprinzipien notieren", "format": "markdown"}
+          ]
+        },
+        {
+          "title": "DORA (2024) – Guidance on the responsible use of quantitative indicators",
+          "slug": "dora-indicators-guidance-2024",
+          "type": "article",
+          "url": "https://sfdora.org/wp-content/uploads/2024/05/DORA_indicators_guidance.pdf",
           "difficulty": "advanced",
           "readingTimeMinutes": 15,
-          "learningGoals": ["Storyline strukturieren"],
+          "learningGoals": ["DORA-Prinzipien anwenden"],
           "outputs": [
-            {"type": "notes", "description": "Storytelling-Tipps", "format": "markdown"}
+            {"type": "notes", "description": "Prinzipien zusammenfassen", "format": "markdown"}
+          ]
+        },
+        {
+          "title": "Leiden Manifesto (2015) – 10 principles for research metrics",
+          "slug": "leiden-manifesto-2015",
+          "type": "article",
+          "url": "https://www.nature.com/articles/520429a",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 12,
+          "learningGoals": ["Leiden-Prinzipien einordnen"],
+          "outputs": [
+            {"type": "notes", "description": "Prinzipienliste", "format": "markdown"}
+          ]
+        },
+        {
+          "title": "CoARA (2022) – Agreement on Reforming Research Assessment",
+          "slug": "coara-2022",
+          "type": "article",
+          "url": "https://www.coara.org/wp-content/uploads/2025/11/2022_07_19_rra_agreement_final.pdf-3.pdf",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 15,
+          "learningGoals": ["Reformprinzipien von CoARA kennen"],
+          "outputs": [
+            {"type": "notes", "description": "Commitments zusammenfassen", "format": "markdown"}
+          ]
+        },
+        {
+          "title": "Hong Kong Principles (2020) – Assessing researchers, fostering research integrity",
+          "slug": "hong-kong-principles-2020",
+          "type": "article",
+          "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000737",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 12,
+          "learningGoals": ["Integritätsprinzipien in Assessment anwenden"],
+          "outputs": [
+            {"type": "notes", "description": "Prinzipien skizzieren", "format": "markdown"}
+          ]
+        },
+        {
+          "title": "UKRI (2025) – Résumé for Research and Innovation (R4RI): guidance",
+          "slug": "ukri-r4ri-guidance-2025",
+          "type": "article",
+          "url": "https://www.ukri.org/apply-for-funding/develop-your-application/resume-for-research-and-innovation-r4ri-guidance/",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 10,
+          "learningGoals": ["Narrative CV als Format verstehen"],
+          "outputs": [
+            {"type": "notes", "description": "R4RI-Elemente notieren", "format": "markdown"}
+          ]
+        },
+        {
+          "title": "UNESCO (2021) – Recommendation on Open Science",
+          "slug": "unesco-open-science-2021",
+          "type": "article",
+          "url": "https://www.unesco.it/wp-content/uploads/2023/11/RECOMMENDATION-ON-OPEN-SCIENCE-2021-Certified.pdf",
+          "difficulty": "advanced",
+          "readingTimeMinutes": 12,
+          "learningGoals": ["Open-Science-Empfehlungen im Assessment verorten"],
+          "outputs": [
+            {"type": "notes", "description": "Zentrale Empfehlungen", "format": "markdown"}
           ]
         }
       ]
@@ -1110,18 +1244,33 @@
           ]
         },
         {
-          "title": "Modul 12: Reporting und Storytelling",
+          "title": "Modul 12: Forschungsbewertung in der Praxis: Reporting-Patterns, Dashboards, Use-Cases (Unit/Faculty/Person) + Do/Don’t-Katalog",
           "slug": "/module/modul-12-reporting",
           "type": "module",
           "children": [
             {
-              "title": "Dashboard entwerfen",
-              "slug": "/module/modul-12-reporting/dashboard-entwerfen",
+              "title": "High-stakes Entscheidungen einordnen",
+              "slug": "/module/modul-12-reporting/high-stakes-entscheidungen",
               "type": "exercise"
             },
             {
-              "title": "Executive Summary",
-              "slug": "/module/modul-12-reporting/executive-summary",
+              "title": "DORA-Prinzipien benennen",
+              "slug": "/module/modul-12-reporting/dora-prinzipien",
+              "type": "exercise"
+            },
+            {
+              "title": "Dashboard-Spezifikation schreiben",
+              "slug": "/module/modul-12-reporting/dashboard-spezifikation",
+              "type": "exercise"
+            },
+            {
+              "title": "Dashboard kritisch prüfen",
+              "slug": "/module/modul-12-reporting/dashboard-kritik",
+              "type": "exercise"
+            },
+            {
+              "title": "Bewertungs-Set für Berufungen entwerfen",
+              "slug": "/module/modul-12-reporting/berufungskommission-set",
               "type": "exercise"
             }
           ]
