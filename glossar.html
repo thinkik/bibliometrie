@@ -23,20 +23,81 @@
     </header>
     <main class="content">
       <h1>Glossar</h1>
-      <p>
-        Hier findest du die Inhalte für den Abschnitt „Glossar“ der Einführung
-        Bibliometrie. Weitere Details folgen in diesem Bereich.
+      <p>Suche nach Begriffen und entdecke ihre Definitionen im Glossar.</p>
+      <label for="glossar-search">Glossar durchsuchen</label>
+      <input
+        id="glossar-search"
+        type="search"
+        placeholder="Begriff eingeben"
+        aria-describedby="glossar-hinweis"
+      />
+      <p id="glossar-hinweis">
+        Tipp: Starte zu tippen, um die Liste zu filtern. Leereingabe zeigt alle
+        Begriffe.
       </p>
-      <figure class="page-illustration">
-        <img
-          src="assets/glossar_header.png"
-          alt="Grafik für den Glossarbereich mit typografischen Elementen"
-          loading="lazy"
-        />
-        <figcaption>
-          Die wichtigsten Begriffe werden hier Schritt für Schritt erklärt.
-        </figcaption>
-      </figure>
+      <dl class="glossar-list">
+        <dt>Altmetrics</dt>
+        <dd>
+          Alternative Metriken, die Aufmerksamkeit in sozialen Medien,
+          Nachrichten oder Policy-Dokumenten erfassen.
+        </dd>
+        <dt>Bibliometrie</dt>
+        <dd>
+          Quantitative Analyse wissenschaftlicher Publikationen und ihrer
+          Nutzung, etwa über Zitationen.
+        </dd>
+        <dt>Citation</dt>
+        <dd>
+          Verweis auf eine andere Publikation, der zeigt, wie wissenschaftliche
+          Arbeiten miteinander verbunden sind.
+        </dd>
+        <dt>Datenbereinigung</dt>
+        <dd>
+          Aufbereitung von Datensätzen, um Dubletten, Fehler oder Inkonsistenzen
+          zu entfernen.
+        </dd>
+        <dt>h-Index</dt>
+        <dd>
+          Kennzahl, die Produktivität und Zitierhäufigkeit einer Person oder
+          eines Journals kombiniert.
+        </dd>
+        <dt>Impact Factor</dt>
+        <dd>
+          Journalkennzahl, die die durchschnittliche Zitierhäufigkeit von
+          Artikeln innerhalb eines Zeitraums beschreibt.
+        </dd>
+        <dt>Open Access</dt>
+        <dd>
+          Freier, kostenfreier Zugang zu wissenschaftlichen Publikationen, oft
+          unter offenen Lizenzen.
+        </dd>
+        <dt>Peer Review</dt>
+        <dd>
+          Begutachtungsverfahren, bei dem Expert:innen die Qualität von
+          Forschung vor der Veröffentlichung prüfen.
+        </dd>
+      </dl>
     </main>
+    <script>
+      const searchInput = document.querySelector("#glossar-search");
+      const glossaryTerms = document.querySelectorAll(".glossar-list dt");
+
+      const filterGlossary = () => {
+        const query = searchInput.value.trim().toLowerCase();
+
+        glossaryTerms.forEach((term) => {
+          const definition = term.nextElementSibling;
+          const matches = term.textContent.toLowerCase().includes(query);
+
+          term.style.display = matches ? "" : "none";
+          if (definition) {
+            definition.style.display = matches ? "" : "none";
+          }
+        });
+      };
+
+      searchInput.addEventListener("input", filterGlossary);
+      filterGlossary();
+    </script>
   </body>
 </html>
