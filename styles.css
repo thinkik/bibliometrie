@@ -175,6 +175,14 @@ body {
   overflow-x: auto;
 }
 
+.table-responsive .table {
+  min-width: 720px;
+}
+
+.table-striped tbody tr:nth-child(even) {
+  background: #f8fafc;
+}
+
 .module-table {
   width: 100%;
   margin-bottom: 0;
