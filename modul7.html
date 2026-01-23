@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Einführung Bibliometrie – Modul 7: Collaboration & Co-Authorship: Indikatoren, Fractional Counting und Co-Authorship Networks</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="navigation.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">Einführung Bibliometrie</div>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="nav-toggle-label">Menü</span>
+        <span class="nav-toggle-icon" aria-hidden="true">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </span>
+      </button>
+      <nav class="site-nav" id="primary-navigation" aria-label="Hauptnavigation">
+        <a href="index.html">Start</a>
+        <a class="active" href="lehrgang.html">Lehrgang</a>
+        <a href="uebungen.html">Übungen</a>
+        <a href="fallstudien.html">Fallstudien</a>
+        <a href="tools-datenquellen.html">Tools &amp; Datenquellen</a>
+        <a href="responsible-metrics.html">Responsible Metrics</a>
+        <a href="glossar.html">Glossar</a>
+        <a href="downloads-vorlagen.html">Downloads &amp; Vorlagen</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </header>
+    <main class="content">
+      <div class="module-progress" data-module-progress data-module-id="modul7">
+        <span class="module-progress-label">Fortschritt:</span>
+        <progress id="module-progress-bar" max="100" value="0">0%</progress>
+        <span class="module-progress-value" data-module-progress-value>0%</span>
+      </div>
+      <h1>Modul 7: Collaboration & Co-Authorship: Indikatoren, Fractional Counting und Co-Authorship Networks</h1>
+
+      <section class="module-section" id="modul-7" aria-labelledby="heading-modul-7">
+        <h2 id="heading-modul-7">Modul 7: Collaboration & Co-Authorship: Indikatoren, Fractional Counting und Co-Authorship Networks</h2>
+        
+        <h3>Lernziele</h3>
+        <ul>
+          <li>Co-Authorship als Messkonzept erklären (und seine Grenzen benennen).</li>
+          <li>Wichtige Kollaborationsindikatoren korrekt berechnen (domestic/international/industry; Anteile/Quoten).</li>
+          <li>Full vs. fractional counting unterscheiden und die Auswirkungen auf Output-, Impact- und Netzwerk-Analysen verstehen.</li>
+          <li>Hyperauthorship als Sonderfall erkennen und methodisch sauber behandeln.</li>
+          <li>Einen Collaboration-Report transparent dokumentieren (Datenquelle, Regeln, Counting, Limitationen).</li>
+        </ul>
+        <h3>Kurz erklärt</h3>
+        <p>Kollaboration wird in der Bibliometrie häufig über Co-Authorship gemessen. Das ist praktisch, weil es aus Metadaten ableitbar ist – aber nicht identisch mit „echter Zusammenarbeit“. Für institutionelle Vergleiche ist entscheidend, wie du zählst: Full counting erhöht Output bei Kooperationen; fractional counting verteilt Kredit und reduziert Mehrfachzählungen. In Netzwerken (Co-Authorship Networks) wirken Counting-Regeln und Hyperauthorship besonders stark – daher braucht es klare Methodik und transparente Berichte.</p>
+        <h3>Begriffe</h3>
+        <ul>
+          <li><strong>Co-authorship:</strong> Gemeinsame Autorschaft als Proxy für Zusammenarbeit; gemessen über Publikationen mit mehreren Autor:innen/Organisationen.</li>
+          <li><strong>International collaboration:</strong> Publikationen mit Co-Autor:innen bzw. Institutionen aus mehr als einem Land.</li>
+          <li><strong>Domestic collaboration:</strong> Publikationen mit mehreren Institutionen im selben Land (keine internationalen Co-Autor:innen).</li>
+          <li><strong>Industry collaboration:</strong> Publikationen mit mindestens einer Corporate-/Industry-Affiliation (Definition je Plattform/Unification-Status).</li>
+          <li><strong>Collaboration rate:</strong> Anteil kollaborativer Publikationen (z. B. % International Collab = International collab papers / total papers).</li>
+          <li><strong>Full counting:</strong> Jede beteiligte Einheit erhält volle Zählung (1.0) pro Publikation; führt bei Kooperationen zu Mehrfachzählungen.</li>
+          <li><strong>Fractional counting:</strong> Kredit wird auf Einheiten aufgeteilt (z. B. nach Autor:innen, Adressen oder Organisationen), um Mehrfachzählungen zu reduzieren.</li>
+          <li><strong>Binary collaboration counting:</strong> Pro Einheit gilt: kollaboriert (1) oder nicht (0); eine Publikation zählt maximal einmal pro Einheit/Pairing.</li>
+          <li><strong>Co-authorship network:</strong> Netzwerk aus Knoten (z. B. Autor:innen/Orgs/Länder) und Kanten (Co-Authorship-Links), meist gewichtet nach Anzahl gemeinsamer Publikationen.</li>
+          <li><strong>Link strength:</strong> Stärke einer Kante im Netzwerk (z. B. Anzahl gemeinsamer Publikationen; ggf. fractionally gewichtet).</li>
+          <li><strong>Hyperauthorship:</strong> Publikationen mit ungewöhnlich vielen Autor:innen (z. B. Konsortien), die Kennzahlen und Netzwerke stark verzerren können.</li>
+        </ul>
+        <h3>Vertiefung: Indikatoren – was wird gezählt?</h3>
+        <p>Typische Indikatoren sind Anteile kollaborativer Publikationen (z. B. % International Collaboration), domestic vs. international, sowie Industry Collaboration. Wichtig: Plattformen definieren diese Kategorien unterschiedlich (z. B. über Adressen/Organisationen, Unification-Status, Corporate-Typen). Zusätzlich gibt es zwei verbreitete Zähllogiken: (a) Anteile/Quoten auf Basis von Publikationsmengen und (b) Paar-bezogene Kollaborationszählungen (z. B. Land A–B), oft als binär gezählt (kollaboriert ja/nein), um Doppelzählung zu reduzieren.</p>
+        <h3>Vertiefung: Counting – full vs. fractional (und warum das nicht nur „Reporting-Style“ ist)</h3>
+        <p><strong>Full counting:</strong> Jede beteiligte Einheit bekommt 1.0 pro Publikation. Das macht Kooperationen „größer“ und kann Rankings/Benchmarks verzerren.</p>
+        <p><strong>Fractional counting:</strong> Kredit wird geteilt (z. B. 1/N nach Autor:innen oder anteilig nach Organisationen/Adressen). Dadurch wird Output bei großen Kooperationen nicht automatisch überproportional aufgeblasen.</p>
+        <p>Für viele Zwecke (z. B. institutionelle Vergleiche) ist fractional counting methodisch attraktiver, weil es systematische Verzerrungen durch unterschiedliche Kooperationskulturen reduziert.</p>
+        <h3>Vertiefung: Co-Authorship Networks – was zeigen sie (und was nicht)?</h3>
+        <p>Ein Co-Authorship Network hat Knoten (z. B. Autor:innen, Organisationen, Länder) und Kanten (gemeinsame Publikationen). Die Kanten können gewichtet sein (z. B. Anzahl gemeinsamer Publikationen) und lassen sich mit Tools wie VOSviewer visualisieren. Wichtig: Hyperauthored papers können zentrale Netzwerkmetriken stark aufblasen. Zwei typische Gegenmaßnahmen sind (a) definierte Cutoffs/Filter und/oder (b) fractional weighting.</p>
+        <h3>Typische Fallen & Fehlinterpretationen</h3>
+        <ul>
+          <li><strong>„Co-Authorship = echte Zusammenarbeit.“</strong> Co-Authorship ist ein Proxy: Er misst gemeinsame Autorschaft, nicht zwingend Intensität, Rollen oder tatsächliche Arbeitsanteile.</li>
+          <li><strong>„Mehr International Collab heißt automatisch bessere Forschung.“</strong> Internationalität kann Sichtbarkeit erhöhen, ist aber feld-, projekt- und förderlogikabhängig; es ist kein Qualitätsbeweis.</li>
+          <li><strong>„Full und fractional liefern ähnliche Ergebnisse.“</strong> Gerade bei großen Kooperationen unterscheiden sich Output, Impact und Netzwerkstrukturen stark.</li>
+          <li><strong>„Netzwerkzentralität zeigt die wichtigsten Forschenden.“</strong> Zentralität ist sensibel gegenüber Hyperauthorship, Datenbereinigung und Zählregeln; interpretierbar nur mit Kontext.</li>
+        </ul>
+        <h3>Praxis-Workflow: Collaboration-Analyse sauber aufsetzen</h3>
+        <ol>
+          <li>Zweck klären: Monitoring, Strategie, Reporting oder Evaluation? (High-stakes -> besonders vorsichtig).</li>
+          <li>Einheit definieren: Autor:in, Organisation, Land, Departement; und Ebenen trennen (nicht mischen).</li>
+          <li>Datenquelle + Exportregeln dokumentieren (Coverage, Dokumenttypen, Zeitraum, Stichtag).</li>
+          <li>Kollaborationsdefinition festlegen: international/domestic/industry; Regeln zu Multi-Affiliations.</li>
+          <li>Counting-Regel festlegen: full vs. fractional (und welche Fractional-Variante: nach Autor:innen, Adressen, Organisationen).</li>
+          <li>Hyperauthorship-Policy: Cutoff/Filter oder fractional weighting (und im Report begründen).</li>
+          <li>Netzwerk-Analyse (optional): Knotenebene wählen, Linkdefinition (co-authored papers), Gewichtung, Thresholds.</li>
+          <li>Plausibilisieren: Disambiguierung (Orgs), Dubletten, Konsortien, Multi-Affiliations, Feldmix.</li>
+          <li>Report schreiben: Methodik-Kasten + Limitationen + Responsible-Metrics-Hinweis.</li>
+        </ol>
+        <h3>Tool-Lab: Co-Authorship Network in VOSviewer (15 Minuten)</h3>
+        <ol>
+          <li>Export: Aus WoS/Scopus/Dimensions/Lens/OpenAlex eine Publikationsliste exportieren (inkl. Autor:innen + Affiliations).</li>
+          <li>VOSviewer: Create Map -> Bibliographic data -> Co-authorship.</li>
+          <li>Item type wählen: Authors ODER Organizations ODER Countries (nicht mischen).</li>
+          <li>Counting: Full vs. Fractional (falls angeboten) bzw. Gewichtung/Thresholds so einstellen, dass die Karte lesbar bleibt.</li>
+          <li>Cleaning: Thesaurus/Name-Variants (z. B. Organisationsnamen vereinheitlichen).</li>
+          <li>Interpretation: Cluster = dichte Kollaborationsgruppen; Overlay/Density nutzen, aber mit Vorsicht (Hyperauthorship beachten).</li>
+        </ol>
+        <h3>Responsible Metrics: Kollaboration</h3>
+        <ul>
+          <li>Immer dokumentieren: Definition von „international/domestic/industry“, Datenquelle, Zeitraum, Counting-Regel, Hyperauthorship-Policy.</li>
+          <li>Für Vergleiche: gleiche Regeln für alle Einheiten; Feldmix und Output-Mix explizit benennen.</li>
+          <li>Keine mechanischen Schlüsse: Kollaboration ist Strategie-/Strukturindikator, nicht automatisch Qualitätsindikator.</li>
+          <li>Netzwerkmetriken nur als explorative Evidenz nutzen, nicht als Ranking-Automat.</li>
+        </ul>
+        <h3>Übungen</h3>
+        <h4>Level 1</h4>
+        <ol>
+          <li><strong>M07-L1-Q1:</strong> Was ist der wichtigste Unterschied zwischen full und fractional counting?</li>
+        </ol>
+        <ul>
+          <li>Full counting ist nur für Zitationen, fractional nur für Publikationen.</li>
+          <li>Full counting gibt jeder Einheit volle Zählung; fractional verteilt Kredit auf Einheiten.</li>
+          <li>Fractional counting zählt nur internationale Kooperationen.</li>
+          <li><strong>Lösung:</strong> Full counting gibt jeder Einheit volle Zählung; fractional verteilt Kredit auf Einheiten.</li>
+        </ul>
+        <ol>
+          <li><strong>M07-L1-Q2:</strong> Welche Aussage ist am vorsichtigsten?</li>
+        </ol>
+        <ul>
+          <li>Internationale Kollaboration beweist hohe Qualität.</li>
+          <li>Internationale Kollaboration ist ein Strukturindikator, der kontextabhängig ist.</li>
+          <li>Ohne Kollaboration ist Forschung weniger wertvoll.</li>
+          <li><strong>Lösung:</strong> Internationale Kollaboration ist ein Strukturindikator, der kontextabhängig ist.</li>
+        </ul>
+        <ol>
+          <li><strong>M07-L1-Q3:</strong> Hyperauthorship ist problematisch, weil …</li>
+        </ol>
+        <ul>
+          <li>es Zitationen komplett verhindert.</li>
+          <li>es Kennzahlen/Netzwerkmetriken stark verzerren kann.</li>
+          <li>es nur in den Geisteswissenschaften vorkommt.</li>
+          <li><strong>Lösung:</strong> es Kennzahlen/Netzwerkmetriken stark verzerren kann.</li>
+        </ul>
+        <h4>Level 2</h4>
+        <ol>
+          <li><strong>M07-L2-CALC-1:</strong> Berechne Kollaborationsraten (Publikations-Set mit 10 Publikationen): 6 sind multi-institutionell im selben Land (domestic), 2 sind multi-country (international), 2 sind single-institution. Wie groß sind % domestic, % international, % no-collaboration?</li>
+        </ol>
+        <ul>
+          <li><strong>Lösung:</strong> % domestic = 6/10 = 60%; % international = 2/10 = 20%; % no-collaboration = 2/10 = 20%</li>
+          <li><strong>Bewertung:</strong> 1 Punkt: alle drei korrekt.</li>
+        </ul>
+        <ol>
+          <li><strong>M07-L2-CALC-2:</strong> Full vs. Fractional (vereinfachtes Autorenmodell): Eine Publikation hat 5 Autor:innen: 2 von Uni A, 3 von Uni B. Wie viel Output bekommt Uni A (a) bei full counting, (b) bei fractional counting nach Autor:innen?</li>
+        </ol>
+        <ul>
+          <li><strong>Lösung:</strong> (a) Full: 1.0; (b) Fractional: 2/5 = 0.4</li>
+          <li><strong>Bewertung:</strong> 1 Punkt: full korrekt. 1 Punkt: fractional korrekt.</li>
+        </ul>
+        <ol>
+          <li><strong>M07-L2-NET-1:</strong> Netzwerk-Kante (Publikationszählung): Autor A und B haben 3 gemeinsame Papers, A und C haben 1 gemeinsames Paper. Welche Link Strength ist stärker? Um wie viel?</li>
+        </ol>
+        <ul>
+          <li><strong>Lösung:</strong> A–B ist stärker (3 vs. 1), also um Faktor 3 bzw. Differenz 2.</li>
+          <li><strong>Bewertung:</strong> 1 Punkt: korrekt.</li>
+        </ul>
+        <ol>
+          <li><strong>M07-L2-INTERPRET:</strong> Interpretation: Ein Departement hat % international = 45% (5 Jahre), aber der Wert sprang im letzten Jahr auf 70%. Nenne 2 plausible, nicht-wertende Erklärungen.</li>
+        </ol>
+        <ul>
+          <li><strong>Lösung:</strong> Beispiele: (1) Start/Ende eines großen, internationalen Projekts oder Konsortiums. (2) Änderung in Publikationsmix (z. B. mehr Multi-Center-Studien) oder bessere Affiliation-Erfassung/Unification in der Datenquelle.</li>
+          <li><strong>Bewertung:</strong> 1 Punkt: 1 plausible Erklärung. 1 Punkt: 2. plausible Erklärung.</li>
+        </ul>
+        <h4>Level 3</h4>
+        <ol>
+          <li><strong>M07-L3-CASE:</strong> Mini-Case: Du erstellst einen Uni-Report „Collaboration 2021–2025“. Liefere (a) einen Methodik-Kasten (Datenquelle, Zeitraum, Dokumenttypen, Definition international/domestic/industry, Counting, Hyperauthorship-Policy) und (b) 8 Limitationen/Warnhinweise.</li>
+        </ol>
+        <ul>
+          <li><strong>Deliverable:</strong> Methodik-Kasten + 8 Limitationen (Bulletpoints).</li>
+          <li><strong>Lösungsrahmen:</strong></li>
+          <li>Methodik: Quelle+Stichtag; Zeitraum; Dokumenttypen; Kollaborationsdefinitionen; Counting (full vs fractional + Variante); Hyperauthorship (Cutoff oder fractional weighting); Disambiguierung/Unification.</li>
+          <li>Limitationen: Coverage-Bias; Feldmix; Multi-affiliations; Unification-Fehler; Konsortien/Hyperauthorship; Namensvarianten; Zitations-/Output-Fenster-Effekte; Vergleichsgruppenwahl; Unterschiede in Kollaborationskultur.</li>
+          <li><strong>Bewertung:</strong></li>
+          <li>Methodik vollständig und nachvollziehbar: 4 Punkte.</li>
+          <li>Limitationen konkret (daten- & methodenspezifisch): 3 Punkte.</li>
+          <li>Responsible-Metrics-Logik sichtbar: 2 Punkte.</li>
+        </ul>
+        <h3>Quellen</h3>
+        <ul>
+          <li><a href="https://traditional.leidenranking.com/information/indicators">https://traditional.leidenranking.com/information/indicators</a></li>
+          <li><a href="https://incites.zendesk.com/hc/en-gb/articles/25087437743889-Collaboration-Indicators">https://incites.zendesk.com/hc/en-gb/articles/25087437743889-Collaboration-Indicators</a></li>
+          <li><a href="https://oecd.ai/en/partner-data-methodological-note">https://oecd.ai/en/partner-data-methodological-note</a></li>
+          <li><a href="https://www.sciencedirect.com/science/article/abs/pii/S1751157716302036">https://www.sciencedirect.com/science/article/abs/pii/S1751157716302036</a></li>
+          <li><a href="https://ideas.repec.org/a/eee/infome/v9y2015i4p872-894.html">https://ideas.repec.org/a/eee/infome/v9y2015i4p872-894.html</a></li>
+          <li><a href="https://www.vosviewer.com/documentation/Manual_VOSviewer_1.6.18.pdf">https://www.vosviewer.com/documentation/Manual_VOSviewer_1.6.18.pdf</a></li>
+          <li><a href="https://direct.mit.edu/qss/article/5/3/613/120830/Hyperauthored-papers-disproportionately-amplify">https://direct.mit.edu/qss/article/5/3/613/120830/Hyperauthored-papers-disproportionately-amplify</a></li>
+        </ul>
+        <h3>Weiterführende Literatur</h3>
+        <ul>
+          <li><a href="https://www.vosviewer.com/download/f-x2.pdf">https://www.vosviewer.com/download/f-x2.pdf</a></li>
+          <li><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0253397">https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0253397</a></li>
+        </ul>
+      </section>
+    </main>
+    <script src="role-toggle.js" defer></script>
+    <script src="module-progress.js" defer></script>
+  </body>
+</html>

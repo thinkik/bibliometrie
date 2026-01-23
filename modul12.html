@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Einführung Bibliometrie – Modul 12: Forschungsbewertung in der Praxis: Reporting-Patterns, Dashboards, Use-Cases (Unit/Faculty/Person) + Do/Don’t-Katalog</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="navigation.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">Einführung Bibliometrie</div>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="nav-toggle-label">Menü</span>
+        <span class="nav-toggle-icon" aria-hidden="true">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </span>
+      </button>
+      <nav class="site-nav" id="primary-navigation" aria-label="Hauptnavigation">
+        <a href="index.html">Start</a>
+        <a class="active" href="lehrgang.html">Lehrgang</a>
+        <a href="uebungen.html">Übungen</a>
+        <a href="fallstudien.html">Fallstudien</a>
+        <a href="tools-datenquellen.html">Tools &amp; Datenquellen</a>
+        <a href="responsible-metrics.html">Responsible Metrics</a>
+        <a href="glossar.html">Glossar</a>
+        <a href="downloads-vorlagen.html">Downloads &amp; Vorlagen</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </header>
+    <main class="content">
+      <div class="module-progress" data-module-progress data-module-id="modul12">
+        <span class="module-progress-label">Fortschritt:</span>
+        <progress id="module-progress-bar" max="100" value="0">0%</progress>
+        <span class="module-progress-value" data-module-progress-value>0%</span>
+      </div>
+      <h1>Modul 12: Forschungsbewertung in der Praxis: Reporting-Patterns, Dashboards, Use-Cases (Unit/Faculty/Person) + Do/Don’t-Katalog</h1>
+
+      <section class="module-section" id="modul-12" aria-labelledby="heading-modul-12">
+        <h2 id="heading-modul-12">Modul 12: Forschungsbewertung in der Praxis: Reporting-Patterns, Dashboards, Use-Cases (Unit/Faculty/Person) + Do/Don’t-Katalog</h2>
+        
+        <h3>Lernziele</h3>
+        <ul>
+          <li>Zwischen Monitoring, Learning/Improvement und High-stakes Evaluation unterscheiden (und passende Methoden wählen).</li>
+          <li>Responsible-Metrics-Leitplanken (DORA/Leiden/Metric Tide/CoARA/HKP) in konkrete Reporting- und Dashboard-Designs übersetzen.</li>
+          <li>Dashboards so spezifizieren, dass sie transparent, auditierbar und fair sind (Quelle, Stichtag, Coverage, Counting, Unsicherheit).</li>
+          <li>Typische Fehlanreize und Governance-Risiken erkennen und vermeiden (Gaming, Goodhart, Field-bias, Ranking-Falle).</li>
+          <li>Für drei Ebenen (Institution/Unit, Faculty/Group, Person) passende Indikator-Sets und Narrative-Elemente entwerfen.</li>
+        </ul>
+        <h3>Kurz erklärt</h3>
+        <p>Dashboards und Reports sind nie neutral: Sie formen Entscheidungen. Gute bibliometrische Praxis beginnt daher mit dem Use-Case (Monitoring vs. High-stakes), arbeitet mit einem kleinen, ausgewogenen Indikatorenset, ergänzt qualitative Beurteilung (Peer Review/Narrative Evidence) und dokumentiert die Methodik vollständig (Quelle, Stichtag, Coverage, Counting, Limitationen).</p>
+        <h3>Schlüsselbegriffe</h3>
+        <ul>
+          <li><strong>Low-stakes monitoring:</strong> Monitoring zur Orientierung/Verbesserung (z. B. Portfolio-Entwicklung, OA-Anteile), ohne direkte Konsequenzen für Einzelpersonen.</li>
+          <li><strong>High-stakes assessment:</strong> Bewertung mit direkten Konsequenzen (Hiring/Promotion, Mittelzuweisung, Ranking-Entscheide). Erfordert besonders strenge Leitplanken.</li>
+          <li><strong>Responsible metrics:</strong> Rahmen, der Metriken als unterstützende Evidenz versteht und Transparenz, Kontext, Fairness, Expertise und Reproduzierbarkeit verlangt.</li>
+          <li><strong>Goodhart’s law (in der Praxis):</strong> Wenn ein Indikator zum Ziel wird, verliert er Informationsgehalt (Gaming/Optimierung auf Zahl statt Qualität).</li>
+          <li><strong>Source disclosure / Methodikbox:</strong> Standardisierte Offenlegung von Datenquelle, Stichtag, Query/Exportregeln, Counting, Limitationen und Reproduzierbarkeit.</li>
+          <li><strong>Narrative CV:</strong> Narratives Format (z. B. UKRI R4RI), um Beiträge, Rollen, Open Science, Team Science, Mentoring etc. sichtbar zu machen – als Ergänzung zu Zahlen.</li>
+        </ul>
+        <h3>Assessment-Spektrum: Wähle das passende Instrument</h3>
+        <p><strong>A — Monitoring & Learning (low-stakes)</strong></p>
+        <ul>
+          <li><strong>Typische Entscheidungen:</strong> Portfolio-Entwicklung, OA-Strategie, Kooperationsanalyse, Feld-/Themenmonitoring.</li>
+          <li><strong>Empfohlene Evidenz:</strong> Zeitreihen, feld-normalisierte Indikatoren auf Aggregat, Open Science/Output-Diversität, qualitative Kontextnotizen.</li>
+          <li><strong>Strenge:</strong> mittel.</li>
+        </ul>
+        <p><strong>B — Priorisierung & Ressourcendialog (medium-stakes)</strong></p>
+        <ul>
+          <li><strong>Typische Entscheidungen:</strong> Schwerpunktsetzung, Ressourcenargumentation, Programm-Review.</li>
+          <li><strong>Empfohlene Evidenz:</strong> Triangulation mehrerer Quellen, Benchmarks innerhalb Fachgruppen, Stichproben-QA + Audit-Trail, kurze Peer-Review-/Expert:innen-Notizen.</li>
+          <li><strong>Strenge:</strong> hoch.</li>
+        </ul>
+        <p><strong>C — Hiring/Promotion/Funding (high-stakes)</strong></p>
+        <ul>
+          <li><strong>Typische Entscheidungen:</strong> Berufungen, Tenure/Promotion, Projektförderung.</li>
+          <li><strong>Empfohlene Evidenz:</strong> primär qualitative Beurteilung (Peer Review), Narrative CV + Evidenz, kontextualisierte, sparsame Metriken (nicht mechanisch), strikte Fairness-/Bias-Checks.</li>
+          <li><strong>Strenge:</strong> maximal.</li>
+        </ul>
+        <h3>Reporting-Patterns: 5 bewährte Muster</h3>
+        <ol>
+          <li><strong>Deskriptives Profil (What we do):</strong> Transparente Bestandsaufnahme ohne Rankingdruck.</li>
+        </ol>
+        <ul>
+          <li>Widgets: Output-Mix (Artikel/Bücher/Datasets/Software), OA-Anteil, Collaboration (int./nat.), Top-Felder/Keywords (mapping-light).</li>
+        </ul>
+        <ol>
+          <li><strong>Kontextualisierte Benchmark (How we compare, responsibly):</strong> Vergleich nur innerhalb sinnvoller Fachgruppen und mit Coverage-Hinweisen.</li>
+        </ol>
+        <ul>
+          <li>Widgets: Field-normalized impact (Aggregat), Top-x% Indikatoren (Aggregat), Produktivität pro FTE (nur wenn valide), Confidence-/Missingness-Box.</li>
+        </ul>
+        <ol>
+          <li><strong>Diagnose & QA (Why numbers differ):</strong> Fehlerquellen sichtbar machen (Affiliations, Dubletten, Coverage).</li>
+        </ol>
+        <ul>
+          <li>Widgets: DOI/ORCID/ROR-Quote, Missing affiliations, Dublettenzahl, Quelle-Vergleich (Triangulation).</li>
+        </ul>
+        <ol>
+          <li><strong>Impact Storyboard (Evidence, not vibes):</strong> Wirkung als belegte Story: Policy/Uptake/Use in Praxis + qualitative Evidenz.</li>
+        </ol>
+        <ul>
+          <li>Widgets: Policy mentions (mit Kontext), Usage (COUNTER), Selected case studies, Narrative evidence + Links.</li>
+        </ul>
+        <ol>
+          <li><strong>Improvement Loop (Measure → Learn → Adjust):</strong> Indikatoren als Feedback für Prozesse (Open Science, Data sharing, reproducibility).</li>
+        </ol>
+        <ul>
+          <li>Widgets: OS-Praktiken (OA, Data availability), Narrative contributions (Mentoring, Team Science), jährliche Indikator-Review-Notiz.</li>
+        </ul>
+        <h3>Dashboard-Blueprint (minimal, aber robust)</h3>
+        <p><strong>Header / Disclosure</strong></p>
+        <ul>
+          <li>Datenquelle(n) + Stichtag + Query/Exportparameter.</li>
+          <li>Zeitraum + Doc types + Counting (full/fractional).</li>
+          <li>Coverage-Hinweis + Missingness/Unsicherheit.</li>
+          <li>Kontakt/Feedback-Kanal (Korrekturen möglich).</li>
+        </ul>
+        <p><strong>KPI-Kern (max. 8 KPIs)</strong></p>
+        <ul>
+          <li>Output-Mix (divers).</li>
+          <li>OA-Anteil.</li>
+          <li>Field-normalized citation indicator (nur Aggregat).</li>
+          <li>Top-x% Indikator (nur Aggregat).</li>
+          <li>Kooperationsindikator.</li>
+          <li>Policy/Practice uptake (qualifiziert, nicht nur Zahl).</li>
+          <li>Usage (COUNTER, wo verfügbar).</li>
+          <li>Data quality: DOI/ORCID/ROR-Quote.</li>
+        </ul>
+        <p><strong>Drill-down (mit Leitplanken)</strong></p>
+        <ul>
+          <li>Keine Einzelpersonen-Rankings im Default-View.</li>
+          <li>Drill-down nur mit Kontext (Feld, Zeitraum, Rolle, Output-Typ).</li>
+          <li>Jede Tabelle exportierbar + mit Methodik-Hinweisen.</li>
+        </ul>
+        <h3>Do / Don’t-Katalog (für Website & Schulung)</h3>
+        <p><strong>Do</strong></p>
+        <ul>
+          <li>Use-case zuerst, Indikatoren danach (Monitoring ≠ Evaluation).</li>
+          <li>Immer Methodikbox + Stichtag + Quelle(n) offenlegen.</li>
+          <li>Feldkontext nutzen (Vergleiche nur innerhalb sinnvoller Gruppen).</li>
+          <li>Kleine, ausgewogene Indikator-Sets + qualitative Ergänzung.</li>
+          <li>QA sichtbar machen (Missingness, Dubletten, Disambiguierung).</li>
+          <li>Regelmäßige Indikator-Reviews (weiterentwickeln, nicht versteinern).</li>
+        </ul>
+        <p><strong>Don’t</strong></p>
+        <ul>
+          <li>Mechanische Schwellen („JIF>…“, „h-index>…“) als harte Kriterien.</li>
+          <li>Personen/Artikel mit Journalmetriken bewerten.</li>
+          <li>Dashboards als Ranglistenmaschinen bauen (Goodhart/Gaming).</li>
+          <li>Quellen mischen ohne Triangulation/Erklärung (Coverage-Fallen).</li>
+          <li>Zahlen ohne Unsicherheit/Missingness präsentieren.</li>
+          <li>„Impact“ behaupten ohne Evidenz (Fallbeispiele, Uptake-Nachweise).</li>
+        </ul>
+        <h3>Governance-Check: Wer entscheidet was?</h3>
+        <ul>
+          <li>Policy: Welche Entscheidungen sind high-stakes? (=> strengste Leitplanken)</li>
+          <li>Roles: Wer ist Data Steward? Wer verantwortet Methodik/QA?</li>
+          <li>Appeals: Korrekturweg für falsch zugeordnete Outputs/Affiliations.</li>
+          <li>Transparency: Veröffentlichung von Methodik & Versionen.</li>
+          <li>Fairness: Feld-/Karrierephase-/Rollen-Dimensionen explizit berücksichtigen.</li>
+        </ul>
+        <h3>Responsible Metrics – Kurzrahmen (kombiniert, praxistauglich)</h3>
+        <ul>
+          <li>Metriken unterstützen qualitative Beurteilung (Leiden).</li>
+          <li>Klar, transparent, spezifisch, kontextualisiert, fair (DORA-Guidance).</li>
+          <li>Reformpfad: Vielfalt der Beiträge anerkennen, qualitative Urteile zentral (CoARA).</li>
+          <li>Integrität/Transparenz/Open Science belohnen (Hong Kong Principles/UNESCO OS).</li>
+          <li>Framework „Responsible Metrics“ operationalisieren (Metric Tide).</li>
+        </ul>
+        <h3>Übungen (Level 1–3)</h3>
+        <ul>
+          <li><strong>Level 1:</strong> High-stakes-Aussage identifizieren und die 5 DORA-Prinzipien benennen.</li>
+          <li><strong>Level 2:</strong> Dashboard-Spezifikation (max. 12 Bulletpoints) für ein Institut schreiben; kritische Review eines Rankings (5 Probleme + 3 Verbesserungen).</li>
+          <li><strong>Level 3:</strong> Bewertungs-Set für eine Berufungskommission entwerfen (qualitative Kriterien, kontextualisierte Metriken, Narrative Template).</li>
+        </ul>
+        <h3>Quellen & weiterführende Links</h3>
+        <ul>
+          <li><a href="https://www.ukri.org/wp-content/uploads/2021/12/RE-151221-TheMetricTideFullReport2015.pdf">https://www.ukri.org/wp-content/uploads/2021/12/RE-151221-TheMetricTideFullReport2015.pdf</a></li>
+          <li><a href="https://sfdora.org/wp-content/uploads/2024/05/DORA_indicators_guidance.pdf">https://sfdora.org/wp-content/uploads/2024/05/DORA_indicators_guidance.pdf</a></li>
+          <li><a href="https://www.nature.com/articles/520429a">https://www.nature.com/articles/520429a</a></li>
+          <li><a href="https://www.coara.org/wp-content/uploads/2025/11/2022_07_19_rra_agreement_final.pdf-3.pdf">https://www.coara.org/wp-content/uploads/2025/11/2022_07_19_rra_agreement_final.pdf-3.pdf</a></li>
+          <li><a href="https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000737">https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000737</a></li>
+          <li><a href="https://www.ukri.org/apply-for-funding/develop-your-application/resume-for-research-and-innovation-r4ri-guidance/">https://www.ukri.org/apply-for-funding/develop-your-application/resume-for-research-and-innovation-r4ri-guidance/</a></li>
+          <li><a href="https://www.unesco.it/wp-content/uploads/2023/11/RECOMMENDATION-ON-OPEN-SCIENCE-2021-Certified.pdf">https://www.unesco.it/wp-content/uploads/2023/11/RECOMMENDATION-ON-OPEN-SCIENCE-2021-Certified.pdf</a></li>
+        </ul>
+      </section>
+    </main>
+    <script src="role-toggle.js" defer></script>
+    <script src="module-progress.js" defer></script>
+  </body>
+</html>

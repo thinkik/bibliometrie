@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Einführung Bibliometrie – Modul 8: Alternative Metriken & Aufmerksamkeit: Altmetrics, Usage, Policy Mentions – sinnvoll nutzen</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="navigation.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">Einführung Bibliometrie</div>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="nav-toggle-label">Menü</span>
+        <span class="nav-toggle-icon" aria-hidden="true">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </span>
+      </button>
+      <nav class="site-nav" id="primary-navigation" aria-label="Hauptnavigation">
+        <a href="index.html">Start</a>
+        <a class="active" href="lehrgang.html">Lehrgang</a>
+        <a href="uebungen.html">Übungen</a>
+        <a href="fallstudien.html">Fallstudien</a>
+        <a href="tools-datenquellen.html">Tools &amp; Datenquellen</a>
+        <a href="responsible-metrics.html">Responsible Metrics</a>
+        <a href="glossar.html">Glossar</a>
+        <a href="downloads-vorlagen.html">Downloads &amp; Vorlagen</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </header>
+    <main class="content">
+      <div class="module-progress" data-module-progress data-module-id="modul8">
+        <span class="module-progress-label">Fortschritt:</span>
+        <progress id="module-progress-bar" max="100" value="0">0%</progress>
+        <span class="module-progress-value" data-module-progress-value>0%</span>
+      </div>
+      <h1>Modul 8: Alternative Metriken & Aufmerksamkeit: Altmetrics, Usage, Policy Mentions – sinnvoll nutzen</h1>
+
+      <section class="module-section" id="modul-8" aria-labelledby="heading-modul-8">
+        <h2 id="heading-modul-8">Modul 8: Alternative Metriken & Aufmerksamkeit: Altmetrics, Usage, Policy Mentions – sinnvoll nutzen</h2>
+        
+        <h3>Lernziele</h3>
+        <ul>
+          <li>Erklären, was Altmetrics messen (und was nicht): Aufmerksamkeit, Nutzung, Saves, Mentions – nicht automatisch Qualität oder gesellschaftlicher Impact.</li>
+          <li>Altmetric Attention Score, PlumX-Kategorien und COUNTER-Usage sauber unterscheiden und korrekt interpretieren.</li>
+          <li>Policy Mentions/Policy Citations als Impact-Signal einordnen (Methodik, Limitationen, Kontext).</li>
+          <li>Ein transparentes Reporting-Template für alternative Metriken erstellen (Quelle, Zeitraum, Abfragedatum, Regeln, Coverage, Bots/Spam).</li>
+          <li>Responsible-Metrics-Leitplanken auf Altmetrics anwenden (klar, transparent, kontextualisiert, fair).</li>
+        </ul>
+        <h3>Kurz erklärt</h3>
+        <p>Altmetrics und Usage-Metriken ergänzen Zitationsmetriken: Sie zeigen, ob Forschung gelesen, gespeichert, diskutiert oder in Policy-Kontexten aufgegriffen wird. Das ist besonders nützlich für frühe Signale (z. B. „Captures“), für Outputs außerhalb klassischer Artikel (Datasets, Preprints) und für Kommunikation. Aber: Aufmerksamkeit ist nicht gleich Qualität. Gute Praxis heißt: Datenquelle, Zeitraum, Regeln, Coverage und mögliche Verzerrungen immer mitliefern – und Altmetrics nie als alleinigen Bewertungsmaßstab verwenden.</p>
+        <h3>Vertiefung: Altmetrics-Familien – 4 Signaltypen (mit typischen Use-Cases)</h3>
+        <p><strong>1) Social & Media Attention</strong> (News, Blogs, Social)</p>
+        <ul>
+          <li>Use-case: Kommunikationsreichweite, Themenresonanz, „public attention“.</li>
+          <li>Risiko: Sensations-/Kontroversen-Bias, Bots/Amplification.</li>
+        </ul>
+        <p><strong>2) Usage</strong> (Views/Downloads)</p>
+        <ul>
+          <li>Use-case: Nutzung/Interesse an Content (insb. OA, Repositories, Lernressourcen).</li>
+          <li>Good practice: Standardisierte COUNTER-Reports nutzen; klare Definitionen (View vs Download).</li>
+        </ul>
+        <p><strong>3) Captures / Saves</strong> (z. B. Mendeley Readers)</p>
+        <ul>
+          <li>Use-case: Frühes Signal von akademischem Interesse; kann Zitationen zeitlich vorauslaufen.</li>
+          <li>Risiko: Plattformabhängigkeit, Fachbias.</li>
+        </ul>
+        <p><strong>4) Mentions in Wissens-/Policy-Kontexten</strong> (Wikipedia, Policy documents)</p>
+        <ul>
+          <li>Use-case: „Evidence uptake“ in Wissens- und Entscheidungskontexten.</li>
+          <li>Risiko: Coverage/Indexing, heterogene Dokumenttypen, Zitierpraktiken.</li>
+        </ul>
+        <h3>Vertiefung: Altmetric Attention Score – was steckt dahinter?</h3>
+        <p>Der Altmetric Attention Score ist eine gewichtete Zählung von Aufmerksamkeit. Gewichte hängen von Quellentypen ab (z. B. News höher als einzelne Social-Mentions). Wichtig: Score = Aufmerksamkeit in erfassten Quellen, nicht „Impact“. Für Reporting: immer Score + Quellenaufschlüsselung + Zeitraum + auffällige Peaks (z. B. Medienereignis) dokumentieren.</p>
+        <h3>Vertiefung: PlumX – 5 Kategorien als saubere Struktur fürs Teaching</h3>
+        <p>PlumX ordnet Metriken in fünf Kategorien: <strong>Citations, Usage, Captures, Mentions, Social Media</strong>. Das ist didaktisch stark: Lernende können bei jedem Output (Artikel, Dataset, Software, Buchkapitel) systematisch fragen, welche Kategorie überhaupt sinnvoll ist – und welche Verzerrungen zu erwarten sind.</p>
+        <h3>Vertiefung: Usage (COUNTER) – warum Standardisierung zählt</h3>
+        <p>Nutzungsdaten sind nur dann vergleichbar, wenn sie nach einem Standard erzeugt werden. COUNTER liefert Definitionen, Reportstrukturen und Compliance-Regeln. Für Bibliotheken und Uni-Reporting ist das der solide Weg, um Views/Downloads nicht willkürlich zu interpretieren.</p>
+        <h3>Vertiefung: Policy Mentions – Impact-Signal mit Methodikpflicht</h3>
+        <p>Policy-Mentions können zeigen, dass Forschung in Entscheidungs- oder Guidelines-Kontexten aufgegriffen wird. Tools wie Overton indexieren Policy-Dokumente und verknüpfen dort referenzierte Forschung. Für seriöse Nutzung braucht es: Definition des Policy-Korpus, Transparenz über Abdeckung, Duplikate, Dokumenttypen (Guidelines vs. Whitepaper) und qualitative Plausibilisierung (welche Rolle spielt die Quelle im Dokument?).</p>
+        <h3>Typische Fehlinterpretationen</h3>
+        <ul>
+          <li><strong>„Altmetrics zeigen gesellschaftlichen Impact.“</strong> Altmetrics zeigen oft Aufmerksamkeit oder Nutzung; Impact kann dazugehören, muss aber kontextualisiert und zusätzlich belegt werden.</li>
+          <li><strong>„Ein hoher Attention Score = hohe wissenschaftliche Qualität.“</strong> Der Score misst Aufmerksamkeit in erfassten Quellen. Er kann durch Kontroversen, Medienzyklen oder Bots verzerrt sein.</li>
+          <li><strong>„Usage ist objektiver als Zitationen.“</strong> Usage hängt von Plattform, OA-Status, UI/SEO, Kursnutzung und Messstandard ab. Ohne COUNTER/Regeln ist Vergleich riskant.</li>
+          <li><strong>„Policy mentions sind ein harter Beweis für Wirkung.“</strong> Policy-Zitationen sind ein starkes Signal, aber nur mit Korpus-/Dokumenttyp-Transparenz und Kontextanalyse sinnvoll.</li>
+        </ul>
+        <h3>Praxis-Workflow: Alternative Metriken report-tauglich machen</h3>
+        <ol>
+          <li>Ziel klären: Kommunikation, Monitoring, Impact-Storytelling, Evaluation? (High-stakes => besonders restriktiv).</li>
+          <li>Output-Typ bestimmen: Artikel, Preprint, Dataset, Software, Buchkapitel (nicht jede Metrik passt überall).</li>
+          <li>Quelle(n) wählen und dokumentieren: Altmetric, PlumX, COUNTER-Reports, Overton etc.</li>
+          <li>Parameter fixieren: Abfragedatum, Zeitraum, Identifikatoren (DOI, PMID, ISBN), Versionen (Preprint vs Published).</li>
+          <li>Aufschlüsselung erfassen: Welche Quellen/Events treiben den Wert? (News vs Social vs Policy).</li>
+          <li>Qualitäts-/Risiko-Checks: Bots/Spam, Medienereignis, Duplikate, Fehlzuordnung (Identifier).</li>
+          <li>Report: Methodik-Kasten + Ergebnis (mit Breakdown) + Limitationen + verantwortungsvolle Interpretation.</li>
+        </ol>
+        <h3>Tool-Lab (optional): Offene Event-Daten als Übungsdatensatz</h3>
+        <ol>
+          <li>Nutze Crossref Event Data als Beispiel für offene Event-Logs rund um DOIs (API-basiert).</li>
+          <li>Ziehe eine kleine Stichprobe (z. B. 50 Events) und klassifiziere sie nach Signaltyp (Attention/Usage/Capture/Mention).</li>
+          <li>Diskutiere Coverage: Welche Plattformen sind drin, welche fehlen? Welche Events sind interpretierbar, welche nicht?</li>
+        </ol>
+        <h3>Responsible Metrics: Altmetrics & Usage</h3>
+        <ul>
+          <li>Altmetrics/Usage nie als alleinige Bewertungsbasis nutzen – besonders nicht für Personenentscheidungen.</li>
+          <li>Immer transparent: Quelle, Zeitraum, Abfragedatum, Identifier/Version, Coverage, Regeln (z. B. Gewichtung).</li>
+          <li>Kontext liefern: warum gab es Aufmerksamkeit (Medienereignis, Pressemitteilung, Kontroverse)?</li>
+          <li>Vergleiche nur mit kompatiblen Datengrundlagen (z. B. COUNTER-konforme Reports).</li>
+          <li>Wenn Impact behauptet wird: zusätzliche Evidenz (qualitative Nachweise, Testimonials, konkrete Uptake-Beispiele).</li>
+        </ul>
+        <h3>Übungen</h3>
+        <h4>Level 1</h4>
+        <ol>
+          <li><strong>M08-L1-Q1:</strong> Welche Aussage ist am defensibelsten?</li>
+        </ol>
+        <ul>
+          <li>Altmetrics messen wissenschaftliche Qualität.</li>
+          <li>Altmetrics messen Aufmerksamkeit/Nutzung und müssen kontextualisiert werden.</li>
+          <li>Altmetrics ersetzen Zitationsmetriken vollständig.</li>
+          <li><strong>Lösung:</strong> Altmetrics messen Aufmerksamkeit/Nutzung und müssen kontextualisiert werden.</li>
+        </ul>
+        <ol>
+          <li><strong>M08-L1-Q2:</strong> Welche Kategorie gehört bei PlumX zu "Captures"?</li>
+        </ol>
+        <ul>
+          <li>Downloads</li>
+          <li>Mendeley Readers</li>
+          <li>Journal Impact Factor</li>
+          <li><strong>Lösung:</strong> Mendeley Readers</li>
+        </ul>
+        <ol>
+          <li><strong>M08-L1-Q3:</strong> Wozu dient COUNTER primär?</li>
+        </ol>
+        <ul>
+          <li>Zur Berechnung des h-Index.</li>
+          <li>Zur Standardisierung von Nutzungsstatistiken (Usage) für Online-Content.</li>
+          <li>Zur Berechnung von Journalmetriken wie SNIP.</li>
+          <li><strong>Lösung:</strong> Zur Standardisierung von Nutzungsstatistiken (Usage) für Online-Content.</li>
+        </ul>
+        <h4>Level 2</h4>
+        <ol>
+          <li><strong>M08-L2-CLASSIFY-1:</strong> Ordne die Ereignisse einem Signaltyp zu (Attention / Usage / Capture / Mention-Policy):</li>
+        </ol>
+        <ul>
+          <li>Ein Artikel wird in einem großen Online-News-Portal besprochen.</li>
+          <li>Ein Repository meldet 800 Downloads eines Datasets (COUNTER-konform).</li>
+          <li>120 Mendeley Readers speichern eine Publikation.</li>
+          <li>Eine Leitlinie (Guideline) einer Behörde zitiert den Artikel.</li>
+          <li><strong>Lösung:</strong> News-Portal -> Attention; Repository-Downloads -> Usage; Mendeley Readers -> Capture; Behördenleitlinie -> Mention-Policy.</li>
+          <li><strong>Bewertung:</strong> 2 Punkte: alle 4 korrekt; 1 Punkt: 3 korrekt.</li>
+        </ul>
+        <ol>
+          <li><strong>M08-L2-REPORT-1:</strong> Formuliere einen Methodik-Kasten (3–5 Sätze) für einen Altmetrics-Report zu einem Artikel: Quelle, Abfragedatum, Zeitraum, Score + Quellenaufschlüsselung, Limitation (Aufmerksamkeit ≠ Qualität).</li>
+        </ol>
+        <ul>
+          <li><strong>Lösungsrahmen:</strong> Quelle (Altmetric/PlumX etc.) nennen; Abfragedatum + betrachteter Zeitraum; Ergebnis immer mit Breakdown (News/Blogs/Policy/Social) nennen; Hinweis: Score ist Aufmerksamkeit in erfassten Quellen; nicht Qualität/Impact-Beweis.</li>
+          <li><strong>Bewertung:</strong> 1 Punkt: Quelle+Datum. 1 Punkt: Breakdown/Transparenz. 1 Punkt: korrekte Limitation.</li>
+        </ul>
+        <ol>
+          <li><strong>M08-L2-CHECK-1:</strong> Plausibilitätscheck: Ein Paper hat plötzlich 3'000 Tweets in 24 Stunden. Nenne 3 Checks, bevor du das als „große Wirkung“ interpretierst.</li>
+        </ol>
+        <ul>
+          <li><strong>Lösung:</strong> Beispiele: (1) Event-/Peaks prüfen (Pressemitteilung, kontroverse News, Influencer-Post). (2) Bot-/Spam-Indikatoren (auffällige Konten, Wiederholungsmuster, Koordination). (3) Quellenmix anschauen: nur Social oder auch News/Policy? (4) Identifier korrekt? (falsches Paper verlinkt?).</li>
+          <li><strong>Bewertung:</strong> 1 Punkt: Bot/Spam-Check. 1 Punkt: Kontext/Peak-Check. 1 Punkt: Quellenmix oder Identifier-Check.</li>
+        </ul>
+        <h4>Level 3</h4>
+        <ol>
+          <li><strong>M08-L3-CASE:</strong> Mini-Case: Fakultät will Altmetrics für Leistungsbeurteilung nutzen. Schreibe (a) 6 Risiken und (b) 4 Alternativen, wie Altmetrics verantwortungsvoll eingesetzt werden können (Kommunikation, Impact-Narrative, Monitoring).</li>
+        </ol>
+        <ul>
+          <li><strong>Deliverable:</strong> 6 Risiken + 4 Alternativen (Bulletpoints).</li>
+          <li><strong>Lösungsrahmen:</strong> Risiken: Bots/Gaming, Medien-/Kontroversen-Bias, Coverage-Bias, Feldbias, OA/SEO-Effekte, Fehlanreize, Datenschutz/Plattformabhängigkeit. Alternativen: Altmetrics nur als Kommunikationsindikator; narrative Impact-Statements + Evidenz; Policy-Uptake qualitativ prüfen; COUNTER-Usage für Ressourcenplanung; klare Leitlinie (DORA/Leiden/NISO) und Transparenzpflicht.</li>
+          <li><strong>Bewertung:</strong> Risiken sind daten- und governance-tauglich (3 Punkte). Alternativen sind praktikabel und verantwortungsvoll (3 Punkte). Responsible-Metrics-Logik sichtbar (Kontext+Transparenz+Fairness) (2 Punkte).</li>
+        </ul>
+        <h3>Quellen</h3>
+        <ul>
+          <li><a href="https://zenodo.org/records/12684249">https://zenodo.org/records/12684249</a></li>
+          <li><a href="https://www.niso.org/publications/rp-25-2016-altmetrics">https://www.niso.org/publications/rp-25-2016-altmetrics</a></li>
+          <li><a href="https://help.altmetric.com/support/solutions/articles/6000233311-how-is-the-altmetric-attention-score-calculated-">https://help.altmetric.com/support/solutions/articles/6000233311-how-is-the-altmetric-attention-score-calculated-</a></li>
+          <li><a href="https://www.altmetric.com/about-us/our-data/donut-and-altmetric-attention-score/">https://www.altmetric.com/about-us/our-data/donut-and-altmetric-attention-score/</a></li>
+          <li><a href="https://www.elsevier.com/insights/metrics/plumx">https://www.elsevier.com/insights/metrics/plumx</a></li>
+          <li><a href="https://cop5.projectcounter.org/_/downloads/en/5.1/pdf/">https://cop5.projectcounter.org/_/downloads/en/5.1/pdf/</a></li>
+          <li><a href="https://www.crossref.org/documentation/event-data/">https://www.crossref.org/documentation/event-data/</a></li>
+          <li><a href="https://direct.mit.edu/qss/article/3/3/624/112760/Overton-A-bibliometric-database-of-policy-document">https://direct.mit.edu/qss/article/3/3/624/112760/Overton-A-bibliometric-database-of-policy-document</a></li>
+          <li><a href="https://sfdora.org/resource/guidance-on-the-responsible-use-of-quantitative-indicators-in-research-assessment/">https://sfdora.org/resource/guidance-on-the-responsible-use-of-quantitative-indicators-in-research-assessment/</a></li>
+          <li><a href="https://www.ucl.ac.uk/research/sites/research/files/responsible_use_of_new_and_alternative_metrics.pdf">https://www.ucl.ac.uk/research/sites/research/files/responsible_use_of_new_and_alternative_metrics.pdf</a></li>
+        </ul>
+      </section>
+    </main>
+    <script src="role-toggle.js" defer></script>
+    <script src="module-progress.js" defer></script>
+  </body>
+</html>
