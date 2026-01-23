@@ -1,6 +1,6 @@
 # Modul 4: Metriken für Autor:innen: h-Index, g-Index, i10 & m-Quotient – sinnvoll nutzen, sauber erklären
 
-**Schwierigkeit:** 2  
+**Schwierigkeit:** Intermediate  
 **Geschätzte Lesezeit:** 25 Minuten  
 **Zielgruppen:** Bibliothek, Forschungsreferat, Forschende  
 **Voraussetzungen:** Modul 1, Modul 2, Modul 3

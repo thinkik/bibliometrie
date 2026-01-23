@@ -1,6 +1,6 @@
 # Modul 5: Journalmetriken: JIF, CiteScore, SNIP, SJR – korrekt nutzen, sauber kommunizieren
 
-**Schwierigkeit:** 2  
+**Schwierigkeit:** Intermediate  
 **Geschätzte Lesezeit:** 30 Minuten  
 **Zielgruppen:** Bibliothek, Forschungsreferat, Forschende  
 **Voraussetzungen:** Modul 1, Modul 2, Modul 3, Modul 4

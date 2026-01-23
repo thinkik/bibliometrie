@@ -40,6 +40,11 @@
 
 # Modul 2: Publikationsdaten und Quellen
 
+**Schwierigkeit:** Beginner  
+**Geschätzte Lesezeit:** 50 Minuten  
+**Zielgruppen:** Bibliothek, Research Office, Forschende  
+**Voraussetzungen:** Modul 1
+
 ## Lernziele
 - Die wichtigsten bibliometrischen Datenquellen (z. B. WoS, Scopus, OpenAlex, Crossref, Dimensions, Google Scholar) unterscheiden.
 - Verstehen, was „Coverage“ praktisch bedeutet (Disziplinen, Sprachen, Dokumenttypen, Jahre, Indexierungslogik).

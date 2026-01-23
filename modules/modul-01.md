@@ -32,6 +32,11 @@
 
 # Modul 1: Grundlagen der Bibliometrie
 
+**Schwierigkeit:** Beginner  
+**Geschätzte Lesezeit:** 45 Minuten  
+**Zielgruppen:** Bibliothek, Research Office, Forschende  
+**Voraussetzungen:** Keine
+
 ## Lernziele
 - Grundbegriffe der Bibliometrie erklären
 - Zitationsdaten als Indikatoren einordnen
