@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Einführung Bibliometrie – Modul 6: Feld- & Zeit-Normalisierung: CNCI, FWCI, MNCS, RCR und Top-10%-Indikatoren</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="navigation.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand">Einführung Bibliometrie</div>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="nav-toggle-label">Menü</span>
+        <span class="nav-toggle-icon" aria-hidden="true">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </span>
+      </button>
+      <nav class="site-nav" id="primary-navigation" aria-label="Hauptnavigation">
+        <a href="index.html">Start</a>
+        <a class="active" href="lehrgang.html">Lehrgang</a>
+        <a href="uebungen.html">Übungen</a>
+        <a href="fallstudien.html">Fallstudien</a>
+        <a href="tools-datenquellen.html">Tools &amp; Datenquellen</a>
+        <a href="responsible-metrics.html">Responsible Metrics</a>
+        <a href="glossar.html">Glossar</a>
+        <a href="downloads-vorlagen.html">Downloads &amp; Vorlagen</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </header>
+    <main class="content">
+      <div class="module-progress" data-module-progress data-module-id="modul6">
+        <span class="module-progress-label">Fortschritt:</span>
+        <progress id="module-progress-bar" max="100" value="0">0%</progress>
+        <span class="module-progress-value" data-module-progress-value>0%</span>
+      </div>
+      <h1>Modul 6: Feld- & Zeit-Normalisierung: CNCI, FWCI, MNCS, RCR und Top-10%-Indikatoren</h1>
+
+      <section class="module-section" id="modul-6" aria-labelledby="heading-modul-6">
+        <h2 id="heading-modul-6">Modul 6: Feld- & Zeit-Normalisierung: CNCI, FWCI, MNCS, RCR und Top-10%-Indikatoren</h2>
+        
+        <h3>Lernziele</h3>
+        <ul>
+          <li>Erklären, warum Feld- und Zeit-Normalisierung nötig ist (und was ohne Normalisierung schiefgeht).</li>
+          <li>Die Logik von expected citations, NCS und Aggregationen (MNCS, Percentile/Top-x%) verstehen.</li>
+          <li>CNCI, FWCI und RCR als unterschiedliche Normalisierungsansätze unterscheiden und korrekt interpretieren.</li>
+          <li>Counting-Methoden (full vs. fractional) als relevanten Design-Entscheid für feld-normalisierte Analysen einordnen.</li>
+          <li>Feld-normalisierte Kennzahlen transparent berichten (Quelle, Referenzset, Fenster, Dokumenttypen, Regeln, Limitationen).</li>
+        </ul>
+        <h3>Kurz erklärt</h3>
+        <p>Feld- und zeit-normalisierte Kennzahlen beantworten die Frage: „Wie wurde eine Publikation (oder ein Set) zitiert – im Vergleich zu dem, was für ähnliche Publikationen erwartbar ist?“ Ohne Normalisierung sind Vergleiche zwischen Feldern oder zwischen älteren und jüngeren Publikationen oft unfair. Normalisierung ist daher ein Kerninstrument für Monitoring und Benchmarking – aber nur, wenn Datenbasis, Referenzset und Regeln transparent dokumentiert sind.</p>
+        <h3>Begriffe</h3>
+        <ul>
+          <li><strong>Expected citations (Erwartungswert):</strong> Erwartete Zitierungen für eine Publikation basierend auf einem Referenzset (z. B. gleiche Fachkategorie, Publikationsjahr, Dokumenttyp).</li>
+          <li><strong>NCS (Normalized Citation Score):</strong> NCS = tatsächliche Zitierungen / erwartete Zitierungen. Werte >1 bedeuten über dem Erwartungswert, <1 darunter.</li>
+          <li><strong>MNCS (Mean Normalized Citation Score):</strong> Durchschnitt der NCS-Werte einer Publikationsmenge (z. B. Institut/Uni). Durchschnitt = 1 entspricht Referenzset/„Weltmittel“.</li>
+          <li><strong>CNCI (Category Normalized Citation Impact):</strong> Clarivate/InCites: tatsächliche Zitierungen dividiert durch erwartete Zitierungen für gleiche Fachkategorie(n), Jahr und Dokumenttyp.</li>
+          <li><strong>FWCI (Field-Weighted Citation Impact):</strong> Elsevier/SciVal: Zitierungen relativ zu erwarteten Zitierungen für „ähnliche“ Publikationen (Feld, Jahr, Dokumenttyp).</li>
+          <li><strong>RCR (Relative Citation Ratio):</strong> NIH/iCite: feld- und zeit-normalisierte Zitationsrate auf Artikelebene; Feld wird dynamisch über Co-Citation-Network definiert.</li>
+          <li><strong>Top-x%-Indikator (z. B. PP(top 10%)):</strong> Anteil der Publikationen, die im Vergleich zu ähnlichen Publikationen (gleiches Feld & Jahr) zu den top x% am häufigsten zitierten gehören.</li>
+          <li><strong>Referenzset:</strong> Die Vergleichsmenge, aus der erwartete Zitierungen/Percentiles abgeleitet werden (z. B. gesamte Datenbank, spezifische Felder, Dokumenttypen).</li>
+          <li><strong>Full counting:</strong> Jede Publikation zählt vollständig für jede beteiligte Einheit (z. B. jedes Institut erhält 1.0).</li>
+          <li><strong>Fractional counting:</strong> Publikationen werden anteilig verteilt (z. B. nach Autor:innen oder Adressen), um Verzerrungen in Aggregationen zu reduzieren.</li>
+        </ul>
+        <h3>Vertiefung: Drei Normalisierungsfamilien</h3>
+        <p><strong>1) Kategorie-/Feldbasierte Expected-Citation-Modelle (CNCI/FWCI, MNCS/NCS)</strong></p>
+        <ul>
+          <li>Du definierst „ähnlich“ über Fachkategorie(n), Jahr und Dokumenttyp.</li>
+          <li>Dann: NCS = actual / expected.</li>
+          <li>Aggregationen: MNCS (Mittel der NCS), oder Summen/Anteile.</li>
+        </ul>
+        <p><strong>2) Dynamische Felder über Zitationsnetzwerke (RCR)</strong></p>
+        <ul>
+          <li>Feld wird pro Artikel aus dem Co-Citation-Network abgeleitet.</li>
+          <li>Ergebnis ist artikelbasiert und zeit-normalisiert.</li>
+        </ul>
+        <p><strong>3) Percentile-/Top-x%-Indikatoren (PP(top 10%))</strong></p>
+        <ul>
+          <li>Statt Durchschnittszitationen nutzt du die Frage: „Gehört die Publikation zu den top x% in Feld & Jahr?“</li>
+          <li>Vorteil: robust gegen extreme Ausreißer; gut für institutionelle Reports.</li>
+        </ul>
+        <p><strong>Wichtig: Counting-Methoden</strong> Bei institutionellen Vergleichen beeinflusst full vs. fractional counting die Feld-Normalisierung und kann systematische Verzerrungen erzeugen. Für feld-normalisierte Studien ist die Counting-Entscheidung deshalb methodisch relevant (nicht nur „Reporting-Style“).</p>
+        <h3>Typische Fehlinterpretationen</h3>
+        <ul>
+          <li><strong>„Normalisiert = perfekt fair.“</strong> Normalisierung reduziert Verzerrungen, ersetzt aber nicht Kontext (Feldabgrenzung, Dokumenttypen, Datenqualität, Output-Mix).</li>
+          <li><strong>„CNCI/FWCI/RCR messen das Gleiche.“</strong> Sie nutzen unterschiedliche Referenzsets und Felddefinitionen (Kategorien vs. dynamisches Netzwerk). Ergebnisse sind nicht 1:1 austauschbar.</li>
+          <li><strong>„Ein Wert von 2.0 heißt: doppelt so gut.“</strong> Es heißt: doppelt so hoch wie erwartet zitiert (bezogen auf das Referenzset). Es ist kein Qualitätsurteil.</li>
+          <li><strong>„Counting ist egal.“</strong> Bei multi-affiliierten Publikationen kann full counting Aggregationen verzerren; fractional counting kann fairere Vergleiche ermöglichen (je nach Ziel).</li>
+        </ul>
+        <h3>Praxis-Workflow: Feld-normalisierten Impact berichten</h3>
+        <ol>
+          <li>Fragestellung klären: Artikel-/Autor:innen-/Institutslevel? Monitoring oder Evaluation?</li>
+          <li>Datenquelle + Referenzset festlegen (und im Report sichtbar machen).</li>
+          <li>„Ähnlichkeit“ definieren: Feld/Kategorien, Jahr, Dokumenttyp; Zitationsfenster festlegen.</li>
+          <li>Counting-Regel festlegen (full vs. fractional) – besonders bei institutionellen Vergleichen.</li>
+          <li>Kennzahl wählen: (a) NCS/MNCS, (b) CNCI/FWCI, (c) PP(top 10%), (d) RCR (artikelbasiert).</li>
+          <li>Plausibilisierung: Ausreißer, Dokumenttypen-Mix, Feldzuordnung, Dubletten/Disambiguierung.</li>
+          <li>Report: Methodik-Kasten + Limitationen + Responsible-Metrics-Hinweis.</li>
+        </ol>
+        <h3>Responsible Metrics: Normalisierte Kennzahlen</h3>
+        <ul>
+          <li>Immer angeben: Datenquelle, Referenzset, Jahr(e), Dokumenttypen, Zitationsfenster, Counting-Regel.</li>
+          <li>Vergleiche nur innerhalb sinnvoller Gruppen (z. B. Karrierephase, Feldcluster, Output-Mix).</li>
+          <li>Top-x%-Indikatoren sind oft robuster für Institutionen als reine Mittelwerte (Ausreißer-Effekt).</li>
+          <li>Bei Entscheidungen mit Konsequenzen: Normalisierte Kennzahlen nur zusammen mit qualitativen Verfahren nutzen.</li>
+        </ul>
+        <h3>Übungen</h3>
+        <h4>Level 1</h4>
+        <ol>
+          <li><strong>M06-L1-Q1:</strong> Was bedeutet ein normalisierter Wert von 1.0 (z. B. CNCI/FWCI/MNCS) am häufigsten?</li>
+        </ol>
+        <ul>
+          <li>Genau 1 Zitation.</li>
+          <li>Zitationen entsprechen dem Erwartungswert für ähnliche Publikationen im Referenzset.</li>
+          <li>Die Publikation ist im Top-1%.</li>
+          <li><strong>Lösung:</strong> Zitationen entsprechen dem Erwartungswert für ähnliche Publikationen im Referenzset.</li>
+        </ul>
+        <ol>
+          <li><strong>M06-L1-Q2:</strong> Welche Kennzahl ist ein Percentile-/Top-x%-Indikator?</li>
+        </ol>
+        <ul>
+          <li>MNCS</li>
+          <li>PP(top 10%)</li>
+          <li>NCS</li>
+          <li><strong>Lösung:</strong> PP(top 10%)</li>
+        </ul>
+        <ol>
+          <li><strong>M06-L1-Q3:</strong> Welche Aussage passt am besten zu RCR?</li>
+        </ol>
+        <ul>
+          <li>RCR normalisiert über starre Fachkategorien im Journal-Set.</li>
+          <li>RCR definiert Felder dynamisch über Co-Citation-Networks und ist artikelbasiert.</li>
+          <li>RCR ist eine Journalmetrik wie der JIF.</li>
+          <li><strong>Lösung:</strong> RCR definiert Felder dynamisch über Co-Citation-Networks und ist artikelbasiert.</li>
+        </ul>
+        <h4>Level 2</h4>
+        <ol>
+          <li><strong>M06-L2-CALC-1:</strong> Berechne NCS: Eine Publikation hat 15 Zitationen. Erwartungswert (expected) für gleiche Kategorie, Jahr und Dokumenttyp ist 10. Wie groß ist NCS?</li>
+        </ol>
+        <ul>
+          <li><strong>Lösung:</strong> NCS = 15 / 10 = 1.5</li>
+          <li><strong>Bewertung:</strong> 1 Punkt: korrekte Rechnung und Ergebnis.</li>
+        </ul>
+        <ol>
+          <li><strong>M06-L2-CALC-2:</strong> Berechne MNCS: Vier Publikationen haben NCS-Werte 0.8, 1.2, 2.0, 1.0. Wie groß ist MNCS?</li>
+        </ol>
+        <ul>
+          <li><strong>Lösung:</strong> MNCS = (0.8 + 1.2 + 2.0 + 1.0) / 4 = 1.25</li>
+          <li><strong>Bewertung:</strong> 1 Punkt: korrekter Wert. 1 Punkt: korrekte Rechnung.</li>
+        </ul>
+        <ol>
+          <li><strong>M06-L2-CALC-3:</strong> PP(top 10%): In einem Set von 50 Publikationen sind 9 im Top-10% ihrer Feld&Jahr-Referenzsets. Wie groß ist PP(top 10%)?</li>
+        </ol>
+        <ul>
+          <li><strong>Lösung:</strong> PP(top 10%) = 9 / 50 = 0.18 (= 18%)</li>
+          <li><strong>Bewertung:</strong> 1 Punkt: korrekter Anteil. 1 Punkt: korrekte Prozentangabe.</li>
+        </ul>
+        <ol>
+          <li><strong>M06-L2-INTERPRET:</strong> Interpretation: Ein Institut hat MNCS = 1.6 und PP(top 10%) = 14%. Nenne 2 vorsichtige Interpretationen (ohne Qualitätsurteil).</li>
+        </ol>
+        <ul>
+          <li><strong>Lösung:</strong> Beispiele: (1) Die Publikationen werden im Mittel häufiger zitiert als im jeweiligen Feld&Jahr erwartet (MNCS>1). (2) Der Anteil sehr hochzitierter Publikationen liegt über der „Top-10%-Baseline“ von 10% (14% statt 10%), was auf überdurchschnittliche Sichtbarkeit/Resonanz hindeuten kann – abhängig von Datenbasis, Output-Mix und Counting-Regeln.</li>
+          <li><strong>Bewertung:</strong> 1 Punkt: MNCS defensibel erklärt. 1 Punkt: PP(top10) defensibel erklärt.</li>
+        </ul>
+        <h4>Level 3</h4>
+        <ol>
+          <li><strong>M06-L3-CASE:</strong> Mini-Case: Du sollst zwei Departemente vergleichen (2020–2024). Liefere (a) einen Methodik-Kasten (Quelle, Referenzset, Dokumenttypen, Fenster, Counting-Regel) und (b) 6 Limitationen/Warnhinweise, die speziell für feld-normalisierte Vergleiche relevant sind.</li>
+        </ol>
+        <ul>
+          <li><strong>Deliverable:</strong> Methodik-Kasten + 6 Limitationen (Bulletpoints).</li>
+          <li><strong>Lösungsrahmen:</strong></li>
+          <li>Methodik: Datenquelle(n), Abfragedatum, Zeitraum 2020–2024, Dokumenttypen (Article/Review getrennt), Zitationsfenster, Referenzset (Feld&Jahr), Kennzahlen (z. B. MNCS + PP(top10)), Counting (full vs. fractional).</li>
+          <li>Limitationen: Feldabgrenzung/Kategorien, Output-Mix (Reviews), Datenqualitätsprobleme (Disambiguierung/Affiliation), Coverage-Bias der Quelle, Zeitdynamiken (Fenster), counting-bedingte Verzerrungen, Ausreißer/Skewness, Interdisziplinarität (Mehrfachkategorien).</li>
+          <li><strong>Bewertung:</strong></li>
+          <li>Methodik ist vollständig (Quelle+Referenzset+Fenster+Dokumenttypen+Counting): 3 Punkte.</li>
+          <li>Limitationen sind konkret und feld-normalisierungsspezifisch: 3 Punkte.</li>
+          <li>Responsible-Metrics-Transparenz ist sichtbar: 2 Punkte.</li>
+        </ul>
+        <h3>Quellen</h3>
+        <ul>
+          <li><a href="https://incites.zendesk.com/hc/en-gb/articles/25087312115601-Category-Normalized-Citation-Impact-CNCI">https://incites.zendesk.com/hc/en-gb/articles/25087312115601-Category-Normalized-Citation-Impact-CNCI</a></li>
+          <li><a href="https://supportcontent.elsevier.com/RightNow%20Next%20Gen/SciVal/ACAD_RL_ElsevierResearchMetricsBook_WEB.pdf">https://supportcontent.elsevier.com/RightNow%20Next%20Gen/SciVal/ACAD_RL_ElsevierResearchMetricsBook_WEB.pdf</a></li>
+          <li><a href="https://traditional.leidenranking.com/information/indicators">https://traditional.leidenranking.com/information/indicators</a></li>
+          <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3081055/">https://pmc.ncbi.nlm.nih.gov/articles/PMC3081055/</a></li>
+          <li><a href="https://arxiv.org/abs/1501.04431">https://arxiv.org/abs/1501.04431</a></li>
+          <li><a href="https://support.icite.nih.gov/hc/en-us/articles/9105587565851-Relative-Citation-Ratio-RCR">https://support.icite.nih.gov/hc/en-us/articles/9105587565851-Relative-Citation-Ratio-RCR</a></li>
+          <li><a href="https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002541">https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002541</a></li>
+        </ul>
+        <h3>Weiterführende Literatur</h3>
+        <ul>
+          <li><a href="https://www.cwts.nl/blog?article=n-q2w274">https://www.cwts.nl/blog?article=n-q2w274</a></li>
+          <li><a href="https://www.cwts.nl/TvR/documents/TonvR%281%29.pdf">https://www.cwts.nl/TvR/documents/TonvR%281%29.pdf</a></li>
+        </ul>
+      </section>
+    </main>
+    <script src="role-toggle.js" defer></script>
+    <script src="module-progress.js" defer></script>
+  </body>
+</html>
