@@ -6,6 +6,7 @@
     <title>Einführung Bibliometrie – Tools &amp; Datenquellen</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="navigation.js" defer></script>
+    <script src="tools-datenquellen.js" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -33,80 +34,106 @@
     <main class="content">
       <h1>Tools &amp; Datenquellen</h1>
       <p>
-        Hier findest du die Inhalte für den Abschnitt „Tools &amp; Datenquellen“ der Einführung
-        Bibliometrie. Weitere Details folgen in diesem Bereich.
+        Vergleiche wichtige bibliometrische Datenquellen. Du kannst nach Eigenschaften filtern und
+        die Tabelle nach Kosten, Abdeckung, Transparenz oder Exportmöglichkeiten sortieren.
       </p>
-      <div class="table-responsive" aria-label="Übersicht der bibliometrischen Datenquellen">
-        <table class="table table-striped">
+
+      <section class="source-filters" aria-label="Filter für Datenquellen">
+        <p class="source-filters__title">Filter:</p>
+        <label><input type="checkbox" data-filter="open-access" checked /> Open Access</label>
+        <label><input type="checkbox" data-filter="kostenpflichtig" checked /> kostenpflichtig</label>
+        <label><input type="checkbox" data-filter="hybrid" checked /> hybrid</label>
+      </section>
+
+      <div class="table-responsive" aria-label="Vergleichstabelle bibliometrischer Datenquellen">
+        <table class="table table-striped source-table" id="source-table">
           <thead>
             <tr>
-              <th scope="col">Name/Tool</th>
-              <th scope="col">Beschreibung</th>
-              <th scope="col">Abdeckung</th>
-              <th scope="col">Zugriff</th>
-              <th scope="col">Besonderheiten</th>
+              <th scope="col">Datenquelle</th>
+              <th scope="col">
+                <button type="button" class="sort-button" data-sort-key="kosten" aria-label="Nach Kosten sortieren">
+                  Kosten
+                </button>
+              </th>
+              <th scope="col">
+                <button type="button" class="sort-button" data-sort-key="abdeckung" aria-label="Nach Abdeckung sortieren">
+                  Abdeckung
+                </button>
+              </th>
+              <th scope="col">
+                <button type="button" class="sort-button" data-sort-key="transparenz" aria-label="Nach Transparenz sortieren">
+                  Transparenz
+                </button>
+              </th>
+              <th scope="col">
+                <button
+                  type="button"
+                  class="sort-button"
+                  data-sort-key="export"
+                  aria-label="Nach Exportmöglichkeiten sortieren"
+                >
+                  Exportmöglichkeiten
+                </button>
+              </th>
+              <th scope="col">Offizielle Website</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr data-access="kostenpflichtig" data-kosten="3" data-abdeckung="5" data-transparenz="4" data-export="4">
               <td>Web of Science</td>
-              <td>Kuratiertes Zitationsdatenbank-Ökosystem mit stabilen Indexen.</td>
-              <td>Starke Abdeckung von Zeitschriften, ausgewählten Konferenzen, Patenten.</td>
-              <td>Lizenziert</td>
-              <td>Historische Tiefe, Journal Impact Factor, klare Auswahlkriterien.</td>
+              <td>Kostenpflichtig (Lizenz)</td>
+              <td>Sehr hoch</td>
+              <td>Hoch</td>
+              <td>CSV, API (institutionell), InCites</td>
+              <td><a class="table-link" href="https://www.webofscience.com" target="_blank" rel="noopener">Website öffnen</a></td>
             </tr>
-            <tr>
+            <tr data-access="kostenpflichtig" data-kosten="3" data-abdeckung="5" data-transparenz="4" data-export="4">
               <td>Scopus</td>
-              <td>Große multidisziplinäre Zitationsdatenbank mit breitem Zeitschriftenspektrum.</td>
-              <td>Zeitschriften, Konferenzen, Bücher; besonders Technik/Medizin.</td>
-              <td>Lizenziert</td>
-              <td>Breite Abdeckung, Author IDs, institutionelle Profile.</td>
+              <td>Kostenpflichtig (Lizenz)</td>
+              <td>Sehr hoch</td>
+              <td>Hoch</td>
+              <td>CSV, RIS, API (lizenzabhängig)</td>
+              <td><a class="table-link" href="https://www.scopus.com" target="_blank" rel="noopener">Website öffnen</a></td>
             </tr>
-            <tr>
+            <tr data-access="open-access" data-kosten="1" data-abdeckung="4" data-transparenz="5" data-export="5">
               <td>OpenAlex</td>
-              <td>Offene, frei nutzbare Wissensgraph-Datenquelle.</td>
-              <td>Publikationen, Personen, Institutionen, Konzepte, Zitationen.</td>
-              <td>Offen</td>
-              <td>Open Data, API-first, regelmäßige Dumps.</td>
+              <td>Open Access</td>
+              <td>Hoch</td>
+              <td>Sehr hoch</td>
+              <td>REST-API, Dumps (JSONL), CSV via Tools</td>
+              <td><a class="table-link" href="https://openalex.org" target="_blank" rel="noopener">Website öffnen</a></td>
             </tr>
-            <tr>
+            <tr data-access="open-access" data-kosten="1" data-abdeckung="4" data-transparenz="5" data-export="4">
               <td>Crossref</td>
-              <td>Metadaten-Registry für DOIs mit Verlags- und Repositoriumsangaben.</td>
-              <td>Zeitschriftenartikel, Bücher, Konferenzbeiträge, Datensätze.</td>
-              <td>Offen</td>
-              <td>DOI-Metadaten, offene APIs, Referenzlisten je nach Verlag.</td>
+              <td>Open Access</td>
+              <td>Hoch</td>
+              <td>Sehr hoch</td>
+              <td>REST-API, JSON/XML-Metadaten</td>
+              <td><a class="table-link" href="https://www.crossref.org" target="_blank" rel="noopener">Website öffnen</a></td>
             </tr>
-            <tr>
+            <tr data-access="hybrid" data-kosten="2" data-abdeckung="4" data-transparenz="3" data-export="4">
               <td>Dimensions</td>
-              <td>Plattform für Publikationen, Zitationen, Förderungen und Patente.</td>
-              <td>Multidisziplinär, inkl. Förderdaten und Policy-Docs.</td>
-              <td>Teilweise offen / lizenziert</td>
-              <td>Verknüpft Förderungen mit Outputs, Analyse-Dashboards.</td>
+              <td>Hybrid (teils offen, teils Lizenz)</td>
+              <td>Hoch</td>
+              <td>Mittel</td>
+              <td>CSV, API (lizenzabhängig), Dashboards</td>
+              <td><a class="table-link" href="https://www.dimensions.ai" target="_blank" rel="noopener">Website öffnen</a></td>
             </tr>
-            <tr>
+            <tr data-access="open-access" data-kosten="1" data-abdeckung="4" data-transparenz="2" data-export="2">
               <td>Google Scholar</td>
-              <td>Suchmaschine für wissenschaftliche Literatur mit breiter Indexierung.</td>
-              <td>Zeitschriften, Preprints, Abschlussarbeiten, graue Literatur.</td>
-              <td>Offen</td>
-              <td>Sehr breite Abdeckung, unklare Auswahlkriterien.</td>
-            </tr>
-            <tr>
-              <td>VOSviewer</td>
-              <td>Software zur Visualisierung bibliometrischer Netzwerke.</td>
-              <td>Arbeitet mit Exporten aus WoS, Scopus, Dimensions, OpenAlex.</td>
-              <td>Offen (kostenlos)</td>
-              <td>Netzwerk-Maps, Cluster-Analysen, starke Visualisierungen.</td>
-            </tr>
-            <tr>
-              <td>Bibliometrix</td>
-              <td>R-Paket für bibliometrische Analysen und Reports.</td>
-              <td>Unterstützt WoS, Scopus, Dimensions, OpenAlex, Crossref.</td>
-              <td>Offen (Open Source)</td>
-              <td>Reproduzierbare Workflows, Biblioshiny-GUI.</td>
+              <td>Open Access (Suche)</td>
+              <td>Hoch</td>
+              <td>Niedrig</td>
+              <td>Kein offizieller Bulk-Export/API</td>
+              <td><a class="table-link" href="https://scholar.google.com" target="_blank" rel="noopener">Website öffnen</a></td>
             </tr>
           </tbody>
         </table>
       </div>
+      <p id="no-results-message" class="no-results-message" hidden>
+        Für die gewählten Filter wurden keine Datenquellen gefunden.
+      </p>
+
       <figure class="page-illustration">
         <img
           src="assets/illustration_datenquellen.png"
