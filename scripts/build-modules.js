@@ -64,6 +64,7 @@ ${contentHtml}
 
 const INLINE_BOLD = /\*\*(.+?)\*\*/g;
 const INLINE_URL = /(https?:\/\/[^\s)<>]+)/g;
+const TABLE_DIVIDER = /^\|?\s*:?-{3,}:?\s*(\|\s*:?-{3,}:?\s*)+\|?$/;
 
 const renderInline = (text) => {
   const withStrong = text.replace(INLINE_BOLD, "<strong>$1</strong>");
@@ -85,6 +86,11 @@ const markdownToHtml = (lines) => {
   const html = [];
   const state = { list: null, paragraph: null };
 
+  const splitTableRow = (row) => {
+    const normalized = row.trim().replace(/^\|/, "").replace(/\|$/, "");
+    return normalized.split("|").map((cell) => cell.trim());
+  };
+
   const flushParagraph = () => {
     if (state.paragraph) {
       html.push(`        <p>${renderInline(state.paragraph.join(" "))}</p>`);
@@ -103,11 +109,51 @@ const markdownToHtml = (lines) => {
     }
   };
 
-  lines.forEach((line) => {
+  for (let index = 0; index < lines.length; index += 1) {
+    const line = lines[index];
     const trimmed = line.trim();
     if (!trimmed) {
       closeBlocks(state, html);
-      return;
+      continue;
+    }
+
+    const nextLine = lines[index + 1] ? lines[index + 1].trim() : "";
+    if (trimmed.startsWith("|") && TABLE_DIVIDER.test(nextLine)) {
+      closeBlocks(state, html);
+      const headerCells = splitTableRow(trimmed);
+      const bodyRows = [];
+      index += 2;
+      while (index < lines.length) {
+        const candidate = lines[index].trim();
+        if (!candidate.startsWith("|")) {
+          index -= 1;
+          break;
+        }
+        bodyRows.push(splitTableRow(candidate));
+        index += 1;
+      }
+
+      html.push("        <table>");
+      html.push("          <thead>");
+      html.push("            <tr>");
+      headerCells.forEach((cell) => {
+        html.push(`              <th>${renderInline(cell)}</th>`);
+      });
+      html.push("            </tr>");
+      html.push("          </thead>");
+      if (bodyRows.length > 0) {
+        html.push("          <tbody>");
+        bodyRows.forEach((row) => {
+          html.push("            <tr>");
+          row.forEach((cell) => {
+            html.push(`              <td>${renderInline(cell)}</td>`);
+          });
+          html.push("            </tr>");
+        });
+        html.push("          </tbody>");
+      }
+      html.push("        </table>");
+      continue;
     }
 
     const headingMatch = trimmed.match(/^(#{2,6})\s+(.*)$/);
@@ -115,7 +161,7 @@ const markdownToHtml = (lines) => {
       closeBlocks(state, html);
       const level = Math.min(6, headingMatch[1].length + 1);
       html.push(`        <h${level}>${renderInline(headingMatch[2])}</h${level}>`);
-      return;
+      continue;
     }
 
     const orderedMatch = trimmed.match(/^\d+\.\s+(.*)$/);
@@ -123,7 +169,7 @@ const markdownToHtml = (lines) => {
       flushParagraph();
       ensureList("ol");
       html.push(`          <li>${renderInline(orderedMatch[1])}</li>`);
-      return;
+      continue;
     }
 
     const unorderedMatch = trimmed.match(/^-\s+(.*)$/);
@@ -131,7 +177,7 @@ const markdownToHtml = (lines) => {
       flushParagraph();
       ensureList("ul");
       html.push(`          <li>${renderInline(unorderedMatch[1])}</li>`);
-      return;
+      continue;
     }
 
     if (state.list && html.length > 0) {
@@ -141,7 +187,7 @@ const markdownToHtml = (lines) => {
           "</li>",
           ` <p>${renderInline(trimmed)}</p></li>`
         );
-        return;
+        continue;
       }
     }
 
@@ -149,7 +195,7 @@ const markdownToHtml = (lines) => {
       state.paragraph = [];
     }
     state.paragraph.push(trimmed);
-  });
+  }
 
   closeBlocks(state, html);
 

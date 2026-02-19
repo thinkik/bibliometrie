@@ -53,7 +53,92 @@
         <h3>Kurz erklärt</h3>
         <p>Die Wahl der Datenquelle ist eine methodische Entscheidung – nicht nur eine Tool-Frage. WoS/Scopus sind kuratierte, kostenpflichtige Zitationsindizes mit definierten Selektionsprozessen. OpenAlex ist offen und sehr breit (primär gespeist aus Crossref und weiteren Quellen). Google Scholar ist extrem breit, aber weniger transparent und schwieriger reproduzierbar. Für seriöse Bibliometrie gilt: Quelle offenlegen, Use-Case passend wählen, und bei heiklen Aussagen triangulieren.</p>
         <h3>Vergleichsmatrix (didaktisch für die Website)</h3>
-        <p>| Dimension | Web of Science (WoS Core Collection) | Scopus | OpenAlex (primär Crossref-basiert, offen) | Crossref (Metadata Registry, offen) | Google Scholar | | --- | --- | --- | --- | --- | --- | | Kosten/Zugang | Abo (institutionell). | Abo (institutionell). | Offen (API/Downloads). | Offen (REST API). | Kostenlos (Web). | | Kuration/Selektion | Stark kuratiert, redaktioneller Selektionsprozess, Re-Evaluation. | Kuratiert durch Content Selection and Advisory Board (CSAB). | Keine Journal-Kuration im Sinne von „selektiv aufnehmen“; sehr breit, abhängig von Quellfeeds. | Registry-Logik (Publisher registrieren DOIs); keine „Qualitätsselektion“ wie WoS/Scopus. | Sehr breit, weitgehend automatisiert; weniger transparent. | | Coverage (Feld/Region/Typ) | Selektiv; gute Zitierverknüpfung, je nach Collection/Feld unterschiedlich. | Breit, oft stärker in Proceedings/Internationalität; dennoch kuratiert. | Sehr breit; stark beeinflusst durch Crossref-Registrierung/Metadatenqualität; Typisierung kann Grenzen haben. | Breit für DOI-registrierte Inhalte; Referenzen/Metadaten je Publisher stark unterschiedlich. | Sehr groß (inkl. nicht-traditioneller Outputs); dadurch häufig höhere Zitationszahlen. | | Transparenz (Regeln/Docs) | Dokumentiert (Selection/Indexing/Policies). | Relativ gut (Coverage Guides). | Sehr gut dokumentiert (Entities, FAQ, Quellen). | Sehr gut dokumentiert (REST API, Metadata). | Begrenzt; Reproduzierbarkeit und Coverage schwer exakt zu dokumentieren. | | APIs/Export | Professionelle Exporte/Integrationen (abhängig von Lizenz). | APIs/Exports abhängig von Lizenz; breit genutzt in Research Intelligence. | Starke, offene API; gut für reproduzierbare Pipelines. | Sehr gut (REST API). | Keine offizielle offene API für systematische Analysen; Export/Harvesting eingeschränkt. | | Reproduzierbarkeit | Gut, wenn Exportparameter und Stichtag dokumentiert werden. | Gut bei sauberer Dokumentation (Stichtag, Query, Dokumenttypen). | Sehr gut, wenn Snapshot/Stichtag und Query fixiert werden. | Sehr gut (DOI als Key, Stichtag dokumentieren). | Schwächer (Ranking/Indexing/Profiles ändern sich; Limitierungen beim systematischen Zugriff). | | Stärken | Hohe Datenkonsistenz, kuratierte Collections, etablierte Evaluation-Workflows. | Breite Abdeckung, stabile Metadaten-Pipelines, viele Metriken/Produkte (z. B. CiteScore). | Open workflows, skalierbare Analysen, gute Lehr-/Demo-Umgebung, Integration mit offenen IDs. | Stabiler Work-Identifier-Backbone (DOI), Basis für Metadaten-Abgleich und offene Workflows. | Auffinden von grauer Literatur, lokalen/kleineren Outputs, breites Suchnetz. | | Risiken/Limitations | Coverage-Bias (Feld/Region/Sprache), „Selektivität“ kann SSH/Local outputs benachteiligen. | Coverage-Unterschiede zu WoS/anderen; Backfill/Indexing-Regeln können Ergebnisse beeinflussen. | Abhängigkeit von Crossref & Metadatenqualität; Disambiguierung/Typen/Ref-Links nicht überall gleich stark wie kuratierte Zitationsindizes. | Zitations-/Referenzdaten nicht vollständig/uneinheitlich; nicht „Citation index“ im WoS/Scopus-Sinn. | Intransparenz, Dubletten/Fehlzuordnungen, schwierig auditierbar für institutionelles Reporting. | | Typische Use-Cases | Formale Evaluation (mit Responsible-Metrics-Leitplanken), Zitationsanalysen, standardisierte Reports. | Forschungsmonitoring, Portfolios, Feld-/Themenanalysen, Kombination mit SciVal-Workflows. | Lehre, Prototyping, offene Dashboards, Triangulation, erste Feld-/Netzwerkanalysen. | Metadaten-Enrichment, Dedup/QA, DOI-basierte Datensätze, offene Pipelines. | Literatursuche, ergänzende Triangulation, individuelle Profile (mit QA), frühe Orientierung in Nischen. |</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Dimension</th>
+              <th>Web of Science (WoS Core Collection)</th>
+              <th>Scopus</th>
+              <th>OpenAlex (primär Crossref-basiert, offen)</th>
+              <th>Crossref (Metadata Registry, offen)</th>
+              <th>Google Scholar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Kosten/Zugang</td>
+              <td>Abo (institutionell).</td>
+              <td>Abo (institutionell).</td>
+              <td>Offen (API/Downloads).</td>
+              <td>Offen (REST API).</td>
+              <td>Kostenlos (Web).</td>
+            </tr>
+            <tr>
+              <td>Kuration/Selektion</td>
+              <td>Stark kuratiert, redaktioneller Selektionsprozess, Re-Evaluation.</td>
+              <td>Kuratiert durch Content Selection and Advisory Board (CSAB).</td>
+              <td>Keine Journal-Kuration im Sinne von „selektiv aufnehmen“; sehr breit, abhängig von Quellfeeds.</td>
+              <td>Registry-Logik (Publisher registrieren DOIs); keine „Qualitätsselektion“ wie WoS/Scopus.</td>
+              <td>Sehr breit, weitgehend automatisiert; weniger transparent.</td>
+            </tr>
+            <tr>
+              <td>Coverage (Feld/Region/Typ)</td>
+              <td>Selektiv; gute Zitierverknüpfung, je nach Collection/Feld unterschiedlich.</td>
+              <td>Breit, oft stärker in Proceedings/Internationalität; dennoch kuratiert.</td>
+              <td>Sehr breit; stark beeinflusst durch Crossref-Registrierung/Metadatenqualität; Typisierung kann Grenzen haben.</td>
+              <td>Breit für DOI-registrierte Inhalte; Referenzen/Metadaten je Publisher stark unterschiedlich.</td>
+              <td>Sehr groß (inkl. nicht-traditioneller Outputs); dadurch häufig höhere Zitationszahlen.</td>
+            </tr>
+            <tr>
+              <td>Transparenz (Regeln/Docs)</td>
+              <td>Dokumentiert (Selection/Indexing/Policies).</td>
+              <td>Relativ gut (Coverage Guides).</td>
+              <td>Sehr gut dokumentiert (Entities, FAQ, Quellen).</td>
+              <td>Sehr gut dokumentiert (REST API, Metadata).</td>
+              <td>Begrenzt; Reproduzierbarkeit und Coverage schwer exakt zu dokumentieren.</td>
+            </tr>
+            <tr>
+              <td>APIs/Export</td>
+              <td>Professionelle Exporte/Integrationen (abhängig von Lizenz).</td>
+              <td>APIs/Exports abhängig von Lizenz; breit genutzt in Research Intelligence.</td>
+              <td>Starke, offene API; gut für reproduzierbare Pipelines.</td>
+              <td>Sehr gut (REST API).</td>
+              <td>Keine offizielle offene API für systematische Analysen; Export/Harvesting eingeschränkt.</td>
+            </tr>
+            <tr>
+              <td>Reproduzierbarkeit</td>
+              <td>Gut, wenn Exportparameter und Stichtag dokumentiert werden.</td>
+              <td>Gut bei sauberer Dokumentation (Stichtag, Query, Dokumenttypen).</td>
+              <td>Sehr gut, wenn Snapshot/Stichtag und Query fixiert werden.</td>
+              <td>Sehr gut (DOI als Key, Stichtag dokumentieren).</td>
+              <td>Schwächer (Ranking/Indexing/Profiles ändern sich; Limitierungen beim systematischen Zugriff).</td>
+            </tr>
+            <tr>
+              <td>Stärken</td>
+              <td>Hohe Datenkonsistenz, kuratierte Collections, etablierte Evaluation-Workflows.</td>
+              <td>Breite Abdeckung, stabile Metadaten-Pipelines, viele Metriken/Produkte (z. B. CiteScore).</td>
+              <td>Open workflows, skalierbare Analysen, gute Lehr-/Demo-Umgebung, Integration mit offenen IDs.</td>
+              <td>Stabiler Work-Identifier-Backbone (DOI), Basis für Metadaten-Abgleich und offene Workflows.</td>
+              <td>Auffinden von grauer Literatur, lokalen/kleineren Outputs, breites Suchnetz.</td>
+            </tr>
+            <tr>
+              <td>Risiken/Limitations</td>
+              <td>Coverage-Bias (Feld/Region/Sprache), „Selektivität“ kann SSH/Local outputs benachteiligen.</td>
+              <td>Coverage-Unterschiede zu WoS/anderen; Backfill/Indexing-Regeln können Ergebnisse beeinflussen.</td>
+              <td>Abhängigkeit von Crossref &amp; Metadatenqualität; Disambiguierung/Typen/Ref-Links nicht überall gleich stark wie kuratierte Zitationsindizes.</td>
+              <td>Zitations-/Referenzdaten nicht vollständig/uneinheitlich; nicht „Citation index“ im WoS/Scopus-Sinn.</td>
+              <td>Intransparenz, Dubletten/Fehlzuordnungen, schwierig auditierbar für institutionelles Reporting.</td>
+            </tr>
+            <tr>
+              <td>Typische Use-Cases</td>
+              <td>Formale Evaluation (mit Responsible-Metrics-Leitplanken), Zitationsanalysen, standardisierte Reports.</td>
+              <td>Forschungsmonitoring, Portfolios, Feld-/Themenanalysen, Kombination mit SciVal-Workflows.</td>
+              <td>Lehre, Prototyping, offene Dashboards, Triangulation, erste Feld-/Netzwerkanalysen.</td>
+              <td>Metadaten-Enrichment, Dedup/QA, DOI-basierte Datensätze, offene Pipelines.</td>
+              <td>Literatursuche, ergänzende Triangulation, individuelle Profile (mit QA), frühe Orientierung in Nischen.</td>
+            </tr>
+          </tbody>
+        </table>
         <h3>Entscheidungshilfe nach Use-Case (praktisch)</h3>
         <ul>
           <li><strong>Offizielles Uni-Reporting / evaluative Berichte:</strong> Primär WoS oder Scopus (je nach Lizenz/Tradition), plus klare Responsible-Metrics-Policy und Transparenzbox; OpenAlex als Triangulation/QA möglich.</li>
