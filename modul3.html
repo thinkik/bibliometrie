@@ -6,29 +6,31 @@
     <title>Einführung Bibliometrie – Modul 3</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="navigation.js" defer></script>
+    <script src="i18n.js" defer></script>
   </head>
   <body>
     <header class="site-header">
-      <div class="brand">Einführung Bibliometrie</div>
+      <div class="brand" data-i18n="site.brand">Einführung Bibliometrie</div>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
-        <span class="nav-toggle-label">Menü</span>
+        <span class="nav-toggle-label" data-i18n="nav.menu">Menü</span>
         <span class="nav-toggle-icon" aria-hidden="true">
           <span class="nav-toggle-bar"></span>
           <span class="nav-toggle-bar"></span>
           <span class="nav-toggle-bar"></span>
         </span>
       </button>
-      <nav class="site-nav" id="primary-navigation" aria-label="Hauptnavigation">
-        <a href="index.html">Start</a>
-        <a class="active" href="lehrgang.html">Lehrgang</a>
-        <a href="uebungen.html">Übungen</a>
-        <a href="fallstudien.html">Fallstudien</a>
-        <a href="tools-datenquellen.html">Tools &amp; Datenquellen</a>
-        <a href="responsible-metrics.html">Responsible Metrics</a>
-        <a href="glossar.html">Glossar</a>
-        <a href="downloads-vorlagen.html">Downloads &amp; Vorlagen</a>
-        <a href="faq.html">FAQ</a>
+      <nav class="site-nav" id="primary-navigation" aria-label="Hauptnavigation" data-i18n-aria-label="nav.aria">
+        <a href="index.html" data-i18n="nav.home">Start</a>
+        <a class="active" href="lehrgang.html" data-i18n="nav.course">Lehrgang</a>
+        <a href="uebungen.html" data-i18n="nav.exercises">Übungen</a>
+        <a href="fallstudien.html" data-i18n="nav.cases">Fallstudien</a>
+        <a href="tools-datenquellen.html" data-i18n="nav.tools">Tools &amp; Datenquellen</a>
+        <a href="responsible-metrics.html" data-i18n="nav.responsible">Responsible Metrics</a>
+        <a href="glossar.html" data-i18n="nav.glossary">Glossar</a>
+        <a href="downloads-vorlagen.html" data-i18n="nav.downloads">Downloads &amp; Vorlagen</a>
+        <a href="faq.html" data-i18n="nav.faq">FAQ</a>
       </nav>
+      <button class="language-toggle" type="button" aria-label="Sprache wechseln" data-i18n="language.toggle" data-i18n-aria-label="language.aria">DE/EN</button>
     </header>
     <main class="content">
       <div class="module-progress" data-module-progress data-module-id="modul3">
