@@ -1,0 +1,76 @@
+{
+  "ui": {
+    "de": {
+      "site": {
+        "brand": "Einführung Bibliometrie"
+      },
+      "nav": {
+        "menu": "Menü",
+        "aria": "Hauptnavigation",
+        "home": "Start",
+        "course": "Lehrgang",
+        "exercises": "Übungen",
+        "cases": "Fallstudien",
+        "tools": "Tools & Datenquellen",
+        "responsible": "Responsible Metrics",
+        "glossary": "Glossar",
+        "downloads": "Downloads & Vorlagen",
+        "faq": "FAQ"
+      },
+      "language": {
+        "toggle": "DE/EN",
+        "aria": "Sprache wechseln"
+      }
+    },
+    "en": {
+      "site": {
+        "brand": "Introduction to Bibliometrics"
+      },
+      "nav": {
+        "menu": "Menu",
+        "aria": "Main navigation",
+        "home": "Home",
+        "course": "Course",
+        "exercises": "Exercises",
+        "cases": "Case studies",
+        "tools": "Tools & Data sources",
+        "responsible": "Responsible Metrics",
+        "glossary": "Glossary",
+        "downloads": "Downloads & Templates",
+        "faq": "FAQ"
+      },
+      "language": {
+        "toggle": "DE/EN",
+        "aria": "Switch language"
+      }
+    }
+  },
+  "textMap": {
+    "Start": "Home",
+    "Lehrgang": "Course",
+    "Übungen": "Exercises",
+    "Fallstudien": "Case Studies",
+    "Tools & Datenquellen": "Tools & Data Sources",
+    "Glossar": "Glossary",
+    "Downloads & Vorlagen": "Downloads & Templates",
+    "Dein Einstieg in die Bibliometrie": "Your entry point into bibliometrics",
+    "Einführung in die Lernplattform": "Introduction to the learning platform",
+    "Module im Überblick": "Modules at a glance",
+    "Zum Lehrgang": "Go to course",
+    "Modul 1": "Module 1",
+    "Modul 2": "Module 2",
+    "Modul 3": "Module 3",
+    "Modul 1: Grundlagen der Bibliometrie": "Module 1: Fundamentals of Bibliometrics",
+    "Modul 2: Publikationsdaten und Quellen": "Module 2: Publication data and sources",
+    "Modul 3: Zitationsindikatoren": "Module 3: Citation indicators",
+    "Modul 4: Metriken für Autor:innen: h-Index, g-Index, i10 & m-Quotient – sinnvoll nutzen, sauber erklären": "Module 4: Author metrics: h-index, g-index, i10 & m-quotient – use meaningfully, explain clearly",
+    "Modul 5: Journalmetriken: JIF, CiteScore, SNIP, SJR – korrekt nutzen, sauber kommunizieren": "Module 5: Journal metrics: JIF, CiteScore, SNIP, SJR – use correctly, communicate clearly",
+    "Modul 6: Feld- & Zeit-Normalisierung: CNCI, FWCI, MNCS, RCR und Top-10%-Indikatoren": "Module 6: Field & time normalization: CNCI, FWCI, MNCS, RCR and top-10% indicators",
+    "Modul 7: Collaboration & Co-Authorship: Indikatoren, Fractional Counting und Co-Authorship Networks": "Module 7: Collaboration & Co-authorship: indicators, fractional counting and co-authorship networks",
+    "Modul 8: Alternative Metriken & Aufmerksamkeit: Altmetrics, Usage, Policy Mentions – sinnvoll nutzen": "Module 8: Alternative metrics & attention: altmetrics, usage, policy mentions – use appropriately",
+    "Modul 9: Datenqualität & Disambiguierung: Autor:innen, Organisationen, Affiliations, Dubletten – plus reproduzierbare Workflows": "Module 9: Data quality & disambiguation: authors, organizations, affiliations, duplicates – plus reproducible workflows",
+    "Modul 10: Datenquellen & Coverage": "Module 10: Data sources & coverage",
+    "Modul 11: Science Mapping & Wissensstrukturen: Co-Citation, Bibliographic Coupling, Co-Word (inkl. VOSviewer/bibliometrix)": "Module 11: Science mapping & knowledge structures: co-citation, bibliographic coupling, co-word (incl. VOSviewer/bibliometrix)",
+    "Modul 12: Forschungsbewertung in der Praxis: Reporting-Patterns, Dashboards, Use-Cases (Unit/Faculty/Person) + Do/Don’t-Katalog": "Module 12: Research evaluation in practice: reporting patterns, dashboards, use cases (unit/faculty/person) + do/don't catalog"
+  }
+}
