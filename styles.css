@@ -567,6 +567,41 @@ details summary {
   font-weight: 600;
 }
 
+
+.exercise-filter {
+  margin: 1.25rem 0 1.5rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.exercise-filter h2 {
+  margin: 0 0 0.45rem;
+  font-size: 1.05rem;
+}
+
+.exercise-filter__label {
+  display: block;
+  margin-bottom: 0.45rem;
+  color: var(--muted);
+}
+
+.exercise-filter__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.exercise-filter__input {
+  flex: 1 1 280px;
+  min-width: 220px;
+  padding: 0.5rem 0.65rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font: inherit;
+}
+
 .exercise-progress {
   margin: 1.25rem 0 1.5rem;
   padding: 0.9rem 1rem;

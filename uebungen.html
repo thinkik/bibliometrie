@@ -43,6 +43,23 @@
         <progress id="exercise-progress-bar" max="100" value="0">0%</progress>
       </section>
 
+      <section class="exercise-filter" aria-labelledby="exercise-filter-title">
+        <h2 id="exercise-filter-title">Suche in Level 1–3</h2>
+        <label class="exercise-filter__label" for="exercise-filter-input">
+          Suche nach Modulnummer, Schlagworten in den Fragen oder Schwierigkeitsgrad
+        </label>
+        <div class="exercise-filter__controls">
+          <input
+            id="exercise-filter-input"
+            class="exercise-filter__input"
+            type="search"
+            placeholder="z. B. Modul 2, Coverage, Level 3, schwer"
+            autocomplete="off"
+          />
+          <button id="exercise-filter-clear" class="exercise-link" type="button">Zurücksetzen</button>
+        </div>
+      </section>
+
       <figure class="page-illustration">
         <img
           src="assets/infografik_zitationsdynamik.png"

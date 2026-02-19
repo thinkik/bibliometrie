@@ -69,8 +69,79 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  initializeExerciseFilter();
   renderProgress(totalTasks, progressState, progressText, progressBar);
 });
+
+function initializeExerciseFilter() {
+  const input = document.getElementById("exercise-filter-input");
+  const clearButton = document.getElementById("exercise-filter-clear");
+  const levelSections = Array.from(document.querySelectorAll("section.exercise-level"));
+
+  if (!input || levelSections.length === 0) {
+    return;
+  }
+
+  const rowEntries = levelSections.flatMap((section) => {
+    const levelHeading = section.querySelector("h2")?.textContent.trim() || "";
+    const levelAliases = buildLevelAliases(levelHeading);
+
+    return Array.from(section.querySelectorAll("tbody tr")).map((row) => {
+      const moduleText = row.querySelector('th[scope="row"]')?.textContent.trim() || "";
+      const questionText = Array.from(row.querySelectorAll('button[data-dialog$="-task"]'))
+        .map((button) => getDialogText(button.dataset.dialog))
+        .join(" ");
+
+      const searchableText = normalizeText([moduleText, levelHeading, levelAliases, questionText].join(" "));
+      return { row, searchableText };
+    });
+  });
+
+  const applyFilter = () => {
+    const queryTokens = normalizeText(input.value)
+      .split(" ")
+      .filter(Boolean);
+
+    rowEntries.forEach(({ row, searchableText }) => {
+      const isMatch = queryTokens.every((token) => searchableText.includes(token));
+      row.hidden = !isMatch;
+    });
+  };
+
+  input.addEventListener("input", applyFilter);
+  clearButton?.addEventListener("click", () => {
+    input.value = "";
+    applyFilter();
+    input.focus();
+  });
+}
+
+function buildLevelAliases(levelHeading) {
+  const normalized = normalizeText(levelHeading);
+  if (normalized.includes("level 1")) {
+    return "schwierigkeitsgrad leicht einstieg";
+  }
+  if (normalized.includes("level 2")) {
+    return "schwierigkeitsgrad mittel fortgeschritten";
+  }
+  if (normalized.includes("level 3")) {
+    return "schwierigkeitsgrad schwer experte";
+  }
+  return "";
+}
+
+function getDialogText(dialogId) {
+  if (!dialogId) {
+    return "";
+  }
+
+  const dialog = document.getElementById(dialogId);
+  if (!dialog) {
+    return "";
+  }
+
+  return dialog.textContent?.replace(/\s+/g, " ").trim() || "";
+}
 
 function loadProgress(storageKey) {
   try {
