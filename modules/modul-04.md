@@ -1,117 +1,133 @@
-# Modul 4: Metriken für Autor:innen: h-Index, g-Index, i10 & m-Quotient – sinnvoll nutzen, sauber erklären
+# 🚀 Modul 4: Metriken für Autor:innen
 
-**Schwierigkeit:** Intermediate  
-**Geschätzte Lesezeit:** 25 Minuten  
-**Zielgruppen:** Bibliothek, Forschungsreferat, Forschende  
-**Voraussetzungen:** Modul 1, Modul 2, Modul 3
+### h-Index, g-Index, i10 & m-Quotient – sinnvoll nutzen, sauber erklären
 
-## Lernziele
-- Die Logik von h-Index, g-Index, i10-Index und m-Quotient erklären (inkl. was sie NICHT messen).
-- Einfache Metriken aus einer Zitationsliste korrekt berechnen.
-- Typische Verzerrungen erkennen (Karrierelänge, Dokumenttyp, Datenquelle, Autor:innen-Identität, Selbstzitate).
-- Metriken report-tauglich kommunizieren (Quelle, Stichtag, Zeitraum/Fenster, Regeln, Limitationen).
+## 📌 Auf einen Blick
 
-## Schlüsselbegriffe
-- **h-Index:** h = Anzahl Publikationen, die jeweils mindestens h Zitationen haben (bei absteigend sortierter Zitationsliste).
-- **g-Index:** g = größte Zahl, sodass die Top-g Publikationen zusammen mindestens g² Zitationen haben (gewichtet sehr stark zitierte Arbeiten stärker).
-- **i10-Index:** Anzahl Publikationen mit mindestens 10 Zitationen (vor allem in Google Scholar genutzt).
-- **m-Quotient (m-Index):** Karrierezeit-Korrektur: häufig h geteilt durch Anzahl Jahre seit der ersten Publikation (vereinfachte Senioritäts-Normalisierung).
-- **Autor:innen-Disambiguierung:** Saubere Zuordnung von Publikationen zu einer Person (Namensvarianten, Affiliations, Doppelprofile).
-- **Datenquelle:** Woher die Zitations-/Publikationsdaten stammen (z. B. WoS, Scopus, Google Scholar, OpenAlex).
+| Eigenschaft | Details |
+| --- | --- |
+| **Schwierigkeit** | 🟡 Fortgeschritten (Intermediate) |
+| **Lesezeit** | ⏱️ ca. 25 Minuten |
+| **Zielgruppe** | 🏛️ Bibliothek, Forschungsreferat, Forschende |
+| **Voraussetzungen** | 📚 Module 1, 2 und 3 |
 
-## Kurz erklärt
-Autor:innenmetriken (h, g, i10, m) sollen ein kompaktes Signal für Publikations- und Zitationsmuster liefern. Sie sind hilfreich für Überblick und Monitoring – aber riskant als alleinige Bewertungsgrundlage. Die Werte hängen stark von Datenquelle, Karrierelänge, Dokumenttyp (z. B. Reviews) und sauberer Autor:innen-Zuordnung ab. Gute Praxis: nie nur eine Kennzahl, sondern immer Kontext, Regeln und Limitationen mitliefern.
+---
 
-## Die 4 wichtigsten Metriken (mit Interpretation)
+## 🎯 Lernziele
 
-### h-Index
-- **Was er abbildet:** Breite, anhaltende Resonanz (nicht nur ein einzelner „Hit“).
-- **Berechnung:** Sortiere Zitationen absteigend. Finde die größte Position h, an der gilt: Zitationen(h) ≥ h.
-- **Stärken:**
-  - Robust gegen einzelne extreme Ausreißer.
-  - Einfach erklärbar.
-- **Grenzen:**
-  - Bevorzugt längere Karrieren.
-  - Unfair zwischen Feldern.
-  - Ignoriert Kontext von Zitationen.
-  - Quelle/Abdeckung beeinflusst Wert.
+Nach Abschluss dieses Moduls können Sie:
 
-### g-Index
-- **Was er abbildet:** Gewichtet sehr stark zitierte Arbeiten stärker als der h-Index.
-- **Berechnung:** Sortiere absteigend. Berechne kumulierte Zitationen. g ist die größte Zahl mit: Summe(top g) ≥ g².
-- **Stärken:**
-  - Reagiert auf „Big Hits“.
-  - Unterscheidet Profile mit gleichen h-Werten besser.
-- **Grenzen:**
-  - Noch stärker von Datenquelle/Abdeckung abhängig.
-  - Kann durch wenige sehr stark zitierte Arbeiten dominieren.
+- Die Logik und die Grenzen von **h-Index, g-Index, i10-Index und m-Quotient** verständlich erklären (und wissen, was sie *nicht* messen).
+- Einfache Metriken aus einer Zitationsliste **korrekt berechnen**.
+- Typische **Verzerrungen erkennen** (z. B. durch Karrierelänge, Dokumenttyp, Datenquellen, Namensvarianten oder Selbstzitate).
+- Metriken **report-tauglich kommunizieren** (inklusive Quelle, Stichtag, Zeitraum und Limitationen).
 
-### i10-Index
-- **Was er abbildet:** Sehr einfache Produktivitäts-/Resonanz-Schwelle (≥10 Zitationen).
-- **Berechnung:** Zähle Publikationen mit mindestens 10 Zitationen.
-- **Stärken:**
-  - Sehr leicht zu erklären.
-  - Schneller Überblick.
-- **Grenzen:**
-  - Grob und feldabhängig.
-  - Stark datenquellenabhängig.
-  - Nicht überall etabliert.
+---
 
-### m-Quotient (m-Index)
-- **Was er abbildet:** Grobe Karrierezeit-Korrektur (h pro Jahr).
-- **Berechnung:** m = h / (Jahre seit erster Publikation).
-- **Stärken:**
-  - Hilft beim Vergleich unterschiedlicher Seniorität (grobe Näherung).
-- **Grenzen:**
-  - Sehr grob (Karrieren sind nicht linear).
-  - Feld-/Dokumenttyp-Effekte bleiben.
-  - Jahresdefinition muss festgelegt werden.
+## 💡 Kurz erklärt: Autor:innenmetriken
 
-## Typische Fallen & Fehlinterpretationen
-- **„Eine Zahl reicht, um Leistung zu bewerten.“**  
-  Metriken sind Kontextsignale. Responsible Metrics verlangt mehrere Indikatoren plus qualitative Evidenz.
-- **„h-Index aus Quelle A = h-Index aus Quelle B.“**  
-  Datenquellen unterscheiden sich in Coverage und Zitationsverknüpfung. Werte sind nicht automatisch vergleichbar.
-- **„Ein niedriger h bedeutet schlechte Forschung.“**  
-  Karrierelänge, Feld, Dokumenttyp, Sprache/Region und Datenbasis beeinflussen den Wert stark.
-- **„Autor:innenprofile stimmen schon.“**  
-  Namensvarianten und Doppelprofile sind häufig. Ohne Bereinigung ist jede Kennzahl wacklig.
+Autor:innenmetriken sollen ein kompaktes Signal für Publikations- und Zitationsmuster liefern. Sie sind hilfreich, um sich einen Überblick zu verschaffen und Entwicklungen zu monitoren – jedoch **brandgefährlich als alleinige Bewertungsgrundlage**.
 
-## Praxis-Workflow: Autor:innenmetriken sauber erheben
-1. Zweck klären: Monitoring, CV-Kontext, Bericht oder Evaluation?
-2. Datenquelle(n) festlegen und dokumentieren (inkl. Stichtag der Abfrage).
-3. Autor:innenprofil bereinigen (Namensvarianten, Dubletten, falsche Zuordnung).
-4. Regeln definieren: Zeitraum/Zitationsfenster? Dokumenttypen? Umgang mit Selbstzitaten?
-5. Metriken berechnen (h, g, i10, optional m).
-6. Plausibilisieren: Ausreißer prüfen (Reviews, Leitlinien, kontroverse Paper), Stichprobe gegen bekannte Publikationen.
-7. Report schreiben: Methodik-Kasten + Limitationen + verantwortungsvolle Interpretation.
+Die Werte hängen massiv von der jeweiligen Datenquelle, der Karrierelänge, dem Dokumenttyp (z. B. Reviews werden generell häufiger zitiert) und einer sauberen Autor:innen-Zuordnung ab.
 
-## Responsible Metrics: Mindeststandard für Autor:innenmetriken
-- Nie eine Kennzahl alleine verwenden; immer Kontext + mehrere Signale.
-- Immer angeben: Datenquelle, Stichtag, Zeitraum/Fenster, Dokumenttypen, Regeln (z. B. Selbstzitate ja/nein).
-- Vergleiche nur in sinnvollen Gruppen (Fach, Karrierestufe, Dokumenttypen).
-- Wenn Entscheidungen betroffen sind: quantitative Indikatoren nur zusammen mit qualitativer Begutachtung.
+> **Best Practice:** Verwenden Sie niemals nur eine einzelne Kennzahl. Liefern Sie stets den Kontext, die methodischen Spielregeln und die Limitationen mit!
 
-## Übungen
+### 🔑 Wichtige Schlüsselbegriffe vorab
 
-### Level 1
-1. **M04-L1-Q1:** Welche Definition trifft den h-Index am besten?
-   - Anzahl Publikationen insgesamt.
-   - h Publikationen haben jeweils mindestens h Zitationen.
-   - Durchschnittliche Zitationen pro Publikation.
-   - **Lösung:** h Publikationen haben jeweils mindestens h Zitationen.
-   - **Bewertung:** 1 Punkt: richtige Antwort.
+- **Autor:innen-Disambiguierung:** Die saubere Zuordnung von Publikationen zu einer bestimmten Person (Bereinigung von Namensvarianten, unterschiedlichen Affiliations und Doppelprofilen).
+- **Datenquelle:** Der Ursprung der Zitations- und Publikationsdaten (z. B. Web of Science, Scopus, Google Scholar, OpenAlex).
 
-2. **M04-L1-Q2:** Was misst der i10-Index?
-   - Durchschnittliche Zitationen pro Jahr.
-   - Anzahl Publikationen mit mindestens 10 Zitationen.
-   - Anzahl Zitationen im letzten Jahr.
-   - **Lösung:** Anzahl Publikationen mit mindestens 10 Zitationen.
-   - **Bewertung:** 1 Punkt: richtige Antwort.
+---
 
-3. **M04-L1-Q3:** Welche Aussage ist verantwortungsvoll?
-   - Wir ranken Forschende nur nach h-Index.
-   - Wir nennen Quelle, Stichtag und Regeln und interpretieren im Kontext.
-   - Wenn zwei Datenbanken abweichen, nehmen wir den höheren Wert.
-   - **Lösung:** Wir nennen Quelle, Stichtag und Regeln und interpretieren im Kontext.
-   - **Bewertung:** 1 Punkt: richtige Antwort.
+## 📊 Die 4 wichtigsten Metriken im Detail
+
+### 1️⃣ h-Index
+
+- **Was er abbildet:** Breite, anhaltende Resonanz (belohnt kontinuierliche Leistung, nicht nur ein einzelnes „One-Hit-Wonder“).
+- **Berechnung:** Sortieren Sie alle Publikationen absteigend nach Zitationen. Der h-Index ist die größte Position *h*, an der gilt: Die Publikation hat mindestens *h* Zitationen.
+- ✅ **Stärken:** Robust gegenüber einzelnen extremen Ausreißern; intuitiv und sehr einfach zu erklären.
+- ⚠️ **Grenzen:** Bevorzugt längere Karrieren; unfair beim Vergleich unterschiedlicher Fachdisziplinen; ignoriert den Kontext der Zitationen; extrem abhängig von der Datenabdeckung der Quelle.
+
+### 2️⃣ g-Index
+
+- **Was er abbildet:** Im Gegensatz zum h-Index werden hier sehr stark zitierte Arbeiten (Top-Publikationen) stärker ins Gewicht geworfen.
+- **Berechnung:** Sortieren Sie absteigend und bilden Sie die kumulierte Summe der Zitationen. Der g-Index ist die größte Zahl *g*, bei der die Top-*g* Publikationen zusammen mindestens *g²* Zitationen aufweisen.
+- ✅ **Stärken:** Reagiert sensibel auf „Big Hits“; differenziert deutlich besser zwischen Profilen, die denselben h-Index aufweisen.
+- ⚠️ **Grenzen:** Noch stärker von der Datenquelle abhängig als der h-Index; kann durch wenige extrem oft zitierte Arbeiten dominiert werden.
+
+### 3️⃣ i10-Index
+
+- **Was er abbildet:** Eine sehr einfache Schwelle für Produktivität und grundlegende Resonanz (wird vor allem in Google Scholar genutzt).
+- **Berechnung:** Anzahl der Publikationen einer Person, die jeweils mindestens 10-mal zitiert wurden.
+- ✅ **Stärken:** Extrem leicht zu erklären; bietet einen sehr schnellen Überblick.
+- ⚠️ **Grenzen:** Sehr grobes Maß; stark feld- und datenquellenabhängig; außerhalb des Google-Universums wenig etabliert.
+
+### 4️⃣ m-Quotient (m-Index)
+
+- **Was er abbildet:** Eine grobe Normalisierung der Karrierezeit (h-Index pro Jahr).
+- **Berechnung:** *m = h-Index ÷ (Jahre seit der allerersten Publikation)*.
+- ✅ **Stärken:** Hilft als grobe Näherung beim Vergleich von Forschenden mit unterschiedlicher Seniorität (Karrierealter).
+- ⚠️ **Grenzen:** Zu vereinfachend, da Karrieren und Zitationszyklen selten linear verlaufen; Feld- und Dokumenttyp-Effekte bleiben bestehen; die Definition des "Startjahres" muss klar definiert sein.
+
+---
+
+## 🛑 Typische Fallen & Fehlinterpretationen
+
+- ❌ **„Eine Zahl reicht, um Leistung zu bewerten.“**
+- *Realität:* Metriken sind reine Kontextsignale. „Responsible Metrics“ verlangen immer mehrere Indikatoren kombiniert mit qualitativer Evidenz.
+
+- ❌ **„Der h-Index aus Quelle A ist identisch mit dem aus Quelle B.“**
+- *Realität:* Datenbanken unterscheiden sich in ihrer Abdeckung (Coverage) und Zitationsverknüpfung erheblich. Werte aus verschiedenen Quellen sind **niemals** direkt vergleichbar.
+
+- ❌ **„Ein niedriger h-Index bedeutet schlechte Forschung.“**
+- *Realität:* Karrierelänge, Fachgebiet, Dokumenttyp, Publikationssprache und die gewählte Datenbasis beeinflussen den Wert massiv.
+
+- ❌ **„Autor:innenprofile in Datenbanken stimmen automatisch.“**
+- *Realität:* Namensvarianten und Doppelprofile sind der absolute Standard. Ohne manuelle Bereinigung ist jede darauf basierende Kennzahl völlig wacklig.
+
+---
+
+## 🛠️ Praxis-Workflow: Metriken sauber erheben
+
+Um Metriken professionell und belastbar zu nutzen, folgen Sie diesem 7-Schritte-Plan:
+
+1. **Zweck klären:** Dienen die Daten dem reinen Monitoring, als Kontext für einen CV, für einen offiziellen Bericht oder für eine Evaluation?
+2. **Datenquelle festlegen:** Quelle(n) eindeutig bestimmen und dokumentieren (inklusive exaktem Stichtag der Abfrage!).
+3. **Profil bereinigen:** Namensvarianten, Dubletten und falsche Zuordnungen korrigieren (Autor:innen-Disambiguierung).
+4. **Regeln definieren:** Welcher Zeitraum / welches Zitationsfenster gilt? Welche Dokumenttypen werden mitgezählt? Wie wird mit Selbstzitaten umgegangen?
+5. **Werte berechnen:** Metriken (h, g, i10, ggf. m) ermitteln.
+6. **Plausibilisieren:** Ausreißer kritisch prüfen (z. B. stark zitierte Guidelines, stark umstrittene Paper) und Stichproben gegen die tatsächliche Publikationsliste abgleichen.
+7. **Report erstellen:** Ergebnisse stets zusammen mit einem **Methodik-Kasten**, den **Limitationen** und einer **verantwortungsvollen Interpretation** präsentieren.
+
+---
+
+## ⚖️ Responsible Metrics: Der Mindeststandard
+
+- **Kontext ist König:** Nutzen Sie niemals eine Kennzahl isoliert. Setzen Sie immer auf mehrere Signale.
+- **Maximale Transparenz:** Geben Sie immer die genutzte Datenquelle, den Stichtag, den Zeitraum/das Fenster, die einbezogenen Dokumenttypen und die Berechnungsregeln an.
+- **Sinnvolle Vergleiche:** Vergleichen Sie nur innerhalb plausibler Kohorten (gleiches Fachgebiet, identische Karrierestufe, gleiche Dokumenttypen).
+- **Qualität vor Quantität:** Wenn weitreichende Entscheidungen anstehen (z. B. Berufungen, Fördermittel), dürfen quantitative Indikatoren nur unterstützend zur qualitativen Begutachtung (Peer Review) eingesetzt werden.
+
+---
+
+## 📝 Übungen (Level 1)
+
+Testen Sie Ihr erworbenes Wissen mit diesen kurzen Kontrollfragen:
+
+**Frage 1: Welche Definition trifft den h-Index am besten?**
+
+- [ ] Anzahl der Publikationen insgesamt.
+- [x] *h* Publikationen haben jeweils mindestens *h* Zitationen.
+- [ ] Durchschnittliche Zitationen pro Publikation.
+
+**Frage 2: Was misst der i10-Index?**
+
+- [ ] Durchschnittliche Zitationen pro Jahr.
+- [x] Anzahl der Publikationen mit mindestens 10 Zitationen.
+- [ ] Anzahl der Zitationen im letzten Jahr.
+
+**Frage 3: Welche Aussage entspricht den Grundsätzen von "Responsible Metrics"?**
+
+- [ ] Wir ranken Forschende ausschließlich nach ihrem h-Index.
+- [x] Wir nennen Quelle, Stichtag sowie Regeln und interpretieren den Wert im Kontext.
+- [ ] Wenn zwei Datenbanken abweichen, nehmen wir einfach immer den höheren Wert.
