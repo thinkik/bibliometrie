@@ -50,6 +50,12 @@
           Alternative Metriken, die Aufmerksamkeit in sozialen Medien,
           Nachrichten oder Policy-Dokumenten erfassen.
         </dd>
+        <dt>Altmetrics-Kategorien</dt>
+        <dd>
+          Unterteilung alternativer Metriken in Gruppen wie Social Media,
+          Nachrichten, Policy-Dokumente, wissenschaftliche Plattformen oder
+          Nutzungsdaten.
+        </dd>
         <dt>Bibliometrie</dt>
         <dd>
           Quantitative Analyse wissenschaftlicher Publikationen und ihrer
@@ -60,10 +66,21 @@
           Verweis auf eine andere Publikation, der zeigt, wie wissenschaftliche
           Arbeiten miteinander verbunden sind.
         </dd>
+        <dt>Citation Window</dt>
+        <dd>
+          Zeitfenster, in dem Zitationen für die Berechnung einer Kennzahl
+          gezählt werden, zum Beispiel zwei oder fünf Jahre nach Publikation.
+        </dd>
         <dt>Datenbereinigung</dt>
         <dd>
           Aufbereitung von Datensätzen, um Dubletten, Fehler oder Inkonsistenzen
           zu entfernen.
+        </dd>
+        <dt>g-Index</dt>
+        <dd>
+          Kennzahl, die häufig zitierte Arbeiten stärker gewichtet als der
+          h-Index, indem die kumulierten Zitationen der Top-Publikationen
+          berücksichtigt werden.
         </dd>
         <dt>h-Index</dt>
         <dd>
@@ -75,6 +92,11 @@
           Journalkennzahl, die die durchschnittliche Zitierhäufigkeit von
           Artikeln innerhalb eines Zeitraums beschreibt.
         </dd>
+        <dt>RCR (Relative Citation Ratio)</dt>
+        <dd>
+          Feldnormalisierte Artikelmetrik, die die Zitierleistung einer
+          Publikation im Verhältnis zu einem referenzierten Fachgebiet bewertet.
+        </dd>
         <dt>Open Access</dt>
         <dd>
           Freier, kostenfreier Zugang zu wissenschaftlichen Publikationen, oft
@@ -85,24 +107,73 @@
           Begutachtungsverfahren, bei dem Expert:innen die Qualität von
           Forschung vor der Veröffentlichung prüfen.
         </dd>
+        <dt>SNIP (Source Normalized Impact per Paper)</dt>
+        <dd>
+          Journalindikator, der Zitationen kontextabhängig normalisiert und
+          Unterschiede in Zitierpraktiken zwischen Fachgebieten ausgleicht.
+        </dd>
       </dl>
+      <p id="glossar-no-results" hidden>
+        Keine Treffer gefunden. Bitte Suchbegriff anpassen.
+      </p>
     </main>
     <script>
       const searchInput = document.querySelector("#glossar-search");
       const glossaryTerms = document.querySelectorAll(".glossar-list dt");
+      const noResultsMessage = document.querySelector("#glossar-no-results");
+
+      const escapeRegExp = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+      const highlightMatches = (element, query) => {
+        const originalText = element.dataset.originalText;
+
+        if (!query) {
+          element.textContent = originalText;
+          return;
+        }
+
+        const pattern = new RegExp(`(${escapeRegExp(query)})`, "gi");
+        element.innerHTML = originalText.replace(
+          pattern,
+          '<mark class="glossar-highlight">$1</mark>'
+        );
+      };
+
+      glossaryTerms.forEach((term) => {
+        const definition = term.nextElementSibling;
+        term.dataset.originalText = term.textContent;
+        if (definition) {
+          definition.dataset.originalText = definition.textContent;
+        }
+      });
 
       const filterGlossary = () => {
         const query = searchInput.value.trim().toLowerCase();
+        let hasResults = false;
 
         glossaryTerms.forEach((term) => {
           const definition = term.nextElementSibling;
-          const matches = term.textContent.toLowerCase().includes(query);
+          const termText = term.dataset.originalText.toLowerCase();
+          const definitionText = definition
+            ? definition.dataset.originalText.toLowerCase()
+            : "";
+          const matches =
+            !query || termText.includes(query) || definitionText.includes(query);
+
+          if (matches) {
+            hasResults = true;
+          }
 
           term.style.display = matches ? "" : "none";
+          highlightMatches(term, matches ? query : "");
+
           if (definition) {
             definition.style.display = matches ? "" : "none";
+            highlightMatches(definition, matches ? query : "");
           }
         });
+
+        noResultsMessage.hidden = hasResults;
       };
 
       searchInput.addEventListener("input", filterGlossary);

@@ -188,6 +188,30 @@ body {
   font-size: 1.05rem;
 }
 
+.glossar-list dt {
+  margin-top: 1rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.glossar-list dd {
+  margin-left: 0;
+  color: var(--muted);
+}
+
+.glossar-highlight {
+  background: #fef08a;
+  color: inherit;
+  border-radius: 0.2rem;
+  padding: 0 0.1rem;
+}
+
+#glossar-no-results {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #b91c1c;
+}
+
 .module-nav {
   margin: 2rem 0 1.5rem;
   padding: 1rem 1.25rem;
