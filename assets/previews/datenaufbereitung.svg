@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="176" height="236" viewBox="0 0 176 236" fill="none">
+  <rect x="8" y="8" width="160" height="220" rx="14" fill="#fff" stroke="#0f766e" stroke-width="4"/>
+  <rect x="24" y="26" width="128" height="24" rx="8" fill="#ccfbf1"/>
+  <rect x="24" y="62" width="128" height="136" rx="8" fill="#f1f5f9"/>
+  <path d="M24 95h128M24 128h128M24 161h128" stroke="#99a4b5" stroke-width="2"/>
+  <path d="M56 62v136M88 62v136M120 62v136" stroke="#99a4b5" stroke-width="2"/>
+  <text x="88" y="42" text-anchor="middle" font-size="14" fill="#0f766e" font-family="Arial">XLSX</text>
+</svg>
