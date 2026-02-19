@@ -778,3 +778,110 @@ details summary {
   border-color: #166534;
   color: #166534;
 }
+
+.btn-small {
+  padding: 0.4rem 0.85rem;
+  font-size: 0.86rem;
+}
+
+.btn-secondary {
+  background: #ffffff;
+  color: var(--primary);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background: #ecfeff;
+}
+
+.science-map-tool {
+  margin-top: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 10px 24px rgba(15, 118, 110, 0.08);
+  overflow: hidden;
+}
+
+.science-map-controls {
+  padding: 1rem;
+  border-bottom: 1px solid var(--border);
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.control-group h4 {
+  margin: 0 0 0.4rem;
+}
+
+.file-label {
+  display: inline-block;
+  margin-top: 0.65rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.download-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.92rem;
+  margin-top: 0.75rem;
+}
+
+.cluster-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 0.75rem;
+}
+
+.cluster-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.cluster-swatch {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 999px;
+  display: inline-block;
+}
+
+.science-map-canvas-wrap {
+  position: relative;
+  padding: 0.75rem;
+}
+
+.science-map-status {
+  margin: 0.25rem 0 0.75rem;
+  font-size: 0.92rem;
+}
+
+.science-map-status.is-error {
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+.science-map-canvas {
+  width: 100%;
+  min-height: 380px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: linear-gradient(180deg, #f8fbff 0%, #f1f5f9 100%);
+}
+
+.science-map-tooltip {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+  max-width: 260px;
+  padding: 0.5rem 0.6rem;
+  border-radius: 8px;
+  background: rgba(15, 23, 42, 0.92);
+  color: #f8fafc;
+  font-size: 0.83rem;
+  line-height: 1.35;
+}

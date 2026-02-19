@@ -1,0 +1,13 @@
+source,target,weight,type,source_label,source_cluster,source_citations,source_year,source_keywords,target_label,target_cluster,target_citations,target_year,target_keywords
+n1,n2,4,co-word,Open Science Policies,Open Science,132,2021,"open access; policy; transparency",Research Data Management,Open Science,98,2020,"FAIR data; repositories"
+n1,n4,3,co-citation,Open Science Policies,Open Science,132,2021,"open access; policy; transparency",Responsible Metrics,Evaluation,87,2022,"DORA; narrative CV"
+n2,n5,2,co-word,Research Data Management,Open Science,98,2020,"FAIR data; repositories",AI-assisted Literature Review,Methods,110,2023,"NLP; topic modeling"
+n3,n4,5,co-citation,Bibliometric Indicators,Evaluation,155,2019,"h-index; field normalization",Responsible Metrics,Evaluation,87,2022,"DORA; narrative CV"
+n3,n6,4,co-citation,Bibliometric Indicators,Evaluation,155,2019,"h-index; field normalization",Co-Citation Analysis,Methods,142,2018,"science mapping; networks"
+n4,n7,2,co-word,Responsible Metrics,Evaluation,87,2022,"DORA; narrative CV",Interdisciplinary Collaboration,Collaboration,123,2021,"co-authorship; interdisciplinarity"
+n5,n6,3,co-word,AI-assisted Literature Review,Methods,110,2023,"NLP; topic modeling",Co-Citation Analysis,Methods,142,2018,"science mapping; networks"
+n5,n7,2,co-word,AI-assisted Literature Review,Methods,110,2023,"NLP; topic modeling",Interdisciplinary Collaboration,Collaboration,123,2021,"co-authorship; interdisciplinarity"
+n6,n8,1,co-citation,Co-Citation Analysis,Methods,142,2018,"science mapping; networks",International Partnerships,Collaboration,95,2020,"global science; institutions"
+n7,n8,4,co-authorship,Interdisciplinary Collaboration,Collaboration,123,2021,"co-authorship; interdisciplinarity",International Partnerships,Collaboration,95,2020,"global science; institutions"
+n2,n7,2,co-word,Research Data Management,Open Science,98,2020,"FAIR data; repositories",Interdisciplinary Collaboration,Collaboration,123,2021,"co-authorship; interdisciplinarity"
+n4,n8,1,co-citation,Responsible Metrics,Evaluation,87,2022,"DORA; narrative CV",International Partnerships,Collaboration,95,2020,"global science; institutions"

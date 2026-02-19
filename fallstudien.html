@@ -6,6 +6,8 @@
     <title>Einführung Bibliometrie – Fallstudien</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="navigation.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="fallstudien-network.js" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -180,6 +182,43 @@
           Die Clusteranalyse zeigt, welche Themen sich stark vernetzen und wo neue
           Forschungsschwerpunkte entstehen können.
         </p>
+        <p>
+          Interaktives Beispiel ähnlich zu Science-Mapping-Demonstrationen wie bei
+          thinkik.github.io: Laden Sie Beispieldaten herunter oder importieren Sie eigene
+          Netzwerkdaten direkt im Browser.
+        </p>
+        <div class="science-map-tool" aria-label="Interaktive Science-Mapping-Visualisierung">
+          <div class="science-map-controls">
+            <div class="control-group">
+              <h4>Daten laden</h4>
+              <button id="load-sample-network" type="button" class="btn btn-small">Beispieldaten laden</button>
+              <label for="network-file-input" class="file-label">Eigene Datei (JSON oder CSV)</label>
+              <input id="network-file-input" type="file" accept=".json,.csv" />
+              <p class="download-links">
+                <a href="data/science-mapping-sample.json" download>Beispiel-JSON herunterladen</a>
+                <a href="data/science-mapping-sample.csv" download>Beispiel-CSV herunterladen</a>
+              </p>
+            </div>
+
+            <div class="control-group">
+              <h4>Cluster filtern</h4>
+              <div id="cluster-filters" class="cluster-filters"></div>
+            </div>
+
+            <div class="control-group">
+              <h4>Kantengewicht</h4>
+              <label for="min-link-weight">Minimum: <span id="min-link-weight-value">1</span></label>
+              <input id="min-link-weight" type="range" min="1" max="5" step="1" value="1" />
+              <button id="reset-network-filters" type="button" class="btn btn-small btn-secondary">Filter zurücksetzen</button>
+            </div>
+          </div>
+
+          <div class="science-map-canvas-wrap">
+            <p id="science-map-status" class="science-map-status" aria-live="polite">Lade Daten …</p>
+            <svg id="science-map-svg" class="science-map-canvas" role="img" aria-label="Netzwerk wissenschaftlicher Themencluster"></svg>
+            <div id="science-map-tooltip" class="science-map-tooltip" aria-hidden="true"></div>
+          </div>
+        </div>
         <p><strong>Passende Module:</strong> Modul 11 (Science Mapping)</p>
       </section>
       <section>

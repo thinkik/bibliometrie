@@ -1,0 +1,26 @@
+{
+  "nodes": [
+    {"id": "n1", "label": "Open Science Policies", "cluster": "Open Science", "citations": 132, "year": 2021, "keywords": "open access; policy; transparency"},
+    {"id": "n2", "label": "Research Data Management", "cluster": "Open Science", "citations": 98, "year": 2020, "keywords": "FAIR data; repositories"},
+    {"id": "n3", "label": "Bibliometric Indicators", "cluster": "Evaluation", "citations": 155, "year": 2019, "keywords": "h-index; field normalization"},
+    {"id": "n4", "label": "Responsible Metrics", "cluster": "Evaluation", "citations": 87, "year": 2022, "keywords": "DORA; narrative CV"},
+    {"id": "n5", "label": "AI-assisted Literature Review", "cluster": "Methods", "citations": 110, "year": 2023, "keywords": "NLP; topic modeling"},
+    {"id": "n6", "label": "Co-Citation Analysis", "cluster": "Methods", "citations": 142, "year": 2018, "keywords": "science mapping; networks"},
+    {"id": "n7", "label": "Interdisciplinary Collaboration", "cluster": "Collaboration", "citations": 123, "year": 2021, "keywords": "co-authorship; interdisciplinarity"},
+    {"id": "n8", "label": "International Partnerships", "cluster": "Collaboration", "citations": 95, "year": 2020, "keywords": "global science; institutions"}
+  ],
+  "links": [
+    {"source": "n1", "target": "n2", "weight": 4, "type": "co-word"},
+    {"source": "n1", "target": "n4", "weight": 3, "type": "co-citation"},
+    {"source": "n2", "target": "n5", "weight": 2, "type": "co-word"},
+    {"source": "n3", "target": "n4", "weight": 5, "type": "co-citation"},
+    {"source": "n3", "target": "n6", "weight": 4, "type": "co-citation"},
+    {"source": "n4", "target": "n7", "weight": 2, "type": "co-word"},
+    {"source": "n5", "target": "n6", "weight": 3, "type": "co-word"},
+    {"source": "n5", "target": "n7", "weight": 2, "type": "co-word"},
+    {"source": "n6", "target": "n8", "weight": 1, "type": "co-citation"},
+    {"source": "n7", "target": "n8", "weight": 4, "type": "co-authorship"},
+    {"source": "n2", "target": "n7", "weight": 2, "type": "co-word"},
+    {"source": "n4", "target": "n8", "weight": 1, "type": "co-citation"}
+  ]
+}
