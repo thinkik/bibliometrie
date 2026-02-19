@@ -3,36 +3,32 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Einführung Bibliometrie – Modul 4: Metriken für Autor:innen: h-Index, g-Index, i10 & m-Quotient – sinnvoll nutzen, sauber erklären</title>
+    <title>Einführung Bibliometrie – 🚀 Modul 4: Metriken für Autor:innen</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="navigation.js" defer></script>
-    <script src="i18n.js" defer></script>
   </head>
   <body>
     <header class="site-header">
-      <div class="brand" data-i18n="site.brand">Einführung Bibliometrie</div>
+      <div class="brand">Einführung Bibliometrie</div>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
-        <span class="nav-toggle-label" data-i18n="nav.menu">Menü</span>
+        <span class="nav-toggle-label">Menü</span>
         <span class="nav-toggle-icon" aria-hidden="true">
           <span class="nav-toggle-bar"></span>
           <span class="nav-toggle-bar"></span>
           <span class="nav-toggle-bar"></span>
         </span>
       </button>
-      <nav class="site-nav" id="primary-navigation" aria-label="Hauptnavigation" data-i18n-aria-label="nav.aria">
-        <a href="index.html" data-i18n="nav.home">Start</a>
-        <a class="active" href="lehrgang.html" data-i18n="nav.course">Lehrgang</a>
-        <a href="uebungen.html" data-i18n="nav.exercises">Übungen</a>
-        <a href="fallstudien.html" data-i18n="nav.cases">Fallstudien</a>
-        <a href="tools-datenquellen.html" data-i18n="nav.tools">Tools &amp; Datenquellen</a>
-        <a href="responsible-metrics.html" data-i18n="nav.responsible">Responsible Metrics</a>
-        <a href="glossar.html" data-i18n="nav.glossary">Glossar</a>
-        <a href="downloads-vorlagen.html" data-i18n="nav.downloads">Downloads &amp; Vorlagen</a>
-        <a href="faq.html" data-i18n="nav.faq">FAQ</a>
-        <a href="datenschutz.html">Datenschutz</a>
-        <a href="impressum.html">Impressum</a>
+      <nav class="site-nav" id="primary-navigation" aria-label="Hauptnavigation">
+        <a href="index.html">Start</a>
+        <a class="active" href="lehrgang.html">Lehrgang</a>
+        <a href="uebungen.html">Übungen</a>
+        <a href="fallstudien.html">Fallstudien</a>
+        <a href="tools-datenquellen.html">Tools &amp; Datenquellen</a>
+        <a href="responsible-metrics.html">Responsible Metrics</a>
+        <a href="glossar.html">Glossar</a>
+        <a href="downloads-vorlagen.html">Downloads &amp; Vorlagen</a>
+        <a href="faq.html">FAQ</a>
       </nav>
-      <button class="language-toggle" type="button" aria-label="Sprache wechseln" data-i18n="language.toggle" data-i18n-aria-label="language.aria">DE/EN</button>
     </header>
     <main class="content">
       <div class="module-progress" data-module-progress data-module-id="modul4">
@@ -40,143 +36,149 @@
         <progress id="module-progress-bar" max="100" value="0">0%</progress>
         <span class="module-progress-value" data-module-progress-value>0%</span>
       </div>
-      <h1 id="heading-modul-4">Modul 4: Metriken für Autor:innen: h-Index, g-Index, i10 & m-Quotient – sinnvoll nutzen, sauber erklären</h1>
+      <h1>🚀 Modul 4: Metriken für Autor:innen</h1>
 
       <section class="module-section" id="modul-4" aria-labelledby="heading-modul-4">
-        <ul class="module-meta">
-          <li><strong>Schwierigkeit:</strong> Intermediate</li>
-          <li><strong>Geschätzte Lesezeit:</strong> 25 Minuten</li>
-          <li><strong>Zielgruppen:</strong> Bibliothek, Forschungsreferat, Forschende</li>
-          <li><strong>Voraussetzungen:</strong> Modul 1, Modul 2, Modul 3</li>
-        </ul>
-        <h3>Lernziele</h3>
+        <h2 id="heading-modul-4">🚀 Modul 4: Metriken für Autor:innen</h2>
+        
+        <h3>📌 Auf einen Blick</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Eigenschaft</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Schwierigkeit</strong></td>
+              <td>🟡 Fortgeschritten (Intermediate)</td>
+            </tr>
+            <tr>
+              <td><strong>Lesezeit</strong></td>
+              <td>⏱️ ca. 25 Minuten</td>
+            </tr>
+            <tr>
+              <td><strong>Zielgruppe</strong></td>
+              <td>🏛️ Bibliothek, Forschungsreferat, Forschende</td>
+            </tr>
+            <tr>
+              <td><strong>Voraussetzungen</strong></td>
+              <td>📚 Module 1, 2 und 3</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>---</p>
+        <h3>🎯 Lernziele</h3>
+        <p>Nach Abschluss dieses Moduls können Sie:</p>
         <ul>
-          <li>Die Logik von h-Index, g-Index, i10-Index und m-Quotient erklären (inkl. was sie NICHT messen).</li>
-          <li>Einfache Metriken aus einer Zitationsliste korrekt berechnen.</li>
-          <li>Typische Verzerrungen erkennen (Karrierelänge, Dokumenttyp, Datenquelle, Autor:innen-Identität, Selbstzitate).</li>
-          <li>Metriken report-tauglich kommunizieren (Quelle, Stichtag, Zeitraum/Fenster, Regeln, Limitationen).</li>
+          <li>Die Logik und die Grenzen von <strong>h-Index, g-Index, i10-Index und m-Quotient</strong> verständlich erklären (und wissen, was sie *nicht* messen).</li>
+          <li>Einfache Metriken aus einer Zitationsliste <strong>korrekt berechnen</strong>.</li>
+          <li>Typische <strong>Verzerrungen erkennen</strong> (z. B. durch Karrierelänge, Dokumenttyp, Datenquellen, Namensvarianten oder Selbstzitate).</li>
+          <li>Metriken <strong>report-tauglich kommunizieren</strong> (inklusive Quelle, Stichtag, Zeitraum und Limitationen).</li>
         </ul>
-        <h3>Schlüsselbegriffe</h3>
+        <p>---</p>
+        <h3>💡 Kurz erklärt: Autor:innenmetriken</h3>
+        <p>Autor:innenmetriken sollen ein kompaktes Signal für Publikations- und Zitationsmuster liefern. Sie sind hilfreich, um sich einen Überblick zu verschaffen und Entwicklungen zu monitoren – jedoch <strong>brandgefährlich als alleinige Bewertungsgrundlage</strong>.</p>
+        <p>Die Werte hängen massiv von der jeweiligen Datenquelle, der Karrierelänge, dem Dokumenttyp (z. B. Reviews werden generell häufiger zitiert) und einer sauberen Autor:innen-Zuordnung ab.</p>
+        <p>> <strong>Best Practice:</strong> Verwenden Sie niemals nur eine einzelne Kennzahl. Liefern Sie stets den Kontext, die methodischen Spielregeln und die Limitationen mit!</p>
+        <h4>🔑 Wichtige Schlüsselbegriffe vorab</h4>
         <ul>
-          <li><strong>h-Index:</strong> h = Anzahl Publikationen, die jeweils mindestens h Zitationen haben (bei absteigend sortierter Zitationsliste).</li>
-          <li><strong>g-Index:</strong> g = größte Zahl, sodass die Top-g Publikationen zusammen mindestens g² Zitationen haben (gewichtet sehr stark zitierte Arbeiten stärker).</li>
-          <li><strong>i10-Index:</strong> Anzahl Publikationen mit mindestens 10 Zitationen (vor allem in Google Scholar genutzt).</li>
-          <li><strong>m-Quotient (m-Index):</strong> Karrierezeit-Korrektur: häufig h geteilt durch Anzahl Jahre seit der ersten Publikation (vereinfachte Senioritäts-Normalisierung).</li>
-          <li><strong>Autor:innen-Disambiguierung:</strong> Saubere Zuordnung von Publikationen zu einer Person (Namensvarianten, Affiliations, Doppelprofile).</li>
-          <li><strong>Datenquelle:</strong> Woher die Zitations-/Publikationsdaten stammen (z. B. WoS, Scopus, Google Scholar, OpenAlex).</li>
+          <li><strong>Autor:innen-Disambiguierung:</strong> Die saubere Zuordnung von Publikationen zu einer bestimmten Person (Bereinigung von Namensvarianten, unterschiedlichen Affiliations und Doppelprofilen).</li>
+          <li><strong>Datenquelle:</strong> Der Ursprung der Zitations- und Publikationsdaten (z. B. Web of Science, Scopus, Google Scholar, OpenAlex).</li>
         </ul>
-        <h3>Kurz erklärt</h3>
-        <p>Autor:innenmetriken (h, g, i10, m) sollen ein kompaktes Signal für Publikations- und Zitationsmuster liefern. Sie sind hilfreich für Überblick und Monitoring – aber riskant als alleinige Bewertungsgrundlage. Die Werte hängen stark von Datenquelle, Karrierelänge, Dokumenttyp (z. B. Reviews) und sauberer Autor:innen-Zuordnung ab. Gute Praxis: nie nur eine Kennzahl, sondern immer Kontext, Regeln und Limitationen mitliefern.</p>
-        <h3>Die 4 wichtigsten Metriken (mit Interpretation)</h3>
-        <h4>h-Index</h4>
+        <p>---</p>
+        <h3>📊 Die 4 wichtigsten Metriken im Detail</h3>
+        <h4>1️⃣ h-Index</h4>
         <ul>
-          <li><strong>Was er abbildet:</strong> Breite, anhaltende Resonanz (nicht nur ein einzelner „Hit“).</li>
-          <li><strong>Berechnung:</strong> Sortiere Zitationen absteigend. Finde die größte Position h, an der gilt: Zitationen(h) ≥ h.</li>
-          <li><strong>Stärken:</strong></li>
-          <li>Robust gegen einzelne extreme Ausreißer.</li>
-          <li>Einfach erklärbar.</li>
-          <li><strong>Grenzen:</strong></li>
-          <li>Bevorzugt längere Karrieren.</li>
-          <li>Unfair zwischen Feldern.</li>
-          <li>Ignoriert Kontext von Zitationen.</li>
-          <li>Quelle/Abdeckung beeinflusst Wert.</li>
+          <li><strong>Was er abbildet:</strong> Breite, anhaltende Resonanz (belohnt kontinuierliche Leistung, nicht nur ein einzelnes „One-Hit-Wonder“).</li>
+          <li><strong>Berechnung:</strong> Sortieren Sie alle Publikationen absteigend nach Zitationen. Der h-Index ist die größte Position *h*, an der gilt: Die Publikation hat mindestens *h* Zitationen.</li>
+          <li>✅ <strong>Stärken:</strong> Robust gegenüber einzelnen extremen Ausreißern; intuitiv und sehr einfach zu erklären.</li>
+          <li>⚠️ <strong>Grenzen:</strong> Bevorzugt längere Karrieren; unfair beim Vergleich unterschiedlicher Fachdisziplinen; ignoriert den Kontext der Zitationen; extrem abhängig von der Datenabdeckung der Quelle.</li>
         </ul>
-        <h4>g-Index</h4>
+        <h4>2️⃣ g-Index</h4>
         <ul>
-          <li><strong>Was er abbildet:</strong> Gewichtet sehr stark zitierte Arbeiten stärker als der h-Index.</li>
-          <li><strong>Berechnung:</strong> Sortiere absteigend. Berechne kumulierte Zitationen. g ist die größte Zahl mit: Summe(top g) ≥ g².</li>
-          <li><strong>Stärken:</strong></li>
-          <li>Reagiert auf „Big Hits“.</li>
-          <li>Unterscheidet Profile mit gleichen h-Werten besser.</li>
-          <li><strong>Grenzen:</strong></li>
-          <li>Noch stärker von Datenquelle/Abdeckung abhängig.</li>
-          <li>Kann durch wenige sehr stark zitierte Arbeiten dominieren.</li>
+          <li><strong>Was er abbildet:</strong> Im Gegensatz zum h-Index werden hier sehr stark zitierte Arbeiten (Top-Publikationen) stärker ins Gewicht geworfen.</li>
+          <li><strong>Berechnung:</strong> Sortieren Sie absteigend und bilden Sie die kumulierte Summe der Zitationen. Der g-Index ist die größte Zahl *g*, bei der die Top-*g* Publikationen zusammen mindestens *g²* Zitationen aufweisen.</li>
+          <li>✅ <strong>Stärken:</strong> Reagiert sensibel auf „Big Hits“; differenziert deutlich besser zwischen Profilen, die denselben h-Index aufweisen.</li>
+          <li>⚠️ <strong>Grenzen:</strong> Noch stärker von der Datenquelle abhängig als der h-Index; kann durch wenige extrem oft zitierte Arbeiten dominiert werden.</li>
         </ul>
-        <h4>i10-Index</h4>
+        <h4>3️⃣ i10-Index</h4>
         <ul>
-          <li><strong>Was er abbildet:</strong> Sehr einfache Produktivitäts-/Resonanz-Schwelle (≥10 Zitationen).</li>
-          <li><strong>Berechnung:</strong> Zähle Publikationen mit mindestens 10 Zitationen.</li>
-          <li><strong>Stärken:</strong></li>
-          <li>Sehr leicht zu erklären.</li>
-          <li>Schneller Überblick.</li>
-          <li><strong>Grenzen:</strong></li>
-          <li>Grob und feldabhängig.</li>
-          <li>Stark datenquellenabhängig.</li>
-          <li>Nicht überall etabliert.</li>
+          <li><strong>Was er abbildet:</strong> Eine sehr einfache Schwelle für Produktivität und grundlegende Resonanz (wird vor allem in Google Scholar genutzt).</li>
+          <li><strong>Berechnung:</strong> Anzahl der Publikationen einer Person, die jeweils mindestens 10-mal zitiert wurden.</li>
+          <li>✅ <strong>Stärken:</strong> Extrem leicht zu erklären; bietet einen sehr schnellen Überblick.</li>
+          <li>⚠️ <strong>Grenzen:</strong> Sehr grobes Maß; stark feld- und datenquellenabhängig; außerhalb des Google-Universums wenig etabliert.</li>
         </ul>
-        <h4>m-Quotient (m-Index)</h4>
+        <h4>4️⃣ m-Quotient (m-Index)</h4>
         <ul>
-          <li><strong>Was er abbildet:</strong> Grobe Karrierezeit-Korrektur (h pro Jahr).</li>
-          <li><strong>Berechnung:</strong> m = h / (Jahre seit erster Publikation).</li>
-          <li><strong>Stärken:</strong></li>
-          <li>Hilft beim Vergleich unterschiedlicher Seniorität (grobe Näherung).</li>
-          <li><strong>Grenzen:</strong></li>
-          <li>Sehr grob (Karrieren sind nicht linear).</li>
-          <li>Feld-/Dokumenttyp-Effekte bleiben.</li>
-          <li>Jahresdefinition muss festgelegt werden.</li>
+          <li><strong>Was er abbildet:</strong> Eine grobe Normalisierung der Karrierezeit (h-Index pro Jahr).</li>
+          <li><strong>Berechnung:</strong> *m = h-Index ÷ (Jahre seit der allerersten Publikation)*.</li>
+          <li>✅ <strong>Stärken:</strong> Hilft als grobe Näherung beim Vergleich von Forschenden mit unterschiedlicher Seniorität (Karrierealter).</li>
+          <li>⚠️ <strong>Grenzen:</strong> Zu vereinfachend, da Karrieren und Zitationszyklen selten linear verlaufen; Feld- und Dokumenttyp-Effekte bleiben bestehen; die Definition des "Startjahres" muss klar definiert sein.</li>
         </ul>
-        <h3>Typische Fallen & Fehlinterpretationen</h3>
+        <p>---</p>
+        <h3>🛑 Typische Fallen & Fehlinterpretationen</h3>
         <ul>
-          <li><strong>„Eine Zahl reicht, um Leistung zu bewerten.“</strong> <p>Metriken sind Kontextsignale. Responsible Metrics verlangt mehrere Indikatoren plus qualitative Evidenz.</p></li>
-          <li><strong>„h-Index aus Quelle A = h-Index aus Quelle B.“</strong> <p>Datenquellen unterscheiden sich in Coverage und Zitationsverknüpfung. Werte sind nicht automatisch vergleichbar.</p></li>
-          <li><strong>„Ein niedriger h bedeutet schlechte Forschung.“</strong> <p>Karrierelänge, Feld, Dokumenttyp, Sprache/Region und Datenbasis beeinflussen den Wert stark.</p></li>
-          <li><strong>„Autor:innenprofile stimmen schon.“</strong> <p>Namensvarianten und Doppelprofile sind häufig. Ohne Bereinigung ist jede Kennzahl wacklig.</p></li>
+          <li>❌ <strong>„Eine Zahl reicht, um Leistung zu bewerten.“</strong></li>
+          <li>*Realität:* Metriken sind reine Kontextsignale. „Responsible Metrics“ verlangen immer mehrere Indikatoren kombiniert mit qualitativer Evidenz.</li>
         </ul>
-        <h3>Praxis-Workflow: Autor:innenmetriken sauber erheben</h3>
+        <ul>
+          <li>❌ <strong>„Der h-Index aus Quelle A ist identisch mit dem aus Quelle B.“</strong></li>
+          <li>*Realität:* Datenbanken unterscheiden sich in ihrer Abdeckung (Coverage) und Zitationsverknüpfung erheblich. Werte aus verschiedenen Quellen sind <strong>niemals</strong> direkt vergleichbar.</li>
+        </ul>
+        <ul>
+          <li>❌ <strong>„Ein niedriger h-Index bedeutet schlechte Forschung.“</strong></li>
+          <li>*Realität:* Karrierelänge, Fachgebiet, Dokumenttyp, Publikationssprache und die gewählte Datenbasis beeinflussen den Wert massiv.</li>
+        </ul>
+        <ul>
+          <li>❌ <strong>„Autor:innenprofile in Datenbanken stimmen automatisch.“</strong></li>
+          <li>*Realität:* Namensvarianten und Doppelprofile sind der absolute Standard. Ohne manuelle Bereinigung ist jede darauf basierende Kennzahl völlig wacklig.</li>
+        </ul>
+        <p>---</p>
+        <h3>🛠️ Praxis-Workflow: Metriken sauber erheben</h3>
+        <p>Um Metriken professionell und belastbar zu nutzen, folgen Sie diesem 7-Schritte-Plan:</p>
         <ol>
-          <li>Zweck klären: Monitoring, CV-Kontext, Bericht oder Evaluation?</li>
-          <li>Datenquelle(n) festlegen und dokumentieren (inkl. Stichtag der Abfrage).</li>
-          <li>Autor:innenprofil bereinigen (Namensvarianten, Dubletten, falsche Zuordnung).</li>
-          <li>Regeln definieren: Zeitraum/Zitationsfenster? Dokumenttypen? Umgang mit Selbstzitaten?</li>
-          <li>Metriken berechnen (h, g, i10, optional m).</li>
-          <li>Plausibilisieren: Ausreißer prüfen (Reviews, Leitlinien, kontroverse Paper), Stichprobe gegen bekannte Publikationen.</li>
-          <li>Report schreiben: Methodik-Kasten + Limitationen + verantwortungsvolle Interpretation.</li>
+          <li><strong>Zweck klären:</strong> Dienen die Daten dem reinen Monitoring, als Kontext für einen CV, für einen offiziellen Bericht oder für eine Evaluation?</li>
+          <li><strong>Datenquelle festlegen:</strong> Quelle(n) eindeutig bestimmen und dokumentieren (inklusive exaktem Stichtag der Abfrage!).</li>
+          <li><strong>Profil bereinigen:</strong> Namensvarianten, Dubletten und falsche Zuordnungen korrigieren (Autor:innen-Disambiguierung).</li>
+          <li><strong>Regeln definieren:</strong> Welcher Zeitraum / welches Zitationsfenster gilt? Welche Dokumenttypen werden mitgezählt? Wie wird mit Selbstzitaten umgegangen?</li>
+          <li><strong>Werte berechnen:</strong> Metriken (h, g, i10, ggf. m) ermitteln.</li>
+          <li><strong>Plausibilisieren:</strong> Ausreißer kritisch prüfen (z. B. stark zitierte Guidelines, stark umstrittene Paper) und Stichproben gegen die tatsächliche Publikationsliste abgleichen.</li>
+          <li><strong>Report erstellen:</strong> Ergebnisse stets zusammen mit einem <strong>Methodik-Kasten</strong>, den <strong>Limitationen</strong> und einer <strong>verantwortungsvollen Interpretation</strong> präsentieren.</li>
         </ol>
-        <h3>Responsible Metrics: Mindeststandard für Autor:innenmetriken</h3>
+        <p>---</p>
+        <h3>⚖️ Responsible Metrics: Der Mindeststandard</h3>
         <ul>
-          <li>Nie eine Kennzahl alleine verwenden; immer Kontext + mehrere Signale.</li>
-          <li>Immer angeben: Datenquelle, Stichtag, Zeitraum/Fenster, Dokumenttypen, Regeln (z. B. Selbstzitate ja/nein).</li>
-          <li>Vergleiche nur in sinnvollen Gruppen (Fach, Karrierestufe, Dokumenttypen).</li>
-          <li>Wenn Entscheidungen betroffen sind: quantitative Indikatoren nur zusammen mit qualitativer Begutachtung.</li>
+          <li><strong>Kontext ist König:</strong> Nutzen Sie niemals eine Kennzahl isoliert. Setzen Sie immer auf mehrere Signale.</li>
+          <li><strong>Maximale Transparenz:</strong> Geben Sie immer die genutzte Datenquelle, den Stichtag, den Zeitraum/das Fenster, die einbezogenen Dokumenttypen und die Berechnungsregeln an.</li>
+          <li><strong>Sinnvolle Vergleiche:</strong> Vergleichen Sie nur innerhalb plausibler Kohorten (gleiches Fachgebiet, identische Karrierestufe, gleiche Dokumenttypen).</li>
+          <li><strong>Qualität vor Quantität:</strong> Wenn weitreichende Entscheidungen anstehen (z. B. Berufungen, Fördermittel), dürfen quantitative Indikatoren nur unterstützend zur qualitativen Begutachtung (Peer Review) eingesetzt werden.</li>
         </ul>
-        <h3>Übungen</h3>
-        <h4>Level 1</h4>
-        <ol>
-          <li><strong>M04-L1-Q1:</strong> Welche Definition trifft den h-Index am besten?</li>
-        </ol>
+        <p>---</p>
+        <h3>📝 Übungen (Level 1)</h3>
+        <p>Testen Sie Ihr erworbenes Wissen mit diesen kurzen Kontrollfragen:</p>
+        <p><strong>Frage 1: Welche Definition trifft den h-Index am besten?</strong></p>
         <ul>
-          <li>Anzahl Publikationen insgesamt.</li>
-          <li>h Publikationen haben jeweils mindestens h Zitationen.</li>
-          <li>Durchschnittliche Zitationen pro Publikation.</li>
-          <li><strong>Lösung:</strong> h Publikationen haben jeweils mindestens h Zitationen.</li>
-          <li><strong>Bewertung:</strong> 1 Punkt: richtige Antwort.</li>
+          <li>[ ] Anzahl der Publikationen insgesamt.</li>
+          <li>[x] *h* Publikationen haben jeweils mindestens *h* Zitationen.</li>
+          <li>[ ] Durchschnittliche Zitationen pro Publikation.</li>
         </ul>
-        <ol>
-          <li><strong>M04-L1-Q2:</strong> Was misst der i10-Index?</li>
-        </ol>
+        <p><strong>Frage 2: Was misst der i10-Index?</strong></p>
         <ul>
-          <li>Durchschnittliche Zitationen pro Jahr.</li>
-          <li>Anzahl Publikationen mit mindestens 10 Zitationen.</li>
-          <li>Anzahl Zitationen im letzten Jahr.</li>
-          <li><strong>Lösung:</strong> Anzahl Publikationen mit mindestens 10 Zitationen.</li>
-          <li><strong>Bewertung:</strong> 1 Punkt: richtige Antwort.</li>
+          <li>[ ] Durchschnittliche Zitationen pro Jahr.</li>
+          <li>[x] Anzahl der Publikationen mit mindestens 10 Zitationen.</li>
+          <li>[ ] Anzahl der Zitationen im letzten Jahr.</li>
         </ul>
-        <ol>
-          <li><strong>M04-L1-Q3:</strong> Welche Aussage ist verantwortungsvoll?</li>
-        </ol>
+        <p><strong>Frage 3: Welche Aussage entspricht den Grundsätzen von "Responsible Metrics"?</strong></p>
         <ul>
-          <li>Wir ranken Forschende nur nach h-Index.</li>
-          <li>Wir nennen Quelle, Stichtag und Regeln und interpretieren im Kontext.</li>
-          <li>Wenn zwei Datenbanken abweichen, nehmen wir den höheren Wert.</li>
-          <li><strong>Lösung:</strong> Wir nennen Quelle, Stichtag und Regeln und interpretieren im Kontext.</li>
-          <li><strong>Bewertung:</strong> 1 Punkt: richtige Antwort.</li>
+          <li>[ ] Wir ranken Forschende ausschließlich nach ihrem h-Index.</li>
+          <li>[x] Wir nennen Quelle, Stichtag sowie Regeln und interpretieren den Wert im Kontext.</li>
+          <li>[ ] Wenn zwei Datenbanken abweichen, nehmen wir einfach immer den höheren Wert.</li>
         </ul>
       </section>
     </main>
     <script src="role-toggle.js" defer></script>
     <script src="module-progress.js" defer></script>
-    <footer class="site-footer">
-      <p>Die Inhalte dieser Website stehen unter der <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0 Lizenz</a>.</p>
-    </footer>
   </body>
 </html>
