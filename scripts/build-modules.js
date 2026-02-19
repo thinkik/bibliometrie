@@ -3,6 +3,7 @@
 
 const fs = require("fs");
 const path = require("path");
+const { execFileSync } = require("child_process");
 
 const ROOT = path.resolve(__dirname, "..");
 const MODULE_DIR = path.join(ROOT, "modules");
@@ -237,3 +238,6 @@ if (modulesToBuild.length === 0) {
 
 const outputs = modulesToBuild.map((file) => buildModulePage(file));
 console.log(`Generated ${outputs.length} module pages: ${outputs.join(", ")}`);
+
+
+execFileSync(process.execPath, [path.join(__dirname, "build-search-index.js")], { stdio: "inherit" });
