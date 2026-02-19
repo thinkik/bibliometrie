@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="navigation.js" defer></script>
     <script src="i18n.js" defer></script>
+    <script src="downloads-vorlagen.js" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -39,28 +40,85 @@
         der Erstellung eines Methodenberichts und der konsistenten Dokumentation von
         Analyseergebnissen in der Bibliometrie.
       </p>
-      <ul>
-        <li>
-          <a href="assets/Datenaufbereitung.xlsx" download="Datenaufbereitung.xlsx">
-            Datenaufbereitung.xlsx
-          </a>
-        </li>
-        <li>
-          <a href="assets/Methodenbericht.docx" download="Methodenbericht.docx">
-            Methodenbericht.docx
-          </a>
-        </li>
-        <li>
-          <a href="assets/Indikatoren-Checkliste.pdf" download="Indikatoren-Checkliste.pdf">
-            Indikatoren-Checkliste.pdf
-          </a>
-        </li>
-        <li>
-          <a href="assets/Visualisierungsvorlage.pptx" download="Visualisierungsvorlage.pptx">
-            Visualisierungsvorlage.pptx
-          </a>
-        </li>
-      </ul>
+
+      <section class="download-templates" aria-label="Vorlagen zum Download">
+        <article class="download-card" data-file-url="assets/Datenaufbereitung.xlsx" data-file-name="Datenaufbereitung.xlsx">
+          <div class="download-card__content">
+            <h2>Datenaufbereitung.xlsx</h2>
+            <p>
+              Tabellenstruktur zur Erfassung von Publikations-, Zitier- und Metadaten inklusive
+              vorbereiteter Felder für Bereinigung und Normalisierung.
+            </p>
+            <a class="download-card__link" href="assets/Datenaufbereitung.xlsx">Datei im Repo öffnen</a>
+          </div>
+          <div class="download-card__preview-wrap" aria-hidden="true">
+            <img class="download-card__preview" src="assets/previews/datenaufbereitung.svg" alt="Vorschau Datenaufbereitung" loading="lazy" />
+          </div>
+          <div class="download-card__actions">
+            <button class="btn download-button" type="button">Herunterladen</button>
+            <progress class="download-progress" max="100" value="0" aria-label="Download-Fortschritt"></progress>
+            <span class="download-progress-text" aria-live="polite">Bereit</span>
+          </div>
+        </article>
+
+        <article class="download-card" data-file-url="assets/Methodenbericht.docx" data-file-name="Methodenbericht.docx">
+          <div class="download-card__content">
+            <h2>Methodenbericht.docx</h2>
+            <p>
+              Dokumentvorlage für transparente Methodenbeschreibungen mit Abschnitten zu
+              Datengrundlage, Auswahlkriterien, Limitationen und Reproduzierbarkeit.
+            </p>
+            <a class="download-card__link" href="assets/Methodenbericht.docx">Datei im Repo öffnen</a>
+          </div>
+          <div class="download-card__preview-wrap" aria-hidden="true">
+            <img class="download-card__preview" src="assets/previews/methodenbericht.svg" alt="Vorschau Methodenbericht" loading="lazy" />
+          </div>
+          <div class="download-card__actions">
+            <button class="btn download-button" type="button">Herunterladen</button>
+            <progress class="download-progress" max="100" value="0" aria-label="Download-Fortschritt"></progress>
+            <span class="download-progress-text" aria-live="polite">Bereit</span>
+          </div>
+        </article>
+
+        <article class="download-card" data-file-url="assets/Indikatoren-Checkliste.pdf" data-file-name="Indikatoren Checkliste.pdf">
+          <div class="download-card__content">
+            <h2>Indikatoren Checkliste.pdf</h2>
+            <p>
+              Checkliste zur Auswahl und Bewertung bibliometrischer Kennzahlen mit Kriterien
+              für Aussagekraft, Vergleichbarkeit und verantwortungsvollen Einsatz.
+            </p>
+            <a class="download-card__link" href="assets/Indikatoren-Checkliste.pdf">Datei im Repo öffnen</a>
+          </div>
+          <div class="download-card__preview-wrap" aria-hidden="true">
+            <img class="download-card__preview" src="assets/previews/indikatoren-checkliste.svg" alt="Vorschau Indikatoren Checkliste" loading="lazy" />
+          </div>
+          <div class="download-card__actions">
+            <button class="btn download-button" type="button">Herunterladen</button>
+            <progress class="download-progress" max="100" value="0" aria-label="Download-Fortschritt"></progress>
+            <span class="download-progress-text" aria-live="polite">Bereit</span>
+          </div>
+        </article>
+
+        <article class="download-card" data-file-url="assets/Visualisierungsvorlage.pptx" data-file-name="Visualisierungsvorlage.pptx">
+          <div class="download-card__content">
+            <h2>Visualisierungsvorlage.pptx</h2>
+            <p>
+              Foliensatz mit vordefinierten Diagramm-Layouts, Farbschema und Platzhaltern
+              für die verständliche Präsentation bibliometrischer Ergebnisse.
+            </p>
+            <a class="download-card__link" href="assets/Visualisierungsvorlage.pptx">Datei im Repo öffnen</a>
+          </div>
+          <div class="download-card__preview-wrap" aria-hidden="true">
+            <img class="download-card__preview" src="assets/previews/visualisierungsvorlage.svg" alt="Vorschau Visualisierungsvorlage" loading="lazy" />
+          </div>
+          <div class="download-card__actions">
+            <button class="btn download-button" type="button">Herunterladen</button>
+            <progress class="download-progress" max="100" value="0" aria-label="Download-Fortschritt"></progress>
+            <span class="download-progress-text" aria-live="polite">Bereit</span>
+          </div>
+        </article>
+      </section>
+
       <figure class="page-illustration">
         <img
           src="assets/downloads_vorlagen.png"

@@ -973,3 +973,112 @@ details summary {
   font-size: 0.83rem;
   line-height: 1.35;
 }
+
+.download-templates {
+  margin: 1.5rem 0 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.download-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  padding: 1.1rem 1.2rem;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(15, 118, 110, 0.08);
+}
+
+.download-card__content h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.download-card__content p {
+  margin: 0.4rem 0 0.6rem;
+  font-size: 0.95rem;
+}
+
+.download-card__link {
+  font-size: 0.9rem;
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.download-card__link:hover,
+.download-card__link:focus {
+  text-decoration: underline;
+  outline: none;
+}
+
+.download-card__preview-wrap {
+  align-self: start;
+}
+
+.download-card__preview {
+  width: 88px;
+  height: 118px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 16px rgba(15, 23, 42, 0.16);
+  opacity: 0;
+  transform: translateY(8px) scale(0.97);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  pointer-events: none;
+}
+
+.download-card:hover .download-card__preview,
+.download-card:focus-within .download-card__preview {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.download-card__actions {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.download-button[disabled] {
+  opacity: 0.75;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.download-progress {
+  width: 100%;
+  height: 0.75rem;
+  accent-color: var(--primary);
+}
+
+.download-progress-text {
+  min-width: 72px;
+  text-align: right;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+@media (max-width: 640px) {
+  .download-card {
+    grid-template-columns: 1fr;
+  }
+
+  .download-card__preview-wrap {
+    display: none;
+  }
+
+  .download-card__actions {
+    grid-template-columns: 1fr;
+  }
+
+  .download-progress-text {
+    text-align: left;
+  }
+}

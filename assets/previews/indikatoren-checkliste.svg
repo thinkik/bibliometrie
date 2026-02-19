@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="176" height="236" viewBox="0 0 176 236" fill="none">
+  <rect x="8" y="8" width="160" height="220" rx="14" fill="#fff" stroke="#0f766e" stroke-width="4"/>
+  <rect x="24" y="26" width="128" height="24" rx="8" fill="#dcfce7"/>
+  <rect x="24" y="66" width="14" height="14" rx="3" fill="#0f766e"/>
+  <path d="M27 73l3 3 5-6" stroke="#fff" stroke-width="2"/>
+  <rect x="46" y="67" width="106" height="10" rx="4" fill="#cbd5e1"/>
+  <rect x="24" y="94" width="14" height="14" rx="3" fill="#0f766e"/>
+  <path d="M27 101l3 3 5-6" stroke="#fff" stroke-width="2"/>
+  <rect x="46" y="95" width="98" height="10" rx="4" fill="#cbd5e1"/>
+  <rect x="24" y="122" width="14" height="14" rx="3" fill="#0f766e"/>
+  <path d="M27 129l3 3 5-6" stroke="#fff" stroke-width="2"/>
+  <rect x="46" y="123" width="110" height="10" rx="4" fill="#cbd5e1"/>
+  <text x="88" y="42" text-anchor="middle" font-size="14" fill="#0f766e" font-family="Arial">PDF</text>
+</svg>
