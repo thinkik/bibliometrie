@@ -7,27 +7,48 @@
       "title": "Start",
       "slug": "start",
       "readingTimeMinutes": 5,
-      "learningGoals": ["Kursaufbau verstehen", "Navigation der Inhalte"],
+      "learningGoals": [
+        "Kursaufbau verstehen",
+        "Navigation der Inhalte"
+      ],
       "outputs": [
-        {"type": "checklist", "description": "Onboarding-Checkliste", "format": "markdown"}
+        {
+          "type": "checklist",
+          "description": "Onboarding-Checkliste",
+          "format": "markdown"
+        }
       ]
     },
     {
       "title": "Kursüberblick",
       "slug": "kursueberblick",
       "readingTimeMinutes": 8,
-      "learningGoals": ["Ziele des Kurses kennen", "Lernpfad planen"],
+      "learningGoals": [
+        "Ziele des Kurses kennen",
+        "Lernpfad planen"
+      ],
       "outputs": [
-        {"type": "outline", "description": "Kursstruktur", "format": "json"}
+        {
+          "type": "outline",
+          "description": "Kursstruktur",
+          "format": "json"
+        }
       ]
     },
     {
       "title": "Bewertung und Abgaben",
       "slug": "bewertung",
       "readingTimeMinutes": 6,
-      "learningGoals": ["Abgabekriterien verstehen", "Bewertungsschema kennen"],
+      "learningGoals": [
+        "Abgabekriterien verstehen",
+        "Bewertungsschema kennen"
+      ],
       "outputs": [
-        {"type": "rubric", "description": "Bewertungskriterien", "format": "pdf"}
+        {
+          "type": "rubric",
+          "description": "Bewertungskriterien",
+          "format": "pdf"
+        }
       ]
     }
   ],
@@ -37,9 +58,16 @@
       "slug": "modul-1-grundlagen",
       "difficulty": "beginner",
       "readingTimeMinutes": 45,
-      "learningGoals": ["Begriffe definieren", "Anwendungsfelder benennen"],
+      "learningGoals": [
+        "Begriffe definieren",
+        "Anwendungsfelder benennen"
+      ],
       "outputs": [
-        {"type": "summary", "description": "Begriffsübersicht", "format": "markdown"}
+        {
+          "type": "summary",
+          "description": "Begriffsübersicht",
+          "format": "markdown"
+        }
       ],
       "exercises": [
         {
@@ -47,9 +75,15 @@
           "slug": "begriffe-zuordnen",
           "difficulty": "beginner",
           "readingTimeMinutes": 20,
-          "learningGoals": ["Schlüsselbegriffe unterscheiden"],
+          "learningGoals": [
+            "Schlüsselbegriffe unterscheiden"
+          ],
           "outputs": [
-            {"type": "worksheet", "description": "Zuordnungstabelle", "format": "csv"}
+            {
+              "type": "worksheet",
+              "description": "Zuordnungstabelle",
+              "format": "csv"
+            }
           ]
         },
         {
@@ -57,9 +91,15 @@
           "slug": "einsatzfelder-skizzieren",
           "difficulty": "beginner",
           "readingTimeMinutes": 25,
-          "learningGoals": ["Bibliometrische Anwendungsfelder erkennen"],
+          "learningGoals": [
+            "Bibliometrische Anwendungsfelder erkennen"
+          ],
           "outputs": [
-            {"type": "map", "description": "Einsatzfelder-Mindmap", "format": "png"}
+            {
+              "type": "map",
+              "description": "Einsatzfelder-Mindmap",
+              "format": "png"
+            }
           ]
         }
       ],
@@ -71,21 +111,35 @@
           "url": "https://example.com/bibliometrie-einfuehrung",
           "difficulty": "beginner",
           "readingTimeMinutes": 12,
-          "learningGoals": ["Grundbegriffe verstehen"],
+          "learningGoals": [
+            "Grundbegriffe verstehen"
+          ],
           "outputs": [
-            {"type": "notes", "description": "Lesenotizen", "format": "markdown"}
+            {
+              "type": "notes",
+              "description": "Lesenotizen",
+              "format": "markdown"
+            }
           ]
         }
-      ]
+      ],
+      "path": "modul1.html"
     },
     {
       "title": "Modul 2: Publikationsdaten und Quellen",
       "slug": "modul-2-quellen",
       "difficulty": "beginner",
       "readingTimeMinutes": 50,
-      "learningGoals": ["Quelltypen unterscheiden", "Datenqualität einschätzen"],
+      "learningGoals": [
+        "Quelltypen unterscheiden",
+        "Datenqualität einschätzen"
+      ],
       "outputs": [
-        {"type": "matrix", "description": "Quellenvergleich", "format": "xlsx"}
+        {
+          "type": "matrix",
+          "description": "Quellenvergleich",
+          "format": "xlsx"
+        }
       ],
       "exercises": [
         {
@@ -93,9 +147,15 @@
           "slug": "quellen-vergleichen",
           "difficulty": "beginner",
           "readingTimeMinutes": 25,
-          "learningGoals": ["Datenquellen bewerten"],
+          "learningGoals": [
+            "Datenquellen bewerten"
+          ],
           "outputs": [
-            {"type": "table", "description": "Vergleichstabelle", "format": "csv"}
+            {
+              "type": "table",
+              "description": "Vergleichstabelle",
+              "format": "csv"
+            }
           ]
         },
         {
@@ -103,9 +163,15 @@
           "slug": "datenluecken-erkennen",
           "difficulty": "beginner",
           "readingTimeMinutes": 20,
-          "learningGoals": ["Abdeckung einschätzen"],
+          "learningGoals": [
+            "Abdeckung einschätzen"
+          ],
           "outputs": [
-            {"type": "report", "description": "Abdeckungskurzanalyse", "format": "pdf"}
+            {
+              "type": "report",
+              "description": "Abdeckungskurzanalyse",
+              "format": "pdf"
+            }
           ]
         }
       ],
@@ -117,21 +183,35 @@
           "url": "https://example.com/datenquellen-video",
           "difficulty": "beginner",
           "readingTimeMinutes": 15,
-          "learningGoals": ["Wichtige Datenbanken benennen"],
+          "learningGoals": [
+            "Wichtige Datenbanken benennen"
+          ],
           "outputs": [
-            {"type": "notes", "description": "Stichpunkte", "format": "markdown"}
+            {
+              "type": "notes",
+              "description": "Stichpunkte",
+              "format": "markdown"
+            }
           ]
         }
-      ]
+      ],
+      "path": "modul2.html"
     },
     {
       "title": "Modul 3: Zitationsindikatoren",
       "slug": "modul-3-zitation",
       "difficulty": "beginner",
       "readingTimeMinutes": 55,
-      "learningGoals": ["Basisindikatoren berechnen", "Interpretation verstehen"],
+      "learningGoals": [
+        "Basisindikatoren berechnen",
+        "Interpretation verstehen"
+      ],
       "outputs": [
-        {"type": "worksheet", "description": "Indikatoren-Übersicht", "format": "xlsx"}
+        {
+          "type": "worksheet",
+          "description": "Indikatoren-Übersicht",
+          "format": "xlsx"
+        }
       ],
       "exercises": [
         {
@@ -139,9 +219,15 @@
           "slug": "zitationszaehlung",
           "difficulty": "beginner",
           "readingTimeMinutes": 25,
-          "learningGoals": ["Zitationen korrekt zählen"],
+          "learningGoals": [
+            "Zitationen korrekt zählen"
+          ],
           "outputs": [
-            {"type": "table", "description": "Zitationsliste", "format": "csv"}
+            {
+              "type": "table",
+              "description": "Zitationsliste",
+              "format": "csv"
+            }
           ]
         },
         {
@@ -149,9 +235,15 @@
           "slug": "h-index-berechnen",
           "difficulty": "beginner",
           "readingTimeMinutes": 30,
-          "learningGoals": ["h-Index anwenden"],
+          "learningGoals": [
+            "h-Index anwenden"
+          ],
           "outputs": [
-            {"type": "calculation", "description": "Berechnungsschritte", "format": "markdown"}
+            {
+              "type": "calculation",
+              "description": "Berechnungsschritte",
+              "format": "markdown"
+            }
           ]
         }
       ],
@@ -163,21 +255,35 @@
           "url": "https://example.com/indikatoren",
           "difficulty": "beginner",
           "readingTimeMinutes": 18,
-          "learningGoals": ["Indikatoren vergleichen"],
+          "learningGoals": [
+            "Indikatoren vergleichen"
+          ],
           "outputs": [
-            {"type": "notes", "description": "Zusammenfassung", "format": "markdown"}
+            {
+              "type": "notes",
+              "description": "Zusammenfassung",
+              "format": "markdown"
+            }
           ]
         }
-      ]
+      ],
+      "path": "modul3.html"
     },
     {
       "title": "Modul 4: Feldnormierung",
       "slug": "modul-4-feldnormierung",
       "difficulty": "intermediate",
       "readingTimeMinutes": 60,
-      "learningGoals": ["Feldnormierung erklären", "Vergleichbarkeit sichern"],
+      "learningGoals": [
+        "Feldnormierung erklären",
+        "Vergleichbarkeit sichern"
+      ],
       "outputs": [
-        {"type": "guide", "description": "Normierungsschritte", "format": "pdf"}
+        {
+          "type": "guide",
+          "description": "Normierungsschritte",
+          "format": "pdf"
+        }
       ],
       "exercises": [
         {
@@ -185,9 +291,15 @@
           "slug": "referenzwerte-bestimmen",
           "difficulty": "intermediate",
           "readingTimeMinutes": 30,
-          "learningGoals": ["Feldspezifische Benchmarks nutzen"],
+          "learningGoals": [
+            "Feldspezifische Benchmarks nutzen"
+          ],
           "outputs": [
-            {"type": "table", "description": "Benchmark-Tabelle", "format": "csv"}
+            {
+              "type": "table",
+              "description": "Benchmark-Tabelle",
+              "format": "csv"
+            }
           ]
         },
         {
@@ -195,9 +307,15 @@
           "slug": "normierte-kennzahlen",
           "difficulty": "intermediate",
           "readingTimeMinutes": 25,
-          "learningGoals": ["Normalisierte Werte interpretieren"],
+          "learningGoals": [
+            "Normalisierte Werte interpretieren"
+          ],
           "outputs": [
-            {"type": "report", "description": "Normierungsbericht", "format": "pdf"}
+            {
+              "type": "report",
+              "description": "Normierungsbericht",
+              "format": "pdf"
+            }
           ]
         }
       ],
@@ -209,21 +327,35 @@
           "url": "https://example.com/field-normalized",
           "difficulty": "intermediate",
           "readingTimeMinutes": 20,
-          "learningGoals": ["Normierungsansätze vergleichen"],
+          "learningGoals": [
+            "Normierungsansätze vergleichen"
+          ],
           "outputs": [
-            {"type": "notes", "description": "Lesenotizen", "format": "markdown"}
+            {
+              "type": "notes",
+              "description": "Lesenotizen",
+              "format": "markdown"
+            }
           ]
         }
-      ]
+      ],
+      "path": "modul4.html"
     },
     {
       "title": "Modul 5: Altmetrics",
       "slug": "modul-5-altmetrics",
       "difficulty": "intermediate",
       "readingTimeMinutes": 50,
-      "learningGoals": ["Alternative Metriken einordnen", "Altmetrics-Daten interpretieren"],
+      "learningGoals": [
+        "Alternative Metriken einordnen",
+        "Altmetrics-Daten interpretieren"
+      ],
       "outputs": [
-        {"type": "dashboard", "description": "Altmetrics-Übersicht", "format": "png"}
+        {
+          "type": "dashboard",
+          "description": "Altmetrics-Übersicht",
+          "format": "png"
+        }
       ],
       "exercises": [
         {
@@ -231,9 +363,15 @@
           "slug": "altmetrics-bewerten",
           "difficulty": "intermediate",
           "readingTimeMinutes": 25,
-          "learningGoals": ["Altmetrics kritisch beurteilen"],
+          "learningGoals": [
+            "Altmetrics kritisch beurteilen"
+          ],
           "outputs": [
-            {"type": "checklist", "description": "Bewertungskriterien", "format": "markdown"}
+            {
+              "type": "checklist",
+              "description": "Bewertungskriterien",
+              "format": "markdown"
+            }
           ]
         },
         {
@@ -241,9 +379,15 @@
           "slug": "social-media-signale",
           "difficulty": "intermediate",
           "readingTimeMinutes": 20,
-          "learningGoals": ["Signalquellen erkennen"],
+          "learningGoals": [
+            "Signalquellen erkennen"
+          ],
           "outputs": [
-            {"type": "summary", "description": "Signalquellen-Notizen", "format": "markdown"}
+            {
+              "type": "summary",
+              "description": "Signalquellen-Notizen",
+              "format": "markdown"
+            }
           ]
         }
       ],
@@ -255,21 +399,35 @@
           "url": "https://example.com/altmetrics",
           "difficulty": "intermediate",
           "readingTimeMinutes": 14,
-          "learningGoals": ["Altmetrics-Landschaft verstehen"],
+          "learningGoals": [
+            "Altmetrics-Landschaft verstehen"
+          ],
           "outputs": [
-            {"type": "notes", "description": "Kurznotizen", "format": "markdown"}
+            {
+              "type": "notes",
+              "description": "Kurznotizen",
+              "format": "markdown"
+            }
           ]
         }
-      ]
+      ],
+      "path": "modul5.html"
     },
     {
       "title": "Modul 6: Datenbereinigung",
       "slug": "modul-6-datenbereinigung",
       "difficulty": "intermediate",
       "readingTimeMinutes": 55,
-      "learningGoals": ["Daten bereinigen", "Duplikate identifizieren"],
+      "learningGoals": [
+        "Daten bereinigen",
+        "Duplikate identifizieren"
+      ],
       "outputs": [
-        {"type": "script", "description": "Bereinigungsschritte", "format": "python"}
+        {
+          "type": "script",
+          "description": "Bereinigungsschritte",
+          "format": "python"
+        }
       ],
       "exercises": [
         {
@@ -277,9 +435,15 @@
           "slug": "duplikate-entfernen",
           "difficulty": "intermediate",
           "readingTimeMinutes": 25,
-          "learningGoals": ["Dublettenerkennung anwenden"],
+          "learningGoals": [
+            "Dublettenerkennung anwenden"
+          ],
           "outputs": [
-            {"type": "log", "description": "Bereinigungsprotokoll", "format": "txt"}
+            {
+              "type": "log",
+              "description": "Bereinigungsprotokoll",
+              "format": "txt"
+            }
           ]
         },
         {
@@ -287,9 +451,15 @@
           "slug": "autoren-disambiguieren",
           "difficulty": "intermediate",
           "readingTimeMinutes": 30,
-          "learningGoals": ["Namensvarianten zusammenführen"],
+          "learningGoals": [
+            "Namensvarianten zusammenführen"
+          ],
           "outputs": [
-            {"type": "table", "description": "Namensmapping", "format": "csv"}
+            {
+              "type": "table",
+              "description": "Namensmapping",
+              "format": "csv"
+            }
           ]
         }
       ],
@@ -301,21 +471,35 @@
           "url": "https://example.com/cleaning",
           "difficulty": "intermediate",
           "readingTimeMinutes": 16,
-          "learningGoals": ["Bereinigungsstrategien anwenden"],
+          "learningGoals": [
+            "Bereinigungsstrategien anwenden"
+          ],
           "outputs": [
-            {"type": "notes", "description": "Checkliste", "format": "markdown"}
+            {
+              "type": "notes",
+              "description": "Checkliste",
+              "format": "markdown"
+            }
           ]
         }
-      ]
+      ],
+      "path": "modul6.html"
     },
     {
       "title": "Modul 7: Netzwerk- und Graphanalyse",
       "slug": "modul-7-netzwerke",
       "difficulty": "intermediate",
       "readingTimeMinutes": 60,
-      "learningGoals": ["Ko-Autorenschaften analysieren", "Netzwerke visualisieren"],
+      "learningGoals": [
+        "Ko-Autorenschaften analysieren",
+        "Netzwerke visualisieren"
+      ],
       "outputs": [
-        {"type": "graph", "description": "Ko-Autoren-Netzwerk", "format": "graphml"}
+        {
+          "type": "graph",
+          "description": "Ko-Autoren-Netzwerk",
+          "format": "graphml"
+        }
       ],
       "exercises": [
         {
@@ -323,9 +507,15 @@
           "slug": "ko-autoren-modellieren",
           "difficulty": "intermediate",
           "readingTimeMinutes": 30,
-          "learningGoals": ["Netzwerkgraphen erstellen"],
+          "learningGoals": [
+            "Netzwerkgraphen erstellen"
+          ],
           "outputs": [
-            {"type": "graph", "description": "Graphdaten", "format": "graphml"}
+            {
+              "type": "graph",
+              "description": "Graphdaten",
+              "format": "graphml"
+            }
           ]
         },
         {
@@ -333,9 +523,15 @@
           "slug": "cluster-finden",
           "difficulty": "intermediate",
           "readingTimeMinutes": 25,
-          "learningGoals": ["Community Detection anwenden"],
+          "learningGoals": [
+            "Community Detection anwenden"
+          ],
           "outputs": [
-            {"type": "report", "description": "Cluster-Übersicht", "format": "pdf"}
+            {
+              "type": "report",
+              "description": "Cluster-Übersicht",
+              "format": "pdf"
+            }
           ]
         }
       ],
@@ -347,21 +543,35 @@
           "url": "https://example.com/netzwerk",
           "difficulty": "intermediate",
           "readingTimeMinutes": 18,
-          "learningGoals": ["Netzwerke interpretieren"],
+          "learningGoals": [
+            "Netzwerke interpretieren"
+          ],
           "outputs": [
-            {"type": "notes", "description": "Kernaussagen", "format": "markdown"}
+            {
+              "type": "notes",
+              "description": "Kernaussagen",
+              "format": "markdown"
+            }
           ]
         }
-      ]
+      ],
+      "path": "modul7.html"
     },
     {
       "title": "Modul 8: Themenmapping",
       "slug": "modul-8-themenmapping",
       "difficulty": "intermediate",
       "readingTimeMinutes": 55,
-      "learningGoals": ["Themencluster erkennen", "Keyword-Co-Occurrence analysieren"],
+      "learningGoals": [
+        "Themencluster erkennen",
+        "Keyword-Co-Occurrence analysieren"
+      ],
       "outputs": [
-        {"type": "map", "description": "Themenlandkarte", "format": "png"}
+        {
+          "type": "map",
+          "description": "Themenlandkarte",
+          "format": "png"
+        }
       ],
       "exercises": [
         {
@@ -369,9 +579,15 @@
           "slug": "keyword-matrix-erstellen",
           "difficulty": "intermediate",
           "readingTimeMinutes": 25,
-          "learningGoals": ["Co-Occurrence berechnen"],
+          "learningGoals": [
+            "Co-Occurrence berechnen"
+          ],
           "outputs": [
-            {"type": "table", "description": "Keyword-Matrix", "format": "csv"}
+            {
+              "type": "table",
+              "description": "Keyword-Matrix",
+              "format": "csv"
+            }
           ]
         },
         {
@@ -379,9 +595,15 @@
           "slug": "themencluster-beschreiben",
           "difficulty": "intermediate",
           "readingTimeMinutes": 25,
-          "learningGoals": ["Cluster interpretieren"],
+          "learningGoals": [
+            "Cluster interpretieren"
+          ],
           "outputs": [
-            {"type": "report", "description": "Clusterbeschreibung", "format": "markdown"}
+            {
+              "type": "report",
+              "description": "Clusterbeschreibung",
+              "format": "markdown"
+            }
           ]
         }
       ],
@@ -393,12 +615,19 @@
           "url": "https://example.com/themenmapping",
           "difficulty": "intermediate",
           "readingTimeMinutes": 20,
-          "learningGoals": ["Mapping-Methoden anwenden"],
+          "learningGoals": [
+            "Mapping-Methoden anwenden"
+          ],
           "outputs": [
-            {"type": "notes", "description": "Notizen", "format": "markdown"}
+            {
+              "type": "notes",
+              "description": "Notizen",
+              "format": "markdown"
+            }
           ]
         }
-      ]
+      ],
+      "path": "modul8.html"
     },
     {
       "title": "Modul 9: Datenqualität & Disambiguierung",
@@ -413,8 +642,16 @@
         "Workflows reproduzierbar dokumentieren"
       ],
       "outputs": [
-        {"type": "checklist", "description": "QA-Checkliste", "format": "markdown"},
-        {"type": "template", "description": "Methodik-Kasten", "format": "markdown"}
+        {
+          "type": "checklist",
+          "description": "QA-Checkliste",
+          "format": "markdown"
+        },
+        {
+          "type": "template",
+          "description": "Methodik-Kasten",
+          "format": "markdown"
+        }
       ],
       "exercises": [
         {
@@ -422,9 +659,15 @@
           "slug": "minimalstandard-anwenden",
           "difficulty": "advanced",
           "readingTimeMinutes": 20,
-          "learningGoals": ["Cleaning-Pipeline strukturieren"],
+          "learningGoals": [
+            "Cleaning-Pipeline strukturieren"
+          ],
           "outputs": [
-            {"type": "worksheet", "description": "Pipeline-Checkliste", "format": "markdown"}
+            {
+              "type": "worksheet",
+              "description": "Pipeline-Checkliste",
+              "format": "markdown"
+            }
           ]
         },
         {
@@ -432,9 +675,15 @@
           "slug": "dedup-mapping-ueben",
           "difficulty": "advanced",
           "readingTimeMinutes": 25,
-          "learningGoals": ["Dedup-Regeln und Mapping anwenden"],
+          "learningGoals": [
+            "Dedup-Regeln und Mapping anwenden"
+          ],
           "outputs": [
-            {"type": "table", "description": "Mapping-Tabelle", "format": "csv"}
+            {
+              "type": "table",
+              "description": "Mapping-Tabelle",
+              "format": "csv"
+            }
           ]
         },
         {
@@ -442,9 +691,15 @@
           "slug": "workflow-qa-planen",
           "difficulty": "advanced",
           "readingTimeMinutes": 30,
-          "learningGoals": ["Reproduzierbare Workflows entwerfen"],
+          "learningGoals": [
+            "Reproduzierbare Workflows entwerfen"
+          ],
           "outputs": [
-            {"type": "plan", "description": "Workflow-Blueprint", "format": "markdown"}
+            {
+              "type": "plan",
+              "description": "Workflow-Blueprint",
+              "format": "markdown"
+            }
           ]
         }
       ],
@@ -456,9 +711,15 @@
           "url": "https://help.openalex.org/hc/en-us/articles/24347048891543-Author-disambiguation",
           "difficulty": "advanced",
           "readingTimeMinutes": 12,
-          "learningGoals": ["Disambiguierungssignale verstehen"],
+          "learningGoals": [
+            "Disambiguierungssignale verstehen"
+          ],
           "outputs": [
-            {"type": "notes", "description": "Stichpunkte", "format": "markdown"}
+            {
+              "type": "notes",
+              "description": "Stichpunkte",
+              "format": "markdown"
+            }
           ]
         },
         {
@@ -468,9 +729,15 @@
           "url": "https://support.orcid.org/hc/en-us/articles/360006897334-What-is-an-ORCID-iD-and-how-do-I-use-it",
           "difficulty": "advanced",
           "readingTimeMinutes": 10,
-          "learningGoals": ["PIDs für Autor:innen nutzen"],
+          "learningGoals": [
+            "PIDs für Autor:innen nutzen"
+          ],
           "outputs": [
-            {"type": "notes", "description": "Kurznotizen", "format": "markdown"}
+            {
+              "type": "notes",
+              "description": "Kurznotizen",
+              "format": "markdown"
+            }
           ]
         },
         {
@@ -480,12 +747,19 @@
           "url": "https://ror.org/",
           "difficulty": "advanced",
           "readingTimeMinutes": 8,
-          "learningGoals": ["Organisationen stabil referenzieren"],
+          "learningGoals": [
+            "Organisationen stabil referenzieren"
+          ],
           "outputs": [
-            {"type": "notes", "description": "Kurznotizen", "format": "markdown"}
+            {
+              "type": "notes",
+              "description": "Kurznotizen",
+              "format": "markdown"
+            }
           ]
         }
-      ]
+      ],
+      "path": "modul9.html"
     },
     {
       "title": "Modul 10: Datenquellen & Coverage: WoS vs. Scopus vs. OpenAlex/Crossref vs. Google Scholar – Auswahl je Use-Case",
@@ -499,9 +773,21 @@
         "Einen „Source Disclosure“-Methodik-Kasten schreiben, der Quelle, Stichtag, Exportregeln, Limitationen und Reproduzierbarkeit abdeckt"
       ],
       "outputs": [
-        {"type": "matrix", "description": "Vergleichsmatrix der Quellen", "format": "markdown"},
-        {"type": "guide", "description": "Use-Case-Entscheidungshilfe", "format": "markdown"},
-        {"type": "template", "description": "Source Disclosure Box", "format": "markdown"}
+        {
+          "type": "matrix",
+          "description": "Vergleichsmatrix der Quellen",
+          "format": "markdown"
+        },
+        {
+          "type": "guide",
+          "description": "Use-Case-Entscheidungshilfe",
+          "format": "markdown"
+        },
+        {
+          "type": "template",
+          "description": "Source Disclosure Box",
+          "format": "markdown"
+        }
       ],
       "exercises": [
         {
@@ -509,9 +795,15 @@
           "slug": "quellenfamilien-unterscheiden",
           "difficulty": "advanced",
           "readingTimeMinutes": 15,
-          "learningGoals": ["Quellenfamilien korrekt zuordnen"],
+          "learningGoals": [
+            "Quellenfamilien korrekt zuordnen"
+          ],
           "outputs": [
-            {"type": "quiz", "description": "Zuordnungsfragen", "format": "markdown"}
+            {
+              "type": "quiz",
+              "description": "Zuordnungsfragen",
+              "format": "markdown"
+            }
           ]
         },
         {
@@ -519,9 +811,15 @@
           "slug": "quellenwahl-begruenden",
           "difficulty": "advanced",
           "readingTimeMinutes": 20,
-          "learningGoals": ["Quellenwahl für Übungen begründen"],
+          "learningGoals": [
+            "Quellenwahl für Übungen begründen"
+          ],
           "outputs": [
-            {"type": "notes", "description": "Begründung in Bulletpoints", "format": "markdown"}
+            {
+              "type": "notes",
+              "description": "Begründung in Bulletpoints",
+              "format": "markdown"
+            }
           ]
         },
         {
@@ -529,9 +827,15 @@
           "slug": "triangulation-erklaeren",
           "difficulty": "advanced",
           "readingTimeMinutes": 20,
-          "learningGoals": ["Coverage-Unterschiede plausibel erklären"],
+          "learningGoals": [
+            "Coverage-Unterschiede plausibel erklären"
+          ],
           "outputs": [
-            {"type": "list", "description": "Plausible Gründe", "format": "markdown"}
+            {
+              "type": "list",
+              "description": "Plausible Gründe",
+              "format": "markdown"
+            }
           ]
         },
         {
@@ -539,9 +843,16 @@
           "slug": "dashboard-case",
           "difficulty": "advanced",
           "readingTimeMinutes": 30,
-          "learningGoals": ["Source-Strategie entwerfen", "Disclosure Box erstellen"],
+          "learningGoals": [
+            "Source-Strategie entwerfen",
+            "Disclosure Box erstellen"
+          ],
           "outputs": [
-            {"type": "report", "description": "Strategie + Disclosure Box", "format": "markdown"}
+            {
+              "type": "report",
+              "description": "Strategie + Disclosure Box",
+              "format": "markdown"
+            }
           ]
         }
       ],
@@ -553,9 +864,15 @@
           "url": "https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/web-of-science-core-collection/content-collection-and-indexing-process/",
           "difficulty": "advanced",
           "readingTimeMinutes": 12,
-          "learningGoals": ["Kurations- und Indexing-Prozess verstehen"],
+          "learningGoals": [
+            "Kurations- und Indexing-Prozess verstehen"
+          ],
           "outputs": [
-            {"type": "notes", "description": "Notizen", "format": "markdown"}
+            {
+              "type": "notes",
+              "description": "Notizen",
+              "format": "markdown"
+            }
           ]
         },
         {
@@ -565,9 +882,15 @@
           "url": "https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/web-of-science-core-collection/editorial-selection-process/",
           "difficulty": "advanced",
           "readingTimeMinutes": 12,
-          "learningGoals": ["Selektionskriterien nachvollziehen"],
+          "learningGoals": [
+            "Selektionskriterien nachvollziehen"
+          ],
           "outputs": [
-            {"type": "notes", "description": "Notizen", "format": "markdown"}
+            {
+              "type": "notes",
+              "description": "Notizen",
+              "format": "markdown"
+            }
           ]
         },
         {
@@ -577,9 +900,15 @@
           "url": "https://assets.ctfassets.net/o78em1y1w4i4/EX1iy8VxBeQKf8aN2XzOp/c36f79db25484cb38a5972ad9a5472ec/Scopus_ContentCoverage_Guide_WEB.pdf",
           "difficulty": "advanced",
           "readingTimeMinutes": 15,
-          "learningGoals": ["Scopus-Coverage-Logik verstehen"],
+          "learningGoals": [
+            "Scopus-Coverage-Logik verstehen"
+          ],
           "outputs": [
-            {"type": "notes", "description": "Notizen", "format": "markdown"}
+            {
+              "type": "notes",
+              "description": "Notizen",
+              "format": "markdown"
+            }
           ]
         },
         {
@@ -589,9 +918,15 @@
           "url": "https://docs.openalex.org/additional-help/faq",
           "difficulty": "advanced",
           "readingTimeMinutes": 8,
-          "learningGoals": ["OpenAlex-Datenquellen einordnen"],
+          "learningGoals": [
+            "OpenAlex-Datenquellen einordnen"
+          ],
           "outputs": [
-            {"type": "notes", "description": "Notizen", "format": "markdown"}
+            {
+              "type": "notes",
+              "description": "Notizen",
+              "format": "markdown"
+            }
           ]
         },
         {
@@ -601,9 +936,15 @@
           "url": "https://docs.openalex.org/api-entities/sources",
           "difficulty": "advanced",
           "readingTimeMinutes": 10,
-          "learningGoals": ["OpenAlex-Quellenherkunft verstehen"],
+          "learningGoals": [
+            "OpenAlex-Quellenherkunft verstehen"
+          ],
           "outputs": [
-            {"type": "notes", "description": "Notizen", "format": "markdown"}
+            {
+              "type": "notes",
+              "description": "Notizen",
+              "format": "markdown"
+            }
           ]
         },
         {
@@ -613,9 +954,15 @@
           "url": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/",
           "difficulty": "advanced",
           "readingTimeMinutes": 8,
-          "learningGoals": ["Crossref-API für Metadaten verstehen"],
+          "learningGoals": [
+            "Crossref-API für Metadaten verstehen"
+          ],
           "outputs": [
-            {"type": "notes", "description": "Notizen", "format": "markdown"}
+            {
+              "type": "notes",
+              "description": "Notizen",
+              "format": "markdown"
+            }
           ]
         },
         {
@@ -625,9 +972,15 @@
           "url": "https://onlinelibrary.wiley.com/doi/full/10.1002/jrsm.1729",
           "difficulty": "advanced",
           "readingTimeMinutes": 18,
-          "learningGoals": ["Vergleichsstudien zur Coverage einordnen"],
+          "learningGoals": [
+            "Vergleichsstudien zur Coverage einordnen"
+          ],
           "outputs": [
-            {"type": "notes", "description": "Notizen", "format": "markdown"}
+            {
+              "type": "notes",
+              "description": "Notizen",
+              "format": "markdown"
+            }
           ]
         },
         {
@@ -637,12 +990,19 @@
           "url": "https://blogs.lse.ac.uk/impactofsocialsciences/2019/12/03/google-scholar-web-of-science-and-scopus-which-is-best-for-me/",
           "difficulty": "advanced",
           "readingTimeMinutes": 12,
-          "learningGoals": ["Praxisnahen Quellenvergleich verstehen"],
+          "learningGoals": [
+            "Praxisnahen Quellenvergleich verstehen"
+          ],
           "outputs": [
-            {"type": "notes", "description": "Notizen", "format": "markdown"}
+            {
+              "type": "notes",
+              "description": "Notizen",
+              "format": "markdown"
+            }
           ]
         }
-      ]
+      ],
+      "path": "modul10.html"
     },
     {
       "title": "Modul 11: Science Mapping & Wissensstrukturen: Co-Citation, Bibliographic Coupling, Co-Word",
@@ -657,7 +1017,11 @@
         "Fehlinterpretationen vermeiden"
       ],
       "outputs": [
-        {"type": "map", "description": "Science-Mapping-Karte mit Methodikbox", "format": "png"}
+        {
+          "type": "map",
+          "description": "Science-Mapping-Karte mit Methodikbox",
+          "format": "png"
+        }
       ],
       "exercises": [
         {
@@ -665,9 +1029,15 @@
           "slug": "methoden-quiz",
           "difficulty": "advanced",
           "readingTimeMinutes": 15,
-          "learningGoals": ["Passende Mapping-Methode auswählen"],
+          "learningGoals": [
+            "Passende Mapping-Methode auswählen"
+          ],
           "outputs": [
-            {"type": "quiz", "description": "Antworten + Begründung", "format": "markdown"}
+            {
+              "type": "quiz",
+              "description": "Antworten + Begründung",
+              "format": "markdown"
+            }
           ]
         },
         {
@@ -675,9 +1045,15 @@
           "slug": "methoden-zuordnen",
           "difficulty": "advanced",
           "readingTimeMinutes": 20,
-          "learningGoals": ["Fragestellungen mit co-citation, coupling, co-word matchen"],
+          "learningGoals": [
+            "Fragestellungen mit co-citation, coupling, co-word matchen"
+          ],
           "outputs": [
-            {"type": "worksheet", "description": "Zuordnungstabelle", "format": "markdown"}
+            {
+              "type": "worksheet",
+              "description": "Zuordnungstabelle",
+              "format": "markdown"
+            }
           ]
         },
         {
@@ -685,9 +1061,15 @@
           "slug": "kantenstaerke-berechnen",
           "difficulty": "advanced",
           "readingTimeMinutes": 10,
-          "learningGoals": ["Gewichte im Co-word-Netzwerk interpretieren"],
+          "learningGoals": [
+            "Gewichte im Co-word-Netzwerk interpretieren"
+          ],
           "outputs": [
-            {"type": "calculation", "description": "Kurzberechnung", "format": "markdown"}
+            {
+              "type": "calculation",
+              "description": "Kurzberechnung",
+              "format": "markdown"
+            }
           ]
         },
         {
@@ -695,9 +1077,15 @@
           "slug": "map-disclosure-box",
           "difficulty": "advanced",
           "readingTimeMinutes": 20,
-          "learningGoals": ["Methodik transparent dokumentieren"],
+          "learningGoals": [
+            "Methodik transparent dokumentieren"
+          ],
           "outputs": [
-            {"type": "methodbox", "description": "Disclosure Box", "format": "markdown"}
+            {
+              "type": "methodbox",
+              "description": "Disclosure Box",
+              "format": "markdown"
+            }
           ]
         },
         {
@@ -705,9 +1093,16 @@
           "slug": "mini-case-mapping",
           "difficulty": "advanced",
           "readingTimeMinutes": 30,
-          "learningGoals": ["Zwei Mapping-Varianten entwerfen", "Stabilitätschecks definieren"],
+          "learningGoals": [
+            "Zwei Mapping-Varianten entwerfen",
+            "Stabilitätschecks definieren"
+          ],
           "outputs": [
-            {"type": "plan", "description": "Varianten + Checks", "format": "markdown"}
+            {
+              "type": "plan",
+              "description": "Varianten + Checks",
+              "format": "markdown"
+            }
           ]
         }
       ],
@@ -719,9 +1114,15 @@
           "url": "https://asistdl.onlinelibrary.wiley.com/doi/10.1002/asi.4630240406",
           "difficulty": "advanced",
           "readingTimeMinutes": 12,
-          "learningGoals": ["Co-citation definieren"],
+          "learningGoals": [
+            "Co-citation definieren"
+          ],
           "outputs": [
-            {"type": "notes", "description": "Notizen", "format": "markdown"}
+            {
+              "type": "notes",
+              "description": "Notizen",
+              "format": "markdown"
+            }
           ]
         },
         {
@@ -731,9 +1132,15 @@
           "url": "https://onlinelibrary.wiley.com/doi/10.1002/asi.5090140103",
           "difficulty": "advanced",
           "readingTimeMinutes": 12,
-          "learningGoals": ["Bibliographic coupling erklären"],
+          "learningGoals": [
+            "Bibliographic coupling erklären"
+          ],
           "outputs": [
-            {"type": "notes", "description": "Notizen", "format": "markdown"}
+            {
+              "type": "notes",
+              "description": "Notizen",
+              "format": "markdown"
+            }
           ]
         },
         {
@@ -743,9 +1150,15 @@
           "url": "https://journals.sagepub.com/doi/10.1177/053901883022002003",
           "difficulty": "advanced",
           "readingTimeMinutes": 14,
-          "learningGoals": ["Co-word analysis einordnen"],
+          "learningGoals": [
+            "Co-word analysis einordnen"
+          ],
           "outputs": [
-            {"type": "notes", "description": "Notizen", "format": "markdown"}
+            {
+              "type": "notes",
+              "description": "Notizen",
+              "format": "markdown"
+            }
           ]
         },
         {
@@ -755,9 +1168,15 @@
           "url": "https://link.springer.com/article/10.1007/s11192-009-0146-3",
           "difficulty": "advanced",
           "readingTimeMinutes": 12,
-          "learningGoals": ["VOSviewer als Tool einordnen"],
+          "learningGoals": [
+            "VOSviewer als Tool einordnen"
+          ],
           "outputs": [
-            {"type": "notes", "description": "Notizen", "format": "markdown"}
+            {
+              "type": "notes",
+              "description": "Notizen",
+              "format": "markdown"
+            }
           ]
         },
         {
@@ -767,9 +1186,15 @@
           "url": "https://www.vosviewer.com/documentation/Manual_VOSviewer_1.6.18.pdf",
           "difficulty": "advanced",
           "readingTimeMinutes": 18,
-          "learningGoals": ["VOSviewer-Workflow nachschlagen"],
+          "learningGoals": [
+            "VOSviewer-Workflow nachschlagen"
+          ],
           "outputs": [
-            {"type": "notes", "description": "Notizen", "format": "markdown"}
+            {
+              "type": "notes",
+              "description": "Notizen",
+              "format": "markdown"
+            }
           ]
         },
         {
@@ -779,9 +1204,15 @@
           "url": "https://www.sciencedirect.com/science/article/pii/S1751157717300500",
           "difficulty": "advanced",
           "readingTimeMinutes": 14,
-          "learningGoals": ["bibliometrix als Pipeline-Tool verstehen"],
+          "learningGoals": [
+            "bibliometrix als Pipeline-Tool verstehen"
+          ],
           "outputs": [
-            {"type": "notes", "description": "Notizen", "format": "markdown"}
+            {
+              "type": "notes",
+              "description": "Notizen",
+              "format": "markdown"
+            }
           ]
         },
         {
@@ -791,12 +1222,19 @@
           "url": "https://arxiv.org/abs/1301.4655",
           "difficulty": "advanced",
           "readingTimeMinutes": 16,
-          "learningGoals": ["Netzwerktransformationen & Normalisierung verstehen"],
+          "learningGoals": [
+            "Netzwerktransformationen & Normalisierung verstehen"
+          ],
           "outputs": [
-            {"type": "notes", "description": "Notizen", "format": "markdown"}
+            {
+              "type": "notes",
+              "description": "Notizen",
+              "format": "markdown"
+            }
           ]
         }
-      ]
+      ],
+      "path": "modul11.html"
     },
     {
       "title": "Modul 12: Forschungsbewertung in der Praxis: Reporting-Patterns, Dashboards, Use-Cases (Unit/Faculty/Person) + Do/Don’t-Katalog",
@@ -823,7 +1261,9 @@
           "slug": "high-stakes-entscheidungen",
           "difficulty": "beginner",
           "readingTimeMinutes": 10,
-          "learningGoals": ["High-stakes-Assessment von Monitoring unterscheiden"],
+          "learningGoals": [
+            "High-stakes-Assessment von Monitoring unterscheiden"
+          ],
           "outputs": [
             {
               "type": "quiz",
@@ -837,7 +1277,9 @@
           "slug": "dora-prinzipien",
           "difficulty": "beginner",
           "readingTimeMinutes": 10,
-          "learningGoals": ["DORA-Prinzipien korrekt wiedergeben"],
+          "learningGoals": [
+            "DORA-Prinzipien korrekt wiedergeben"
+          ],
           "outputs": [
             {
               "type": "short-answer",
@@ -851,7 +1293,9 @@
           "slug": "dashboard-spezifikation",
           "difficulty": "intermediate",
           "readingTimeMinutes": 30,
-          "learningGoals": ["Dashboard-Blueprint für Low-stakes-Use-Case entwerfen"],
+          "learningGoals": [
+            "Dashboard-Blueprint für Low-stakes-Use-Case entwerfen"
+          ],
           "outputs": [
             {
               "type": "spec",
@@ -865,7 +1309,9 @@
           "slug": "dashboard-kritik",
           "difficulty": "intermediate",
           "readingTimeMinutes": 25,
-          "learningGoals": ["Fehlanreize und Bias in Dashboards erkennen"],
+          "learningGoals": [
+            "Fehlanreize und Bias in Dashboards erkennen"
+          ],
           "outputs": [
             {
               "type": "analysis",
@@ -899,9 +1345,15 @@
           "url": "https://www.ukri.org/wp-content/uploads/2021/12/RE-151221-TheMetricTideFullReport2015.pdf",
           "difficulty": "advanced",
           "readingTimeMinutes": 20,
-          "learningGoals": ["Framework für Responsible Metrics verstehen"],
+          "learningGoals": [
+            "Framework für Responsible Metrics verstehen"
+          ],
           "outputs": [
-            {"type": "notes", "description": "Kernprinzipien notieren", "format": "markdown"}
+            {
+              "type": "notes",
+              "description": "Kernprinzipien notieren",
+              "format": "markdown"
+            }
           ]
         },
         {
@@ -911,9 +1363,15 @@
           "url": "https://sfdora.org/wp-content/uploads/2024/05/DORA_indicators_guidance.pdf",
           "difficulty": "advanced",
           "readingTimeMinutes": 15,
-          "learningGoals": ["DORA-Prinzipien anwenden"],
+          "learningGoals": [
+            "DORA-Prinzipien anwenden"
+          ],
           "outputs": [
-            {"type": "notes", "description": "Prinzipien zusammenfassen", "format": "markdown"}
+            {
+              "type": "notes",
+              "description": "Prinzipien zusammenfassen",
+              "format": "markdown"
+            }
           ]
         },
         {
@@ -923,9 +1381,15 @@
           "url": "https://www.nature.com/articles/520429a",
           "difficulty": "advanced",
           "readingTimeMinutes": 12,
-          "learningGoals": ["Leiden-Prinzipien einordnen"],
+          "learningGoals": [
+            "Leiden-Prinzipien einordnen"
+          ],
           "outputs": [
-            {"type": "notes", "description": "Prinzipienliste", "format": "markdown"}
+            {
+              "type": "notes",
+              "description": "Prinzipienliste",
+              "format": "markdown"
+            }
           ]
         },
         {
@@ -935,9 +1399,15 @@
           "url": "https://www.coara.org/wp-content/uploads/2025/11/2022_07_19_rra_agreement_final.pdf-3.pdf",
           "difficulty": "advanced",
           "readingTimeMinutes": 15,
-          "learningGoals": ["Reformprinzipien von CoARA kennen"],
+          "learningGoals": [
+            "Reformprinzipien von CoARA kennen"
+          ],
           "outputs": [
-            {"type": "notes", "description": "Commitments zusammenfassen", "format": "markdown"}
+            {
+              "type": "notes",
+              "description": "Commitments zusammenfassen",
+              "format": "markdown"
+            }
           ]
         },
         {
@@ -947,9 +1417,15 @@
           "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000737",
           "difficulty": "advanced",
           "readingTimeMinutes": 12,
-          "learningGoals": ["Integritätsprinzipien in Assessment anwenden"],
+          "learningGoals": [
+            "Integritätsprinzipien in Assessment anwenden"
+          ],
           "outputs": [
-            {"type": "notes", "description": "Prinzipien skizzieren", "format": "markdown"}
+            {
+              "type": "notes",
+              "description": "Prinzipien skizzieren",
+              "format": "markdown"
+            }
           ]
         },
         {
@@ -959,9 +1435,15 @@
           "url": "https://www.ukri.org/apply-for-funding/develop-your-application/resume-for-research-and-innovation-r4ri-guidance/",
           "difficulty": "advanced",
           "readingTimeMinutes": 10,
-          "learningGoals": ["Narrative CV als Format verstehen"],
+          "learningGoals": [
+            "Narrative CV als Format verstehen"
+          ],
           "outputs": [
-            {"type": "notes", "description": "R4RI-Elemente notieren", "format": "markdown"}
+            {
+              "type": "notes",
+              "description": "R4RI-Elemente notieren",
+              "format": "markdown"
+            }
           ]
         },
         {
@@ -971,12 +1453,19 @@
           "url": "https://www.unesco.it/wp-content/uploads/2023/11/RECOMMENDATION-ON-OPEN-SCIENCE-2021-Certified.pdf",
           "difficulty": "advanced",
           "readingTimeMinutes": 12,
-          "learningGoals": ["Open-Science-Empfehlungen im Assessment verorten"],
+          "learningGoals": [
+            "Open-Science-Empfehlungen im Assessment verorten"
+          ],
           "outputs": [
-            {"type": "notes", "description": "Zentrale Empfehlungen", "format": "markdown"}
+            {
+              "type": "notes",
+              "description": "Zentrale Empfehlungen",
+              "format": "markdown"
+            }
           ]
         }
-      ]
+      ],
+      "path": "modul12.html"
     }
   ],
   "resources": [
@@ -987,9 +1476,15 @@
       "url": "https://example.com/tools",
       "difficulty": "beginner",
       "readingTimeMinutes": 10,
-      "learningGoals": ["Wichtige Tools benennen"],
+      "learningGoals": [
+        "Wichtige Tools benennen"
+      ],
       "outputs": [
-        {"type": "catalog", "description": "Tool-Liste", "format": "json"}
+        {
+          "type": "catalog",
+          "description": "Tool-Liste",
+          "format": "json"
+        }
       ]
     },
     {
@@ -999,9 +1494,15 @@
       "url": "https://example.com/ethik",
       "difficulty": "intermediate",
       "readingTimeMinutes": 12,
-      "learningGoals": ["Ethikleitlinien kennen"],
+      "learningGoals": [
+        "Ethikleitlinien kennen"
+      ],
       "outputs": [
-        {"type": "notes", "description": "Ethiknotizen", "format": "markdown"}
+        {
+          "type": "notes",
+          "description": "Ethiknotizen",
+          "format": "markdown"
+        }
       ]
     }
   ],

@@ -1,49 +1,15 @@
-<div class="module-role-panel">
-  <p class="module-role-label">Wähle deine Rolle für passende Hinweise:</p>
-  <div class="module-role-buttons" role="group" aria-label="Rolle auswählen">
-    <button type="button" class="role-toggle-button" data-role="Bibliothek">Bibliothek</button>
-    <button type="button" class="role-toggle-button" data-role="Research Office">Research Office</button>
-    <button type="button" class="role-toggle-button" data-role="Forschende">Forschende</button>
-  </div>
-  <div class="module-role-hints">
-    <div class="role-hint" data-role="Bibliothek" hidden>
-      Hinweis: Baut ein internes Standardblatt: „Welche Datenquelle für welche Frage?“
-    </div>
-    <div class="role-hint" data-role="Bibliothek" hidden>
-      Hinweis: Dokumentiert Coverage-Hinweise sichtbar im Report (z. B. als Methodik-Kasten).
-    </div>
-    <div class="role-hint" data-role="Bibliothek" hidden>
-      Hinweis: Vermeidet Tool-Mix ohne Erklärung: Wenn mehrere Quellen kombiniert werden, müsst ihr Dubletten/IDs klären.
-    </div>
-    <div class="role-hint" data-role="Research Office" hidden>
-      Hinweis: Definiert früh den Zweck: Monitoring ≠ Bewertung. Die Datenquelle hängt am Ziel.
-    </div>
-    <div class="role-hint" data-role="Research Office" hidden>
-      Hinweis: Für Governance: verlangt Standardangaben (Quelle, Zeitraum, Dokumenttypen, Limitationen).
-    </div>
-    <div class="role-hint" data-role="Research Office" hidden>
-      Hinweis: Wenn Ranking-Druck entsteht: nutzt Responsible-Metrics-Checks (Kontext + Multi-Indikator + qualitative Evidenz).
-    </div>
-    <div class="role-hint" data-role="Forschende" hidden>
-      Hinweis: Wenn Zahlen nicht passen: prüfe zuerst Namensvarianten, Affiliations, Dokumenttypen und Zeitraum.
-    </div>
-    <div class="role-hint" data-role="Forschende" hidden>
-      Hinweis: Nutze Kennzahlen in CVs nur mit kurzer Kontextzeile (Quelle + Zeitraum + Feld).
-    </div>
-    <div class="role-hint" data-role="Forschende" hidden>
-      Hinweis: Für Themen-/Kooperationsanalysen können offene Quellen sehr nützlich sein – aber Ergebnisse immer plausibilisieren.
-    </div>
-  </div>
-</div>
-<script src="../role-toggle.js" defer></script>
-<script src="../details-accordion.js" defer></script>
-
 # Modul 2: Publikationsdaten und Quellen
 
 **Schwierigkeit:** Beginner  
 **Geschätzte Lesezeit:** 50 Minuten  
 **Zielgruppen:** Bibliothek, Research Office, Forschende  
 **Voraussetzungen:** Modul 1
+
+:::role-hint
+[Bibliothek]: Hinweis: Dokumentiert pro Datenquelle transparent, welche Disziplinen und Dokumenttypen gut bzw. schwach abgedeckt sind.
+[Research Office]: Hinweis: Verankert Mindestangaben (Quelle, Zeitraum, Dokumenttypen, Limitationen) als Pflichtstandard im Reporting.
+[Forschende]: Hinweis: Prüft bei Profilen zuerst Namensvarianten und Affiliations, bevor Kennzahlen interpretiert werden.
+:::
 
 ## Lernziele
 - Die wichtigsten bibliometrischen Datenquellen (z. B. WoS, Scopus, OpenAlex, Crossref, Dimensions, Google Scholar) unterscheiden.

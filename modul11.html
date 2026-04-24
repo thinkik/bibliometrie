@@ -1,129 +1,133 @@
 <!doctype html>
-<html lang="de">
+<html lang="de" data-original-text="Einführung Bibliometrie – Modul 11: Science Mapping &amp; Wissensstrukturen: Co-Citation, Bibliographic Coupling, Co-Word (inkl. VOSviewer/bibliometrix)">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Einführung Bibliometrie – Modul 11: Science Mapping & Wissensstrukturen: Co-Citation, Bibliographic Coupling, Co-Word (inkl. VOSviewer/bibliometrix)</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="navigation.js" defer></script>
+    <script src="i18n.js" defer></script>
   </head>
   <body>
     <header class="site-header">
-      <div class="brand">Einführung Bibliometrie</div>
+      <div class="brand" data-i18n="site.brand" data-original-text="Einführung Bibliometrie">Einführung Bibliometrie</div>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
-        <span class="nav-toggle-label">Menü</span>
+        <span class="nav-toggle-label" data-i18n="nav.menu" data-original-text="Menü">Menü</span>
         <span class="nav-toggle-icon" aria-hidden="true">
           <span class="nav-toggle-bar"></span>
           <span class="nav-toggle-bar"></span>
           <span class="nav-toggle-bar"></span>
         </span>
       </button>
-      <nav class="site-nav" id="primary-navigation" aria-label="Hauptnavigation">
-        <a href="index.html">Start</a>
-        <a class="active" href="lehrgang.html">Lehrgang</a>
-        <a href="uebungen.html">Übungen</a>
-        <a href="fallstudien.html">Fallstudien</a>
-        <a href="tools-datenquellen.html">Tools &amp; Datenquellen</a>
-        <a href="responsible-metrics.html">Responsible Metrics</a>
-        <a href="glossar.html">Glossar</a>
-        <a href="downloads-vorlagen.html">Downloads &amp; Vorlagen</a>
-        <a href="faq.html">FAQ</a>
+      <nav class="site-nav" id="primary-navigation" aria-label="Hauptnavigation" data-i18n-aria-label="nav.aria">
+        <a href="index.html" data-i18n="nav.home">Start</a>
+        <a class="active" href="lehrgang.html" data-i18n="nav.course">Lehrgang</a>
+        <a href="uebungen.html" data-i18n="nav.exercises">Übungen</a>
+        <a href="fallstudien.html" data-i18n="nav.cases">Fallstudien</a>
+        <a href="tools-datenquellen.html" data-i18n="nav.tools">Tools &amp; Datenquellen</a>
+        <a href="responsible-metrics.html" data-i18n="nav.responsible">Responsible Metrics</a>
+        <a href="glossar.html" data-i18n="nav.glossary">Glossar</a>
+        <a href="downloads-vorlagen.html" data-i18n="nav.downloads">Downloads &amp; Vorlagen</a>
+        <a href="faq.html" data-i18n="nav.faq">FAQ</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="impressum.html">Impressum</a>
       </nav>
+      <button class="language-toggle" type="button" aria-label="Sprache wechseln" data-i18n="language.toggle" data-i18n-aria-label="language.aria" data-original-text="DE/EN">DE/EN</button>
     </header>
     <main class="content">
       <div class="module-progress" data-module-progress data-module-id="modul11">
-        <span class="module-progress-label">Fortschritt:</span>
+        <span class="module-progress-label" data-original-text="Fortschritt:">Fortschritt:</span>
         <progress id="module-progress-bar" max="100" value="0">0%</progress>
-        <span class="module-progress-value" data-module-progress-value>0%</span>
+        <span class="module-progress-value" data-module-progress-value data-original-text="0%">0%</span>
       </div>
-      <h1>Modul 11: Science Mapping & Wissensstrukturen: Co-Citation, Bibliographic Coupling, Co-Word (inkl. VOSviewer/bibliometrix)</h1>
+      <h1 id="heading-modul-11" data-original-text="Modul 11: Science Mapping &amp; Wissensstrukturen: Co-Citation, Bibliographic Coupling, Co-Word (inkl. VOSviewer/bibliometrix)">Modul 11: Science Mapping & Wissensstrukturen: Co-Citation, Bibliographic Coupling, Co-Word (inkl. VOSviewer/bibliometrix)</h1>
 
       <section class="module-section" id="modul-11" aria-labelledby="heading-modul-11">
-        <h2 id="heading-modul-11">Modul 11: Science Mapping & Wissensstrukturen: Co-Citation, Bibliographic Coupling, Co-Word (inkl. VOSviewer/bibliometrix)</h2>
-        
-        <h3>Lernziele</h3>
+
+        <h3 data-original-text="Lernziele">Lernziele</h3>
         <ul>
-          <li>Die drei klassischen Science-Mapping-Ansätze (co-citation, bibliographic coupling, co-word) definieren und für passende Fragestellungen auswählen.</li>
-          <li>Verstehen, warum co-citation eher die "intellektuelle Basis" (Vergangenheit) und bibliographic coupling eher die "Forschungsfront" (Gegenwart) sichtbar macht.</li>
-          <li>Grundbegriffe von Netzwerken (Knoten, Kanten, Gewicht, Normalisierung, Thresholds, Cluster) korrekt anwenden.</li>
-          <li>Ein Mapping-Projekt reproduzierbar durchführen: Datenbasis, Parameter, Cleaning, Thresholds, Visualisierung, Interpretation.</li>
-          <li>Typische Fehlinterpretationen (Cluster = "Schulen", Farben = "Qualität", Kanten = "Kausalität") vermeiden.</li>
+          <li data-original-text="Die drei klassischen Science-Mapping-Ansätze (co-citation, bibliographic coupling, co-word) definieren und für passende Fragestellungen auswählen.">Die drei klassischen Science-Mapping-Ansätze (co-citation, bibliographic coupling, co-word) definieren und für passende Fragestellungen auswählen.</li>
+          <li data-original-text="Verstehen, warum co-citation eher die &quot;intellektuelle Basis&quot; (Vergangenheit) und bibliographic coupling eher die &quot;Forschungsfront&quot; (Gegenwart) sichtbar macht.">Verstehen, warum co-citation eher die "intellektuelle Basis" (Vergangenheit) und bibliographic coupling eher die "Forschungsfront" (Gegenwart) sichtbar macht.</li>
+          <li data-original-text="Grundbegriffe von Netzwerken (Knoten, Kanten, Gewicht, Normalisierung, Thresholds, Cluster) korrekt anwenden.">Grundbegriffe von Netzwerken (Knoten, Kanten, Gewicht, Normalisierung, Thresholds, Cluster) korrekt anwenden.</li>
+          <li data-original-text="Ein Mapping-Projekt reproduzierbar durchführen: Datenbasis, Parameter, Cleaning, Thresholds, Visualisierung, Interpretation.">Ein Mapping-Projekt reproduzierbar durchführen: Datenbasis, Parameter, Cleaning, Thresholds, Visualisierung, Interpretation.</li>
+          <li data-original-text="Typische Fehlinterpretationen (Cluster = &quot;Schulen&quot;, Farben = &quot;Qualität&quot;, Kanten = &quot;Kausalität&quot;) vermeiden.">Typische Fehlinterpretationen (Cluster = "Schulen", Farben = "Qualität", Kanten = "Kausalität") vermeiden.</li>
         </ul>
-        <h3>Kurz erklärt</h3>
-        <p>Science Mapping beschreibt Forschungsfelder als Netzwerke. Du kannst damit z. B. die intellektuellen Grundlagen (co-citation), die aktuelle Forschungsfront (bibliographic coupling) oder Themenlandschaften (co-word/co-occurrence) sichtbar machen. Die Qualität steht und fällt mit Datenbasis, Cleaning (Orgs/Keywords), Thresholds und transparenter Dokumentation.</p>
-        <h3>Schlüsselbegriffe</h3>
+        <h3 data-original-text="Kurz erklärt">Kurz erklärt</h3>
+        <p data-original-text="Science Mapping beschreibt Forschungsfelder als Netzwerke. Du kannst damit z. B. die intellektuellen Grundlagen (co-citation), die aktuelle Forschungsfront (bibliographic coupling) oder Themenlandschaften (co-word/co-occurrence) sichtbar machen. Die Qualität steht und fällt mit Datenbasis, Cleaning (Orgs/Keywords), Thresholds und transparenter Dokumentation.">Science Mapping beschreibt Forschungsfelder als Netzwerke. Du kannst damit z. B. die intellektuellen Grundlagen (co-citation), die aktuelle Forschungsfront (bibliographic coupling) oder Themenlandschaften (co-word/co-occurrence) sichtbar machen. Die Qualität steht und fällt mit Datenbasis, Cleaning (Orgs/Keywords), Thresholds und transparenter Dokumentation.</p>
+        <h3 data-original-text="Schlüsselbegriffe">Schlüsselbegriffe</h3>
         <ul>
-          <li><strong>Co-citation:</strong> Zwei Dokumente gelten als co-cited, wenn sie gemeinsam von anderen Dokumenten zitiert werden; Stärke = Häufigkeit des gemeinsamen Zitierens.</li>
-          <li><strong>Bibliographic coupling:</strong> Zwei Dokumente sind gekoppelt, wenn sie gemeinsame Referenzen haben; Stärke = Anzahl geteilter Referenzen.</li>
-          <li><strong>Co-word analysis / Co-occurrence:</strong> Analyse von gemeinsam auftretenden Begriffen/Keywords (oder Terms im Abstract/Title) zur Themen- und Strukturkartierung.</li>
-          <li><strong>Node (Knoten):</strong> Ein Element im Netzwerk (z. B. Paper, Autor:in, Journal, Keyword, Organisation).</li>
-          <li><strong>Edge (Kante):</strong> Verbindung zwischen zwei Knoten (z. B. co-citation link, coupling link, co-occurrence link).</li>
-          <li><strong>Weight (Gewicht):</strong> Stärke einer Kante (z. B. #co-citations, #shared references, #co-occurrences).</li>
-          <li><strong>Normalization:</strong> Skalierung/Anpassung der Gewichte, damit große Knoten/hochfrequente Items nicht alles dominieren.</li>
-          <li><strong>Threshold:</strong> Mindestkriterium, ab wann ein Item/Kante in die Karte aufgenommen wird (z. B. min. 20 Zitationen).</li>
-          <li><strong>Clustering:</strong> Algorithmische Gruppierung von Items in Cluster (dichte Teilnetze), oft als Themen-/Schul-Nähe interpretiert – aber nicht 1:1 identisch.</li>
-          <li><strong>Overlay visualization:</strong> Darstellung eines Zusatzmerkmals (z. B. mittleres Jahr, FWCI) als Farb-/Skalenlayer – interpretieren mit Vorsicht.</li>
+          <li data-original-text="**Co-citation:** Zwei Dokumente gelten als co-cited, wenn sie gemeinsam von anderen Dokumenten zitiert werden; Stärke = Häufigkeit des gemeinsamen Zitierens."><strong>Co-citation:</strong> Zwei Dokumente gelten als co-cited, wenn sie gemeinsam von anderen Dokumenten zitiert werden; Stärke = Häufigkeit des gemeinsamen Zitierens.</li>
+          <li data-original-text="**Bibliographic coupling:** Zwei Dokumente sind gekoppelt, wenn sie gemeinsame Referenzen haben; Stärke = Anzahl geteilter Referenzen."><strong>Bibliographic coupling:</strong> Zwei Dokumente sind gekoppelt, wenn sie gemeinsame Referenzen haben; Stärke = Anzahl geteilter Referenzen.</li>
+          <li data-original-text="**Co-word analysis / Co-occurrence:** Analyse von gemeinsam auftretenden Begriffen/Keywords (oder Terms im Abstract/Title) zur Themen- und Strukturkartierung."><strong>Co-word analysis / Co-occurrence:</strong> Analyse von gemeinsam auftretenden Begriffen/Keywords (oder Terms im Abstract/Title) zur Themen- und Strukturkartierung.</li>
+          <li data-original-text="**Node (Knoten):** Ein Element im Netzwerk (z. B. Paper, Autor:in, Journal, Keyword, Organisation)."><strong>Node (Knoten):</strong> Ein Element im Netzwerk (z. B. Paper, Autor:in, Journal, Keyword, Organisation).</li>
+          <li data-original-text="**Edge (Kante):** Verbindung zwischen zwei Knoten (z. B. co-citation link, coupling link, co-occurrence link)."><strong>Edge (Kante):</strong> Verbindung zwischen zwei Knoten (z. B. co-citation link, coupling link, co-occurrence link).</li>
+          <li data-original-text="**Weight (Gewicht):** Stärke einer Kante (z. B. #co-citations, #shared references, #co-occurrences)."><strong>Weight (Gewicht):</strong> Stärke einer Kante (z. B. #co-citations, #shared references, #co-occurrences).</li>
+          <li data-original-text="**Normalization:** Skalierung/Anpassung der Gewichte, damit große Knoten/hochfrequente Items nicht alles dominieren."><strong>Normalization:</strong> Skalierung/Anpassung der Gewichte, damit große Knoten/hochfrequente Items nicht alles dominieren.</li>
+          <li data-original-text="**Threshold:** Mindestkriterium, ab wann ein Item/Kante in die Karte aufgenommen wird (z. B. min. 20 Zitationen)."><strong>Threshold:</strong> Mindestkriterium, ab wann ein Item/Kante in die Karte aufgenommen wird (z. B. min. 20 Zitationen).</li>
+          <li data-original-text="**Clustering:** Algorithmische Gruppierung von Items in Cluster (dichte Teilnetze), oft als Themen-/Schul-Nähe interpretiert – aber nicht 1:1 identisch."><strong>Clustering:</strong> Algorithmische Gruppierung von Items in Cluster (dichte Teilnetze), oft als Themen-/Schul-Nähe interpretiert – aber nicht 1:1 identisch.</li>
+          <li data-original-text="**Overlay visualization:** Darstellung eines Zusatzmerkmals (z. B. mittleres Jahr, FWCI) als Farb-/Skalenlayer – interpretieren mit Vorsicht."><strong>Overlay visualization:</strong> Darstellung eines Zusatzmerkmals (z. B. mittleres Jahr, FWCI) als Farb-/Skalenlayer – interpretieren mit Vorsicht.</li>
         </ul>
-        <h3>Drei Ansätze – wann welcher passt</h3>
-        <p><strong>1) Co-citation (Wissensbasis / "intellectual base")</strong> Nutze co-citation, wenn du verstehen willst, *welche klassischen Werke/Theorien* ein Feld zusammenhalten.</p>
-        <p><strong>2) Bibliographic coupling (Forschungsfront / "research front")</strong> Nutze coupling, wenn du sehen willst, *welche aktuellen Publikationen* auf ähnlichen Referenzfundamenten stehen (oft zeitnäher als co-citation).</p>
-        <p><strong>3) Co-word / Co-occurrence (Themen & Begriffe)</strong> Nutze co-word, wenn du Themencluster, Begriffsräume oder Trendbegriffe kartieren willst (Keywords oder Terms aus Titles/Abstracts).</p>
-        <h3>Interpretation: Was eine Karte zeigt (und was nicht)</h3>
-        <p>Eine Karte zeigt Ähnlichkeit/Relatedness nach dem gewählten Link-Typ. Nähe bedeutet: „stärker verbunden“ – nicht automatisch „inhaltlich identisch“, nicht „besser“, nicht „kausal“. Cluster sind algorithmische Gruppen; ihre Benennung ist ein interpretativer Schritt (immer mit Stichprobenprüfung der Top-Items pro Cluster).</p>
-        <h3>Typische Fehlinterpretationen</h3>
+        <h3 data-original-text="Drei Ansätze – wann welcher passt">Drei Ansätze – wann welcher passt</h3>
+        <p data-original-text="**1) Co-citation (Wissensbasis / &quot;intellectual base&quot;)** Nutze co-citation, wenn du verstehen willst, *welche klassischen Werke/Theorien* ein Feld zusammenhalten."><strong>1) Co-citation (Wissensbasis / "intellectual base")</strong> Nutze co-citation, wenn du verstehen willst, *welche klassischen Werke/Theorien* ein Feld zusammenhalten.</p>
+        <p data-original-text="**2) Bibliographic coupling (Forschungsfront / &quot;research front&quot;)** Nutze coupling, wenn du sehen willst, *welche aktuellen Publikationen* auf ähnlichen Referenzfundamenten stehen (oft zeitnäher als co-citation)."><strong>2) Bibliographic coupling (Forschungsfront / "research front")</strong> Nutze coupling, wenn du sehen willst, *welche aktuellen Publikationen* auf ähnlichen Referenzfundamenten stehen (oft zeitnäher als co-citation).</p>
+        <p data-original-text="**3) Co-word / Co-occurrence (Themen &amp; Begriffe)** Nutze co-word, wenn du Themencluster, Begriffsräume oder Trendbegriffe kartieren willst (Keywords oder Terms aus Titles/Abstracts)."><strong>3) Co-word / Co-occurrence (Themen & Begriffe)</strong> Nutze co-word, wenn du Themencluster, Begriffsräume oder Trendbegriffe kartieren willst (Keywords oder Terms aus Titles/Abstracts).</p>
+        <h3 data-original-text="Interpretation: Was eine Karte zeigt (und was nicht)">Interpretation: Was eine Karte zeigt (und was nicht)</h3>
+        <p data-original-text="Eine Karte zeigt Ähnlichkeit/Relatedness nach dem gewählten Link-Typ. Nähe bedeutet: „stärker verbunden“ – nicht automatisch „inhaltlich identisch“, nicht „besser“, nicht „kausal“. Cluster sind algorithmische Gruppen; ihre Benennung ist ein interpretativer Schritt (immer mit Stichprobenprüfung der Top-Items pro Cluster).">Eine Karte zeigt Ähnlichkeit/Relatedness nach dem gewählten Link-Typ. Nähe bedeutet: „stärker verbunden“ – nicht automatisch „inhaltlich identisch“, nicht „besser“, nicht „kausal“. Cluster sind algorithmische Gruppen; ihre Benennung ist ein interpretativer Schritt (immer mit Stichprobenprüfung der Top-Items pro Cluster).</p>
+        <h3 data-original-text="Typische Fehlinterpretationen">Typische Fehlinterpretationen</h3>
         <ul>
-          <li><strong>„Ein Cluster ist eine objektive 'Schule'.“</strong> Cluster hängen von Datenquelle, Thresholds, Normalisierung und Algorithmusparametern ab.</li>
-          <li><strong>„Mehr Kanten = bessere Forschung.“</strong> Netzwerkdichte misst Verbundenheit/Kommunikation, nicht Qualität.</li>
-          <li><strong>„Farben im Overlay zeigen Impact/Qualität.“</strong> Overlay zeigt das gewählte Merkmal (z. B. Jahr) und ist anfällig für Ausreißer/Selection-Bias.</li>
-          <li><strong>„Die Karte ist 'die Wahrheit' über das Feld.“</strong> Karten sind Modelle; seriöse Nutzung braucht Triangulation + methodische Transparenz.</li>
+          <li data-original-text="**„Ein Cluster ist eine objektive 'Schule'.“** Cluster hängen von Datenquelle, Thresholds, Normalisierung und Algorithmusparametern ab."><strong>„Ein Cluster ist eine objektive 'Schule'.“</strong> Cluster hängen von Datenquelle, Thresholds, Normalisierung und Algorithmusparametern ab.</li>
+          <li data-original-text="**„Mehr Kanten = bessere Forschung.“** Netzwerkdichte misst Verbundenheit/Kommunikation, nicht Qualität."><strong>„Mehr Kanten = bessere Forschung.“</strong> Netzwerkdichte misst Verbundenheit/Kommunikation, nicht Qualität.</li>
+          <li data-original-text="**„Farben im Overlay zeigen Impact/Qualität.“** Overlay zeigt das gewählte Merkmal (z. B. Jahr) und ist anfällig für Ausreißer/Selection-Bias."><strong>„Farben im Overlay zeigen Impact/Qualität.“</strong> Overlay zeigt das gewählte Merkmal (z. B. Jahr) und ist anfällig für Ausreißer/Selection-Bias.</li>
+          <li data-original-text="**„Die Karte ist 'die Wahrheit' über das Feld.“** Karten sind Modelle; seriöse Nutzung braucht Triangulation + methodische Transparenz."><strong>„Die Karte ist 'die Wahrheit' über das Feld.“</strong> Karten sind Modelle; seriöse Nutzung braucht Triangulation + methodische Transparenz.</li>
         </ul>
-        <h3>Praxis-Workflow: Science Mapping reproduzierbar</h3>
+        <h3 data-original-text="Praxis-Workflow: Science Mapping reproduzierbar">Praxis-Workflow: Science Mapping reproduzierbar</h3>
         <ol>
-          <li>Fragestellung + Einheit definieren (Papers, Journals, Autor:innen, Keywords).</li>
-          <li>Datenquelle wählen (WoS/Scopus/OpenAlex) + Exportparameter fixieren (Zeitraum, Doc types, Query).</li>
-          <li>Cleaning: Dubletten entfernen; Orgs/Keywords vereinheitlichen (Thesaurus/Mappings).</li>
-          <li>Link-Typ wählen: co-citation vs coupling vs co-word (passend zur Frage).</li>
-          <li>Thresholds setzen (min. cites/occurrences) + Sensitivitätscheck (2–3 Varianten).</li>
-          <li>Normalisierung/Counting dokumentieren (Tool-defaults sind Teil der Methodik!).</li>
-          <li>Clustering + Labeling: pro Cluster Top-Items prüfen und beschriften.</li>
-          <li>Output: Karte + Tabellen (Top-Items/Top-links) + Methodik-Kasten + Limitationen.</li>
+          <li data-original-text="Fragestellung + Einheit definieren (Papers, Journals, Autor:innen, Keywords).">Fragestellung + Einheit definieren (Papers, Journals, Autor:innen, Keywords).</li>
+          <li data-original-text="Datenquelle wählen (WoS/Scopus/OpenAlex) + Exportparameter fixieren (Zeitraum, Doc types, Query).">Datenquelle wählen (WoS/Scopus/OpenAlex) + Exportparameter fixieren (Zeitraum, Doc types, Query).</li>
+          <li data-original-text="Cleaning: Dubletten entfernen; Orgs/Keywords vereinheitlichen (Thesaurus/Mappings).">Cleaning: Dubletten entfernen; Orgs/Keywords vereinheitlichen (Thesaurus/Mappings).</li>
+          <li data-original-text="Link-Typ wählen: co-citation vs coupling vs co-word (passend zur Frage).">Link-Typ wählen: co-citation vs coupling vs co-word (passend zur Frage).</li>
+          <li data-original-text="Thresholds setzen (min. cites/occurrences) + Sensitivitätscheck (2–3 Varianten).">Thresholds setzen (min. cites/occurrences) + Sensitivitätscheck (2–3 Varianten).</li>
+          <li data-original-text="Normalisierung/Counting dokumentieren (Tool-defaults sind Teil der Methodik!).">Normalisierung/Counting dokumentieren (Tool-defaults sind Teil der Methodik!).</li>
+          <li data-original-text="Clustering + Labeling: pro Cluster Top-Items prüfen und beschriften.">Clustering + Labeling: pro Cluster Top-Items prüfen und beschriften.</li>
+          <li data-original-text="Output: Karte + Tabellen (Top-Items/Top-links) + Methodik-Kasten + Limitationen.">Output: Karte + Tabellen (Top-Items/Top-links) + Methodik-Kasten + Limitationen.</li>
         </ol>
-        <h3>Mini-Lab: VOSviewer Karte (30–45 Minuten)</h3>
+        <h3 data-original-text="Mini-Lab: VOSviewer Karte (30–45 Minuten)">Mini-Lab: VOSviewer Karte (30–45 Minuten)</h3>
         <ol>
-          <li>Export aus WoS/Scopus (oder OpenAlex->CSV) mit Referenzen/Keywords.</li>
-          <li>VOSviewer: Create map -> Bibliographic data.</li>
-          <li>Wähle Map-Typ: Co-citation (Cited References oder Sources) ODER Bibliographic coupling (Documents/Sources) ODER Co-occurrence (All keywords/Terms).</li>
-          <li>Setze Thresholds so, dass ~100–400 Items übrig bleiben (lesbar, aber aussagekräftig).</li>
-          <li>Nutze Thesaurus-Datei für Synonyme/Varianten (Keywords/Orgs).</li>
-          <li>Interpretation: Pro Cluster 10 Top-Items prüfen; Cluster benennen; 3 zentrale Knoten erklären.</li>
+          <li data-original-text="Export aus WoS/Scopus (oder OpenAlex-&gt;CSV) mit Referenzen/Keywords.">Export aus WoS/Scopus (oder OpenAlex->CSV) mit Referenzen/Keywords.</li>
+          <li data-original-text="VOSviewer: Create map -&gt; Bibliographic data.">VOSviewer: Create map -> Bibliographic data.</li>
+          <li data-original-text="Wähle Map-Typ: Co-citation (Cited References oder Sources) ODER Bibliographic coupling (Documents/Sources) ODER Co-occurrence (All keywords/Terms).">Wähle Map-Typ: Co-citation (Cited References oder Sources) ODER Bibliographic coupling (Documents/Sources) ODER Co-occurrence (All keywords/Terms).</li>
+          <li data-original-text="Setze Thresholds so, dass ~100–400 Items übrig bleiben (lesbar, aber aussagekräftig).">Setze Thresholds so, dass ~100–400 Items übrig bleiben (lesbar, aber aussagekräftig).</li>
+          <li data-original-text="Nutze Thesaurus-Datei für Synonyme/Varianten (Keywords/Orgs).">Nutze Thesaurus-Datei für Synonyme/Varianten (Keywords/Orgs).</li>
+          <li data-original-text="Interpretation: Pro Cluster 10 Top-Items prüfen; Cluster benennen; 3 zentrale Knoten erklären.">Interpretation: Pro Cluster 10 Top-Items prüfen; Cluster benennen; 3 zentrale Knoten erklären.</li>
         </ol>
-        <h3>Mini-Lab (optional): bibliometrix (R) als reproduzierbare Pipeline</h3>
+        <h3 data-original-text="Mini-Lab (optional): bibliometrix (R) als reproduzierbare Pipeline">Mini-Lab (optional): bibliometrix (R) als reproduzierbare Pipeline</h3>
         <ol>
-          <li>Import der Exportdatei (WoS/Scopus) in bibliometrix.</li>
-          <li>Erstelle (a) co-citation, (b) coupling, (c) co-word Netzwerke mit identischen Thresholds.</li>
-          <li>Vergleiche: Welche Cluster bleiben stabil? Wo ändern sich Grenzen?</li>
-          <li>Exportiere Results als CSV/JSON (Top-Items, Cluster assignments) für die Website.</li>
+          <li data-original-text="Import der Exportdatei (WoS/Scopus) in bibliometrix.">Import der Exportdatei (WoS/Scopus) in bibliometrix.</li>
+          <li data-original-text="Erstelle (a) co-citation, (b) coupling, (c) co-word Netzwerke mit identischen Thresholds.">Erstelle (a) co-citation, (b) coupling, (c) co-word Netzwerke mit identischen Thresholds.</li>
+          <li data-original-text="Vergleiche: Welche Cluster bleiben stabil? Wo ändern sich Grenzen?">Vergleiche: Welche Cluster bleiben stabil? Wo ändern sich Grenzen?</li>
+          <li data-original-text="Exportiere Results als CSV/JSON (Top-Items, Cluster assignments) für die Website.">Exportiere Results als CSV/JSON (Top-Items, Cluster assignments) für die Website.</li>
         </ol>
-        <h3>Responsible-Metrics-Box</h3>
+        <h3 data-original-text="Responsible-Metrics-Box">Responsible-Metrics-Box</h3>
         <ul>
-          <li>Karten sind explorativ: keine Ranking- oder Qualitätsautomatik.</li>
-          <li>Immer offenlegen: Datenquelle, Query, Zeitraum, Doc types, Thresholds, Normalisierung, Tool-Version.</li>
-          <li>Cluster-Benennung ist interpretativ: mit Stichprobenprüfung begründen.</li>
-          <li>Bei Stakeholder-Reports: Karten mit Tabellen + Methodikbox + Limitationen kombinieren.</li>
+          <li data-original-text="Karten sind explorativ: keine Ranking- oder Qualitätsautomatik.">Karten sind explorativ: keine Ranking- oder Qualitätsautomatik.</li>
+          <li data-original-text="Immer offenlegen: Datenquelle, Query, Zeitraum, Doc types, Thresholds, Normalisierung, Tool-Version.">Immer offenlegen: Datenquelle, Query, Zeitraum, Doc types, Thresholds, Normalisierung, Tool-Version.</li>
+          <li data-original-text="Cluster-Benennung ist interpretativ: mit Stichprobenprüfung begründen.">Cluster-Benennung ist interpretativ: mit Stichprobenprüfung begründen.</li>
+          <li data-original-text="Bei Stakeholder-Reports: Karten mit Tabellen + Methodikbox + Limitationen kombinieren.">Bei Stakeholder-Reports: Karten mit Tabellen + Methodikbox + Limitationen kombinieren.</li>
         </ul>
-        <h3>Quellen & weiterführende Links</h3>
+        <h3 data-original-text="Quellen &amp; weiterführende Links">Quellen & weiterführende Links</h3>
         <ul>
-          <li><a href="https://asistdl.onlinelibrary.wiley.com/doi/10.1002/asi.4630240406">https://asistdl.onlinelibrary.wiley.com/doi/10.1002/asi.4630240406</a></li>
-          <li><a href="https://onlinelibrary.wiley.com/doi/10.1002/asi.5090140103">https://onlinelibrary.wiley.com/doi/10.1002/asi.5090140103</a></li>
-          <li><a href="https://journals.sagepub.com/doi/10.1177/053901883022002003">https://journals.sagepub.com/doi/10.1177/053901883022002003</a></li>
-          <li><a href="https://link.springer.com/article/10.1007/s11192-009-0146-3">https://link.springer.com/article/10.1007/s11192-009-0146-3</a></li>
-          <li><a href="https://www.vosviewer.com/documentation/Manual_VOSviewer_1.6.18.pdf">https://www.vosviewer.com/documentation/Manual_VOSviewer_1.6.18.pdf</a></li>
-          <li><a href="https://www.sciencedirect.com/science/article/pii/S1751157717300500">https://www.sciencedirect.com/science/article/pii/S1751157717300500</a></li>
-          <li><a href="https://arxiv.org/abs/1301.4655">https://arxiv.org/abs/1301.4655</a></li>
+          <li data-original-text="https://asistdl.onlinelibrary.wiley.com/doi/10.1002/asi.4630240406"><a href="https://asistdl.onlinelibrary.wiley.com/doi/10.1002/asi.4630240406">https://asistdl.onlinelibrary.wiley.com/doi/10.1002/asi.4630240406</a></li>
+          <li data-original-text="https://onlinelibrary.wiley.com/doi/10.1002/asi.5090140103"><a href="https://onlinelibrary.wiley.com/doi/10.1002/asi.5090140103">https://onlinelibrary.wiley.com/doi/10.1002/asi.5090140103</a></li>
+          <li data-original-text="https://journals.sagepub.com/doi/10.1177/053901883022002003"><a href="https://journals.sagepub.com/doi/10.1177/053901883022002003">https://journals.sagepub.com/doi/10.1177/053901883022002003</a></li>
+          <li data-original-text="https://link.springer.com/article/10.1007/s11192-009-0146-3"><a href="https://link.springer.com/article/10.1007/s11192-009-0146-3">https://link.springer.com/article/10.1007/s11192-009-0146-3</a></li>
+          <li data-original-text="https://www.vosviewer.com/documentation/Manual_VOSviewer_1.6.18.pdf"><a href="https://www.vosviewer.com/documentation/Manual_VOSviewer_1.6.18.pdf">https://www.vosviewer.com/documentation/Manual_VOSviewer_1.6.18.pdf</a></li>
+          <li data-original-text="https://www.sciencedirect.com/science/article/pii/S1751157717300500"><a href="https://www.sciencedirect.com/science/article/pii/S1751157717300500">https://www.sciencedirect.com/science/article/pii/S1751157717300500</a></li>
+          <li data-original-text="https://arxiv.org/abs/1301.4655"><a href="https://arxiv.org/abs/1301.4655">https://arxiv.org/abs/1301.4655</a></li>
         </ul>
       </section>
     </main>
     <script src="role-toggle.js" defer></script>
     <script src="module-progress.js" defer></script>
+    <script src="details-accordion.js" defer></script>
   </body>
 </html>

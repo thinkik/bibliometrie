@@ -7,7 +7,7 @@ const path = require("path");
 const ROOT = path.resolve(__dirname, "..");
 const OUTPUT_PATH = path.join(ROOT, "data", "search-index.json");
 
-const SEARCHABLE_FILES = [
+const STATIC_SEARCHABLE_FILES = [
   "lehrgang.html",
   "uebungen.html",
   "glossar.html",
@@ -17,14 +17,21 @@ const SEARCHABLE_FILES = [
   "responsible-metrics.html",
   "downloads-vorlagen.html",
   "index.html",
-  ...Array.from({ length: 12 }, (_, index) => `modul${index + 1}.html`),
 ];
 
+const getModuleFiles = () =>
+  fs
+    .readdirSync(ROOT)
+    .filter((filename) => /^modul([1-9]|1[0-2])\.html$/.test(filename))
+    .sort((a, b) => parseInt(a.match(/\d+/)[0], 10) - parseInt(b.match(/\d+/)[0], 10));
+
+const SEARCHABLE_FILES = [...STATIC_SEARCHABLE_FILES, ...getModuleFiles()];
+
 const CATEGORY_BY_FILE = [
-  { regex: /^modul\d+\.html$/, category: "Module" },
-  { regex: /^uebungen\.html$/, category: "Übungen" },
-  { regex: /^glossar\.html$/, category: "Glossar" },
-  { regex: /^faq\.html$/, category: "FAQ" },
+  { regex: /^modul([1-9]|1[0-2])\.html$/, category: (filename) => `Modul ${filename.match(/\d+/)[0].padStart(2, "0")}` },
+  { regex: /^uebungen\.html$/, category: () => "Übungen" },
+  { regex: /^glossar\.html$/, category: () => "Glossar" },
+  { regex: /^faq\.html$/, category: () => "FAQ" },
 ];
 
 const decodeHtmlEntities = (text) =>
@@ -55,7 +62,7 @@ const getTitle = (html, fallback) => {
 
 const getCategory = (filename) => {
   const match = CATEGORY_BY_FILE.find(({ regex }) => regex.test(filename));
-  return match ? match.category : "Inhalte";
+  return match ? match.category(filename) : "Inhalte";
 };
 
 const entries = SEARCHABLE_FILES.filter((filename) => fs.existsSync(path.join(ROOT, filename))).map((filename) => {
@@ -74,7 +81,7 @@ const entries = SEARCHABLE_FILES.filter((filename) => fs.existsSync(path.join(RO
 
 fs.writeFileSync(
   OUTPUT_PATH,
-  JSON.stringify({ generatedAt: new Date().toISOString(), entries }, null, 2) + "\n",
+  `${JSON.stringify({ generatedAt: new Date().toISOString(), entries }, null, 2)}\n`,
   "utf8"
 );
 

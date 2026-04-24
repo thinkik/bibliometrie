@@ -71,6 +71,26 @@
     "Modul 9: Datenqualität & Disambiguierung: Autor:innen, Organisationen, Affiliations, Dubletten – plus reproduzierbare Workflows": "Module 9: Data quality & disambiguation: authors, organizations, affiliations, duplicates – plus reproducible workflows",
     "Modul 10: Datenquellen & Coverage": "Module 10: Data sources & coverage",
     "Modul 11: Science Mapping & Wissensstrukturen: Co-Citation, Bibliographic Coupling, Co-Word (inkl. VOSviewer/bibliometrix)": "Module 11: Science mapping & knowledge structures: co-citation, bibliographic coupling, co-word (incl. VOSviewer/bibliometrix)",
-    "Modul 12: Forschungsbewertung in der Praxis: Reporting-Patterns, Dashboards, Use-Cases (Unit/Faculty/Person) + Do/Don’t-Katalog": "Module 12: Research evaluation in practice: reporting patterns, dashboards, use cases (unit/faculty/person) + do/don't catalog"
+    "Modul 12: Forschungsbewertung in der Praxis: Reporting-Patterns, Dashboards, Use-Cases (Unit/Faculty/Person) + Do/Don’t-Katalog": "Module 12: Research evaluation in practice: reporting patterns, dashboards, use cases (unit/faculty/person) + do/don't catalog",
+    "Fortschritt:": "Progress:",
+    "Schwierigkeit": "Difficulty",
+    "Geschätzte Lesezeit": "Estimated reading time",
+    "Zielgruppen": "Target groups",
+    "Voraussetzungen": "Prerequisites",
+    "Typische Fehlinterpretationen": "Typical misinterpretations",
+    "Lernziele": "Learning goals",
+    "Kurz erklärt": "Quick explanation",
+    "Vertiefung": "Deep dive",
+    "Praxis-Workflow": "Practical workflow",
+    "Responsible-Metrics-Box": "Responsible metrics box",
+    "Quellen & weiterführende Links": "Sources & further reading",
+    "Für Bibliometrie-Interessierte": "For bibliometrics learners",
+    "Für Fortgeschrittene": "For advanced learners",
+    "Wähle deine Rolle für passende Hinweise:": "Choose your role for tailored hints:",
+    "Rolle auswählen": "Select role",
+    "Bibliothek": "Library",
+    "Forschende": "Researchers",
+    "Research Office": "Research Office",
+    "Keine": "None"
   }
 }
