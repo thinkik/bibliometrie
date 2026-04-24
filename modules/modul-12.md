@@ -99,10 +99,94 @@ Dashboards und Reports sind nie neutral: Sie formen Entscheidungen. Gute bibliom
 - Integrität/Transparenz/Open Science belohnen (Hong Kong Principles/UNESCO OS).
 - Framework „Responsible Metrics“ operationalisieren (Metric Tide).
 
-## Übungen (Level 1–3)
-- **Level 1:** High-stakes-Aussage identifizieren und die 5 DORA-Prinzipien benennen.
-- **Level 2:** Dashboard-Spezifikation (max. 12 Bulletpoints) für ein Institut schreiben; kritische Review eines Rankings (5 Probleme + 3 Verbesserungen).
-- **Level 3:** Bewertungs-Set für eine Berufungskommission entwerfen (qualitative Kriterien, kontextualisierte Metriken, Narrative Template).
+## Übungen
+
+### Level 1 Q1–Q5
+
+**M12-L1-Q1 – High-stakes erkennen**  
+Aufgabe: Welche Situation ist ein High-stakes-Use-Case?  
+A) Berufungsentscheidung.  
+B) Interne Lernanalyse ohne Konsequenzen.  
+C) Themenmonitoring für eine Bibliotheksschulung.  
+Lösung: A.
+
+**M12-L1-Q2 – Monitoring vs. Evaluation**  
+Aufgabe: Warum muss zwischen Monitoring und Evaluation unterschieden werden?  
+Lösung: Weil die Anforderungen an Evidenz, Fairness, Transparenz und qualitative Beurteilung bei Entscheidungen mit Konsequenzen deutlich höher sind.
+
+**M12-L1-Q3 – Goodhart’s Law**  
+Aufgabe: Was beschreibt Goodhart’s Law im Kontext von Forschungsbewertung?  
+Lösung: Wenn eine Kennzahl zum Ziel wird, kann sie ihren Informationsgehalt verlieren, weil Verhalten auf die Optimierung der Kennzahl ausgerichtet wird.
+
+**M12-L1-Q4 – Dashboard-Leitplanke**  
+Aufgabe: Welche Designentscheidung ist verantwortungsvoll?  
+A) Keine Personenrankings im Default-View.  
+B) Automatisches Ranking aller Forschenden nach h-Index.  
+C) Journal Impact Factor als Personenmetrik.  
+Lösung: A.
+
+**M12-L1-Q5 – Narrative Evidence**  
+Aufgabe: Wozu dient Narrative Evidence?  
+Lösung: Sie ergänzt Kennzahlen durch qualitative Beiträge, Rollen, Open-Science-Aktivitäten, Teamarbeit, Mentoring und Wirkungskontexte.
+
+### Level 2 Q1–Q3
+
+**M12-L2-Q1 – Dashboard-Spezifikation**  
+Aufgabe: Entwirf ein Dashboard für ein Institut mit maximal acht KPIs. Die KPIs dürfen keine Personenrankings erzeugen.  
+Lösungsskizze: Output-Mix, OA-Anteil, feldnormalisierter Impact auf Aggregatsebene, PP(top 10%), internationale Kooperation, Policy/Practice Uptake, COUNTER Usage, Datenqualität (DOI/ORCID/ROR-Quote).  
+Bewertung: 4 Punkte für geeignete KPIs, 2 Punkte für Aggregatlogik, 2 Punkte für Responsible-Metrics-Hinweise.
+
+**M12-L2-Q2 – Ranking kritisch prüfen**  
+Aufgabe: Ein internes Dashboard zeigt eine Rangliste aller Forschenden nach h-Index. Nenne fünf Probleme und drei Verbesserungen.  
+Lösung:
+Probleme: Feldbias; Karrierelängenbias; Datenquellenabhängigkeit; Fehlanreiz/Gaming; Personenranking ohne Kontext; ignoriert Rollen/Beiträge; Benachteiligung von Early-Career-Forschenden.  
+Verbesserungen: keine Default-Rankings; qualitative Narrative ergänzen; Vergleichsgruppen nach Feld/Karrierephase; Methodikbox; Datenqualitätsanzeige; Peer Review zentral halten.  
+Bewertung: 5 Punkte Probleme, 3 Punkte Verbesserungen.
+
+**M12-L2-Q3 – Governance-Check**  
+Aufgabe: Erstelle einen Governance-Check für ein Forschungsdashboard mit mindestens sechs Fragen.  
+Lösungsvorschlag:
+- Welche Entscheidungen werden mit dem Dashboard unterstützt?
+- Sind Entscheidungen low-, medium- oder high-stakes?
+- Wer verantwortet Datenquelle und Methodik?
+- Gibt es einen Korrekturprozess für falsch zugeordnete Publikationen?
+- Werden Datenquelle, Stichtag, Coverage und Counting offengelegt?
+- Gibt es Fairness-Checks nach Feld, Karrierephase und Rolle?
+- Werden Indikatoren regelmäßig überprüft?
+- Wird qualitative Evidenz einbezogen?
+Bewertung: 1 Punkt pro sinnvoller Frage, maximal 6 Punkte.
+
+### Level 3
+
+**M12-L3-CASE – Bewertungs-Set für Berufungskommission**  
+Aufgabe: Eine Berufungskommission möchte bibliometrische Informationen nutzen. Entwirf ein verantwortungsvolles Bewertungs-Set.
+
+Deliverable:
+- Zweck und Grenzen der Kennzahlen
+- qualitative Hauptkriterien
+- kleine Auswahl kontextualisierter Metriken
+- Narrative-CV-Elemente
+- Fairness-Checks
+- Methodikbox
+- Do/Don’t-Liste für die Kommission
+
+Lösungsskizze:
+- Zweck: Kennzahlen nur als Kontext, nicht als Entscheidungsautomat.
+- Qualitative Hauptkriterien: wissenschaftliche Qualität, Originalität, methodische Solidität, Beitrag zur Fachcommunity, Lehre/Mentoring, Open Science, Team Science.
+- Metriken: feldnormalisierte Aggregatsignale, ausgewählte Publikationsliste, ggf. Top-x%-Anteil, keine Journalmetrik für Einzelartikel.
+- Narrative-CV-Elemente: wichtigste Beiträge, Rolle in Teamarbeiten, Daten/Software, Open-Science-Beiträge, Wirkung in Praxis/Policy.
+- Fairness: Fach, Karrierephase, Unterbrüche, Teilzeit, Publikationstypen, Sprache, Datenquellen-Coverage.
+- Methodikbox: Quelle, Stichtag, Zeitraum, Dokumenttypen, Counting, Disambiguierung, Limitationen.
+- Don’t: kein JIF-Filter, kein h-Index-Ranking, keine mechanischen Schwellen.
+
+Bewertung:
+- 3 Punkte qualitative Kriterien.
+- 2 Punkte passende Metriken.
+- 2 Punkte Fairness/Responsible Metrics.
+- 2 Punkte Methodikbox.
+- 1 Punkt klare Don’ts.
+
+
 
 ## Quellen & weiterführende Links
 - https://www.ukri.org/wp-content/uploads/2021/12/RE-151221-TheMetricTideFullReport2015.pdf

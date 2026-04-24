@@ -17,6 +17,8 @@ const STATIC_SEARCHABLE_FILES = [
   "responsible-metrics.html",
   "downloads-vorlagen.html",
   "index.html",
+  "kursueberblick.html",
+  "bewertung.html",
 ];
 
 const getModuleFiles = () =>
