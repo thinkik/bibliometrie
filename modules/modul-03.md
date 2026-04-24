@@ -5,7 +5,12 @@
 **Zielgruppen:** Bibliothek, Forschungsreferat, Forschende  
 **Voraussetzungen:** Modul 1, Modul 2
 
-<script src="../details-accordion.js" defer></script>
+:::role-hint
+[Bibliothek]: Hinweis: Ergänzt in Beratungen immer einen kurzen Interpretationshinweis zu Zitationsfenster und Datenquelle.
+[Research Office]: Hinweis: Nutzt Zitationswerte als Kontextsignal und kombiniert sie mit qualitativer Evidenz.
+[Forschende]: Hinweis: Vergleicht nur innerhalb sinnvoller Kohorten (Fach, Karrierestufe, Dokumenttyp, Alter).
+:::
+
 
 ## Lernziele
 - Erklären, was eine Zitation ist und warum Zitationsdaten als Signal (nicht als Beweis) verstanden werden müssen.

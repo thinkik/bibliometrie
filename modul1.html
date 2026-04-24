@@ -1,18 +1,18 @@
 <!doctype html>
-<html lang="de">
+<html lang="de" data-original-text="Einführung Bibliometrie – Modul 1: Grundlagen der Bibliometrie">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Einführung Bibliometrie – Modul 1</title>
+    <title>Einführung Bibliometrie – Modul 1: Grundlagen der Bibliometrie</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="navigation.js" defer></script>
     <script src="i18n.js" defer></script>
   </head>
   <body>
     <header class="site-header">
-      <div class="brand" data-i18n="site.brand">Einführung Bibliometrie</div>
+      <div class="brand" data-i18n="site.brand" data-original-text="Einführung Bibliometrie">Einführung Bibliometrie</div>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
-        <span class="nav-toggle-label" data-i18n="nav.menu">Menü</span>
+        <span class="nav-toggle-label" data-i18n="nav.menu" data-original-text="Menü">Menü</span>
         <span class="nav-toggle-icon" aria-hidden="true">
           <span class="nav-toggle-bar"></span>
           <span class="nav-toggle-bar"></span>
@@ -32,136 +32,110 @@
         <a href="datenschutz.html">Datenschutz</a>
         <a href="impressum.html">Impressum</a>
       </nav>
-      <button class="language-toggle" type="button" aria-label="Sprache wechseln" data-i18n="language.toggle" data-i18n-aria-label="language.aria">DE/EN</button>
+      <button class="language-toggle" type="button" aria-label="Sprache wechseln" data-i18n="language.toggle" data-i18n-aria-label="language.aria" data-original-text="DE/EN">DE/EN</button>
     </header>
     <main class="content">
       <div class="module-progress" data-module-progress data-module-id="modul1">
-        <span class="module-progress-label">Fortschritt:</span>
+        <span class="module-progress-label" data-original-text="Fortschritt:">Fortschritt:</span>
         <progress id="module-progress-bar" max="100" value="0">0%</progress>
-        <span class="module-progress-value" data-module-progress-value>0%</span>
+        <span class="module-progress-value" data-module-progress-value data-original-text="0%">0%</span>
       </div>
-      <h1 id="heading-modul-1">Modul 1: Grundlagen der Bibliometrie</h1>
+      <h1 id="heading-modul-1" data-original-text="Modul 1: Grundlagen der Bibliometrie">Modul 1: Grundlagen der Bibliometrie</h1>
 
       <section class="module-section" id="modul-1" aria-labelledby="heading-modul-1">
         <ul class="module-meta">
-          <li><strong>Schwierigkeit:</strong> Beginner</li>
-          <li><strong>Geschätzte Lesezeit:</strong> 45 Minuten</li>
-          <li><strong>Zielgruppen:</strong> Bibliothek, Research Office, Forschende</li>
-          <li><strong>Voraussetzungen:</strong> Keine</li>
+          <li data-original-text="Schwierigkeit: Beginner"><strong>Schwierigkeit:</strong> Beginner</li>
+          <li data-original-text="Geschätzte Lesezeit: 45 Minuten"><strong>Geschätzte Lesezeit:</strong> 45 Minuten</li>
+          <li data-original-text="Zielgruppen: Bibliothek, Research Office, Forschende"><strong>Zielgruppen:</strong> Bibliothek, Research Office, Forschende</li>
+          <li data-original-text="Voraussetzungen: Keine"><strong>Voraussetzungen:</strong> Keine</li>
         </ul>
         <div class="module-role-panel">
-          <p class="module-role-label">Wähle deine Rolle für passende Hinweise:</p>
+          <p class="module-role-label" data-original-text="Wähle deine Rolle für passende Hinweise:">Wähle deine Rolle für passende Hinweise:</p>
           <div class="module-role-buttons" role="group" aria-label="Rolle auswählen">
-            <button type="button" class="role-toggle-button" data-role="Bibliothek">Bibliothek</button>
-            <button type="button" class="role-toggle-button" data-role="Research Office">Research Office</button>
-            <button type="button" class="role-toggle-button" data-role="Forschende">Forschende</button>
+            <button type="button" class="role-toggle-button" data-role="Bibliothek" data-original-text="Bibliothek">Bibliothek</button>
+            <button type="button" class="role-toggle-button" data-role="Bibliothek" data-original-text="Bibliothek">Bibliothek</button>
+            <button type="button" class="role-toggle-button" data-role="Research Office" data-original-text="Research Office">Research Office</button>
+            <button type="button" class="role-toggle-button" data-role="Research Office" data-original-text="Research Office">Research Office</button>
+            <button type="button" class="role-toggle-button" data-role="Forschende" data-original-text="Forschende">Forschende</button>
+            <button type="button" class="role-toggle-button" data-role="Forschende" data-original-text="Forschende">Forschende</button>
           </div>
           <div class="module-role-hints">
-            <div class="role-hint" data-role="Bibliothek" hidden>
-              Hinweis: Klärt mit dem Team, welche bibliometrischen Basisbegriffe in Schulungen konsistent
-              verwendet werden sollen.
-            </div>
-            <div class="role-hint" data-role="Bibliothek" hidden>
-              Hinweis: Notiert typische Nutzerfragen, um spätere Beratungsangebote daran auszurichten.
-            </div>
-            <div class="role-hint" data-role="Research Office" hidden>
-              Hinweis: Haltet fest, welche Kennzahlen für interne Reports wirklich benötigt werden.
-            </div>
-            <div class="role-hint" data-role="Research Office" hidden>
-              Hinweis: Prüft früh, welche Datenquellen für zentrale Entscheidungen akzeptiert sind.
-            </div>
-            <div class="role-hint" data-role="Forschende" hidden>
-              Hinweis: Überlegt, welche Indikatoren eure Arbeit sinnvoll ergänzen, ohne sie zu reduzieren.
-            </div>
-            <div class="role-hint" data-role="Forschende" hidden>
-              Hinweis: Sammelt Beispiele, wo Zitationszahlen missverstanden wurden, um gegenzusteuern.
-            </div>
+            <div class="role-hint" data-role="Bibliothek" data-original-text="Hinweis: Klärt mit dem Team, welche bibliometrischen Basisbegriffe in Schulungen konsistent verwendet werden sollen." hidden>Hinweis: Klärt mit dem Team, welche bibliometrischen Basisbegriffe in Schulungen konsistent verwendet werden sollen.</div>
+            <div class="role-hint" data-role="Bibliothek" data-original-text="Hinweis: Notiert typische Nutzerfragen, um spätere Beratungsangebote daran auszurichten." hidden>Hinweis: Notiert typische Nutzerfragen, um spätere Beratungsangebote daran auszurichten.</div>
+            <div class="role-hint" data-role="Research Office" data-original-text="Hinweis: Haltet fest, welche Kennzahlen für interne Reports wirklich benötigt werden." hidden>Hinweis: Haltet fest, welche Kennzahlen für interne Reports wirklich benötigt werden.</div>
+            <div class="role-hint" data-role="Research Office" data-original-text="Hinweis: Prüft früh, welche Datenquellen für zentrale Entscheidungen akzeptiert sind." hidden>Hinweis: Prüft früh, welche Datenquellen für zentrale Entscheidungen akzeptiert sind.</div>
+            <div class="role-hint" data-role="Forschende" data-original-text="Hinweis: Überlegt, welche Indikatoren eure Arbeit sinnvoll ergänzen, ohne sie zu reduzieren." hidden>Hinweis: Überlegt, welche Indikatoren eure Arbeit sinnvoll ergänzen, ohne sie zu reduzieren.</div>
+            <div class="role-hint" data-role="Forschende" data-original-text="Hinweis: Sammelt Beispiele, wo Zitationszahlen missverstanden wurden, um gegenzusteuern." hidden>Hinweis: Sammelt Beispiele, wo Zitationszahlen missverstanden wurden, um gegenzusteuern.</div>
           </div>
         </div>
-
-        <h3>Lernziele</h3>
+        <h3 data-original-text="Lernziele">Lernziele</h3>
         <ul>
-          <li>Grundbegriffe der Bibliometrie erklären</li>
-          <li>Zitationsdaten als Indikatoren einordnen</li>
-          <li>Einsatzbereiche und Grenzen benennen</li>
+          <li data-original-text="Grundbegriffe der Bibliometrie erklären">Grundbegriffe der Bibliometrie erklären</li>
+          <li data-original-text="Zitationsdaten als Indikatoren einordnen">Zitationsdaten als Indikatoren einordnen</li>
+          <li data-original-text="Einsatzbereiche und Grenzen benennen">Einsatzbereiche und Grenzen benennen</li>
         </ul>
-
-        <h3>Kurz erklärt</h3>
-        <p>
-          Bibliometrie untersucht wissenschaftliche Kommunikation anhand von Publikations- und
-          Zitationsdaten. In diesem Modul lernen Sie, warum Zitationen als Hinweis auf Rezeption dienen,
-          aber nicht mit Qualität gleichgesetzt werden dürfen. Wir betrachten typische Fragestellungen wie
-          Forschungsleistung messen, Themenfelder beobachten oder Kooperationen sichtbar machen. Zugleich
-          klären wir Begriffe wie Publikationstypen, Zitationsfenster, Datenbanken und die Rolle von
-          Referenzen. Wir unterscheiden deskriptive Analysen von evaluativen Anwendungen und besprechen,
-          welche Entscheidungen auf welcher Evidenz beruhen sollten. Ein besonderer Fokus liegt auf
-          verantwortungsvollem Umgang mit Kennzahlen: Indikatoren sind Werkzeuge zur Orientierung, keine
-          Urteile. Am Ende können Sie die Rolle der Bibliometrie im Forschungsmanagement einordnen und
-          erkennen, welche Datenbasis für valide Aussagen nötig ist.
-        </p>
-
-        <h3>Vertiefung</h3>
+        <h3 data-original-text="Kurz erklärt">Kurz erklärt</h3>
+        <p data-original-text="Bibliometrie untersucht wissenschaftliche Kommunikation anhand von Publikations- und Zitationsdaten. In diesem Modul lernen Sie, warum Zitationen als Hinweis auf Rezeption dienen, aber nicht mit Qualität gleichgesetzt werden dürfen. Wir betrachten typische Fragestellungen wie Forschungsleistung messen, Themenfelder beobachten oder Kooperationen sichtbar machen. Zugleich klären wir Begriffe wie Publikationstypen, Zitationsfenster, Datenbanken und die Rolle von Referenzen. Wir unterscheiden deskriptive Analysen von evaluativen Anwendungen und besprechen, welche Entscheidungen auf welcher Evidenz beruhen sollten. Ein besonderer Fokus liegt auf verantwortungsvollem Umgang mit Kennzahlen: Indikatoren sind Werkzeuge zur Orientierung, keine Urteile. Am Ende können Sie die Rolle der Bibliometrie im Forschungsmanagement einordnen und erkennen, welche Datenbasis für valide Aussagen nötig ist.">Bibliometrie untersucht wissenschaftliche Kommunikation anhand von Publikations- und Zitationsdaten. In diesem Modul lernen Sie, warum Zitationen als Hinweis auf Rezeption dienen, aber nicht mit Qualität gleichgesetzt werden dürfen. Wir betrachten typische Fragestellungen wie Forschungsleistung messen, Themenfelder beobachten oder Kooperationen sichtbar machen. Zugleich klären wir Begriffe wie Publikationstypen, Zitationsfenster, Datenbanken und die Rolle von Referenzen. Wir unterscheiden deskriptive Analysen von evaluativen Anwendungen und besprechen, welche Entscheidungen auf welcher Evidenz beruhen sollten. Ein besonderer Fokus liegt auf verantwortungsvollem Umgang mit Kennzahlen: Indikatoren sind Werkzeuge zur Orientierung, keine Urteile. Am Ende können Sie die Rolle der Bibliometrie im Forschungsmanagement einordnen und erkennen, welche Datenbasis für valide Aussagen nötig ist.</p>
+        <h3 data-original-text="Vertiefung">Vertiefung</h3>
         <ul>
-          <li>Zentrale Begriffe und Definitionen sammeln und mit Beispielen illustrieren.</li>
-          <li>Begrenzen, welche Aussagen mit den gewählten Daten tatsächlich möglich sind.</li>
-          <li>Ein kurzes Reflexionsprotokoll zu Annahmen, Datenlücken und Bias erstellen.</li>
+          <li data-original-text="Zentrale Begriffe und Definitionen sammeln und mit Beispielen illustrieren.">Zentrale Begriffe und Definitionen sammeln und mit Beispielen illustrieren.</li>
+          <li data-original-text="Begrenzen, welche Aussagen mit den gewählten Daten tatsächlich möglich sind.">Begrenzen, welche Aussagen mit den gewählten Daten tatsächlich möglich sind.</li>
+          <li data-original-text="Ein kurzes Reflexionsprotokoll zu Annahmen, Datenlücken und Bias erstellen.">Ein kurzes Reflexionsprotokoll zu Annahmen, Datenlücken und Bias erstellen.</li>
         </ul>
-
-        <h4>Praxis-Workflow</h4>
-        <ol>
-          <li>Fragestellung präzisieren und Zielgruppe definieren.</li>
-          <li>Datenquelle auswählen und dokumentieren.</li>
-          <li>Indikatoren berechnen und validieren.</li>
-          <li>Ergebnisse visualisieren und interpretieren.</li>
-          <li>Bericht mit Limitationen veröffentlichen.</li>
-        </ol>
-
-        <h4>Responsible-Metrics-Box</h4>
+        <h3 data-original-text="Typische Fehlinterpretationen">Typische Fehlinterpretationen</h3>
         <ul>
-          <li>Verwenden Sie mehrere Indikatoren und erläutern Sie deren Grenzen.</li>
-          <li>Kombinieren Sie quantitative Werte mit qualitativen Einschätzungen.</li>
+          <li data-original-text="Indikatoren als direkte Qualitätsurteile verwenden.">Indikatoren als direkte Qualitätsurteile verwenden.</li>
+          <li data-original-text="Unterschiedliche Fächer oder Zeitfenster ohne Normalisierung vergleichen.">Unterschiedliche Fächer oder Zeitfenster ohne Normalisierung vergleichen.</li>
+          <li data-original-text="Datenlücken oder Dubletten ignorieren.">Datenlücken oder Dubletten ignorieren.</li>
         </ul>
-
-        <h3>Typische Fehlinterpretationen</h3>
-        <ul>
-          <li>Indikatoren als direkte Qualitätsurteile verwenden.</li>
-          <li>Unterschiedliche Fächer oder Zeitfenster ohne Normalisierung vergleichen.</li>
-          <li>Datenlücken oder Dubletten ignorieren.</li>
-        </ul>
-
-        <h3>Übungen</h3>
-        <details data-progress-id="uebungen-1">
-          <summary>Level 1–3</summary>
-          <div class="details-content">
-            <h4>Level 1</h4>
-            <ul>
-              <li>Ein zentrales Konzept in zwei Sätzen definieren.</li>
-            </ul>
-
-            <h4>Level 2</h4>
-            <ul>
-              <li>Ein kleines Datenset skizzieren und passende Indikatoren vorschlagen.</li>
-            </ul>
-
-            <h4>Level 3</h4>
-            <ul>
-              <li>Eine kurze Interpretation schreiben und mögliche Bias benennen.</li>
-            </ul>
-          </div>
+        <h3 data-original-text="Mini-Übungen (Level 1–3)">Mini-Übungen (Level 1–3)</h3>
+        <details class="exercise-item">
+          <summary>Level 1: Ein zentrales Konzept in zwei Sätzen definieren</summary>
+          <p>
+            <strong>Antwort:</strong> Beispiel: Bibliometrie untersucht wissenschaftliche Kommunikation anhand von
+            Publikations- und Zitationsdaten und liefert Hinweise auf Sichtbarkeit und Rezeption. Sie ersetzt keine
+            Qualitätsurteile, sondern unterstützt Kontextanalysen.
+          </p>
         </details>
-
-        <h3>Quellen</h3>
+        <details class="exercise-item">
+          <summary>Level 2: Ein kleines Datenset skizzieren und passende Indikatoren vorschlagen</summary>
+          <p>
+            <strong>Antwort:</strong> Beispiel: Datenset mit Publikationstyp, Jahr, Zitationen und Autor:in.
+            Indikatoren könnten Publikationsanzahl pro Jahr, Zitationen pro Publikation und Anteil verschiedener
+            Dokumenttypen sein.
+          </p>
+        </details>
+        <details class="exercise-item">
+          <summary>Level 3: Eine kurze Interpretation schreiben und mögliche Bias benennen</summary>
+          <p>
+            <strong>Antwort:</strong> Beispiel: „Die Zitationszahlen sind im Beobachtungszeitraum gestiegen, was auf
+            höhere Sichtbarkeit hindeuten kann. Mögliche Bias ergeben sich aus fachlichen Unterschieden,
+            Dokumenttypen und unvollständiger Coverage der Datenquelle.“
+          </p>
+        </details>
+        <h3 data-original-text="Praxis-Workflow">Praxis-Workflow</h3>
+        <ol>
+          <li data-original-text="Fragestellung präzisieren und Zielgruppe definieren.">Fragestellung präzisieren und Zielgruppe definieren.</li>
+          <li data-original-text="Datenquelle auswählen und dokumentieren.">Datenquelle auswählen und dokumentieren.</li>
+          <li data-original-text="Indikatoren berechnen und validieren.">Indikatoren berechnen und validieren.</li>
+          <li data-original-text="Ergebnisse visualisieren und interpretieren.">Ergebnisse visualisieren und interpretieren.</li>
+          <li data-original-text="Bericht mit Limitationen veröffentlichen.">Bericht mit Limitationen veröffentlichen.</li>
+        </ol>
+        <h3 data-original-text="Responsible-Metrics-Box">Responsible-Metrics-Box</h3>
         <ul>
-          <li><a href="https://www.dora.org/">https://www.dora.org/</a></li>
-          <li><a href="https://www.leidenmanifesto.org/">https://www.leidenmanifesto.org/</a></li>
-          <li><a href="https://www.crossref.org/">https://www.crossref.org/</a></li>
+          <li data-original-text="Verwenden Sie mehrere Indikatoren und erläutern Sie deren Grenzen.">Verwenden Sie mehrere Indikatoren und erläutern Sie deren Grenzen.</li>
+          <li data-original-text="Kombinieren Sie quantitative Werte mit qualitativen Einschätzungen.">Kombinieren Sie quantitative Werte mit qualitativen Einschätzungen.</li>
+        </ul>
+        <h3 data-original-text="Quellen &amp; weiterführende Links">Quellen & weiterführende Links</h3>
+        <ul>
+          <li data-original-text="https://www.dora.org/"><a href="https://www.dora.org/">https://www.dora.org/</a></li>
+          <li data-original-text="https://www.leidenmanifesto.org/"><a href="https://www.leidenmanifesto.org/">https://www.leidenmanifesto.org/</a></li>
+          <li data-original-text="https://www.crossref.org/"><a href="https://www.crossref.org/">https://www.crossref.org/</a></li>
         </ul>
       </section>
     </main>
     <script src="role-toggle.js" defer></script>
     <script src="module-progress.js" defer></script>
-    <footer class="site-footer">
-      <p>Die Inhalte dieser Website stehen unter der <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0 Lizenz</a>.</p>
-    </footer>
+    <script src="details-accordion.js" defer></script>
   </body>
 </html>

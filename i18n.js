@@ -29,7 +29,9 @@ const applyContentTranslations = (translations, language) => {
   const reverseMap = Object.fromEntries(Object.entries(textMap).map(([de, en]) => [en, de]));
 
   document
-    .querySelectorAll("main h1, main h2, main h3, main p, main li, main th, main td, main figcaption, main summary, main .btn")
+    .querySelectorAll(
+      "main h1, main h2, main h3, main p, main li, main th, main td, main figcaption, main summary, main .btn, main .role-hint, main .module-role-label, main .role-toggle-button, main .module-progress-label"
+    )
     .forEach((element) => {
       if (element.children.length > 0) {
         return;
