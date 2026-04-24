@@ -79,3 +79,92 @@ Eine Karte zeigt Ähnlichkeit/Relatedness nach dem gewählten Link-Typ. Nähe be
 - https://www.vosviewer.com/documentation/Manual_VOSviewer_1.6.18.pdf
 - https://www.sciencedirect.com/science/article/pii/S1751157717300500
 - https://arxiv.org/abs/1301.4655
+
+
+## Übungen
+
+### Level 1 Q1–Q5
+
+**M11-L1-Q1 – Methode wählen**  
+Aufgabe: Welche Methode eignet sich am besten, um die intellektuelle Basis eines Feldes sichtbar zu machen?  
+A) Co-Citation  
+B) Usage Counting  
+C) JIF  
+Lösung: A.
+
+**M11-L1-Q2 – Forschungsfront**  
+Aufgabe: Welche Methode eignet sich besonders für aktuelle Forschungsfronten?  
+A) Bibliographic Coupling  
+B) h-Index  
+C) COUNTER  
+Lösung: A.
+
+**M11-L1-Q3 – Co-Word**  
+Aufgabe: Was analysiert Co-Word-Analyse?  
+A) Gemeinsam auftretende Begriffe, Keywords oder Terme.  
+B) Durchschnittliche Downloads.  
+C) Journalranglisten.  
+Lösung: A.
+
+**M11-L1-Q4 – Cluster**  
+Aufgabe: Welche Aussage zu Clustern ist korrekt?  
+A) Cluster sind algorithmische Gruppen und müssen interpretiert werden.  
+B) Cluster sind objektive Schulen.  
+C) Clusterfarben zeigen Qualität.  
+Lösung: A.
+
+**M11-L1-Q5 – Thresholds**  
+Aufgabe: Warum sind Thresholds methodisch wichtig?  
+Lösung: Sie bestimmen, welche Knoten oder Kanten in die Karte aufgenommen werden und beeinflussen dadurch Lesbarkeit, Struktur und Interpretation.
+
+### Level 2 Q1–Q3
+
+**M11-L2-Q1 – Methode zuordnen**  
+Aufgabe: Ordne zu:  
+1. Klassische Werke eines Feldes erkennen.  
+2. Aktuelle Publikationen mit ähnlichem Referenzfundament gruppieren.  
+3. Themenräume über Keywords kartieren.  
+Lösung: 1 = Co-Citation; 2 = Bibliographic Coupling; 3 = Co-Word/Co-Occurrence.  
+Bewertung: 3 Punkte.
+
+**M11-L2-Q2 – Threshold-Entscheidung**  
+Aufgabe: Eine Co-Word-Karte enthält 2’000 Keywords und ist unlesbar. Nenne drei methodische Schritte, um sie sinnvoll zu reduzieren.  
+Lösung: Mindesthäufigkeit erhöhen; Synonyme/Varianten per Thesaurus zusammenführen; Stopwords/unspezifische Begriffe entfernen; nur Author Keywords oder kontrollierte Keywords nutzen; Sensitivitätscheck mit mehreren Thresholds.  
+Bewertung: 3 Punkte für drei sinnvolle Schritte.
+
+**M11-L2-Q3 – Karteninterpretation**  
+Aufgabe: Eine Karte zeigt einen roten Cluster mit Begriffen zu „Open Science“, einen blauen Cluster zu „Research Evaluation“ und starke Kanten zwischen beiden. Formuliere eine vorsichtige Interpretation.  
+Lösungsvorschlag: Die Begriffe treten im Datensatz häufig gemeinsam oder in eng verbundenen Publikationen auf. Dies kann auf eine thematische Verbindung zwischen Open Science und Forschungsbewertung hinweisen. Die Karte zeigt jedoch nur Relatedness nach gewählter Methode, keine Kausalität und keine Qualität.  
+Bewertung: 1 Punkt Relatedness, 1 Punkt thematische Interpretation, 1 Punkt Limitation.
+
+### Level 3
+
+**M11-L3-CASE – Science-Mapping-Projekt planen**  
+Aufgabe: Eine Fakultät möchte neue strategische Themenfelder identifizieren. Plane eine Science-Mapping-Analyse.
+
+Deliverable:
+- Fragestellung
+- Datenquelle
+- Zeitraum und Dokumenttypen
+- Methode: Co-Citation, Bibliographic Coupling oder Co-Word
+- Cleaning-Plan
+- Thresholds
+- Visualisierung
+- Interpretation
+- Limitationen
+- Methodikbox
+
+Lösungsskizze:
+- Fragestellung: Welche Themencluster prägen die Publikationen der Fakultät 2020–2025?
+- Datenquelle: Scopus/WoS oder OpenAlex, je nach Lizenz und Reproduzierbarkeitsziel.
+- Methode: Co-Word für Themenlandschaft; zusätzlich Bibliographic Coupling für aktuelle Forschungsfront.
+- Cleaning: Dubletten, Keyword-Varianten, Organisationsnamen, Stopwords.
+- Thresholds: z. B. Keywords mit mindestens 5 Vorkommen, Sensitivitätscheck mit 3 und 10.
+- Output: Karte, Clusterliste, Top-Keywords, Methodikbox.
+- Limitationen: Coverage, Keyword-Qualität, Threshold-Abhängigkeit, algorithmische Cluster, Interpretationsspielraum.
+
+Bewertung:
+- 3 Punkte für passende Methode.
+- 3 Punkte für reproduzierbare Methodik.
+- 2 Punkte für Cleaning/Thresholds.
+- 2 Punkte für Responsible-Metrics-Limitationen.

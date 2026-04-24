@@ -103,26 +103,7 @@
           ]
         }
       ],
-      "resources": [
-        {
-          "title": "Einführung: Was ist Bibliometrie?",
-          "slug": "was-ist-bibliometrie",
-          "type": "article",
-          "url": "https://example.com/bibliometrie-einfuehrung",
-          "difficulty": "beginner",
-          "readingTimeMinutes": 12,
-          "learningGoals": [
-            "Grundbegriffe verstehen"
-          ],
-          "outputs": [
-            {
-              "type": "notes",
-              "description": "Lesenotizen",
-              "format": "markdown"
-            }
-          ]
-        }
-      ],
+      "resources": [],
       "path": "modul-01.html"
     },
     {
@@ -175,26 +156,7 @@
           ]
         }
       ],
-      "resources": [
-        {
-          "title": "Überblick Datenquellen",
-          "slug": "datenquellen-ueberblick",
-          "type": "video",
-          "url": "https://example.com/datenquellen-video",
-          "difficulty": "beginner",
-          "readingTimeMinutes": 15,
-          "learningGoals": [
-            "Wichtige Datenbanken benennen"
-          ],
-          "outputs": [
-            {
-              "type": "notes",
-              "description": "Stichpunkte",
-              "format": "markdown"
-            }
-          ]
-        }
-      ],
+      "resources": [],
       "path": "modul-02.html"
     },
     {
@@ -247,26 +209,7 @@
           ]
         }
       ],
-      "resources": [
-        {
-          "title": "Indikatoren im Überblick",
-          "slug": "indikatoren-ueberblick",
-          "type": "article",
-          "url": "https://example.com/indikatoren",
-          "difficulty": "beginner",
-          "readingTimeMinutes": 18,
-          "learningGoals": [
-            "Indikatoren vergleichen"
-          ],
-          "outputs": [
-            {
-              "type": "notes",
-              "description": "Zusammenfassung",
-              "format": "markdown"
-            }
-          ]
-        }
-      ],
+      "resources": [],
       "path": "modul-03.html"
     },
     {
@@ -319,26 +262,7 @@
           ]
         }
       ],
-      "resources": [
-        {
-          "title": "Field-normalized indicators",
-          "slug": "field-normalized-indicators",
-          "type": "article",
-          "url": "https://example.com/field-normalized",
-          "difficulty": "intermediate",
-          "readingTimeMinutes": 20,
-          "learningGoals": [
-            "Normierungsansätze vergleichen"
-          ],
-          "outputs": [
-            {
-              "type": "notes",
-              "description": "Lesenotizen",
-              "format": "markdown"
-            }
-          ]
-        }
-      ],
+      "resources": [],
       "path": "modul-04.html"
     },
     {
@@ -391,26 +315,7 @@
           ]
         }
       ],
-      "resources": [
-        {
-          "title": "Altmetrics Primer",
-          "slug": "altmetrics-primer",
-          "type": "article",
-          "url": "https://example.com/altmetrics",
-          "difficulty": "intermediate",
-          "readingTimeMinutes": 14,
-          "learningGoals": [
-            "Altmetrics-Landschaft verstehen"
-          ],
-          "outputs": [
-            {
-              "type": "notes",
-              "description": "Kurznotizen",
-              "format": "markdown"
-            }
-          ]
-        }
-      ],
+      "resources": [],
       "path": "modul-05.html"
     },
     {
@@ -463,26 +368,7 @@
           ]
         }
       ],
-      "resources": [
-        {
-          "title": "Cleaning bibliographic data",
-          "slug": "cleaning-bibliographic-data",
-          "type": "article",
-          "url": "https://example.com/cleaning",
-          "difficulty": "intermediate",
-          "readingTimeMinutes": 16,
-          "learningGoals": [
-            "Bereinigungsstrategien anwenden"
-          ],
-          "outputs": [
-            {
-              "type": "notes",
-              "description": "Checkliste",
-              "format": "markdown"
-            }
-          ]
-        }
-      ],
+      "resources": [],
       "path": "modul-06.html"
     },
     {
@@ -535,26 +421,7 @@
           ]
         }
       ],
-      "resources": [
-        {
-          "title": "Netzwerkanalyse kompakt",
-          "slug": "netzwerkanalyse-kompakt",
-          "type": "video",
-          "url": "https://example.com/netzwerk",
-          "difficulty": "intermediate",
-          "readingTimeMinutes": 18,
-          "learningGoals": [
-            "Netzwerke interpretieren"
-          ],
-          "outputs": [
-            {
-              "type": "notes",
-              "description": "Kernaussagen",
-              "format": "markdown"
-            }
-          ]
-        }
-      ],
+      "resources": [],
       "path": "modul-07.html"
     },
     {
@@ -607,26 +474,7 @@
           ]
         }
       ],
-      "resources": [
-        {
-          "title": "Themenmapping Tutorial",
-          "slug": "themenmapping-tutorial",
-          "type": "video",
-          "url": "https://example.com/themenmapping",
-          "difficulty": "intermediate",
-          "readingTimeMinutes": 20,
-          "learningGoals": [
-            "Mapping-Methoden anwenden"
-          ],
-          "outputs": [
-            {
-              "type": "notes",
-              "description": "Notizen",
-              "format": "markdown"
-            }
-          ]
-        }
-      ],
+      "resources": [],
       "path": "modul-08.html"
     },
     {
@@ -1468,44 +1316,7 @@
       "path": "modul-12.html"
     }
   ],
-  "resources": [
-    {
-      "title": "Bibliometrie Tools Überblick",
-      "slug": "bibliometrie-tools",
-      "type": "tool",
-      "url": "https://example.com/tools",
-      "difficulty": "beginner",
-      "readingTimeMinutes": 10,
-      "learningGoals": [
-        "Wichtige Tools benennen"
-      ],
-      "outputs": [
-        {
-          "type": "catalog",
-          "description": "Tool-Liste",
-          "format": "json"
-        }
-      ]
-    },
-    {
-      "title": "Datenethik in der Forschung",
-      "slug": "datenethik",
-      "type": "article",
-      "url": "https://example.com/ethik",
-      "difficulty": "intermediate",
-      "readingTimeMinutes": 12,
-      "learningGoals": [
-        "Ethikleitlinien kennen"
-      ],
-      "outputs": [
-        {
-          "type": "notes",
-          "description": "Ethiknotizen",
-          "format": "markdown"
-        }
-      ]
-    }
-  ],
+  "resources": [],
   "sitemap": [
     {
       "title": "Start",
