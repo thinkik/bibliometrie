@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="de" data-original-text="Einführung Bibliometrie – Modul 2: Publikationsdaten und Quellen">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Einführung Bibliometrie – Modul 2: Publikationsdaten und Quellen</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="navigation.js" defer></script>
+    <script src="i18n.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand" data-i18n="site.brand" data-original-text="Einführung Bibliometrie">Einführung Bibliometrie</div>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="nav-toggle-label" data-i18n="nav.menu" data-original-text="Menü">Menü</span>
+        <span class="nav-toggle-icon" aria-hidden="true">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </span>
+      </button>
+      <nav class="site-nav" id="primary-navigation" aria-label="Hauptnavigation" data-i18n-aria-label="nav.aria">
+        <a href="index.html" data-i18n="nav.home">Start</a>
+        <a class="active" href="lehrgang.html" data-i18n="nav.course">Lehrgang</a>
+        <a href="uebungen.html" data-i18n="nav.exercises">Übungen</a>
+        <a href="fallstudien.html" data-i18n="nav.cases">Fallstudien</a>
+        <a href="tools-datenquellen.html" data-i18n="nav.tools">Tools &amp; Datenquellen</a>
+        <a href="responsible-metrics.html" data-i18n="nav.responsible">Responsible Metrics</a>
+        <a href="glossar.html" data-i18n="nav.glossary">Glossar</a>
+        <a href="downloads-vorlagen.html" data-i18n="nav.downloads">Downloads &amp; Vorlagen</a>
+        <a href="faq.html" data-i18n="nav.faq">FAQ</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="impressum.html">Impressum</a>
+      </nav>
+      <button class="language-toggle" type="button" aria-label="Sprache wechseln" data-i18n="language.toggle" data-i18n-aria-label="language.aria" data-original-text="DE/EN">DE/EN</button>
+    </header>
+    <main class="content">
+      <div class="module-progress" data-module-progress data-module-id="modul2">
+        <span class="module-progress-label" data-original-text="Fortschritt:">Fortschritt:</span>
+        <progress id="module-progress-bar" max="100" value="0">0%</progress>
+        <span class="module-progress-value" data-module-progress-value data-original-text="0%">0%</span>
+      </div>
+      <h1 id="heading-modul-2" data-original-text="Modul 2: Publikationsdaten und Quellen">Modul 2: Publikationsdaten und Quellen</h1>
+
+      <section class="module-section" id="modul-2" aria-labelledby="heading-modul-2">
+        <ul class="module-meta">
+          <li data-original-text="Schwierigkeit: Beginner"><strong>Schwierigkeit:</strong> Beginner</li>
+          <li data-original-text="Geschätzte Lesezeit: 50 Minuten"><strong>Geschätzte Lesezeit:</strong> 50 Minuten</li>
+          <li data-original-text="Zielgruppen: Bibliothek, Research Office, Forschende"><strong>Zielgruppen:</strong> Bibliothek, Research Office, Forschende</li>
+          <li data-original-text="Voraussetzungen: Modul 1"><strong>Voraussetzungen:</strong> Modul 1</li>
+        </ul>
+        <div class="module-role-panel">
+          <p class="module-role-label" data-original-text="Wähle deine Rolle für passende Hinweise:">Wähle deine Rolle für passende Hinweise:</p>
+          <div class="module-role-buttons" role="group" aria-label="Rolle auswählen">
+            <button type="button" class="role-toggle-button" data-role="Bibliothek" data-original-text="Bibliothek">Bibliothek</button>
+            <button type="button" class="role-toggle-button" data-role="Research Office" data-original-text="Research Office">Research Office</button>
+            <button type="button" class="role-toggle-button" data-role="Forschende" data-original-text="Forschende">Forschende</button>
+          </div>
+          <div class="module-role-hints">
+            <div class="role-hint" data-role="Bibliothek" data-original-text="Hinweis: Dokumentiert pro Datenquelle transparent, welche Disziplinen und Dokumenttypen gut bzw. schwach abgedeckt sind." hidden>Hinweis: Dokumentiert pro Datenquelle transparent, welche Disziplinen und Dokumenttypen gut bzw. schwach abgedeckt sind.</div>
+            <div class="role-hint" data-role="Research Office" data-original-text="Hinweis: Verankert Mindestangaben (Quelle, Zeitraum, Dokumenttypen, Limitationen) als Pflichtstandard im Reporting." hidden>Hinweis: Verankert Mindestangaben (Quelle, Zeitraum, Dokumenttypen, Limitationen) als Pflichtstandard im Reporting.</div>
+            <div class="role-hint" data-role="Forschende" data-original-text="Hinweis: Prüft bei Profilen zuerst Namensvarianten und Affiliations, bevor Kennzahlen interpretiert werden." hidden>Hinweis: Prüft bei Profilen zuerst Namensvarianten und Affiliations, bevor Kennzahlen interpretiert werden.</div>
+          </div>
+        </div>
+        <h3 data-original-text="Lernziele">Lernziele</h3>
+        <ul>
+          <li data-original-text="Die wichtigsten bibliometrischen Datenquellen (z. B. WoS, Scopus, OpenAlex, Crossref, Dimensions, Google Scholar) unterscheiden.">Die wichtigsten bibliometrischen Datenquellen (z. B. WoS, Scopus, OpenAlex, Crossref, Dimensions, Google Scholar) unterscheiden.</li>
+          <li data-original-text="Verstehen, was „Coverage“ praktisch bedeutet (Disziplinen, Sprachen, Dokumenttypen, Jahre, Indexierungslogik).">Verstehen, was „Coverage“ praktisch bedeutet (Disziplinen, Sprachen, Dokumenttypen, Jahre, Indexierungslogik).</li>
+          <li data-original-text="Erklären, warum Publikations- und Zitationszahlen je nach Datenquelle unterschiedlich ausfallen können.">Erklären, warum Publikations- und Zitationszahlen je nach Datenquelle unterschiedlich ausfallen können.</li>
+          <li data-original-text="Eine passende Datenquelle für eine konkrete Fragestellung auswählen und Limitationen korrekt kommunizieren.">Eine passende Datenquelle für eine konkrete Fragestellung auswählen und Limitationen korrekt kommunizieren.</li>
+        </ul>
+        <h3 data-original-text="Schlüsselbegriffe">Schlüsselbegriffe</h3>
+        <ul>
+          <li data-original-text="**Datenquelle:** Ein System/Index, aus dem bibliometrische Daten stammen (z. B. kuratierte Zitationsdatenbank oder offene Metadateninfrastruktur)."><strong>Datenquelle:</strong> Ein System/Index, aus dem bibliometrische Daten stammen (z. B. kuratierte Zitationsdatenbank oder offene Metadateninfrastruktur).</li>
+          <li data-original-text="**Coverage (Abdeckung):** Welche Inhalte eine Datenquelle enthält (Zeitschriften, Konferenzen, Bücher, Sprachen, Länder, Jahre, Dokumenttypen)."><strong>Coverage (Abdeckung):</strong> Welche Inhalte eine Datenquelle enthält (Zeitschriften, Konferenzen, Bücher, Sprachen, Länder, Jahre, Dokumenttypen).</li>
+          <li data-original-text="**Indexierung:** Wie Inhalte aufgenommen, strukturiert und verknüpft werden (z. B. Zitationslinks, Autor:innen, Institutionen)."><strong>Indexierung:</strong> Wie Inhalte aufgenommen, strukturiert und verknüpft werden (z. B. Zitationslinks, Autor:innen, Institutionen).</li>
+          <li data-original-text="**Kuratiert:** Inhalte werden nach definierten Kriterien ausgewählt und redaktionell betreut (typisch für kommerzielle Zitationsindizes)."><strong>Kuratiert:</strong> Inhalte werden nach definierten Kriterien ausgewählt und redaktionell betreut (typisch für kommerzielle Zitationsindizes).</li>
+          <li data-original-text="**Offene Infrastruktur:** Offene Daten/Metadaten (z. B. via API), die reproduzierbare Analysen ermöglichen, aber stark von Datenqualität abhängen."><strong>Offene Infrastruktur:</strong> Offene Daten/Metadaten (z. B. via API), die reproduzierbare Analysen ermöglichen, aber stark von Datenqualität abhängen.</li>
+          <li data-original-text="**Bias:** Systematische Verzerrung in Daten (z. B. Sprache, Region, Disziplin, Dokumenttyp), die Ergebnisse beeinflussen kann."><strong>Bias:</strong> Systematische Verzerrung in Daten (z. B. Sprache, Region, Disziplin, Dokumenttyp), die Ergebnisse beeinflussen kann.</li>
+        </ul>
+        <h3 data-original-text="Kurz erklärt">Kurz erklärt</h3>
+        <p data-original-text="Bibliometrische Kennzahlen sind nur so gut wie ihre Datenbasis. Unterschiedliche Datenquellen erfassen unterschiedliche Publikationen, Sprachen und Dokumenttypen – und verknüpfen Zitationen nicht immer gleich. Deshalb können zwei seriöse Systeme für dieselbe Einheit verschiedene Publikations- und Zitierzahlen zeigen. In diesem Modul lernst du, welche Quellen es gibt, wie Coverage entsteht und wie du Ergebnisse transparent und verantwortungsvoll kommunizierst.">Bibliometrische Kennzahlen sind nur so gut wie ihre Datenbasis. Unterschiedliche Datenquellen erfassen unterschiedliche Publikationen, Sprachen und Dokumenttypen – und verknüpfen Zitationen nicht immer gleich. Deshalb können zwei seriöse Systeme für dieselbe Einheit verschiedene Publikations- und Zitierzahlen zeigen. In diesem Modul lernst du, welche Quellen es gibt, wie Coverage entsteht und wie du Ergebnisse transparent und verantwortungsvoll kommunizierst.</p>
+        <h3 data-original-text="Vertiefung: Die wichtigsten Datenquellen im Überblick">Vertiefung: Die wichtigsten Datenquellen im Überblick</h3>
+        <p data-original-text="In der Bibliometrie gibt es grob drei Familien von Datenquellen:">In der Bibliometrie gibt es grob drei Familien von Datenquellen:</p>
+        <p data-original-text="**1) Kuratierte Zitationsdatenbanken (z. B. WoS, Scopus)**"><strong>1) Kuratierte Zitationsdatenbanken (z. B. WoS, Scopus)</strong></p>
+        <ul>
+          <li data-original-text="Vorteil: definierte Selektions- und Indexierungslogik, konsistente Metadaten, stabile Auswertungen.">Vorteil: definierte Selektions- und Indexierungslogik, konsistente Metadaten, stabile Auswertungen.</li>
+          <li data-original-text="Risiko: nicht jede Disziplin, Sprache oder Publikationsform ist gleich gut abgedeckt.">Risiko: nicht jede Disziplin, Sprache oder Publikationsform ist gleich gut abgedeckt.</li>
+        </ul>
+        <p data-original-text="**2) Offene Datenquellen (z. B. OpenAlex, Crossref)**"><strong>2) Offene Datenquellen (z. B. OpenAlex, Crossref)</strong></p>
+        <ul>
+          <li data-original-text="Vorteil: offen zugänglich, API-basiert, reproduzierbar.">Vorteil: offen zugänglich, API-basiert, reproduzierbar.</li>
+          <li data-original-text="Risiko: Metadatenqualität ist heterogen; Coverage kann je nach Bereich schwanken.">Risiko: Metadatenqualität ist heterogen; Coverage kann je nach Bereich schwanken.</li>
+        </ul>
+        <p data-original-text="**3) Suchmaschinen/Plattformen (z. B. Google Scholar)**"><strong>3) Suchmaschinen/Plattformen (z. B. Google Scholar)</strong></p>
+        <ul>
+          <li data-original-text="Vorteil: häufig sehr breite Abdeckung.">Vorteil: häufig sehr breite Abdeckung.</li>
+          <li data-original-text="Risiko: begrenzte Transparenz (was genau indexiert ist), schwierig für belastbare Evaluation.">Risiko: begrenzte Transparenz (was genau indexiert ist), schwierig für belastbare Evaluation.</li>
+        </ul>
+        <p data-original-text="**Warum unterscheiden sich Zahlen je nach Quelle?**"><strong>Warum unterscheiden sich Zahlen je nach Quelle?</strong></p>
+        <ul>
+          <li data-original-text="Unterschiedliche Coverage (welche Journals/Konferenzen/Bücher enthalten sind)">Unterschiedliche Coverage (welche Journals/Konferenzen/Bücher enthalten sind)</li>
+          <li data-original-text="Unterschiedliche Dokumenttypen (z. B. Proceedings, Preprints)">Unterschiedliche Dokumenttypen (z. B. Proceedings, Preprints)</li>
+          <li data-original-text="Unterschiedliche Indexierung (Zitationsverknüpfungen, Duplikate, Normalisierung)">Unterschiedliche Indexierung (Zitationsverknüpfungen, Duplikate, Normalisierung)</li>
+        </ul>
+        <p data-original-text="**Merksatz:** &gt; Eine Kennzahl ohne Angabe der Datenquelle ist unvollständig."><strong>Merksatz:</strong> > Eine Kennzahl ohne Angabe der Datenquelle ist unvollständig.</p>
+        <p data-original-text="**Mini-Checkliste für jeden Report:**"><strong>Mini-Checkliste für jeden Report:</strong></p>
+        <ul>
+          <li data-original-text="Datenquelle(n): …">Datenquelle(n): …</li>
+          <li data-original-text="Zeitraum: …">Zeitraum: …</li>
+          <li data-original-text="Dokumenttypen: …">Dokumenttypen: …</li>
+          <li data-original-text="Limitationen/Coverage-Hinweise: …">Limitationen/Coverage-Hinweise: …</li>
+          <li data-original-text="Reproduzierbarkeit: Query/Datum dokumentiert: Ja/Nein">Reproduzierbarkeit: Query/Datum dokumentiert: Ja/Nein</li>
+        </ul>
+        <h3 data-original-text="Typische Fehlinterpretationen">Typische Fehlinterpretationen</h3>
+        <ul>
+          <li data-original-text="**Mythos:** „Wenn zwei Quellen unterschiedliche Zahlen liefern, ist eine falsch.“"><strong>Mythos:</strong> „Wenn zwei Quellen unterschiedliche Zahlen liefern, ist eine falsch.“ <p data-original-text="**Korrektur:** Unterschiede entstehen oft durch Coverage, Dokumenttypen und Indexierungslogik. Der erste Schritt ist die Klärung der Datenbasis."><strong>Korrektur:</strong> Unterschiede entstehen oft durch Coverage, Dokumenttypen und Indexierungslogik. Der erste Schritt ist die Klärung der Datenbasis.</p></li>
+          <li data-original-text="**Mythos:** „Mehr Coverage bedeutet automatisch bessere Bibliometrie.“"><strong>Mythos:</strong> „Mehr Coverage bedeutet automatisch bessere Bibliometrie.“ <p data-original-text="**Korrektur:** Breite Abdeckung kann sinnvoll sein – aber Transparenz, Datenqualität und definierte Regeln sind für Evaluation entscheidend."><strong>Korrektur:</strong> Breite Abdeckung kann sinnvoll sein – aber Transparenz, Datenqualität und definierte Regeln sind für Evaluation entscheidend.</p></li>
+          <li data-original-text="**Mythos:** „Wir können jede Disziplin gleich vergleichen.“"><strong>Mythos:</strong> „Wir können jede Disziplin gleich vergleichen.“ <p data-original-text="**Korrektur:** Coverage und Zitationskulturen unterscheiden sich stark. Faire Vergleiche brauchen Kontext und oft Normalisierung (späteres Modul)."><strong>Korrektur:</strong> Coverage und Zitationskulturen unterscheiden sich stark. Faire Vergleiche brauchen Kontext und oft Normalisierung (späteres Modul).</p></li>
+          <li data-original-text="**Mythos:** „Tools liefern neutrale Wahrheit.“"><strong>Mythos:</strong> „Tools liefern neutrale Wahrheit.“ <p data-original-text="**Korrektur:** Tools spiegeln Entscheidungen über Indexierung, Selektion und Metadatenqualität wider."><strong>Korrektur:</strong> Tools spiegeln Entscheidungen über Indexierung, Selektion und Metadatenqualität wider.</p></li>
+        </ul>
+        <h3 data-original-text="Hinweise nach Zielrolle">Hinweise nach Zielrolle</h3>
+        <p data-original-text="**Bibliothek**"><strong>Bibliothek</strong></p>
+        <ul>
+          <li data-original-text="Baut ein internes Standardblatt: „Welche Datenquelle für welche Frage?“">Baut ein internes Standardblatt: „Welche Datenquelle für welche Frage?“</li>
+          <li data-original-text="Dokumentiert Coverage-Hinweise sichtbar im Report (z. B. als Methodik-Kasten).">Dokumentiert Coverage-Hinweise sichtbar im Report (z. B. als Methodik-Kasten).</li>
+          <li data-original-text="Vermeidet Tool-Mix ohne Erklärung: Wenn mehrere Quellen kombiniert werden, müsst ihr Dubletten/IDs klären.">Vermeidet Tool-Mix ohne Erklärung: Wenn mehrere Quellen kombiniert werden, müsst ihr Dubletten/IDs klären.</li>
+        </ul>
+        <p data-original-text="**Research Office**"><strong>Research Office</strong></p>
+        <ul>
+          <li data-original-text="Definiert früh den Zweck: Monitoring ≠ Bewertung. Die Datenquelle hängt am Ziel.">Definiert früh den Zweck: Monitoring ≠ Bewertung. Die Datenquelle hängt am Ziel.</li>
+          <li data-original-text="Für Governance: verlangt Standardangaben (Quelle, Zeitraum, Dokumenttypen, Limitationen).">Für Governance: verlangt Standardangaben (Quelle, Zeitraum, Dokumenttypen, Limitationen).</li>
+          <li data-original-text="Wenn Ranking-Druck entsteht: nutzt Responsible-Metrics-Checks (Kontext + Multi-Indikator + qualitative Evidenz).">Wenn Ranking-Druck entsteht: nutzt Responsible-Metrics-Checks (Kontext + Multi-Indikator + qualitative Evidenz).</li>
+        </ul>
+        <p data-original-text="**Forschende**"><strong>Forschende</strong></p>
+        <ul>
+          <li data-original-text="Wenn Zahlen nicht passen: prüfe zuerst Namensvarianten, Affiliations, Dokumenttypen und Zeitraum.">Wenn Zahlen nicht passen: prüfe zuerst Namensvarianten, Affiliations, Dokumenttypen und Zeitraum.</li>
+          <li data-original-text="Nutze Kennzahlen in CVs nur mit kurzer Kontextzeile (Quelle + Zeitraum + Feld).">Nutze Kennzahlen in CVs nur mit kurzer Kontextzeile (Quelle + Zeitraum + Feld).</li>
+          <li data-original-text="Für Themen-/Kooperationsanalysen können offene Quellen sehr nützlich sein – aber Ergebnisse immer plausibilisieren.">Für Themen-/Kooperationsanalysen können offene Quellen sehr nützlich sein – aber Ergebnisse immer plausibilisieren.</li>
+        </ul>
+        <h3 data-original-text="Praxis-Workflow: Datenquelle auswählen">Praxis-Workflow: Datenquelle auswählen</h3>
+        <ol>
+          <li data-original-text="Frage klären: Monitoring, Reporting, Trendanalyse oder Evaluation?">Frage klären: Monitoring, Reporting, Trendanalyse oder Evaluation?</li>
+          <li data-original-text="Analyseobjekt definieren: Person/Institut/Thema + Zeitraum + Publikationstypen.">Analyseobjekt definieren: Person/Institut/Thema + Zeitraum + Publikationstypen.</li>
+          <li data-original-text="Kandidaten-Datenquellen auswählen (kuratierte DB vs. offen vs. Suchmaschine).">Kandidaten-Datenquellen auswählen (kuratierte DB vs. offen vs. Suchmaschine).</li>
+          <li data-original-text="Coverage prüfen: Disziplin, Sprache, Bücher/Proceedings, regionale Literatur.">Coverage prüfen: Disziplin, Sprache, Bücher/Proceedings, regionale Literatur.</li>
+          <li data-original-text="Testabfrage durchführen und plausibilisieren (Stichprobe gegen bekannte Publikationen).">Testabfrage durchführen und plausibilisieren (Stichprobe gegen bekannte Publikationen).</li>
+          <li data-original-text="Bereinigung planen: IDs, Dubletten, Affiliations, Namensvarianten.">Bereinigung planen: IDs, Dubletten, Affiliations, Namensvarianten.</li>
+          <li data-original-text="Ergebnisbericht: immer mit Datenbasis + Limitationen + Datum der Abfrage.">Ergebnisbericht: immer mit Datenbasis + Limitationen + Datum der Abfrage.</li>
+        </ol>
+        <h3 data-original-text="Responsible-Metrics-Box: Minimum-Transparenz für Datenquellen">Responsible-Metrics-Box: Minimum-Transparenz für Datenquellen</h3>
+        <ul>
+          <li data-original-text="Nenne immer Datenquelle(n), Zeitraum und Dokumenttypen.">Nenne immer Datenquelle(n), Zeitraum und Dokumenttypen.</li>
+          <li data-original-text="Wenn Zahlen verglichen werden: erkläre Coverage-Unterschiede und warum der Vergleich trotzdem sinnvoll ist (oder nicht).">Wenn Zahlen verglichen werden: erkläre Coverage-Unterschiede und warum der Vergleich trotzdem sinnvoll ist (oder nicht).</li>
+          <li data-original-text="Vermeide mechanische Entscheidungen anhand einer einzigen Quelle oder Kennzahl.">Vermeide mechanische Entscheidungen anhand einer einzigen Quelle oder Kennzahl.</li>
+          <li data-original-text="Nutze Bibliometrie als Hinweis-System: Ergebnisse sollten plausibilisiert und kontextualisiert werden.">Nutze Bibliometrie als Hinweis-System: Ergebnisse sollten plausibilisiert und kontextualisiert werden.</li>
+        </ul>
+        <h3 data-original-text="Übungen">Übungen</h3>
+        <h4 data-original-text="Level 1">Level 1</h4>
+        <details class="exercise-item">
+          <summary>M02-L1-Q1: Was bedeutet „Coverage“ in einer bibliometrischen Datenquelle?</summary>
+          <p>
+            <strong>Antwort:</strong> Welche Publikationsarten, Disziplinen, Sprachen und Jahre in der Quelle enthalten
+            sind.
+          </p>
+        </details>
+        <details class="exercise-item">
+          <summary>M02-L1-Q2: Welche Aussage ist am besten im Sinne von Responsible Metrics?</summary>
+          <p><strong>Antwort:</strong> Zu jeder Kennzahl gehören Datenquelle, Zeitraum und Limitationen.</p>
+        </details>
+        <details class="exercise-item">
+          <summary>M02-L1-Q3: Warum zeigt Quelle A mehr Publikationen als Quelle B?</summary>
+          <p>
+            <strong>Antwort:</strong> Quelle A hat wahrscheinlich mehr Dokumenttypen oder breitere Abdeckung
+            indexiert.
+          </p>
+        </details>
+        <details class="exercise-item">
+          <summary>M02-L1-Q4: Was ist ein sinnvoller erster Schritt, bevor du zwei Datenquellen vergleichst?</summary>
+          <p><strong>Antwort:</strong> Dokumenttypen und Zeitraum angleichen und Coverage prüfen.</p>
+        </details>
+        <details class="exercise-item">
+          <summary>M02-L1-Q5: Warum ist die Datenquelle in jedem Bibliometrie-Report Pflichtangabe?</summary>
+          <p><strong>Antwort:</strong> Weil Zahlen nur im Kontext der Coverage interpretierbar sind.</p>
+        </details>
+        <h4 data-original-text="Level 2">Level 2</h4>
+        <details class="exercise-item">
+          <summary>
+            M02-L2-Q1: Zwei Quellen liefern unterschiedliche Publikationszahlen. Was schreibst du in den Report (2–3
+            Sätze, defensiv formuliert)?
+          </summary>
+          <p>
+            <strong>Antwort:</strong> Die unterschiedlichen Werte sind wahrscheinlich durch abweichende Coverage
+            (z. B. Dokumenttypen, Journals/Proceedings, Indexierungsregeln) erklärbar. Für die Interpretation ist
+            entscheidend, welche Datenquelle zur Fragestellung passt. Im Report werden Datenquelle, Zeitraum,
+            einbezogene Dokumenttypen und Limitationen transparent dokumentiert.
+          </p>
+          <p><strong>Datensnippet:</strong></p>
+          <table>
+            <thead>
+              <tr>
+                <th>Einheit</th>
+                <th>Zeitraum</th>
+                <th>Quelle</th>
+                <th>Publikationen</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Institut A</td>
+                <td>2021–2024</td>
+                <td>Quelle 1</td>
+                <td>120</td>
+              </tr>
+              <tr>
+                <td>Institut A</td>
+                <td>2021–2024</td>
+                <td>Quelle 2</td>
+                <td>155</td>
+              </tr>
+            </tbody>
+          </table>
+        </details>
+        <details class="exercise-item">
+          <summary>
+            M02-L2-Q2: Du brauchst ein reproduzierbares Monitoring-Dashboard ohne Paywall. Welche Datenquelle passt
+            am ehesten und welche Einschränkung nennst du?
+          </summary>
+          <p>
+            <strong>Antwort:</strong> OpenAlex (API-basiert, offen, reproduzierbar) ist naheliegend. Einschränkung:
+            Coverage und Metadatenqualität können je nach Fachgebiet variieren; deshalb braucht es Plausibilisierung
+            und Dokumentation der Abfrageparameter.
+          </p>
+        </details>
+        <details class="exercise-item">
+          <summary>
+            M02-L2-Q3: Nenne drei Prüfungen, die du bei einer Publikationsliste aus einer Datenquelle machst, bevor du
+            Kennzahlen berichtest.
+          </summary>
+          <p>
+            <strong>Antwort:</strong> Beispiele: Dublettenprüfung, Namensvarianten/IDs plausibilisieren,
+            Affiliations prüfen, Dokumenttypen filtern, Zeitraum korrekt setzen.
+          </p>
+        </details>
+        <h4 data-original-text="Level 3">Level 3</h4>
+        <details class="exercise-item">
+          <summary>
+            M02-L3-CASE: Du sollst für eine Fakultät einen Vergleich „Publikationsoutput 2020–2024“ erstellen. Definiere
+            deine Datenbasis (Quelle(n), Dokumenttypen, Zeitraum) und formuliere vier Limitationen/Warnhinweise, die du
+            transparent kommunizierst.
+          </summary>
+          <p>
+            <strong>Antwort:</strong> Methodik-Kasten mit Quelle, Zeitraum und Dokumenttypen ergänzen. Limitationen
+            könnten Coverage-Bias, unterschiedliche Dokumenttypen, Disambiguierung/Affiliations und
+            Datenquellen-Vergleichbarkeit betreffen.
+          </p>
+        </details>
+        <h3 data-original-text="Quellen &amp; weiterführende Links">Quellen & weiterführende Links</h3>
+        <ul>
+          <li data-original-text="Clarivate: Web of Science Core Collection – Content collection and indexing process: https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/web-of-science-core-collection/content-collection-and-indexing-process/">Clarivate: Web of Science Core Collection – Content collection and indexing process: <a href="https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/web-of-science-core-collection/content-collection-and-indexing-process/">https://clarivate.com/academia-government/scientific-and-academic-research/research-discovery-and-referencing/web-of-science/web-of-science-core-collection/content-collection-and-indexing-process/</a></li>
+          <li data-original-text="Elsevier: Scopus Content Coverage Guide (PDF): https://assets.ctfassets.net/o78em1y1w4i4/EX1iy8VxBeQKf8aN2XzOp/c36f79db25484cb38a5972ad9a5472ec/Scopus_ContentCoverage_Guide_WEB.pdf">Elsevier: Scopus Content Coverage Guide (PDF): <a href="https://assets.ctfassets.net/o78em1y1w4i4/EX1iy8VxBeQKf8aN2XzOp/c36f79db25484cb38a5972ad9a5472ec/Scopus_ContentCoverage_Guide_WEB.pdf">https://assets.ctfassets.net/o78em1y1w4i4/EX1iy8VxBeQKf8aN2XzOp/c36f79db25484cb38a5972ad9a5472ec/Scopus_ContentCoverage_Guide_WEB.pdf</a></li>
+          <li data-original-text="OpenAlex Documentation: API Overview: https://docs.openalex.org/how-to-use-the-api/api-overview">OpenAlex Documentation: API Overview: <a href="https://docs.openalex.org/how-to-use-the-api/api-overview">https://docs.openalex.org/how-to-use-the-api/api-overview</a></li>
+          <li data-original-text="Crossref Documentation: Metadata Retrieval: https://www.crossref.org/documentation/retrieve-metadata/">Crossref Documentation: Metadata Retrieval: <a href="https://www.crossref.org/documentation/retrieve-metadata/">https://www.crossref.org/documentation/retrieve-metadata/</a></li>
+          <li data-original-text="CWTS (Leiden): Bibliometrics for Research Management (PDF): https://www.cwts.nl/pdf/CWTS_bibliometrics.pdf">CWTS (Leiden): Bibliometrics for Research Management (PDF): <a href="https://www.cwts.nl/pdf/CWTS_bibliometrics.pdf">https://www.cwts.nl/pdf/CWTS_bibliometrics.pdf</a></li>
+          <li data-original-text="Gusenbauer &amp; Haddaway (2020): Suitable academic search systems (PubMed): https://pubmed.ncbi.nlm.nih.gov/31614060/">Gusenbauer & Haddaway (2020): Suitable academic search systems (PubMed): <a href="https://pubmed.ncbi.nlm.nih.gov/31614060/">https://pubmed.ncbi.nlm.nih.gov/31614060/</a></li>
+          <li data-original-text="Gusenbauer (2024): Beyond Google Scholar, Scopus, and WoS: https://onlinelibrary.wiley.com/doi/full/10.1002/jrsm.1729">Gusenbauer (2024): Beyond Google Scholar, Scopus, and WoS: <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/jrsm.1729">https://onlinelibrary.wiley.com/doi/full/10.1002/jrsm.1729</a></li>
+        </ul>
+        <h4 data-original-text="Weiterführende Lektüre">Weiterführende Lektüre</h4>
+        <ul>
+          <li data-original-text="López-Cózar (2018): Google Scholar as bibliographic tool (arXiv PDF): https://arxiv.org/pdf/1806.06351">López-Cózar (2018): Google Scholar as bibliographic tool (arXiv PDF): <a href="https://arxiv.org/pdf/1806.06351">https://arxiv.org/pdf/1806.06351</a></li>
+          <li data-original-text="Dimensions Support: What is covered in Publications?: https://plus.dimensions.ai/support/solutions/articles/23000018859-what-exactly-is-covered-in-the-publications-in-dimensions-">Dimensions Support: What is covered in Publications?: <a href="https://plus.dimensions.ai/support/solutions/articles/23000018859-what-exactly-is-covered-in-the-publications-in-dimensions-">https://plus.dimensions.ai/support/solutions/articles/23000018859-what-exactly-is-covered-in-the-publications-in-dimensions-</a></li>
+        </ul>
+      </section>
+    </main>
+    <script src="role-toggle.js" defer></script>
+    <script src="module-progress.js" defer></script>
+    <script src="details-accordion.js" defer></script>
+  </body>
+</html>

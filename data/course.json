@@ -123,7 +123,7 @@
           ]
         }
       ],
-      "path": "modul1.html"
+      "path": "modul-01.html"
     },
     {
       "title": "Modul 2: Publikationsdaten und Quellen",
@@ -195,7 +195,7 @@
           ]
         }
       ],
-      "path": "modul2.html"
+      "path": "modul-02.html"
     },
     {
       "title": "Modul 3: Zitationsindikatoren",
@@ -267,13 +267,13 @@
           ]
         }
       ],
-      "path": "modul3.html"
+      "path": "modul-03.html"
     },
     {
-      "title": "Modul 4: Feldnormierung",
+      "title": "Modul 4: Metriken für Autor:innen: h-Index, g-Index, i10 & m-Quotient – sinnvoll nutzen, sauber erklären",
       "slug": "modul-4-feldnormierung",
       "difficulty": "intermediate",
-      "readingTimeMinutes": 60,
+      "readingTimeMinutes": 25,
       "learningGoals": [
         "Feldnormierung erklären",
         "Vergleichbarkeit sichern"
@@ -339,13 +339,13 @@
           ]
         }
       ],
-      "path": "modul4.html"
+      "path": "modul-04.html"
     },
     {
-      "title": "Modul 5: Altmetrics",
+      "title": "Modul 5: Journalmetriken: JIF, CiteScore, SNIP, SJR – korrekt nutzen, sauber kommunizieren",
       "slug": "modul-5-altmetrics",
       "difficulty": "intermediate",
-      "readingTimeMinutes": 50,
+      "readingTimeMinutes": 30,
       "learningGoals": [
         "Alternative Metriken einordnen",
         "Altmetrics-Daten interpretieren"
@@ -411,13 +411,13 @@
           ]
         }
       ],
-      "path": "modul5.html"
+      "path": "modul-05.html"
     },
     {
-      "title": "Modul 6: Datenbereinigung",
+      "title": "Modul 6: Feld- & Zeit-Normalisierung: CNCI, FWCI, MNCS, RCR und Top-10%-Indikatoren",
       "slug": "modul-6-datenbereinigung",
       "difficulty": "intermediate",
-      "readingTimeMinutes": 55,
+      "readingTimeMinutes": 60,
       "learningGoals": [
         "Daten bereinigen",
         "Duplikate identifizieren"
@@ -483,13 +483,13 @@
           ]
         }
       ],
-      "path": "modul6.html"
+      "path": "modul-06.html"
     },
     {
-      "title": "Modul 7: Netzwerk- und Graphanalyse",
+      "title": "Modul 7: Collaboration & Co-Authorship: Indikatoren, Fractional Counting und Co-Authorship Networks",
       "slug": "modul-7-netzwerke",
       "difficulty": "intermediate",
-      "readingTimeMinutes": 60,
+      "readingTimeMinutes": 50,
       "learningGoals": [
         "Ko-Autorenschaften analysieren",
         "Netzwerke visualisieren"
@@ -555,13 +555,13 @@
           ]
         }
       ],
-      "path": "modul7.html"
+      "path": "modul-07.html"
     },
     {
-      "title": "Modul 8: Themenmapping",
+      "title": "Modul 8: Alternative Metriken & Aufmerksamkeit: Altmetrics, Usage, Policy Mentions – sinnvoll nutzen",
       "slug": "modul-8-themenmapping",
       "difficulty": "intermediate",
-      "readingTimeMinutes": 55,
+      "readingTimeMinutes": 40,
       "learningGoals": [
         "Themencluster erkennen",
         "Keyword-Co-Occurrence analysieren"
@@ -627,13 +627,13 @@
           ]
         }
       ],
-      "path": "modul8.html"
+      "path": "modul-08.html"
     },
     {
-      "title": "Modul 9: Datenqualität & Disambiguierung",
+      "title": "Modul 9: Datenqualität & Disambiguierung: Autor:innen, Organisationen, Affiliations, Dubletten – plus reproduzierbare Workflows",
       "slug": "modul-9-bewertung",
-      "difficulty": "advanced",
-      "readingTimeMinutes": 35,
+      "difficulty": "intermediate",
+      "readingTimeMinutes": 45,
       "learningGoals": [
         "Datenqualitäts-Probleme erkennen",
         "Disambiguierung als Kernschritt verstehen",
@@ -759,13 +759,13 @@
           ]
         }
       ],
-      "path": "modul9.html"
+      "path": "modul-09.html"
     },
     {
-      "title": "Modul 10: Datenquellen & Coverage: WoS vs. Scopus vs. OpenAlex/Crossref vs. Google Scholar – Auswahl je Use-Case",
+      "title": "Modul 10: Datenquellen & Coverage",
       "slug": "modul-10-datenquellen-coverage",
-      "difficulty": "advanced",
-      "readingTimeMinutes": 40,
+      "difficulty": "intermediate",
+      "readingTimeMinutes": 45,
       "learningGoals": [
         "Die vier großen Quellenfamilien (WoS, Scopus, OpenAlex/Crossref, Google Scholar) nach Kurationsgrad, Coverage, Transparenz, APIs und Reproduzierbarkeit unterscheiden",
         "Coverage-Bias (Feld/Region/Sprache/Publikationstyp) als Haupttreiber für unterschiedliche Ergebnisse erklären",
@@ -1002,13 +1002,13 @@
           ]
         }
       ],
-      "path": "modul10.html"
+      "path": "modul-10.html"
     },
     {
-      "title": "Modul 11: Science Mapping & Wissensstrukturen: Co-Citation, Bibliographic Coupling, Co-Word",
+      "title": "Modul 11: Science Mapping & Wissensstrukturen: Co-Citation, Bibliographic Coupling, Co-Word (inkl. VOSviewer/bibliometrix)",
       "slug": "modul-11-science-mapping",
       "difficulty": "advanced",
-      "readingTimeMinutes": 45,
+      "readingTimeMinutes": 50,
       "learningGoals": [
         "Science-Mapping-Ansätze definieren und auswählen",
         "Co-citation vs. bibliographic coupling zeitlich einordnen",
@@ -1234,13 +1234,13 @@
           ]
         }
       ],
-      "path": "modul11.html"
+      "path": "modul-11.html"
     },
     {
       "title": "Modul 12: Forschungsbewertung in der Praxis: Reporting-Patterns, Dashboards, Use-Cases (Unit/Faculty/Person) + Do/Don’t-Katalog",
       "slug": "modul-12-reporting",
       "difficulty": "advanced",
-      "readingTimeMinutes": 45,
+      "readingTimeMinutes": 40,
       "learningGoals": [
         "Monitoring, Learning/Improvement und High-stakes Evaluation unterscheiden",
         "Responsible-Metrics-Leitplanken in Reporting-Designs übersetzen",
@@ -1465,7 +1465,7 @@
           ]
         }
       ],
-      "path": "modul12.html"
+      "path": "modul-12.html"
     }
   ],
   "resources": [

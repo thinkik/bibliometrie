@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
     <script src="navigation.js" defer></script>
     <script src="i18n.js" defer></script>
+    <script src="lehrgang-modules.js" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -51,172 +52,31 @@
         </figcaption>
       </figure>
       <nav class="module-nav" aria-label="Modul-Navigation">
-        <p class="module-nav-label">Module auswählen:</p>
+        <p class="module-nav-label" data-original-text="Module auswählen:">Module auswählen:</p>
         <div class="table-responsive">
           <table class="table module-table">
+            <caption data-original-text="Module auswählen:">Module auswählen:</caption>
             <thead>
               <tr>
-                <th scope="col">Modul</th>
-                <th scope="col">Modulname</th>
-                <th scope="col">Kurzbeschreibung</th>
-                <th scope="col">Schwierigkeit</th>
-                <th scope="col">Lesezeit</th>
-                <th scope="col">Start</th>
+                <th scope="col" data-original-text="Modul">Modul</th>
+                <th scope="col" data-original-text="Modulname">Modulname</th>
+                <th scope="col" data-original-text="Kurzbeschreibung">Kurzbeschreibung</th>
+                <th scope="col" data-original-text="Schwierigkeit">Schwierigkeit</th>
+                <th scope="col" data-original-text="Lesezeit">Lesezeit</th>
+                <th scope="col" data-original-text="Start">Start</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td data-label="Modul">1</td>
-                <td data-label="Modulname">Grundlagen der Bibliometrie</td>
-                <td data-label="Kurzbeschreibung">
-                  Zentrale Begriffe, Zitationslogik und verantwortungsvoller Einsatz von Kennzahlen.
-                </td>
-                <td data-label="Schwierigkeit">Beginner</td>
-                <td data-label="Lesezeit">45 Minuten</td>
-                <td data-label="Start">
-                  <a class="start-button" href="modul1.html">Start</a>
-                </td>
-              </tr>
-              <tr>
-                <td data-label="Modul">2</td>
-                <td data-label="Modulname">Publikationsdaten und Quellen</td>
-                <td data-label="Kurzbeschreibung">
-                  Auswahl, Abdeckung und Qualität von Datenquellen für bibliometrische Analysen.
-                </td>
-                <td data-label="Schwierigkeit">Beginner</td>
-                <td data-label="Lesezeit">50 Minuten</td>
-                <td data-label="Start">
-                  <a class="start-button" href="modul2.html">Start</a>
-                </td>
-              </tr>
-              <tr>
-                <td data-label="Modul">3</td>
-                <td data-label="Modulname">Zitationsindikatoren</td>
-                <td data-label="Kurzbeschreibung">
-                  Zitationsmetriken verstehen, sauber berichten und im Kontext interpretieren.
-                </td>
-                <td data-label="Schwierigkeit">Beginner</td>
-                <td data-label="Lesezeit">55 Minuten</td>
-                <td data-label="Start">
-                  <a class="start-button" href="modul3.html">Start</a>
-                </td>
-              </tr>
-              <tr>
-                <td data-label="Modul">4</td>
-                <td data-label="Modulname">Metriken für Autor:innen</td>
-                <td data-label="Kurzbeschreibung">
-                  Autor:innenmetriken einordnen und fair im Berichtskontext einsetzen.
-                </td>
-                <td data-label="Schwierigkeit">Intermediate</td>
-                <td data-label="Lesezeit">25 Minuten</td>
-                <td data-label="Start">
-                  <a class="start-button" href="modul4.html">Start</a>
-                </td>
-              </tr>
-              <tr>
-                <td data-label="Modul">5</td>
-                <td data-label="Modulname">Journalmetriken</td>
-                <td data-label="Kurzbeschreibung">
-                  JIF, CiteScore, SNIP und SJR verantwortungsvoll vergleichen und kommunizieren.
-                </td>
-                <td data-label="Schwierigkeit">Intermediate</td>
-                <td data-label="Lesezeit">30 Minuten</td>
-                <td data-label="Start">
-                  <a class="start-button" href="modul5.html">Start</a>
-                </td>
-              </tr>
-              <tr>
-                <td data-label="Modul">6</td>
-                <td data-label="Modulname">Feld- &amp; Zeit-Normalisierung</td>
-                <td data-label="Kurzbeschreibung">
-                  Feld- und Zeit-Normalisierung erklären und Kennzahlen korrekt interpretieren.
-                </td>
-                <td data-label="Schwierigkeit">Intermediate</td>
-                <td data-label="Lesezeit">60 Minuten</td>
-                <td data-label="Start">
-                  <a class="start-button" href="modul6.html">Start</a>
-                </td>
-              </tr>
-              <tr>
-                <td data-label="Modul">7</td>
-                <td data-label="Modulname">Collaboration &amp; Co-Authorship</td>
-                <td data-label="Kurzbeschreibung">
-                  Kollaborationsindikatoren, Counting-Regeln und Netzwerke sauber anwenden.
-                </td>
-                <td data-label="Schwierigkeit">Intermediate</td>
-                <td data-label="Lesezeit">50 Minuten</td>
-                <td data-label="Start">
-                  <a class="start-button" href="modul7.html">Start</a>
-                </td>
-              </tr>
-              <tr>
-                <td data-label="Modul">8</td>
-                <td data-label="Modulname">Alternative Metriken &amp; Aufmerksamkeit</td>
-                <td data-label="Kurzbeschreibung">
-                  Altmetrics, Usage und Policy Mentions sinnvoll einordnen.
-                </td>
-                <td data-label="Schwierigkeit">Intermediate</td>
-                <td data-label="Lesezeit">40 Minuten</td>
-                <td data-label="Start">
-                  <a class="start-button" href="modul8.html">Start</a>
-                </td>
-              </tr>
-              <tr>
-                <td data-label="Modul">9</td>
-                <td data-label="Modulname">Datenqualität &amp; Disambiguierung</td>
-                <td data-label="Kurzbeschreibung">
-                  Datenqualität sichern und Autor:innen/Organisationen sauber zuordnen.
-                </td>
-                <td data-label="Schwierigkeit">Intermediate</td>
-                <td data-label="Lesezeit">45 Minuten</td>
-                <td data-label="Start">
-                  <a class="start-button" href="modul9.html">Start</a>
-                </td>
-              </tr>
-              <tr>
-                <td data-label="Modul">10</td>
-                <td data-label="Modulname">Datenquellen &amp; Coverage</td>
-                <td data-label="Kurzbeschreibung">
-                  Datenquellen nach Coverage, Kurationsgrad und Bias beurteilen.
-                </td>
-                <td data-label="Schwierigkeit">Intermediate</td>
-                <td data-label="Lesezeit">45 Minuten</td>
-                <td data-label="Start">
-                  <a class="start-button" href="modul10.html">Start</a>
-                </td>
-              </tr>
-              <tr>
-                <td data-label="Modul">11</td>
-                <td data-label="Modulname">Science Mapping &amp; Wissensstrukturen</td>
-                <td data-label="Kurzbeschreibung">
-                  Co-Citation, Coupling und Co-Word für Mapping und Visualisierung.
-                </td>
-                <td data-label="Schwierigkeit">Advanced</td>
-                <td data-label="Lesezeit">50 Minuten</td>
-                <td data-label="Start">
-                  <a class="start-button" href="modul11.html">Start</a>
-                </td>
-              </tr>
-              <tr>
-                <td data-label="Modul">12</td>
-                <td data-label="Modulname">Forschungsbewertung in der Praxis</td>
-                <td data-label="Kurzbeschreibung">
-                  Reporting, Dashboards und Do/Don’t-Katalog für verantwortungsvolle Nutzung.
-                </td>
-                <td data-label="Schwierigkeit">Advanced</td>
-                <td data-label="Lesezeit">40 Minuten</td>
-                <td data-label="Start">
-                  <a class="start-button" href="modul12.html">Start</a>
-                </td>
-              </tr>
-            </tbody>
+            <tbody></tbody>
           </table>
         </div>
       </nav>
     </main>
     <script src="role-toggle.js" defer></script>
     <footer class="site-footer">
-      <p>Die Inhalte dieser Website stehen unter der <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0 Lizenz</a>.</p>
+      <p>
+        <span data-original-text="Die Inhalte dieser Website stehen unter der">Die Inhalte dieser Website stehen unter der</span>
+        <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0 Lizenz</a><span data-original-text=".">.</span>
+      </p>
     </footer>
   </body>
 </html>

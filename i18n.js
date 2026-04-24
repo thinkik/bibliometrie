@@ -1,5 +1,6 @@
 const I18N_STORAGE_KEY = "bibliometrie-language";
 const DEFAULT_LANGUAGE = "de";
+let loadedTranslations = null;
 
 const getNestedValue = (object, path) =>
   path.split(".").reduce((value, segment) => (value && value[segment] ? value[segment] : null), object);
@@ -30,7 +31,7 @@ const applyContentTranslations = (translations, language) => {
 
   document
     .querySelectorAll(
-      "main h1, main h2, main h3, main p, main li, main th, main td, main figcaption, main summary, main .btn, main .role-hint, main .module-role-label, main .role-toggle-button, main .module-progress-label"
+      "main h1, main h2, main h3, main p, main li, main th, main td, main caption, main figcaption, main summary, main .btn, main .start-button, main .role-hint, main .module-role-label, main .role-toggle-button, main .module-progress-label, .site-footer span"
     )
     .forEach((element) => {
       if (element.children.length > 0) {
@@ -63,6 +64,15 @@ const setLanguage = (translations, language) => {
   applyContentTranslations(translations, normalizedLanguage);
 };
 
+window.refreshTranslations = () => {
+  if (!loadedTranslations) {
+    return;
+  }
+
+  const activeLanguage = document.documentElement.lang || DEFAULT_LANGUAGE;
+  setLanguage(loadedTranslations, activeLanguage);
+};
+
 const initializeLanguageToggle = (translations) => {
   const languageToggle = document.querySelector(".language-toggle");
   const initialLanguage = localStorage.getItem(I18N_STORAGE_KEY) || DEFAULT_LANGUAGE;
@@ -82,6 +92,7 @@ const initializeLanguageToggle = (translations) => {
 fetch("data/translations.json")
   .then((response) => response.json())
   .then((translations) => {
+    loadedTranslations = translations;
     initializeLanguageToggle(translations);
   })
   .catch((error) => {

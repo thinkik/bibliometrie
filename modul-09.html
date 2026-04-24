@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="de" data-original-text="Einführung Bibliometrie – Modul 9: Datenqualität &amp; Disambiguierung: Autor:innen, Organisationen, Affiliations, Dubletten – plus reproduzierbare Workflows">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Einführung Bibliometrie – Modul 9: Datenqualität & Disambiguierung: Autor:innen, Organisationen, Affiliations, Dubletten – plus reproduzierbare Workflows</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="navigation.js" defer></script>
+    <script src="i18n.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand" data-i18n="site.brand" data-original-text="Einführung Bibliometrie">Einführung Bibliometrie</div>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="nav-toggle-label" data-i18n="nav.menu" data-original-text="Menü">Menü</span>
+        <span class="nav-toggle-icon" aria-hidden="true">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </span>
+      </button>
+      <nav class="site-nav" id="primary-navigation" aria-label="Hauptnavigation" data-i18n-aria-label="nav.aria">
+        <a href="index.html" data-i18n="nav.home">Start</a>
+        <a class="active" href="lehrgang.html" data-i18n="nav.course">Lehrgang</a>
+        <a href="uebungen.html" data-i18n="nav.exercises">Übungen</a>
+        <a href="fallstudien.html" data-i18n="nav.cases">Fallstudien</a>
+        <a href="tools-datenquellen.html" data-i18n="nav.tools">Tools &amp; Datenquellen</a>
+        <a href="responsible-metrics.html" data-i18n="nav.responsible">Responsible Metrics</a>
+        <a href="glossar.html" data-i18n="nav.glossary">Glossar</a>
+        <a href="downloads-vorlagen.html" data-i18n="nav.downloads">Downloads &amp; Vorlagen</a>
+        <a href="faq.html" data-i18n="nav.faq">FAQ</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="impressum.html">Impressum</a>
+      </nav>
+      <button class="language-toggle" type="button" aria-label="Sprache wechseln" data-i18n="language.toggle" data-i18n-aria-label="language.aria" data-original-text="DE/EN">DE/EN</button>
+    </header>
+    <main class="content">
+      <div class="module-progress" data-module-progress data-module-id="modul9">
+        <span class="module-progress-label" data-original-text="Fortschritt:">Fortschritt:</span>
+        <progress id="module-progress-bar" max="100" value="0">0%</progress>
+        <span class="module-progress-value" data-module-progress-value data-original-text="0%">0%</span>
+      </div>
+      <h1 id="heading-modul-9" data-original-text="Modul 9: Datenqualität &amp; Disambiguierung: Autor:innen, Organisationen, Affiliations, Dubletten – plus reproduzierbare Workflows">Modul 9: Datenqualität & Disambiguierung: Autor:innen, Organisationen, Affiliations, Dubletten – plus reproduzierbare Workflows</h1>
+
+      <section class="module-section" id="modul-9" aria-labelledby="heading-modul-9">
+
+        <h3 data-original-text="Lernziele">Lernziele</h3>
+        <ul>
+          <li data-original-text="Die wichtigsten Datenqualitäts-Probleme in bibliometrischen Datensätzen erkennen (Name ambiguity, Affiliations, Dubletten, Coverage).">Die wichtigsten Datenqualitäts-Probleme in bibliometrischen Datensätzen erkennen (Name ambiguity, Affiliations, Dubletten, Coverage).</li>
+          <li data-original-text="Autor:innen- und Organisations-Disambiguierung als eigenes Arbeitsfeld verstehen (warum es nie „perfekt“, aber besser wird).">Autor:innen- und Organisations-Disambiguierung als eigenes Arbeitsfeld verstehen (warum es nie „perfekt“, aber besser wird).</li>
+          <li data-original-text="PIDs (ORCID, ROR, DOI) als robuste Anker für saubere Datensätze nutzen.">PIDs (ORCID, ROR, DOI) als robuste Anker für saubere Datensätze nutzen.</li>
+          <li data-original-text="Ein Cleaning- &amp; QA-Protokoll aufsetzen (Checklisten, Stichproben, Edge-Cases, Logging).">Ein Cleaning- & QA-Protokoll aufsetzen (Checklisten, Stichproben, Edge-Cases, Logging).</li>
+          <li data-original-text="Einen bibliometrischen Workflow reproduzierbar dokumentieren (Stichtag/Snapshot/Versionierung/Parameter).">Einen bibliometrischen Workflow reproduzierbar dokumentieren (Stichtag/Snapshot/Versionierung/Parameter).</li>
+        </ul>
+        <h3 data-original-text="Kurz erklärt">Kurz erklärt</h3>
+        <p data-original-text="Bibliometrie steht und fällt mit Datenqualität. Schon kleine Zuordnungsfehler (falsche Autor:in, falsche Affiliation, Dublette) können Kennzahlen und Rankings stark verzerren. Disambiguierung ist daher kein „Nachputzen“, sondern ein Kernschritt. Gute Praxis kombiniert PIDs (ORCID/ROR/DOI), klar definierte Regeln (Counting, Zeitfenster, Dokumenttypen), QA-Checks (Stichproben/Edge-Cases) und reproduzierbare Dokumentation (Stichtag, Parameter, Versionierung).">Bibliometrie steht und fällt mit Datenqualität. Schon kleine Zuordnungsfehler (falsche Autor:in, falsche Affiliation, Dublette) können Kennzahlen und Rankings stark verzerren. Disambiguierung ist daher kein „Nachputzen“, sondern ein Kernschritt. Gute Praxis kombiniert PIDs (ORCID/ROR/DOI), klar definierte Regeln (Counting, Zeitfenster, Dokumenttypen), QA-Checks (Stichproben/Edge-Cases) und reproduzierbare Dokumentation (Stichtag, Parameter, Versionierung).</p>
+        <h3 data-original-text="Schlüsselbegriffe">Schlüsselbegriffe</h3>
+        <ul>
+          <li data-original-text="**Data quality dimensions:** Typische Dimensionen: Vollständigkeit, Genauigkeit, Konsistenz, Aktualität, Provenienz/Traceability."><strong>Data quality dimensions:</strong> Typische Dimensionen: Vollständigkeit, Genauigkeit, Konsistenz, Aktualität, Provenienz/Traceability.</li>
+          <li data-original-text="**Name ambiguity:** Mehrdeutige Namen (z. B. Initialen, Namensänderungen, Transliteration) führen zu falscher Zuordnung von Publikationen."><strong>Name ambiguity:</strong> Mehrdeutige Namen (z. B. Initialen, Namensänderungen, Transliteration) führen zu falscher Zuordnung von Publikationen.</li>
+          <li data-original-text="**Author disambiguation:** Algorithmische/kuratorische Zuordnung von Werken zu Personen (mit Unsicherheit, Konflikten und iterativer Verbesserung)."><strong>Author disambiguation:</strong> Algorithmische/kuratorische Zuordnung von Werken zu Personen (mit Unsicherheit, Konflikten und iterativer Verbesserung).</li>
+          <li data-original-text="**Organization disambiguation:** Vereinheitlichung von Organisationsnamen (Varianten, Sprachen, Fusions-/Reorg-Historie) zu stabilen Einheiten."><strong>Organization disambiguation:</strong> Vereinheitlichung von Organisationsnamen (Varianten, Sprachen, Fusions-/Reorg-Historie) zu stabilen Einheiten.</li>
+          <li data-original-text="**Affiliation:** Zuordnung einer Autor:in zu einer Organisation im Kontext eines bestimmten Works (zeit-/work-spezifisch)."><strong>Affiliation:</strong> Zuordnung einer Autor:in zu einer Organisation im Kontext eines bestimmten Works (zeit-/work-spezifisch).</li>
+          <li data-original-text="**Duplicate / near-duplicate:** Doppelte oder beinahe doppelte Records (Preprint vs. Version of Record; Importduplikate; Metadatenvarianten)."><strong>Duplicate / near-duplicate:</strong> Doppelte oder beinahe doppelte Records (Preprint vs. Version of Record; Importduplikate; Metadatenvarianten).</li>
+          <li data-original-text="**Persistent Identifier (PID):** Stabiler, eindeutiger Identifier (z. B. ORCID für Personen, ROR für Organisationen, DOI für Objekte)."><strong>Persistent Identifier (PID):</strong> Stabiler, eindeutiger Identifier (z. B. ORCID für Personen, ROR für Organisationen, DOI für Objekte).</li>
+          <li data-original-text="**ORCID iD:** Kostenloser, persistenter Personen-Identifier, der Name-Ambiguität reduziert und Beiträge/Outputs verknüpfen hilft."><strong>ORCID iD:</strong> Kostenloser, persistenter Personen-Identifier, der Name-Ambiguität reduziert und Beiträge/Outputs verknüpfen hilft.</li>
+          <li data-original-text="**ROR ID:** Offener, persistenter Identifier für Forschungseinrichtungen zur Disambiguierung von Organisationsnamen."><strong>ROR ID:</strong> Offener, persistenter Identifier für Forschungseinrichtungen zur Disambiguierung von Organisationsnamen.</li>
+          <li data-original-text="**DOI:** Persistenter Identifier für digitale Objekte (z. B. Artikel, Daten, Preprints), inkl. Metadaten-Verknüpfung."><strong>DOI:</strong> Persistenter Identifier für digitale Objekte (z. B. Artikel, Daten, Preprints), inkl. Metadaten-Verknüpfung.</li>
+          <li data-original-text="**Snapshot / Stichtag:** Fixierter Stand der Daten (Zeitpunkt), der für Reproduzierbarkeit im Reporting zwingend dokumentiert werden sollte."><strong>Snapshot / Stichtag:</strong> Fixierter Stand der Daten (Zeitpunkt), der für Reproduzierbarkeit im Reporting zwingend dokumentiert werden sollte.</li>
+        </ul>
+        <h3 data-original-text="Vertiefung: Wo Fehler typischerweise entstehen">Vertiefung: Wo Fehler typischerweise entstehen</h3>
+        <p data-original-text="**1) Personen:** Namensvarianten, Initialen, Namenswechsel, gleichnamige Personen. **2) Organisationen:** Schreibvarianten (DE/EN/FR), Fakultäten/Institute vs. Gesamtuni, Fusionen/Reorganisation. **3) Affiliations im Work-Kontext:** Mehrfachaffiliationen, fehlende oder veraltete Angaben. **4) Werke:** Preprint vs. Journal-Artikel, Konferenzversionen, doppelte Importe. **5) Datenbasis/Coverage:** Nicht alle Felder/Sprachen/Publikationstypen sind gleich gut abgedeckt."><strong>1) Personen:</strong> Namensvarianten, Initialen, Namenswechsel, gleichnamige Personen. <strong>2) Organisationen:</strong> Schreibvarianten (DE/EN/FR), Fakultäten/Institute vs. Gesamtuni, Fusionen/Reorganisation. <strong>3) Affiliations im Work-Kontext:</strong> Mehrfachaffiliationen, fehlende oder veraltete Angaben. <strong>4) Werke:</strong> Preprint vs. Journal-Artikel, Konferenzversionen, doppelte Importe. <strong>5) Datenbasis/Coverage:</strong> Nicht alle Felder/Sprachen/Publikationstypen sind gleich gut abgedeckt.</p>
+        <h3 data-original-text="Vertiefung: Disambiguierung als Pipeline (statt „manuell irgendwo korrigieren“)">Vertiefung: Disambiguierung als Pipeline (statt „manuell irgendwo korrigieren“)</h3>
+        <p data-original-text="**Ziel:** Aus rohen Metadaten wird ein analysefähiger, auditierbarer Datensatz."><strong>Ziel:</strong> Aus rohen Metadaten wird ein analysefähiger, auditierbarer Datensatz.</p>
+        <p data-original-text="**Schrittfolge (Minimalstandard):**"><strong>Schrittfolge (Minimalstandard):</strong></p>
+        <ol>
+          <li data-original-text="**Identifier-Join zuerst** (ORCID/ROR/DOI), wo möglich."><strong>Identifier-Join zuerst</strong> (ORCID/ROR/DOI), wo möglich.</li>
+          <li data-original-text="**Normalisierung** (Casefolding, Unicode, Trimmen; Standardisierung von Ländern, Institutionssuffixen)."><strong>Normalisierung</strong> (Casefolding, Unicode, Trimmen; Standardisierung von Ländern, Institutionssuffixen).</li>
+          <li data-original-text="**Matching-Regeln** (exakt, dann fuzzy; immer mit Schwellen/Confidence)."><strong>Matching-Regeln</strong> (exakt, dann fuzzy; immer mit Schwellen/Confidence).</li>
+          <li data-original-text="**Konfliktregeln** (z. B. ORCID &gt; Name-Match; ROR &gt; Freitext)."><strong>Konfliktregeln</strong> (z. B. ORCID > Name-Match; ROR > Freitext).</li>
+          <li data-original-text="**Deduplication** (DOI/PMID/ISBN; plus Near-Duplicate-Heuristiken)."><strong>Deduplication</strong> (DOI/PMID/ISBN; plus Near-Duplicate-Heuristiken).</li>
+          <li data-original-text="**QA**: Stichprobe + gezielte Edge-Case-Tests; Logging aller Änderungen."><strong>QA</strong>: Stichprobe + gezielte Edge-Case-Tests; Logging aller Änderungen.</li>
+        </ol>
+        <p data-original-text="**Merksatz:** Jede Korrektur braucht eine Regel + einen Audit-Trail."><strong>Merksatz:</strong> Jede Korrektur braucht eine Regel + einen Audit-Trail.</p>
+        <h3 data-original-text="PIDs als robuste Anker (ORCID, ROR, DOI)">PIDs als robuste Anker (ORCID, ROR, DOI)</h3>
+        <h4 data-original-text="ORCID">ORCID</h4>
+        <p data-original-text="**Use:** Personen eindeutig identifizieren; Profilpflege lohnt sich für Disambiguierung."><strong>Use:</strong> Personen eindeutig identifizieren; Profilpflege lohnt sich für Disambiguierung.</p>
+        <p data-original-text="**Best Practices:**"><strong>Best Practices:</strong></p>
+        <ul>
+          <li data-original-text="ORCID in Publikationssystemen und Repositorien erfassen.">ORCID in Publikationssystemen und Repositorien erfassen.</li>
+          <li data-original-text="ORCID in Reports als Primäranker (falls vorhanden) nutzen.">ORCID in Reports als Primäranker (falls vorhanden) nutzen.</li>
+          <li data-original-text="Bei Konflikten: ORCID-gestützte Zuordnung bevorzugen.">Bei Konflikten: ORCID-gestützte Zuordnung bevorzugen.</li>
+        </ul>
+        <h4 data-original-text="ROR">ROR</h4>
+        <p data-original-text="**Use:** Organisationen konsistent benennen und über Systeme hinweg verbinden."><strong>Use:</strong> Organisationen konsistent benennen und über Systeme hinweg verbinden.</p>
+        <p data-original-text="**Best Practices:**"><strong>Best Practices:</strong></p>
+        <ul>
+          <li data-original-text="ROR als Master-Lookup für Organisationsnamen und Varianten nutzen.">ROR als Master-Lookup für Organisationsnamen und Varianten nutzen.</li>
+          <li data-original-text="Sub-Units (Departemente/Institute) getrennt modellieren (Mapping-Tabelle).">Sub-Units (Departemente/Institute) getrennt modellieren (Mapping-Tabelle).</li>
+          <li data-original-text="Reorg-Historie dokumentieren (ab wann gilt welche Struktur).">Reorg-Historie dokumentieren (ab wann gilt welche Struktur).</li>
+        </ul>
+        <h4 data-original-text="DOI">DOI</h4>
+        <p data-original-text="**Use:** Werke stabil identifizieren; erleichtert Dedup und Metadaten-Abgleich (Crossref/DataCite)."><strong>Use:</strong> Werke stabil identifizieren; erleichtert Dedup und Metadaten-Abgleich (Crossref/DataCite).</p>
+        <p data-original-text="**Best Practices:**"><strong>Best Practices:</strong></p>
+        <ul>
+          <li data-original-text="DOI als primären Work-Key nutzen (wenn vorhanden).">DOI als primären Work-Key nutzen (wenn vorhanden).</li>
+          <li data-original-text="Preprint vs. VoR explizit modellieren (Relation/Version).">Preprint vs. VoR explizit modellieren (Relation/Version).</li>
+          <li data-original-text="Metadaten-Abgleich via APIs (z. B. Crossref) für Plausibilisierung.">Metadaten-Abgleich via APIs (z. B. Crossref) für Plausibilisierung.</li>
+        </ul>
+        <h3 data-original-text="QA-Checkliste (für jede Analyse / jeden Report)">QA-Checkliste (für jede Analyse / jeden Report)</h3>
+        <ul>
+          <li data-original-text="Stichtag/Snapshot dokumentiert (Datum, Datenquelle, Exportparameter).">Stichtag/Snapshot dokumentiert (Datum, Datenquelle, Exportparameter).</li>
+          <li data-original-text="Identifier-Quote: % Werke mit DOI, % Autor:innen mit ORCID, % Orgs mit ROR.">Identifier-Quote: % Werke mit DOI, % Autor:innen mit ORCID, % Orgs mit ROR.</li>
+          <li data-original-text="Top-20 Autor:innen/Orgs manuell plausibilisiert (Fehlzuordnungen?).">Top-20 Autor:innen/Orgs manuell plausibilisiert (Fehlzuordnungen?).</li>
+          <li data-original-text="Dublettentest: DOI-Duplikate = 0; Near-Duplicates geprüft (Preprint/VoR).">Dublettentest: DOI-Duplikate = 0; Near-Duplicates geprüft (Preprint/VoR).</li>
+          <li data-original-text="Affiliation-Qualität: fehlende Affiliationsquote; Multi-affiliation-Regel dokumentiert.">Affiliation-Qualität: fehlende Affiliationsquote; Multi-affiliation-Regel dokumentiert.</li>
+          <li data-original-text="Edge-Case-Liste: Konsortien/Hyperauthorship; Namenswechsel; transliterierte Namen.">Edge-Case-Liste: Konsortien/Hyperauthorship; Namenswechsel; transliterierte Namen.</li>
+          <li data-original-text="Audit-Trail: Welche Regeln/Overrides wurden angewendet? (mit Version)">Audit-Trail: Welche Regeln/Overrides wurden angewendet? (mit Version)</li>
+        </ul>
+        <h3 data-original-text="Template: Methodik-Kasten (Copy/Paste für Website &amp; Reports)">Template: Methodik-Kasten (Copy/Paste für Website & Reports)</h3>
+        <p data-original-text="Datenquelle(n): &lt;…&gt; | Stichtag/Export: &lt;YYYY-MM-DD, Tool/Query&gt; | Zeitraum: &lt;…&gt; | Dokumenttypen: &lt;…&gt; | Identifiers: DOI/ORCID/ROR (Prioritäten: &lt;…&gt;) | Disambiguierung: &lt;Regeln, Fuzzy-Schwellen, Konfliktregeln&gt; | Dedup: &lt;Keys + Heuristiken&gt; | Counting: &lt;full/fractional + Details&gt; | Limitationen: &lt;Coverage, Missingness, Unsicherheit&gt; | Reproduzierbarkeit: &lt;Code/Notebook/Repo + Version&gt;.">Datenquelle(n): <…> | Stichtag/Export: <YYYY-MM-DD, Tool/Query> | Zeitraum: <…> | Dokumenttypen: <…> | Identifiers: DOI/ORCID/ROR (Prioritäten: <…>) | Disambiguierung: <Regeln, Fuzzy-Schwellen, Konfliktregeln> | Dedup: <Keys + Heuristiken> | Counting: <full/fractional + Details> | Limitationen: <Coverage, Missingness, Unsicherheit> | Reproduzierbarkeit: <Code/Notebook/Repo + Version>.</p>
+        <h3 data-original-text="Tool-Lab: Mini-Lab – 30-Minuten Cleaning Sprint (Author + Org)">Tool-Lab: Mini-Lab – 30-Minuten Cleaning Sprint (Author + Org)</h3>
+        <ol>
+          <li data-original-text="Nimm ein Set von 200 Publikationen (z. B. 2022–2025) aus deiner Datenquelle.">Nimm ein Set von 200 Publikationen (z. B. 2022–2025) aus deiner Datenquelle.</li>
+          <li data-original-text="Ermittle Identifier-Quoten (DOI/ORCID/ROR) und dokumentiere sie.">Ermittle Identifier-Quoten (DOI/ORCID/ROR) und dokumentiere sie.</li>
+          <li data-original-text="Wähle 10 häufigste Autor:innen und 10 häufigste Organisationen; prüfe Fehlzuordnungen (Stichprobe 5 Werke pro Einheit).">Wähle 10 häufigste Autor:innen und 10 häufigste Organisationen; prüfe Fehlzuordnungen (Stichprobe 5 Werke pro Einheit).</li>
+          <li data-original-text="Lege ein Mapping-Sheet an: Org-Varianten -&gt; ROR; Sub-Units -&gt; Canonical Name.">Lege ein Mapping-Sheet an: Org-Varianten -> ROR; Sub-Units -> Canonical Name.</li>
+          <li data-original-text="Führe Dedup-Check (DOI) und Near-Dup-Check (Titel+Jahr+1. Autor:in) aus.">Führe Dedup-Check (DOI) und Near-Dup-Check (Titel+Jahr+1. Autor:in) aus.</li>
+          <li data-original-text="Erstelle am Ende einen Methodik-Kasten + eine Edge-Case-Liste (max. 10 Punkte).">Erstelle am Ende einen Methodik-Kasten + eine Edge-Case-Liste (max. 10 Punkte).</li>
+        </ol>
+        <h3 data-original-text="Responsible Metrics: Datenqualität zuerst">Responsible Metrics: Datenqualität zuerst</h3>
+        <ul>
+          <li data-original-text="Keine Kennzahl ohne Datenbasis- und Disambiguierungs-Transparenz.">Keine Kennzahl ohne Datenbasis- und Disambiguierungs-Transparenz.</li>
+          <li data-original-text="Wenn Datenqualität unklar ist: lieber robuste Indikatoren (z. B. Top-x%) und größere Aggregationseinheiten.">Wenn Datenqualität unklar ist: lieber robuste Indikatoren (z. B. Top-x%) und größere Aggregationseinheiten.</li>
+          <li data-original-text="Immer Missingness berichten (DOI/ORCID/ROR-Quote; Affiliation-Quote).">Immer Missingness berichten (DOI/ORCID/ROR-Quote; Affiliation-Quote).</li>
+          <li data-original-text="Korrekturen müssen nachvollziehbar sein (Regel + Audit-Trail) – besonders bei Entscheidungen mit Konsequenzen.">Korrekturen müssen nachvollziehbar sein (Regel + Audit-Trail) – besonders bei Entscheidungen mit Konsequenzen.</li>
+        </ul>
+        <h3 data-original-text="Übungen">Übungen</h3>
+        <h4 data-original-text="Level 1">Level 1</h4>
+        <ol>
+          <li data-original-text="**M09-L1-Q1:** Welche Reihenfolge ist als Minimalstandard am sinnvollsten?"><strong>M09-L1-Q1:</strong> Welche Reihenfolge ist als Minimalstandard am sinnvollsten?</li>
+        </ol>
+        <ul>
+          <li data-original-text="Fuzzy-Matching zuerst, dann Identifier-Join.">Fuzzy-Matching zuerst, dann Identifier-Join.</li>
+          <li data-original-text="Identifier-Join zuerst (ORCID/ROR/DOI), dann Matching für den Rest.">Identifier-Join zuerst (ORCID/ROR/DOI), dann Matching für den Rest.</li>
+          <li data-original-text="Nur manuelle Korrektur, keine Regeln.">Nur manuelle Korrektur, keine Regeln.</li>
+          <li data-original-text="**Lösung:** Identifier-Join zuerst (ORCID/ROR/DOI), dann Matching für den Rest."><strong>Lösung:</strong> Identifier-Join zuerst (ORCID/ROR/DOI), dann Matching für den Rest.</li>
+        </ul>
+        <ol>
+          <li data-original-text="**M09-L1-Q2:** Warum ist ein Stichtag/Snapshot wichtig?"><strong>M09-L1-Q2:</strong> Warum ist ein Stichtag/Snapshot wichtig?</li>
+        </ol>
+        <ul>
+          <li data-original-text="Damit Zahlen größer wirken.">Damit Zahlen größer wirken.</li>
+          <li data-original-text="Damit Analysen reproduzierbar sind und Änderungen über Zeit erklärbar bleiben.">Damit Analysen reproduzierbar sind und Änderungen über Zeit erklärbar bleiben.</li>
+          <li data-original-text="Weil APIs sonst nicht funktionieren.">Weil APIs sonst nicht funktionieren.</li>
+          <li data-original-text="**Lösung:** Damit Analysen reproduzierbar sind und Änderungen über Zeit erklärbar bleiben."><strong>Lösung:</strong> Damit Analysen reproduzierbar sind und Änderungen über Zeit erklärbar bleiben.</li>
+        </ul>
+        <ol>
+          <li data-original-text="**M09-L1-Q3:** Welche Aussage ist am defensibelsten?"><strong>M09-L1-Q3:</strong> Welche Aussage ist am defensibelsten?</li>
+        </ol>
+        <ul>
+          <li data-original-text="Disambiguierung ist immer 100% korrekt.">Disambiguierung ist immer 100% korrekt.</li>
+          <li data-original-text="Disambiguierung ist ein iterativer Prozess mit Unsicherheit, der dokumentiert werden muss.">Disambiguierung ist ein iterativer Prozess mit Unsicherheit, der dokumentiert werden muss.</li>
+          <li data-original-text="PIDs sind unwichtig, weil Namen reichen.">PIDs sind unwichtig, weil Namen reichen.</li>
+          <li data-original-text="**Lösung:** Disambiguierung ist ein iterativer Prozess mit Unsicherheit, der dokumentiert werden muss."><strong>Lösung:</strong> Disambiguierung ist ein iterativer Prozess mit Unsicherheit, der dokumentiert werden muss.</li>
+        </ul>
+        <h4 data-original-text="Level 2">Level 2</h4>
+        <ol>
+          <li data-original-text="**M09-L2-CLEAN-1:** Du bekommst 6 Organisationsnamen aus Publikationen. Erstelle eine Mapping-Tabelle (Original -&gt; Canonical -&gt; ROR-ID (falls auffindbar) -&gt; Notes)."><strong>M09-L2-CLEAN-1:</strong> Du bekommst 6 Organisationsnamen aus Publikationen. Erstelle eine Mapping-Tabelle (Original -> Canonical -> ROR-ID (falls auffindbar) -> Notes).</li>
+        </ol>
+        <ul>
+          <li data-original-text="**Datensnippet:**"><strong>Datensnippet:</strong></li>
+          <li data-original-text="University of Lucerne">University of Lucerne</li>
+          <li data-original-text="Univ. Luzern">Univ. Luzern</li>
+          <li data-original-text="Université de Lucerne">Université de Lucerne</li>
+          <li data-original-text="Dept. of Economics, Univ. of Lucerne">Dept. of Economics, Univ. of Lucerne</li>
+          <li data-original-text="Universität Luzern, Wirtschaftswissenschaftliches Institut">Universität Luzern, Wirtschaftswissenschaftliches Institut</li>
+          <li data-original-text="U. Lucerne">U. Lucerne</li>
+          <li data-original-text="**Lösungsrahmen:**"><strong>Lösungsrahmen:</strong></li>
+          <li data-original-text="Canonical Name: einheitlich (z. B. University of Lucerne / Universität Luzern).">Canonical Name: einheitlich (z. B. University of Lucerne / Universität Luzern).</li>
+          <li data-original-text="Sub-Units separat als unit_label modellieren (Departement/Institut).">Sub-Units separat als unit_label modellieren (Departement/Institut).</li>
+          <li data-original-text="ROR-ID am besten auf Gesamtinstitution anwenden; Sub-Units via internes Mapping.">ROR-ID am besten auf Gesamtinstitution anwenden; Sub-Units via internes Mapping.</li>
+          <li data-original-text="**Bewertung:** 2 Punkte: klare Canonical-Strategie + Sub-Unit-Trennung. 1 Punkt: plausible Notes (Reorg/Sprachvarianten)."><strong>Bewertung:</strong> 2 Punkte: klare Canonical-Strategie + Sub-Unit-Trennung. 1 Punkt: plausible Notes (Reorg/Sprachvarianten).</li>
+        </ul>
+        <ol>
+          <li data-original-text="**M09-L2-DEDUPE-1:** Dedup-Regeln: Formuliere 3 Regeln (priorisiert), um Dubletten zu erkennen (DOI, dann Identifier-ähnliche, dann Near-Dup)."><strong>M09-L2-DEDUPE-1:</strong> Dedup-Regeln: Formuliere 3 Regeln (priorisiert), um Dubletten zu erkennen (DOI, dann Identifier-ähnliche, dann Near-Dup).</li>
+        </ol>
+        <ul>
+          <li data-original-text="**Lösungsrahmen:**"><strong>Lösungsrahmen:</strong></li>
+        </ul>
+        <ol>
+          <li data-original-text="DOI exakt gleich =&gt; Dublette.">DOI exakt gleich => Dublette.</li>
+          <li data-original-text="(Titel normalisiert + Jahr + erster Autor) sehr ähnlich =&gt; Near-duplicate; manuelle Prüfung.">(Titel normalisiert + Jahr + erster Autor) sehr ähnlich => Near-duplicate; manuelle Prüfung.</li>
+          <li data-original-text="Preprint/VoR: Relationen/Versionen explizit kennzeichnen statt „löschen“.">Preprint/VoR: Relationen/Versionen explizit kennzeichnen statt „löschen“.</li>
+        </ol>
+        <ul>
+          <li data-original-text="**Bewertung:** 1 Punkt: DOI-Regel korrekt. 1 Punkt: Near-Dup-Regel mit Normalisierung. 1 Punkt: Versionierungs-Hinweis (Preprint/VoR)."><strong>Bewertung:</strong> 1 Punkt: DOI-Regel korrekt. 1 Punkt: Near-Dup-Regel mit Normalisierung. 1 Punkt: Versionierungs-Hinweis (Preprint/VoR).</li>
+        </ul>
+        <ol>
+          <li data-original-text="**M09-L2-METHODBOX-1:** Schreibe einen Methodik-Kasten (5–8 Sätze) für einen Departements-Report. Muss enthalten: Quelle, Stichtag, Zeitraum, Identifier-Priorität (DOI/ORCID/ROR), Dedup, Disambiguierung, Limitationen."><strong>M09-L2-METHODBOX-1:</strong> Schreibe einen Methodik-Kasten (5–8 Sätze) für einen Departements-Report. Muss enthalten: Quelle, Stichtag, Zeitraum, Identifier-Priorität (DOI/ORCID/ROR), Dedup, Disambiguierung, Limitationen.</li>
+        </ol>
+        <ul>
+          <li data-original-text="**Lösungsrahmen:** Quelle+Stichtag; Zeitraum+Dokumenttypen; Identifier-Priorität (ORCID/ROR/DOI); Dedup + Disambiguierung kurz; 2–3 Limitationen (Coverage/Missingness/Unsicherheit)."><strong>Lösungsrahmen:</strong> Quelle+Stichtag; Zeitraum+Dokumenttypen; Identifier-Priorität (ORCID/ROR/DOI); Dedup + Disambiguierung kurz; 2–3 Limitationen (Coverage/Missingness/Unsicherheit).</li>
+          <li data-original-text="**Bewertung:** 2 Punkte: alle Pflichtfelder enthalten. 1 Punkt: Limitationen konkret (nicht generisch)."><strong>Bewertung:</strong> 2 Punkte: alle Pflichtfelder enthalten. 1 Punkt: Limitationen konkret (nicht generisch).</li>
+        </ul>
+        <h4 data-original-text="Level 3">Level 3</h4>
+        <ol>
+          <li data-original-text="**M09-L3-CASE:** Mini-Case: Du sollst ein Uni-Dashboard bauen, das monatlich aktualisiert wird. Entwirf (a) einen reproduzierbaren Workflow (5–7 Schritte) und (b) eine QA-Strategie (mind. 8 Checks), die bei jedem Lauf automatisch oder halbautomatisch geprüft wird."><strong>M09-L3-CASE:</strong> Mini-Case: Du sollst ein Uni-Dashboard bauen, das monatlich aktualisiert wird. Entwirf (a) einen reproduzierbaren Workflow (5–7 Schritte) und (b) eine QA-Strategie (mind. 8 Checks), die bei jedem Lauf automatisch oder halbautomatisch geprüft wird.</li>
+        </ol>
+        <ul>
+          <li data-original-text="**Deliverable:** Workflow + QA-Strategie (Bulletpoints)."><strong>Deliverable:</strong> Workflow + QA-Strategie (Bulletpoints).</li>
+          <li data-original-text="**Lösungsrahmen:** Workflow: Datenabruf (Query/Export) -&gt; Snapshot speichern -&gt; Cleaning/Mapping -&gt; Dedup -&gt; Disambiguierung -&gt; Kennzahlen -&gt; Outputs (CSV/JSON + Report) -&gt; Versionieren/Changelog. QA: Identifier-Quoten, DOI-Duplikate, Missing affiliations, Top-Einheiten plausibilisieren, Ausreißer-Checks, Version/Parameter-Logging, Edge-Case-Set, Trend-Drift-Checks (Sprünge), Reorg-Mapping-Integrity."><strong>Lösungsrahmen:</strong> Workflow: Datenabruf (Query/Export) -> Snapshot speichern -> Cleaning/Mapping -> Dedup -> Disambiguierung -> Kennzahlen -> Outputs (CSV/JSON + Report) -> Versionieren/Changelog. QA: Identifier-Quoten, DOI-Duplikate, Missing affiliations, Top-Einheiten plausibilisieren, Ausreißer-Checks, Version/Parameter-Logging, Edge-Case-Set, Trend-Drift-Checks (Sprünge), Reorg-Mapping-Integrity.</li>
+          <li data-original-text="**Bewertung:** Workflow ist reproduzierbar (Snapshot/Version/Parameter) (3 Punkte). QA ist konkret und überprüfbar (nicht nur allgemein) (4 Punkte). Transparenz/Responsible-Metrics-Logik sichtbar (2 Punkte)."><strong>Bewertung:</strong> Workflow ist reproduzierbar (Snapshot/Version/Parameter) (3 Punkte). QA ist konkret und überprüfbar (nicht nur allgemein) (4 Punkte). Transparenz/Responsible-Metrics-Logik sichtbar (2 Punkte).</li>
+        </ul>
+        <h3 data-original-text="Quellen">Quellen</h3>
+        <ul>
+          <li data-original-text="https://docs.openalex.org/api-entities/authors"><a href="https://docs.openalex.org/api-entities/authors">https://docs.openalex.org/api-entities/authors</a></li>
+          <li data-original-text="https://help.openalex.org/hc/en-us/articles/24347048891543-Author-disambiguation"><a href="https://help.openalex.org/hc/en-us/articles/24347048891543-Author-disambiguation">https://help.openalex.org/hc/en-us/articles/24347048891543-Author-disambiguation</a></li>
+          <li data-original-text="https://docs.openalex.org/api-entities/works/work-object/authorship-object"><a href="https://docs.openalex.org/api-entities/works/work-object/authorship-object">https://docs.openalex.org/api-entities/works/work-object/authorship-object</a></li>
+          <li data-original-text="https://docs.openalex.org/additional-help/faq"><a href="https://docs.openalex.org/additional-help/faq">https://docs.openalex.org/additional-help/faq</a></li>
+          <li data-original-text="https://orcid.org/"><a href="https://orcid.org/">https://orcid.org/</a></li>
+          <li data-original-text="https://support.orcid.org/hc/en-us/articles/360006897334-What-is-an-ORCID-iD-and-how-do-I-use-it"><a href="https://support.orcid.org/hc/en-us/articles/360006897334-What-is-an-ORCID-iD-and-how-do-I-use-it">https://support.orcid.org/hc/en-us/articles/360006897334-What-is-an-ORCID-iD-and-how-do-I-use-it</a></li>
+          <li data-original-text="https://ror.org/"><a href="https://ror.org/">https://ror.org/</a></li>
+          <li data-original-text="https://www.crossref.org/documentation/retrieve-metadata/rest-api/"><a href="https://www.crossref.org/documentation/retrieve-metadata/rest-api/">https://www.crossref.org/documentation/retrieve-metadata/rest-api/</a></li>
+          <li data-original-text="https://www.doi.org/"><a href="https://www.doi.org/">https://www.doi.org/</a></li>
+          <li data-original-text="https://www.iso.org/standard/81599.html"><a href="https://www.iso.org/standard/81599.html">https://www.iso.org/standard/81599.html</a></li>
+          <li data-original-text="https://support.datacite.org/docs/doi-basics"><a href="https://support.datacite.org/docs/doi-basics">https://support.datacite.org/docs/doi-basics</a></li>
+          <li data-original-text="https://www.elsevier.com/products/scopus/author-profiles"><a href="https://www.elsevier.com/products/scopus/author-profiles">https://www.elsevier.com/products/scopus/author-profiles</a></li>
+        </ul>
+      </section>
+    </main>
+    <script src="role-toggle.js" defer></script>
+    <script src="module-progress.js" defer></script>
+    <script src="details-accordion.js" defer></script>
+  </body>
+</html>

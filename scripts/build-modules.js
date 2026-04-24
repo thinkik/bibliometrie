@@ -381,7 +381,7 @@ const buildModulePage = (filename) => {
   const metaList = buildMetaList(meta);
   const contentHtml = markdownToHtml(bodyLines);
   const html = TEMPLATE({ title, moduleId: moduleNumber, moduleSlug, metaList, contentHtml });
-  const outputName = `modul${moduleNumber}.html`;
+  const outputName = `modul-${String(moduleNumber).padStart(2, "0")}.html`;
   const outputPath = path.join(ROOT, outputName);
   fs.writeFileSync(outputPath, html, "utf8");
   return outputName;
