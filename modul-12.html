@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="de" data-original-text="Einführung Bibliometrie – Modul 12: Forschungsbewertung in der Praxis: Reporting-Patterns, Dashboards, Use-Cases (Unit/Faculty/Person) + Do/Don’t-Katalog">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Einführung Bibliometrie – Modul 12: Forschungsbewertung in der Praxis: Reporting-Patterns, Dashboards, Use-Cases (Unit/Faculty/Person) + Do/Don’t-Katalog</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="navigation.js" defer></script>
+    <script src="i18n.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand" data-i18n="site.brand" data-original-text="Einführung Bibliometrie">Einführung Bibliometrie</div>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="nav-toggle-label" data-i18n="nav.menu" data-original-text="Menü">Menü</span>
+        <span class="nav-toggle-icon" aria-hidden="true">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </span>
+      </button>
+      <nav class="site-nav" id="primary-navigation" aria-label="Hauptnavigation" data-i18n-aria-label="nav.aria">
+        <a href="index.html" data-i18n="nav.home">Start</a>
+        <a class="active" href="lehrgang.html" data-i18n="nav.course">Lehrgang</a>
+        <a href="uebungen.html" data-i18n="nav.exercises">Übungen</a>
+        <a href="fallstudien.html" data-i18n="nav.cases">Fallstudien</a>
+        <a href="tools-datenquellen.html" data-i18n="nav.tools">Tools &amp; Datenquellen</a>
+        <a href="responsible-metrics.html" data-i18n="nav.responsible">Responsible Metrics</a>
+        <a href="glossar.html" data-i18n="nav.glossary">Glossar</a>
+        <a href="downloads-vorlagen.html" data-i18n="nav.downloads">Downloads &amp; Vorlagen</a>
+        <a href="faq.html" data-i18n="nav.faq">FAQ</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="impressum.html">Impressum</a>
+      </nav>
+      <button class="language-toggle" type="button" aria-label="Sprache wechseln" data-i18n="language.toggle" data-i18n-aria-label="language.aria" data-original-text="DE/EN">DE/EN</button>
+    </header>
+    <main class="content">
+      <div class="module-progress" data-module-progress data-module-id="modul12">
+        <span class="module-progress-label" data-original-text="Fortschritt:">Fortschritt:</span>
+        <progress id="module-progress-bar" max="100" value="0">0%</progress>
+        <span class="module-progress-value" data-module-progress-value data-original-text="0%">0%</span>
+      </div>
+      <h1 id="heading-modul-12" data-original-text="Modul 12: Forschungsbewertung in der Praxis: Reporting-Patterns, Dashboards, Use-Cases (Unit/Faculty/Person) + Do/Don’t-Katalog">Modul 12: Forschungsbewertung in der Praxis: Reporting-Patterns, Dashboards, Use-Cases (Unit/Faculty/Person) + Do/Don’t-Katalog</h1>
+
+      <section class="module-section" id="modul-12" aria-labelledby="heading-modul-12">
+
+        <h3 data-original-text="Lernziele">Lernziele</h3>
+        <ul>
+          <li data-original-text="Zwischen Monitoring, Learning/Improvement und High-stakes Evaluation unterscheiden (und passende Methoden wählen).">Zwischen Monitoring, Learning/Improvement und High-stakes Evaluation unterscheiden (und passende Methoden wählen).</li>
+          <li data-original-text="Responsible-Metrics-Leitplanken (DORA/Leiden/Metric Tide/CoARA/HKP) in konkrete Reporting- und Dashboard-Designs übersetzen.">Responsible-Metrics-Leitplanken (DORA/Leiden/Metric Tide/CoARA/HKP) in konkrete Reporting- und Dashboard-Designs übersetzen.</li>
+          <li data-original-text="Dashboards so spezifizieren, dass sie transparent, auditierbar und fair sind (Quelle, Stichtag, Coverage, Counting, Unsicherheit).">Dashboards so spezifizieren, dass sie transparent, auditierbar und fair sind (Quelle, Stichtag, Coverage, Counting, Unsicherheit).</li>
+          <li data-original-text="Typische Fehlanreize und Governance-Risiken erkennen und vermeiden (Gaming, Goodhart, Field-bias, Ranking-Falle).">Typische Fehlanreize und Governance-Risiken erkennen und vermeiden (Gaming, Goodhart, Field-bias, Ranking-Falle).</li>
+          <li data-original-text="Für drei Ebenen (Institution/Unit, Faculty/Group, Person) passende Indikator-Sets und Narrative-Elemente entwerfen.">Für drei Ebenen (Institution/Unit, Faculty/Group, Person) passende Indikator-Sets und Narrative-Elemente entwerfen.</li>
+        </ul>
+        <h3 data-original-text="Kurz erklärt">Kurz erklärt</h3>
+        <p data-original-text="Dashboards und Reports sind nie neutral: Sie formen Entscheidungen. Gute bibliometrische Praxis beginnt daher mit dem Use-Case (Monitoring vs. High-stakes), arbeitet mit einem kleinen, ausgewogenen Indikatorenset, ergänzt qualitative Beurteilung (Peer Review/Narrative Evidence) und dokumentiert die Methodik vollständig (Quelle, Stichtag, Coverage, Counting, Limitationen).">Dashboards und Reports sind nie neutral: Sie formen Entscheidungen. Gute bibliometrische Praxis beginnt daher mit dem Use-Case (Monitoring vs. High-stakes), arbeitet mit einem kleinen, ausgewogenen Indikatorenset, ergänzt qualitative Beurteilung (Peer Review/Narrative Evidence) und dokumentiert die Methodik vollständig (Quelle, Stichtag, Coverage, Counting, Limitationen).</p>
+        <h3 data-original-text="Schlüsselbegriffe">Schlüsselbegriffe</h3>
+        <ul>
+          <li data-original-text="**Low-stakes monitoring:** Monitoring zur Orientierung/Verbesserung (z. B. Portfolio-Entwicklung, OA-Anteile), ohne direkte Konsequenzen für Einzelpersonen."><strong>Low-stakes monitoring:</strong> Monitoring zur Orientierung/Verbesserung (z. B. Portfolio-Entwicklung, OA-Anteile), ohne direkte Konsequenzen für Einzelpersonen.</li>
+          <li data-original-text="**High-stakes assessment:** Bewertung mit direkten Konsequenzen (Hiring/Promotion, Mittelzuweisung, Ranking-Entscheide). Erfordert besonders strenge Leitplanken."><strong>High-stakes assessment:</strong> Bewertung mit direkten Konsequenzen (Hiring/Promotion, Mittelzuweisung, Ranking-Entscheide). Erfordert besonders strenge Leitplanken.</li>
+          <li data-original-text="**Responsible metrics:** Rahmen, der Metriken als unterstützende Evidenz versteht und Transparenz, Kontext, Fairness, Expertise und Reproduzierbarkeit verlangt."><strong>Responsible metrics:</strong> Rahmen, der Metriken als unterstützende Evidenz versteht und Transparenz, Kontext, Fairness, Expertise und Reproduzierbarkeit verlangt.</li>
+          <li data-original-text="**Goodhart’s law (in der Praxis):** Wenn ein Indikator zum Ziel wird, verliert er Informationsgehalt (Gaming/Optimierung auf Zahl statt Qualität)."><strong>Goodhart’s law (in der Praxis):</strong> Wenn ein Indikator zum Ziel wird, verliert er Informationsgehalt (Gaming/Optimierung auf Zahl statt Qualität).</li>
+          <li data-original-text="**Source disclosure / Methodikbox:** Standardisierte Offenlegung von Datenquelle, Stichtag, Query/Exportregeln, Counting, Limitationen und Reproduzierbarkeit."><strong>Source disclosure / Methodikbox:</strong> Standardisierte Offenlegung von Datenquelle, Stichtag, Query/Exportregeln, Counting, Limitationen und Reproduzierbarkeit.</li>
+          <li data-original-text="**Narrative CV:** Narratives Format (z. B. UKRI R4RI), um Beiträge, Rollen, Open Science, Team Science, Mentoring etc. sichtbar zu machen – als Ergänzung zu Zahlen."><strong>Narrative CV:</strong> Narratives Format (z. B. UKRI R4RI), um Beiträge, Rollen, Open Science, Team Science, Mentoring etc. sichtbar zu machen – als Ergänzung zu Zahlen.</li>
+        </ul>
+        <h3 data-original-text="Assessment-Spektrum: Wähle das passende Instrument">Assessment-Spektrum: Wähle das passende Instrument</h3>
+        <p data-original-text="**A — Monitoring &amp; Learning (low-stakes)**"><strong>A — Monitoring & Learning (low-stakes)</strong></p>
+        <ul>
+          <li data-original-text="**Typische Entscheidungen:** Portfolio-Entwicklung, OA-Strategie, Kooperationsanalyse, Feld-/Themenmonitoring."><strong>Typische Entscheidungen:</strong> Portfolio-Entwicklung, OA-Strategie, Kooperationsanalyse, Feld-/Themenmonitoring.</li>
+          <li data-original-text="**Empfohlene Evidenz:** Zeitreihen, feld-normalisierte Indikatoren auf Aggregat, Open Science/Output-Diversität, qualitative Kontextnotizen."><strong>Empfohlene Evidenz:</strong> Zeitreihen, feld-normalisierte Indikatoren auf Aggregat, Open Science/Output-Diversität, qualitative Kontextnotizen.</li>
+          <li data-original-text="**Strenge:** mittel."><strong>Strenge:</strong> mittel.</li>
+        </ul>
+        <p data-original-text="**B — Priorisierung &amp; Ressourcendialog (medium-stakes)**"><strong>B — Priorisierung & Ressourcendialog (medium-stakes)</strong></p>
+        <ul>
+          <li data-original-text="**Typische Entscheidungen:** Schwerpunktsetzung, Ressourcenargumentation, Programm-Review."><strong>Typische Entscheidungen:</strong> Schwerpunktsetzung, Ressourcenargumentation, Programm-Review.</li>
+          <li data-original-text="**Empfohlene Evidenz:** Triangulation mehrerer Quellen, Benchmarks innerhalb Fachgruppen, Stichproben-QA + Audit-Trail, kurze Peer-Review-/Expert:innen-Notizen."><strong>Empfohlene Evidenz:</strong> Triangulation mehrerer Quellen, Benchmarks innerhalb Fachgruppen, Stichproben-QA + Audit-Trail, kurze Peer-Review-/Expert:innen-Notizen.</li>
+          <li data-original-text="**Strenge:** hoch."><strong>Strenge:</strong> hoch.</li>
+        </ul>
+        <p data-original-text="**C — Hiring/Promotion/Funding (high-stakes)**"><strong>C — Hiring/Promotion/Funding (high-stakes)</strong></p>
+        <ul>
+          <li data-original-text="**Typische Entscheidungen:** Berufungen, Tenure/Promotion, Projektförderung."><strong>Typische Entscheidungen:</strong> Berufungen, Tenure/Promotion, Projektförderung.</li>
+          <li data-original-text="**Empfohlene Evidenz:** primär qualitative Beurteilung (Peer Review), Narrative CV + Evidenz, kontextualisierte, sparsame Metriken (nicht mechanisch), strikte Fairness-/Bias-Checks."><strong>Empfohlene Evidenz:</strong> primär qualitative Beurteilung (Peer Review), Narrative CV + Evidenz, kontextualisierte, sparsame Metriken (nicht mechanisch), strikte Fairness-/Bias-Checks.</li>
+          <li data-original-text="**Strenge:** maximal."><strong>Strenge:</strong> maximal.</li>
+        </ul>
+        <h3 data-original-text="Reporting-Patterns: 5 bewährte Muster">Reporting-Patterns: 5 bewährte Muster</h3>
+        <ol>
+          <li data-original-text="**Deskriptives Profil (What we do):** Transparente Bestandsaufnahme ohne Rankingdruck."><strong>Deskriptives Profil (What we do):</strong> Transparente Bestandsaufnahme ohne Rankingdruck.</li>
+        </ol>
+        <ul>
+          <li data-original-text="Widgets: Output-Mix (Artikel/Bücher/Datasets/Software), OA-Anteil, Collaboration (int./nat.), Top-Felder/Keywords (mapping-light).">Widgets: Output-Mix (Artikel/Bücher/Datasets/Software), OA-Anteil, Collaboration (int./nat.), Top-Felder/Keywords (mapping-light).</li>
+        </ul>
+        <ol>
+          <li data-original-text="**Kontextualisierte Benchmark (How we compare, responsibly):** Vergleich nur innerhalb sinnvoller Fachgruppen und mit Coverage-Hinweisen."><strong>Kontextualisierte Benchmark (How we compare, responsibly):</strong> Vergleich nur innerhalb sinnvoller Fachgruppen und mit Coverage-Hinweisen.</li>
+        </ol>
+        <ul>
+          <li data-original-text="Widgets: Field-normalized impact (Aggregat), Top-x% Indikatoren (Aggregat), Produktivität pro FTE (nur wenn valide), Confidence-/Missingness-Box.">Widgets: Field-normalized impact (Aggregat), Top-x% Indikatoren (Aggregat), Produktivität pro FTE (nur wenn valide), Confidence-/Missingness-Box.</li>
+        </ul>
+        <ol>
+          <li data-original-text="**Diagnose &amp; QA (Why numbers differ):** Fehlerquellen sichtbar machen (Affiliations, Dubletten, Coverage)."><strong>Diagnose & QA (Why numbers differ):</strong> Fehlerquellen sichtbar machen (Affiliations, Dubletten, Coverage).</li>
+        </ol>
+        <ul>
+          <li data-original-text="Widgets: DOI/ORCID/ROR-Quote, Missing affiliations, Dublettenzahl, Quelle-Vergleich (Triangulation).">Widgets: DOI/ORCID/ROR-Quote, Missing affiliations, Dublettenzahl, Quelle-Vergleich (Triangulation).</li>
+        </ul>
+        <ol>
+          <li data-original-text="**Impact Storyboard (Evidence, not vibes):** Wirkung als belegte Story: Policy/Uptake/Use in Praxis + qualitative Evidenz."><strong>Impact Storyboard (Evidence, not vibes):</strong> Wirkung als belegte Story: Policy/Uptake/Use in Praxis + qualitative Evidenz.</li>
+        </ol>
+        <ul>
+          <li data-original-text="Widgets: Policy mentions (mit Kontext), Usage (COUNTER), Selected case studies, Narrative evidence + Links.">Widgets: Policy mentions (mit Kontext), Usage (COUNTER), Selected case studies, Narrative evidence + Links.</li>
+        </ul>
+        <ol>
+          <li data-original-text="**Improvement Loop (Measure → Learn → Adjust):** Indikatoren als Feedback für Prozesse (Open Science, Data sharing, reproducibility)."><strong>Improvement Loop (Measure → Learn → Adjust):</strong> Indikatoren als Feedback für Prozesse (Open Science, Data sharing, reproducibility).</li>
+        </ol>
+        <ul>
+          <li data-original-text="Widgets: OS-Praktiken (OA, Data availability), Narrative contributions (Mentoring, Team Science), jährliche Indikator-Review-Notiz.">Widgets: OS-Praktiken (OA, Data availability), Narrative contributions (Mentoring, Team Science), jährliche Indikator-Review-Notiz.</li>
+        </ul>
+        <h3 data-original-text="Dashboard-Blueprint (minimal, aber robust)">Dashboard-Blueprint (minimal, aber robust)</h3>
+        <p data-original-text="**Header / Disclosure**"><strong>Header / Disclosure</strong></p>
+        <ul>
+          <li data-original-text="Datenquelle(n) + Stichtag + Query/Exportparameter.">Datenquelle(n) + Stichtag + Query/Exportparameter.</li>
+          <li data-original-text="Zeitraum + Doc types + Counting (full/fractional).">Zeitraum + Doc types + Counting (full/fractional).</li>
+          <li data-original-text="Coverage-Hinweis + Missingness/Unsicherheit.">Coverage-Hinweis + Missingness/Unsicherheit.</li>
+          <li data-original-text="Kontakt/Feedback-Kanal (Korrekturen möglich).">Kontakt/Feedback-Kanal (Korrekturen möglich).</li>
+        </ul>
+        <p data-original-text="**KPI-Kern (max. 8 KPIs)**"><strong>KPI-Kern (max. 8 KPIs)</strong></p>
+        <ul>
+          <li data-original-text="Output-Mix (divers).">Output-Mix (divers).</li>
+          <li data-original-text="OA-Anteil.">OA-Anteil.</li>
+          <li data-original-text="Field-normalized citation indicator (nur Aggregat).">Field-normalized citation indicator (nur Aggregat).</li>
+          <li data-original-text="Top-x% Indikator (nur Aggregat).">Top-x% Indikator (nur Aggregat).</li>
+          <li data-original-text="Kooperationsindikator.">Kooperationsindikator.</li>
+          <li data-original-text="Policy/Practice uptake (qualifiziert, nicht nur Zahl).">Policy/Practice uptake (qualifiziert, nicht nur Zahl).</li>
+          <li data-original-text="Usage (COUNTER, wo verfügbar).">Usage (COUNTER, wo verfügbar).</li>
+          <li data-original-text="Data quality: DOI/ORCID/ROR-Quote.">Data quality: DOI/ORCID/ROR-Quote.</li>
+        </ul>
+        <p data-original-text="**Drill-down (mit Leitplanken)**"><strong>Drill-down (mit Leitplanken)</strong></p>
+        <ul>
+          <li data-original-text="Keine Einzelpersonen-Rankings im Default-View.">Keine Einzelpersonen-Rankings im Default-View.</li>
+          <li data-original-text="Drill-down nur mit Kontext (Feld, Zeitraum, Rolle, Output-Typ).">Drill-down nur mit Kontext (Feld, Zeitraum, Rolle, Output-Typ).</li>
+          <li data-original-text="Jede Tabelle exportierbar + mit Methodik-Hinweisen.">Jede Tabelle exportierbar + mit Methodik-Hinweisen.</li>
+        </ul>
+        <h3 data-original-text="Do / Don’t-Katalog (für Website &amp; Schulung)">Do / Don’t-Katalog (für Website & Schulung)</h3>
+        <p data-original-text="**Do**"><strong>Do</strong></p>
+        <ul>
+          <li data-original-text="Use-case zuerst, Indikatoren danach (Monitoring ≠ Evaluation).">Use-case zuerst, Indikatoren danach (Monitoring ≠ Evaluation).</li>
+          <li data-original-text="Immer Methodikbox + Stichtag + Quelle(n) offenlegen.">Immer Methodikbox + Stichtag + Quelle(n) offenlegen.</li>
+          <li data-original-text="Feldkontext nutzen (Vergleiche nur innerhalb sinnvoller Gruppen).">Feldkontext nutzen (Vergleiche nur innerhalb sinnvoller Gruppen).</li>
+          <li data-original-text="Kleine, ausgewogene Indikator-Sets + qualitative Ergänzung.">Kleine, ausgewogene Indikator-Sets + qualitative Ergänzung.</li>
+          <li data-original-text="QA sichtbar machen (Missingness, Dubletten, Disambiguierung).">QA sichtbar machen (Missingness, Dubletten, Disambiguierung).</li>
+          <li data-original-text="Regelmäßige Indikator-Reviews (weiterentwickeln, nicht versteinern).">Regelmäßige Indikator-Reviews (weiterentwickeln, nicht versteinern).</li>
+        </ul>
+        <p data-original-text="**Don’t**"><strong>Don’t</strong></p>
+        <ul>
+          <li data-original-text="Mechanische Schwellen („JIF&gt;…“, „h-index&gt;…“) als harte Kriterien.">Mechanische Schwellen („JIF>…“, „h-index>…“) als harte Kriterien.</li>
+          <li data-original-text="Personen/Artikel mit Journalmetriken bewerten.">Personen/Artikel mit Journalmetriken bewerten.</li>
+          <li data-original-text="Dashboards als Ranglistenmaschinen bauen (Goodhart/Gaming).">Dashboards als Ranglistenmaschinen bauen (Goodhart/Gaming).</li>
+          <li data-original-text="Quellen mischen ohne Triangulation/Erklärung (Coverage-Fallen).">Quellen mischen ohne Triangulation/Erklärung (Coverage-Fallen).</li>
+          <li data-original-text="Zahlen ohne Unsicherheit/Missingness präsentieren.">Zahlen ohne Unsicherheit/Missingness präsentieren.</li>
+          <li data-original-text="„Impact“ behaupten ohne Evidenz (Fallbeispiele, Uptake-Nachweise).">„Impact“ behaupten ohne Evidenz (Fallbeispiele, Uptake-Nachweise).</li>
+        </ul>
+        <h3 data-original-text="Governance-Check: Wer entscheidet was?">Governance-Check: Wer entscheidet was?</h3>
+        <ul>
+          <li data-original-text="Policy: Welche Entscheidungen sind high-stakes? (=&gt; strengste Leitplanken)">Policy: Welche Entscheidungen sind high-stakes? (=> strengste Leitplanken)</li>
+          <li data-original-text="Roles: Wer ist Data Steward? Wer verantwortet Methodik/QA?">Roles: Wer ist Data Steward? Wer verantwortet Methodik/QA?</li>
+          <li data-original-text="Appeals: Korrekturweg für falsch zugeordnete Outputs/Affiliations.">Appeals: Korrekturweg für falsch zugeordnete Outputs/Affiliations.</li>
+          <li data-original-text="Transparency: Veröffentlichung von Methodik &amp; Versionen.">Transparency: Veröffentlichung von Methodik & Versionen.</li>
+          <li data-original-text="Fairness: Feld-/Karrierephase-/Rollen-Dimensionen explizit berücksichtigen.">Fairness: Feld-/Karrierephase-/Rollen-Dimensionen explizit berücksichtigen.</li>
+        </ul>
+        <h3 data-original-text="Responsible Metrics – Kurzrahmen (kombiniert, praxistauglich)">Responsible Metrics – Kurzrahmen (kombiniert, praxistauglich)</h3>
+        <ul>
+          <li data-original-text="Metriken unterstützen qualitative Beurteilung (Leiden).">Metriken unterstützen qualitative Beurteilung (Leiden).</li>
+          <li data-original-text="Klar, transparent, spezifisch, kontextualisiert, fair (DORA-Guidance).">Klar, transparent, spezifisch, kontextualisiert, fair (DORA-Guidance).</li>
+          <li data-original-text="Reformpfad: Vielfalt der Beiträge anerkennen, qualitative Urteile zentral (CoARA).">Reformpfad: Vielfalt der Beiträge anerkennen, qualitative Urteile zentral (CoARA).</li>
+          <li data-original-text="Integrität/Transparenz/Open Science belohnen (Hong Kong Principles/UNESCO OS).">Integrität/Transparenz/Open Science belohnen (Hong Kong Principles/UNESCO OS).</li>
+          <li data-original-text="Framework „Responsible Metrics“ operationalisieren (Metric Tide).">Framework „Responsible Metrics“ operationalisieren (Metric Tide).</li>
+        </ul>
+        <h3 data-original-text="Übungen (Level 1–3)">Übungen (Level 1–3)</h3>
+        <ul>
+          <li data-original-text="**Level 1:** High-stakes-Aussage identifizieren und die 5 DORA-Prinzipien benennen."><strong>Level 1:</strong> High-stakes-Aussage identifizieren und die 5 DORA-Prinzipien benennen.</li>
+          <li data-original-text="**Level 2:** Dashboard-Spezifikation (max. 12 Bulletpoints) für ein Institut schreiben; kritische Review eines Rankings (5 Probleme + 3 Verbesserungen)."><strong>Level 2:</strong> Dashboard-Spezifikation (max. 12 Bulletpoints) für ein Institut schreiben; kritische Review eines Rankings (5 Probleme + 3 Verbesserungen).</li>
+          <li data-original-text="**Level 3:** Bewertungs-Set für eine Berufungskommission entwerfen (qualitative Kriterien, kontextualisierte Metriken, Narrative Template)."><strong>Level 3:</strong> Bewertungs-Set für eine Berufungskommission entwerfen (qualitative Kriterien, kontextualisierte Metriken, Narrative Template).</li>
+        </ul>
+        <h3 data-original-text="Quellen &amp; weiterführende Links">Quellen & weiterführende Links</h3>
+        <ul>
+          <li data-original-text="https://www.ukri.org/wp-content/uploads/2021/12/RE-151221-TheMetricTideFullReport2015.pdf"><a href="https://www.ukri.org/wp-content/uploads/2021/12/RE-151221-TheMetricTideFullReport2015.pdf">https://www.ukri.org/wp-content/uploads/2021/12/RE-151221-TheMetricTideFullReport2015.pdf</a></li>
+          <li data-original-text="https://sfdora.org/wp-content/uploads/2024/05/DORA_indicators_guidance.pdf"><a href="https://sfdora.org/wp-content/uploads/2024/05/DORA_indicators_guidance.pdf">https://sfdora.org/wp-content/uploads/2024/05/DORA_indicators_guidance.pdf</a></li>
+          <li data-original-text="https://www.nature.com/articles/520429a"><a href="https://www.nature.com/articles/520429a">https://www.nature.com/articles/520429a</a></li>
+          <li data-original-text="https://www.coara.org/wp-content/uploads/2025/11/2022_07_19_rra_agreement_final.pdf-3.pdf"><a href="https://www.coara.org/wp-content/uploads/2025/11/2022_07_19_rra_agreement_final.pdf-3.pdf">https://www.coara.org/wp-content/uploads/2025/11/2022_07_19_rra_agreement_final.pdf-3.pdf</a></li>
+          <li data-original-text="https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000737"><a href="https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000737">https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3000737</a></li>
+          <li data-original-text="https://www.ukri.org/apply-for-funding/develop-your-application/resume-for-research-and-innovation-r4ri-guidance/"><a href="https://www.ukri.org/apply-for-funding/develop-your-application/resume-for-research-and-innovation-r4ri-guidance/">https://www.ukri.org/apply-for-funding/develop-your-application/resume-for-research-and-innovation-r4ri-guidance/</a></li>
+          <li data-original-text="https://www.unesco.it/wp-content/uploads/2023/11/RECOMMENDATION-ON-OPEN-SCIENCE-2021-Certified.pdf"><a href="https://www.unesco.it/wp-content/uploads/2023/11/RECOMMENDATION-ON-OPEN-SCIENCE-2021-Certified.pdf">https://www.unesco.it/wp-content/uploads/2023/11/RECOMMENDATION-ON-OPEN-SCIENCE-2021-Certified.pdf</a></li>
+        </ul>
+      </section>
+    </main>
+    <script src="role-toggle.js" defer></script>
+    <script src="module-progress.js" defer></script>
+    <script src="details-accordion.js" defer></script>
+  </body>
+</html>
