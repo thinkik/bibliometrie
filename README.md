@@ -57,7 +57,6 @@ Hinweis: Beim Laden über ein CDN kann technisch bedingt eine Verbindung zum CDN
 
 Kontakt- und Verantwortlichkeitsangaben sind im Impressum hinterlegt: `impressum.html`.
 
-> Aktuell enthält das Impressum Platzhalterdaten („Ihr Name / Ihre Organisation“). Diese sollten vor Veröffentlichung durch die realen Angaben des verantwortlichen Teams ersetzt werden.
 
 ## Projekt lokal starten
 
