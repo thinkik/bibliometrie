@@ -28,9 +28,11 @@ node scripts/build-modules.js
 ```
 
 Dieses Skript:
-1. verarbeitet **alle** `modul-01.md` bis `modul-12.md`,
-2. generiert die Seiten `modul1.html` bis `modul12.html`,
+1. verarbeitet die vorhandenen Dateien `modules/modul-01.md` bis `modules/modul-12.md`,
+2. generiert daraus `modul-01.html` bis `modul-12.html` im Root-Verzeichnis,
 3. startet anschließend automatisch `scripts/build-search-index.js`.
+
+Die ebenfalls vorhandenen Dateien `modul1.html` bis `modul12.html` werden durch diesen Build nicht aktualisiert.
 
 ### Suchindex einzeln aktualisieren
 
@@ -38,7 +40,9 @@ Dieses Skript:
 node scripts/build-search-index.js
 ```
 
-Der Suchindex landet in `data/search-index.json` und enthält statische Inhaltsseiten plus alle vorhandenen `modul*.html`.
+Der Suchindex wird als `data/search-index.json` gespeichert und von `navigation.js` geladen. Er enthält die im Suchskript festgelegten, vorhandenen Inhaltsseiten sowie `modul1.html` bis `modul12.html`.
+
+Achtung: Die vom Modul-Build erzeugten Dateien `modul-01.html` bis `modul-12.html` werden vom aktuellen Suchskript nicht erfasst. Änderungen an den Markdown-Modulen gelangen deshalb derzeit nicht über die neu generierten Modulseiten in den Suchindex.
 
 ## Übersetzungen (i18n)
 
@@ -65,11 +69,12 @@ Alternativ kann jeder andere statische Webserver verwendet werden (z. B. `npx se
 
 ## Qualitätssicherung / Deployment
 
-Empfohlen ist eine CI-Pipeline (z. B. GitHub Actions), die bei Push:
-- den Modul-Build ausführt,
-- den Suchindex aktualisiert,
-- automatische Tests startet,
-- und anschließend nach GitHub Pages deployt.
+Im Repository ist derzeit kein GitHub-Actions-Workflow hinterlegt. Für eine künftige CI-Pipeline wird empfohlen:
+- `node scripts/build-modules.js` auszuführen; dieser Schritt erzeugt auch den Suchindex,
+- anschließend Qualitätsprüfungen auszuführen,
+- die statischen Website-Dateien einschließlich der generierten Moduldateien und `data/search-index.json` nach GitHub Pages zu deployen.
+
+Ohne vorgeschalteten Build müssen die generierten Dateien vor der Veröffentlichung aktualisiert und mit veröffentlicht werden.
 
 ## Datenpflege
 
